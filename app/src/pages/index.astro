@@ -22,10 +22,16 @@ const BRAND_LOGOS: Record<string, string> = {
   inception: '/logos/brand-inception.png', // no tenía logo: era la ficha gris
 };
 
+// Webflow Cloud sirve la app bajo el mount path del entorno (por ejemplo /app): lo que
+// viene de /public necesita ese prefijo. Mismo origen a propósito: los logos se pintan
+// en un canvas de WebGL, y una imagen de otro origen sin CORS lo bloquea.
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const withBase = (path: string | null) => (path ? `${base}${path}` : null);
+
 // Al navegador va solo lo que la interfaz necesita. Las descripciones quedan en
 // el servidor: las lee Jev, no el usuario.
 const models = catalog.map((m) => ({
-  id: m.id, name: m.name, creator: m.creator, logo: BRAND_LOGOS[m.creator] ?? m.logo, layer: m.layer,
+  id: m.id, name: m.name, creator: m.creator, logo: withBase(BRAND_LOGOS[m.creator] ?? m.logo), layer: m.layer,
   hasData: m.has_data, quality: m.quality ?? null, price: m.price ?? null,
   speed: m.speed ?? null, url: m.official_url, task: m.task ?? null,
 }));

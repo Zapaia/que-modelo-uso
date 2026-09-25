@@ -3,6 +3,8 @@ import catalog from '../../data/catalog.json';
 import { scoreBatch } from '../../lib/jev';
 
 export const prerender = false;
+// Webflow Cloud corre las rutas de API en el runtime edge (Cloudflare Workers).
+export const config = { runtime: 'edge' };
 
 const byId = new Map(catalog.map((m) => [m.id, m]));
 

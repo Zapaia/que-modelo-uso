@@ -57,6 +57,7 @@ function logoTexture(url: string | null) {
     tex.colorSpace = THREE.SRGBColorSpace;
     tex.anisotropy = 4;
     const img = new Image();
+    img.crossOrigin = 'anonymous'; // por si los assets llegan desde otro origen
     img.onload = () => { ctx.drawImage(img, 0, 0, 256, 256); tex.needsUpdate = true; };
     img.src = url;
     t = tex;

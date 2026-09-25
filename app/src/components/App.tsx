@@ -23,6 +23,8 @@ const EXAMPLES = [
 const PRICE_STEPS = [0.1, 0.2, 0.5, 1, 2, 5, 10, 20, Infinity];
 const SPEED_STEPS = [0, 25, 50, 100, 150, 200, 300, 500];
 
+// En Webflow Cloud la app vive bajo un mount path (por ejemplo /app): la API también.
+const API = `${import.meta.env.BASE_URL.replace(/\/$/, '')}/api/match`;
 const fmt = (n: number, d = 2) => n.toLocaleString('es-AR', { minimumFractionDigits: d, maximumFractionDigits: d });
 const shortName = (m: Model) => m.name.replace(/^[^:]+:\s*/, '');
 
@@ -66,7 +68,7 @@ export default function App({ models }: { models: Model[] }) {
     // Todas las tandas salen a la vez; cada una que vuelve es una oleada.
     await Promise.all(todo.map(async (ids) => {
       try {
-        const res = await fetch('/api/match', {
+        const res = await fetch(API, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ idea: q, ids }),
