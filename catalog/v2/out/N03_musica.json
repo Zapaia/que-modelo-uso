@@ -1,0 +1,244 @@
+[
+ {
+  "id": "elevenlabs/music-v2.5",
+  "layer": 3,
+  "name": "Music v2.5",
+  "creator": "ElevenLabs",
+  "creator_slug": "elevenlabs",
+  "hf_org": "elevenlabs",
+  "card": {
+   "what": "Music generation API model by ElevenLabs that composes full songs from a text prompt or a detailed composition plan.",
+   "kind": "music generation",
+   "input": [
+    "text",
+    "audio"
+   ],
+   "output": [
+    "audio"
+   ],
+   "interaction": "task model",
+   "access": "hosted API",
+   "languages": "English",
+   "best_at": [
+    "composing a full song with verses and choruses from a prompt",
+    "generating instrumental-only background tracks",
+    "following a detailed composition plan for structure and lyrics",
+    "regenerating or editing a section of an existing generated song"
+   ],
+   "product_uses": [
+    "game soundtrack generator",
+    "background music for a podcast",
+    "jingle and ad music tool",
+    "app that turns a mood description into a song"
+   ],
+   "domains": [
+    "media",
+    "general"
+   ],
+   "not_for": [
+    "transcribing or analysing existing audio",
+    "generating short one-off sound effects (use a sound effects model)",
+    "open-ended chat"
+   ]
+  },
+  "official_url": "https://elevenlabs.io/docs/api-reference/music/compose",
+  "sources": [
+   "https://elevenlabs.io/docs/api-reference/music/compose",
+   "https://elevenlabs.io/docs/overview/models"
+  ],
+  "notes": ""
+ },
+ {
+  "id": "elevenlabs/sound-effects-v2",
+  "layer": 3,
+  "name": "Sound Effects v2",
+  "creator": "ElevenLabs",
+  "creator_slug": "elevenlabs",
+  "hf_org": "elevenlabs",
+  "card": {
+   "what": "Audio generation API model by ElevenLabs that turns a text description into a sound effect.",
+   "kind": "audio generation",
+   "input": [
+    "text"
+   ],
+   "output": [
+    "audio"
+   ],
+   "interaction": "task model",
+   "access": "hosted API",
+   "languages": "English",
+   "best_at": [
+    "generating a short sound effect from a text description",
+    "creating foley and ambient sounds for a scene",
+    "producing a sound effect that loops smoothly",
+    "generating short musical elements like drum loops or synth pads"
+   ],
+   "product_uses": [
+    "sound effects library for a game",
+    "video editing app with generated foley",
+    "soundboard app",
+    "podcast or video production tool"
+   ],
+   "domains": [
+    "media",
+    "general"
+   ],
+   "not_for": [
+    "composing a full song with structure (use a music generation model)",
+    "generating spoken narration or dialogue",
+    "transcribing existing audio"
+   ]
+  },
+  "official_url": "https://elevenlabs.io/docs/overview/capabilities/sound-effects",
+  "sources": [
+   "https://elevenlabs.io/docs/overview/capabilities/sound-effects",
+   "https://elevenlabs.io/docs/api-reference/text-to-sound-effects/convert"
+  ],
+  "notes": ""
+ },
+ {
+  "id": "google/lyria-3.5",
+  "layer": 3,
+  "name": "Lyria 3.5",
+  "creator": "Google",
+  "creator_slug": "google",
+  "hf_org": "google",
+  "card": {
+   "what": "Music generation model in the Gemini API by Google that creates full-length songs from a text prompt or image.",
+   "kind": "music generation",
+   "input": [
+    "text",
+    "image"
+   ],
+   "output": [
+    "audio"
+   ],
+   "interaction": "task model",
+   "access": "hosted API",
+   "languages": "multilingual",
+   "best_at": [
+    "composing full-length songs with verses, choruses and bridges",
+    "generating instrumental background music",
+    "writing and singing custom lyrics in a chosen language",
+    "generating music inspired by a reference image"
+   ],
+   "product_uses": [
+    "app that turns a description into a full song",
+    "background music generator for videos",
+    "game soundtrack tool",
+    "creative music-making app for kids"
+   ],
+   "domains": [
+    "media",
+    "general"
+   ],
+   "not_for": [
+    "iteratively editing a song across multiple turns (single-turn generation)",
+    "generating a specific artist's voice or copyrighted lyrics",
+    "transcribing or analysing existing audio"
+   ]
+  },
+  "official_url": "https://ai.google.dev/gemini-api/docs/music-generation",
+  "sources": [
+   "https://ai.google.dev/gemini-api/docs/music-generation"
+  ],
+  "notes": ""
+ },
+ {
+  "id": "stability-ai/stable-audio-2.5",
+  "layer": 3,
+  "name": "Stable Audio 2.5",
+  "creator": "Stability AI",
+  "creator_slug": "stability-ai",
+  "hf_org": "stabilityai",
+  "card": {
+   "what": "Music and sound generation API model by Stability AI that creates or transforms audio from text and audio prompts.",
+   "kind": "music generation",
+   "input": [
+    "text",
+    "audio"
+   ],
+   "output": [
+    "audio"
+   ],
+   "interaction": "task model",
+   "access": "hosted API",
+   "languages": "English",
+   "best_at": [
+    "generating minutes-long music tracks from a text description",
+    "generating sound effects from a text description",
+    "restyling or remixing an existing audio track with a text prompt",
+    "completing or extending an existing track (audio inpainting)"
+   ],
+   "product_uses": [
+    "background music generator for an app",
+    "remixing tool for existing recordings",
+    "sound design tool for video or games",
+    "royalty-free music library generator"
+   ],
+   "domains": [
+    "media",
+    "general"
+   ],
+   "not_for": [
+    "transcribing or identifying existing audio",
+    "generating spoken narration or dialogue",
+    "open-ended chat"
+   ]
+  },
+  "official_url": "https://platform.stability.ai/docs/api-reference",
+  "sources": [
+   "https://kb.stability.ai/knowledge-base/tips-for-using-the-audio-to-audio-api",
+   "https://platform.stability.ai/docs/api-reference"
+  ],
+  "notes": "La ficha de referencia de la API no cargó el contenido vía WebFetch (solo devolvió el título); los detalles se tomaron de la guía de uso de Stability AI (kb.stability.ai) y de reportes de terceros sobre esa misma página oficial."
+ },
+ {
+  "id": "lalal-ai/stem-separation-api",
+  "layer": 3,
+  "name": "LALAL.AI Stem Separation API",
+  "creator": "LALAL.AI",
+  "creator_slug": "lalal-ai",
+  "hf_org": null,
+  "card": {
+   "what": "Audio API by LALAL.AI that separates a track into stems and removes noise or background sound.",
+   "kind": "audio generation",
+   "input": [
+    "audio",
+    "video"
+   ],
+   "output": [
+    "audio"
+   ],
+   "interaction": "task model",
+   "access": "hosted API",
+   "languages": "multilingual",
+   "best_at": [
+    "separating a track into vocals, drums, bass and other instrument stems",
+    "removing background music from a voice recording",
+    "removing background noise, echo or reverb from a recording",
+    "extracting the instrumental version of a song"
+   ],
+   "product_uses": [
+    "karaoke app that removes vocals from a song",
+    "podcast cleanup tool that removes background noise",
+    "remixing app that isolates instrument stems",
+    "video editing tool that cleans up dialogue audio"
+   ],
+   "domains": [
+    "media",
+    "general"
+   ],
+   "not_for": [
+    "generating new music or sound from a prompt",
+    "transcribing speech into text",
+    "open-ended chat"
+   ]
+  },
+  "official_url": "https://www.lalal.ai/api/",
+  "sources": [
+   "https://www.lalal.ai/api/"
+  ],
+  "notes": ""
+ }
+]

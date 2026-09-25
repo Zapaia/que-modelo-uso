@@ -1,0 +1,145 @@
+[
+ {
+  "id": "facebook/musicgen-medium",
+  "name": "musicgen-medium",
+  "creator": "facebook",
+  "layer": 2,
+  "hf_task": "text-to-audio",
+  "license": "cc-by-nc-4.0",
+  "known_sources": [
+   "https://huggingface.co/facebook/musicgen-medium/blob/main/README.md",
+   "https://huggingface.co/facebook/musicgen-medium"
+  ]
+ },
+ {
+  "id": "facebook/musicgen-small",
+  "name": "musicgen-small",
+  "creator": "facebook",
+  "layer": 2,
+  "hf_task": "text-to-audio",
+  "license": "cc-by-nc-4.0",
+  "known_sources": [
+   "https://huggingface.co/facebook/musicgen-small",
+   "https://huggingface.co/facebook/musicgen-small/blob/main/README.md"
+  ]
+ },
+ {
+  "id": "stabilityai/stable-audio-3-medium",
+  "name": "stable-audio-3-medium",
+  "creator": "stabilityai",
+  "layer": 2,
+  "hf_task": "text-to-audio",
+  "license": "other",
+  "known_sources": [
+   "https://huggingface.co/stabilityai/stable-audio-3-medium",
+   "https://stability.ai/news-updates/meet-stable-audio-3-the-model-family-built-for-artistic-experimentation-with-open-weight-models"
+  ]
+ },
+ {
+  "id": "Lykon/dreamshaper-7",
+  "name": "dreamshaper-7",
+  "creator": "Lykon",
+  "layer": 2,
+  "hf_task": "text-to-image",
+  "license": "creativeml-openrail-m",
+  "known_sources": [
+   "https://huggingface.co/Lykon/dreamshaper-7",
+   "https://huggingface.co/Lykon/dreamshaper-7/blob/main/README.md"
+  ]
+ },
+ {
+  "id": "RunDiffusion/Juggernaut-XL-v9",
+  "name": "Juggernaut-XL-v9",
+  "creator": "RunDiffusion",
+  "layer": 2,
+  "hf_task": "text-to-image",
+  "license": "creativeml-openrail-m",
+  "known_sources": [
+   "https://huggingface.co/RunDiffusion/Juggernaut-XL-v9",
+   "https://huggingface.co/RunDiffusion/Juggernaut-XL-v9/blob/main/README.md"
+  ]
+ },
+ {
+  "id": "black-forest-labs/FLUX.1-dev",
+  "name": "FLUX.1-dev",
+  "creator": "black-forest-labs",
+  "layer": 2,
+  "hf_task": "text-to-image",
+  "license": "other",
+  "known_sources": [
+   "https://huggingface.co/black-forest-labs/FLUX.1-dev"
+  ]
+ },
+ {
+  "id": "stabilityai/sdxl-turbo",
+  "name": "sdxl-turbo",
+  "creator": "stabilityai",
+  "layer": 2,
+  "hf_task": "text-to-image",
+  "license": "other",
+  "known_sources": [
+   "https://huggingface.co/stabilityai/sdxl-turbo/blob/main/README.md",
+   "https://huggingface.co/stabilityai/sdxl-turbo"
+  ]
+ },
+ {
+  "id": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "name": "stable-diffusion-v1-5",
+  "creator": "stable-diffusion-v1-5",
+  "layer": 2,
+  "hf_task": "text-to-image",
+  "license": "creativeml-openrail-m",
+  "known_sources": [
+   "https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5/blob/main/README.md",
+   "https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5"
+  ]
+ },
+ {
+  "id": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+  "name": "Qwen3-TTS-12Hz-1.7B-CustomVoice",
+  "creator": "Qwen",
+  "layer": 2,
+  "hf_task": "text-to-speech",
+  "license": "apache-2.0",
+  "known_sources": [
+   "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice/blob/main/README.md",
+   "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"
+  ]
+ },
+ {
+  "id": "Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice",
+  "name": "Qwen3-TTS-12Hz-0.6B-CustomVoice",
+  "creator": "Qwen",
+  "layer": 2,
+  "hf_task": "text-to-speech",
+  "license": "apache-2.0",
+  "known_sources": [
+   "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice/blob/main/README.md",
+   "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice"
+  ]
+ },
+ {
+  "id": "ResembleAI/chatterbox",
+  "name": "chatterbox",
+  "creator": "ResembleAI",
+  "layer": 2,
+  "hf_task": "text-to-speech",
+  "license": "mit",
+  "known_sources": [
+   "https://huggingface.co/ResembleAI/chatterbox",
+   "https://huggingface.co/ResembleAI/chatterbox/blob/main/README.md"
+  ]
+ },
+ {
+  "id": "coqui/XTTS-v2",
+  "name": "XTTS-v2",
+  "creator": "coqui",
+  "layer": 2,
+  "hf_task": "text-to-speech",
+  "license": "other",
+  "known_sources": [
+   "https://huggingface.co/coqui/XTTS-v2",
+   "https://huggingface.co/coqui/XTTS-v2/blob/main/README.md"
+  ]
+ }
+]

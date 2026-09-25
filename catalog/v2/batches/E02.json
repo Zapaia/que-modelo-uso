@@ -1,0 +1,152 @@
+[
+ {
+  "id": "google/gemini-3.5-flash-lite",
+  "name": "Google: Gemini 3.5 Flash Lite",
+  "creator": "google",
+  "layer": 1,
+  "hf_task": null,
+  "license": null,
+  "known_sources": [
+   "https://ai.google.dev/gemini-api/docs/models/gemini-3.5-flash-lite"
+  ],
+  "old_description_hint": "Google's low-latency, cost-effective model optimized for lightweight subagent tasks and automation. Best at: simple coding, document parsing, high-throughput classification, precise extraction, data analysis. Domains: data processing, customer support, workflow automation, content analysis. Typical uses: document analysis, JSON extraction, smart routing, fast classification, PDF processing. Not suited for: complex reasoning or creative content generation tasks."
+ },
+ {
+  "id": "ibm-granite/granite-4.2-8b",
+  "name": "IBM: Granite 4.2 8B",
+  "creator": "ibm-granite",
+  "layer": 1,
+  "hf_task": null,
+  "license": null,
+  "known_sources": [
+   "https://www.ibm.com/granite/docs/models/granite4-2",
+   "https://huggingface.co/ibm-granite/granite-4.2-8b"
+  ],
+  "old_description_hint": "8B dense reasoning model from IBM with native chain-of-thought and 128K context for enterprise applications. Best at: mathematics, code generation, multilingual dialogue, agentic tool calling. Domains: enterprise, finance, healthcare. Typical uses: reasoning-augmented function calling, multilingual support agents, math-heavy workflows. Not suited for: real-time streaming or extreme latency constraints."
+ },
+ {
+  "id": "inception/mercury-2.5",
+  "name": "Inception: Mercury 2.5",
+  "creator": "inception",
+  "layer": 1,
+  "hf_task": null,
+  "license": null,
+  "known_sources": [
+   "https://www.inceptionlabs.ai/blog/introducing-mercury-2-5"
+  ],
+  "old_description_hint": "Diffusion-based LLM from Inception with parallel token generation achieving 1,100+ tokens/sec and 260K context. Best at: fast inference, real-time applications, cost-effective reasoning. Domains: search, voice, coding. Typical uses: real-time search result synthesis, low-latency API responses, high-throughput inference. Not suited for: extended step-by-step reasoning requiring sequential generation."
+ },
+ {
+  "id": "meta-llama/llama-4-maverick",
+  "name": "Meta: Llama 4 Maverick",
+  "creator": "meta-llama",
+  "layer": 1,
+  "hf_task": null,
+  "license": null,
+  "known_sources": [
+   "https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+   "https://ai.meta.com/blog/llama-4-multimodal-intelligence/"
+  ],
+  "old_description_hint": "Meta's most capable open multimodal model with 17B active parameters and 128 mixture-of-experts. Best at: coding, reasoning, multilingual tasks, complex analysis, autonomous workflows. Domains: software development, research, multilingual applications, knowledge work. Typical uses: code generation, autonomous problem-solving, complex reasoning, multi-language processing. Not suited for: cost-critical, real-time latency-sensitive applications requiring immediate responses."
+ },
+ {
+  "id": "meta-llama/llama-4-scout",
+  "name": "Meta: Llama 4 Scout",
+  "creator": "meta-llama",
+  "layer": 1,
+  "hf_task": null,
+  "license": null,
+  "known_sources": [
+   "https://huggingface.co/meta-llama/Llama-4-Scout-17B-16E-Instruct",
+   "https://ai.meta.com/blog/llama-4-multimodal-intelligence/"
+  ],
+  "old_description_hint": "Meta's efficient open multimodal model with 17B active parameters and 16 mixture-of-experts. Best at: multimodal reasoning, image grounding, efficient inference, lightweight workflows, long-context processing. Domains: document analysis, content understanding, efficient processing, research. Typical uses: document processing, image analysis, single-GPU deployment, knowledge extraction. Not suited for: maximum capability reasoning or complex multi-step problem-solving tasks."
+ },
+ {
+  "id": "meta-llama/llama-3.3-70b-instruct",
+  "name": "Meta: Llama 3.3 70B Instruct",
+  "creator": "meta-llama",
+  "layer": 1,
+  "hf_task": null,
+  "license": null,
+  "known_sources": [
+   "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct"
+  ],
+  "old_description_hint": "Meta's 70B parameter instruction-tuned multilingual model with 128K token context window. Best at: reasoning, coding, multilingual tasks, long-context processing, complex analysis. Domains: software development, research, multilingual applications, knowledge work. Typical uses: code generation, complex reasoning, extended conversations, knowledge extraction. Not suited for: real-time latency-sensitive or cost-critical applications requiring minimal computational resources."
+ },
+ {
+  "id": "meta-llama/llama-3.1-8b-instruct",
+  "name": "Meta: Llama 3.1 8B Instruct",
+  "creator": "meta-llama",
+  "layer": 1,
+  "hf_task": null,
+  "license": null,
+  "known_sources": [
+   "https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct"
+  ],
+  "old_description_hint": "Meta's efficient 8B parameter instruction-tuned multilingual model with 128K context for low-resource deployment. Best at: reasoning, coding, multilingual tasks in resource-constrained environments. Domains: software development, chatbots, edge deployment, mobile applications. Typical uses: assistant chat, code generation, efficient inference, distributed systems. Not suited for: maximum reasoning capability or complex multi-step analysis requiring extensive computational resources."
+ },
+ {
+  "id": "microsoft/phi-4",
+  "name": "Microsoft: Phi 4",
+  "creator": "microsoft",
+  "layer": 1,
+  "hf_task": null,
+  "license": null,
+  "known_sources": [
+   "https://huggingface.co/microsoft/phi-4",
+   "https://www.microsoft.com/en-us/research/publication/phi-4-technical-report/"
+  ],
+  "old_description_hint": "14-billion parameter small language model from Microsoft trained with synthetic data for complex reasoning. Best at: mathematics, code generation, logical reasoning with efficiency constraints. Domains: education, embedded systems. Typical uses: math problem solving, competitive programming preparation, resource-constrained inference. Not suited for: multimodal tasks (base model is text-only)."
+ },
+ {
+  "id": "minimax/minimax-m3",
+  "name": "MiniMax: MiniMax M3",
+  "creator": "minimax",
+  "layer": 1,
+  "hf_task": null,
+  "license": null,
+  "known_sources": [
+   "https://huggingface.co/MiniMaxAI/MiniMax-M3",
+   "https://www.minimax.io/blog/minimax-m3"
+  ],
+  "old_description_hint": "Mixture-of-experts foundation model from MiniMax (428B total, 23B active) supporting text, image, and video inputs with 1M context. Best at: agentic coding, long-horizon task orchestration, multimodal reasoning. Domains: software engineering, autonomous systems. Typical uses: autonomous 12-24 hour task execution, CUDA kernel optimization, paper reproduction workflows. Not suited for: resource-constrained environments."
+ },
+ {
+  "id": "mistralai/mistral-medium-3-5",
+  "name": "Mistral: Mistral Medium 3.5",
+  "creator": "mistralai",
+  "layer": 1,
+  "hf_task": null,
+  "license": null,
+  "known_sources": [
+   "https://docs.mistral.ai/models/model-cards/mistral-medium-3-5-26-04",
+   "https://mistral.ai/news/vibe-remote-agents-mistral-medium-3-5/"
+  ],
+  "old_description_hint": "A 128B dense model from Mistral AI designed for instruction-following, reasoning, and coding tasks. Best at: long-horizon coding, agentic workflows, productivity automation. Domains: software engineering, document processing. Typical uses: multi-step research tasks, cross-tool workflows, code generation. Not suited for: real-time latency-critical applications, extreme parameter efficiency."
+ },
+ {
+  "id": "mistralai/mistral-small-2603",
+  "name": "Mistral: Mistral Small 4",
+  "creator": "mistralai",
+  "layer": 1,
+  "hf_task": null,
+  "license": null,
+  "known_sources": [
+   "https://huggingface.co/mistralai/Mistral-Small-4-119B-2603"
+  ],
+  "old_description_hint": "A 119B mixture-of-experts model from Mistral AI with 6.5B activated parameters per token. Best at: reasoning with configurable effort levels, multilingual tasks, function calling. Domains: enterprise chat, document understanding, codebase analysis. Typical uses: chat assistants, mathematical reasoning, developer automation. Not suited for: latency-sensitive edge deployments, fixed resource constraints."
+ },
+ {
+  "id": "mistralai/ministral-8b-2512",
+  "name": "Mistral: Ministral 3 8B 2512",
+  "creator": "mistralai",
+  "layer": 1,
+  "hf_task": null,
+  "license": null,
+  "known_sources": [
+   "https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512"
+  ],
+  "old_description_hint": "A 9B model from Mistral AI combining 8.4B language and 0.4B vision encoders for resource-constrained environments. Best at: instruction adherence, vision-language tasks, multilingual chat. Domains: local deployment, edge devices, constrained environments. Typical uses: chat interfaces, image analysis, translation, specialized agents. Not suited for: frontier reasoning, complex long-horizon planning."
+ }
+]

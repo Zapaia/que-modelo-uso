@@ -20,6 +20,24 @@ const BRAND_LOGOS: Record<string, string> = {
   nvidia: '/logos/brand-nvidia.png',
   cohere: '/logos/brand-cohere.png',
   inception: '/logos/brand-inception.png', // no tenía logo: era la ficha gris
+  // Creadores de la capa 3 (modelos por API): LobeHub donde existe, si no el avatar de su org en HF.
+  adobe: '/logos/brand-adobe.png',
+  assemblyai: '/logos/brand-assemblyai.png',
+  elevenlabs: '/logos/brand-elevenlabs.png',
+  ideogram: '/logos/brand-ideogram.png',
+  jinaai: '/logos/brand-jina.png',
+  kling: '/logos/brand-kling.png',
+  llamaindex: '/logos/brand-llamaindex.png',
+  'luma-ai': '/logos/brand-luma.png',
+  'meshy-ai': '/logos/brand-meshy.png',
+  recraft: '/logos/brand-recraft.png',
+  runway: '/logos/brand-runway.png',
+  tripo3d: '/logos/brand-tripo.png',
+  voyageai: '/logos/brand-voyage.png',
+  deepgram: '/logos/brand-deepgram.png', // avatar de HF
+  cartesia: '/logos/brand-cartesia.png', // avatar de HF
+  synthesia: '/logos/brand-synthesia.png', // avatar de HF
+  nixtla: '/logos/brand-nixtla.png', // avatar de HF
 };
 
 // Webflow Cloud sirve la app bajo el mount path del entorno (por ejemplo /app): lo que
@@ -42,7 +60,7 @@ const models = catalog.map((m) => ({
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>¿Qué modelo uso? — clasificado por Jev</title>
-    <meta name="description" content="Escribí qué querés construir y mirá cómo Jev elige, en segundos, los modelos de IA que sirven entre 186." />
+    <meta name="description" content={`Escribí qué querés construir y mirá cómo Jev elige, en segundos, los modelos de IA que sirven entre ${models.length}.`} />
   </head>
   <body>
     <!--

@@ -1,0 +1,74 @@
+[
+ {
+  "id": "facebook/vjepa2-vitl-fpc64-256",
+  "name": "vjepa2-vitl-fpc64-256",
+  "creator": "facebook",
+  "layer": 2,
+  "hf_task": "video-classification",
+  "license": "mit",
+  "known_sources": [
+   "https://huggingface.co/facebook/vjepa2-vitl-fpc64-256/blob/main/README.md",
+   "https://huggingface.co/facebook/vjepa2-vitl-fpc64-256"
+  ]
+ },
+ {
+  "id": "microsoft/xclip-base-patch16-zero-shot",
+  "name": "xclip-base-patch16-zero-shot",
+  "creator": "microsoft",
+  "layer": 2,
+  "hf_task": "video-classification",
+  "license": "mit",
+  "known_sources": [
+   "https://huggingface.co/microsoft/xclip-base-patch16-zero-shot/blob/main/README.md",
+   "https://huggingface.co/microsoft/xclip-base-patch16-zero-shot"
+  ]
+ },
+ {
+  "id": "MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7",
+  "name": "mDeBERTa-v3-base-xnli-multilingual-nli-2mil7",
+  "creator": "MoritzLaurer",
+  "layer": 2,
+  "hf_task": "zero-shot-classification",
+  "license": "mit",
+  "known_sources": [
+   "https://huggingface.co/MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7/blob/main/README.md",
+   "https://huggingface.co/MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7"
+  ]
+ },
+ {
+  "id": "cross-encoder/nli-deberta-v3-base",
+  "name": "nli-deberta-v3-base",
+  "creator": "cross-encoder",
+  "layer": 2,
+  "hf_task": "zero-shot-classification",
+  "license": "apache-2.0",
+  "known_sources": [
+   "https://huggingface.co/cross-encoder/nli-deberta-v3-base",
+   "https://huggingface.co/cross-encoder/nli-deberta-v3-base/blob/main/README.md"
+  ]
+ },
+ {
+  "id": "joeddav/xlm-roberta-large-xnli",
+  "name": "xlm-roberta-large-xnli",
+  "creator": "joeddav",
+  "layer": 2,
+  "hf_task": "zero-shot-classification",
+  "license": "mit",
+  "known_sources": [
+   "https://huggingface.co/joeddav/xlm-roberta-large-xnli",
+   "https://huggingface.co/joeddav/xlm-roberta-large-xnli/blob/main/README.md"
+  ]
+ },
+ {
+  "id": "microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224",
+  "name": "BiomedCLIP-PubMedBERT_256-vit_base_patch16_224",
+  "creator": "microsoft",
+  "layer": 2,
+  "hf_task": "zero-shot-image-classification",
+  "license": "mit",
+  "known_sources": [
+   "https://huggingface.co/microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224",
+   "https://huggingface.co/microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224/blob/main/README.md"
+  ]
+ }
+]

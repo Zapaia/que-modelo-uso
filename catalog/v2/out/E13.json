@@ -1,0 +1,254 @@
+[
+ {
+  "id": "hexgrad/Kokoro-82M",
+  "name": "Kokoro-82M",
+  "creator": "hexgrad",
+  "card": {
+   "what": "Open-weights text-to-speech model by hexgrad that turns written text into natural-sounding voice audio.",
+   "kind": "text-to-speech",
+   "input": ["text"],
+   "output": ["speech"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "multilingual",
+   "best_at": ["converting written text into spoken audio", "generating natural-sounding voices for narration", "producing low-cost speech for apps"],
+   "product_uses": ["app that reads articles aloud", "voice assistant for a device", "audiobook or podcast narration tool"],
+   "domains": ["general", "media"],
+   "not_for": ["cloning a specific person's voice from a sample", "transcribing speech into text", "open-ended chat"]
+  },
+  "official_url": "https://huggingface.co/hexgrad/Kokoro-82M",
+  "sources": ["https://huggingface.co/hexgrad/Kokoro-82M"],
+  "notes": ""
+ },
+ {
+  "id": "k2-fsa/OmniVoice",
+  "name": "OmniVoice",
+  "creator": "k2-fsa",
+  "card": {
+   "what": "Open-weights text-to-speech model by k2-fsa that generates spoken audio and can clone voices from a reference sample.",
+   "kind": "text-to-speech",
+   "input": ["text", "speech"],
+   "output": ["speech"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "multilingual",
+   "best_at": ["converting text into spoken audio", "cloning a voice from a short reference clip", "designing a voice by attributes like age or accent"],
+   "product_uses": ["app that narrates text in a custom voice", "voice cloning tool for content creators", "multilingual voice assistant"],
+   "domains": ["general", "media"],
+   "not_for": ["transcribing speech into text", "open-ended chat", "unauthorized voice cloning or impersonation"]
+  },
+  "official_url": "https://huggingface.co/k2-fsa/OmniVoice",
+  "sources": ["https://huggingface.co/k2-fsa/OmniVoice"],
+  "notes": ""
+ },
+ {
+  "id": "FastVideo/FastVideo-FastH3-4-step-Preview-v1-VSA-DataFree",
+  "name": "FastVideo-FastH3-4-step-Preview-v1-VSA-DataFree",
+  "creator": "FastVideo",
+  "card": {
+   "what": "Open-weights video generation model distilled from MiniMax H3 that creates video with synchronized audio from a text prompt.",
+   "kind": "text-to-video",
+   "input": ["text"],
+   "output": ["video", "audio"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": ["generating short video clips from a text prompt", "creating video with synchronized audio", "producing quick preview videos for creative concepts"],
+   "product_uses": ["video ad generator from a script", "tool for previsualizing creative video ideas", "social media clip generator from text"],
+   "domains": ["general", "media"],
+   "not_for": ["generating video from an existing image or reference video", "editing an existing video", "capturing fine detail or complex motion reliably"]
+  },
+  "official_url": "https://huggingface.co/FastVideo/FastVideo-FastH3-4-step-Preview-v1-VSA-DataFree",
+  "sources": ["https://huggingface.co/FastVideo/FastVideo-FastH3-4-step-Preview-v1-VSA-DataFree"],
+  "notes": ""
+ },
+ {
+  "id": "SulphurAI/Sulphur-2-base",
+  "name": "Sulphur-2-base",
+  "creator": "SulphurAI",
+  "card": {
+   "what": "Open-weights video generation model based on LTX that creates video from a text prompt or from an image.",
+   "kind": "text-to-video",
+   "input": ["text", "image"],
+   "output": ["video"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": ["generating video clips from a text description", "animating a still image into a video", "creating visual content from short prompts"],
+   "product_uses": ["tool that turns a product photo into a short video", "video generator from a text description", "creative content generation app"],
+   "domains": ["general", "media"],
+   "not_for": ["editing an existing video", "transcribing or generating speech", "open-ended chat"]
+  },
+  "official_url": "https://huggingface.co/SulphurAI/Sulphur-2-base",
+  "sources": ["https://huggingface.co/SulphurAI/Sulphur-2-base"],
+  "notes": "Página indica que la inferencia oficial todavía está por lanzarse."
+ },
+ {
+  "id": "Wan-AI/Wan2.1-T2V-1.3B-Diffusers",
+  "name": "Wan2.1-T2V-1.3B-Diffusers",
+  "creator": "Wan-AI",
+  "card": {
+   "what": "Open-weights text-to-video diffusion model by Wan-AI that creates short video clips from a text prompt.",
+   "kind": "text-to-video",
+   "input": ["text"],
+   "output": ["video"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English, Chinese",
+   "best_at": ["generating short video clips from a text description", "rendering readable Chinese and English text inside a video", "creating video on consumer-grade hardware"],
+   "product_uses": ["video generator app for marketing clips", "tool that creates short animations from a script", "content creation app for social media video"],
+   "domains": ["general", "media"],
+   "not_for": ["editing an existing video", "transcribing or generating speech", "open-ended chat"]
+  },
+  "official_url": "https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B-Diffusers",
+  "sources": ["https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B-Diffusers"],
+  "notes": ""
+ },
+ {
+  "id": "Wan-AI/Wan2.2-TI2V-5B-Diffusers",
+  "name": "Wan2.2-TI2V-5B-Diffusers",
+  "creator": "Wan-AI",
+  "card": {
+   "what": "Open-weights video generation model by Wan-AI that creates video from a text prompt or from an image plus text.",
+   "kind": "text-to-video",
+   "input": ["text", "image"],
+   "output": ["video"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English, Chinese",
+   "best_at": ["generating video clips from a text description", "animating a still image into a video with text guidance", "creating video on consumer-grade hardware"],
+   "product_uses": ["tool that turns a photo into a short video", "video generator app for marketing clips", "content creation app for social media video"],
+   "domains": ["general", "media"],
+   "not_for": ["editing an existing video", "transcribing or generating speech", "open-ended chat"]
+  },
+  "official_url": "https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B-Diffusers",
+  "sources": ["https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B-Diffusers"],
+  "notes": ""
+ },
+ {
+  "id": "amazon/chronos-bolt-small",
+  "name": "chronos-bolt-small",
+  "creator": "Amazon",
+  "card": {
+   "what": "Open-weights time-series forecasting model by Amazon that predicts future values from historical numeric data.",
+   "kind": "time-series forecasting",
+   "input": ["time series"],
+   "output": ["time series"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": ["forecasting future values from historical time series", "predicting demand or resource needs ahead of time", "generating forecasts without training on the specific series"],
+   "product_uses": ["demand forecasting dashboard for retail", "app that predicts resource or capacity needs", "financial forecasting tool for a business"],
+   "domains": ["finance", "retail", "general"],
+   "not_for": ["processing text or images", "open-ended chat", "classifying or labeling data"]
+  },
+  "official_url": "https://huggingface.co/amazon/chronos-bolt-small",
+  "sources": ["https://huggingface.co/amazon/chronos-bolt-small"],
+  "notes": ""
+ },
+ {
+  "id": "OpenMed/OpenMed-NER-DiseaseDetect-BioMed-335M",
+  "name": "OpenMed-NER-DiseaseDetect-BioMed-335M",
+  "creator": "OpenMed",
+  "card": {
+   "what": "Open-weights biomedical NER model by OpenMed that finds disease names in medical text.",
+   "kind": "named entity recognition",
+   "input": ["text"],
+   "output": ["entities"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": ["finding disease names in clinical notes", "extracting disease mentions from research papers", "tagging disease entities in healthcare documents"],
+   "product_uses": ["clinical text mining tool for hospitals", "literature search app for disease research", "medical knowledge graph builder"],
+   "domains": ["medicine", "science"],
+   "not_for": ["open-ended chat or answering questions directly", "finding entities other than diseases", "diagnosing patients"]
+  },
+  "official_url": "https://huggingface.co/OpenMed/OpenMed-NER-DiseaseDetect-BioMed-335M",
+  "sources": ["https://huggingface.co/OpenMed/OpenMed-NER-DiseaseDetect-BioMed-335M"],
+  "notes": ""
+ },
+ {
+  "id": "OpenMed/OpenMed-PII-Italian-ClinicalBGE-Large-335M-v1",
+  "name": "OpenMed-PII-Italian-ClinicalBGE-Large-335M-v1",
+  "creator": "OpenMed",
+  "card": {
+   "what": "Open-weights model by OpenMed that detects personally identifiable information in Italian clinical text.",
+   "kind": "named entity recognition",
+   "input": ["text"],
+   "output": ["entities"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "Italian",
+   "best_at": ["finding personal data in Italian clinical notes", "tagging names, addresses and IDs in Italian text", "flagging sensitive information for removal"],
+   "product_uses": ["de-identification tool for Italian medical records", "compliance tool for privacy audits", "data anonymization pipeline for research datasets"],
+   "domains": ["medicine", "legal"],
+   "not_for": ["open-ended chat or answering questions directly", "detecting PII in languages other than Italian", "replacing manual privacy review"]
+  },
+  "official_url": "https://huggingface.co/OpenMed/OpenMed-PII-Italian-ClinicalBGE-Large-335M-v1",
+  "sources": ["https://huggingface.co/OpenMed/OpenMed-PII-Italian-ClinicalBGE-Large-335M-v1"],
+  "notes": ""
+ },
+ {
+  "id": "OpenMed/OpenMed-NER-ProteinDetect-SuperClinical-141M",
+  "name": "OpenMed-NER-ProteinDetect-SuperClinical-141M",
+  "creator": "OpenMed",
+  "card": {
+   "what": "Open-weights biomedical NER model by OpenMed that finds protein names and variants in medical text.",
+   "kind": "named entity recognition",
+   "input": ["text"],
+   "output": ["entities"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": ["finding protein names in research papers", "tagging protein complexes and families in text", "extracting protein variants from biomedical documents"],
+   "product_uses": ["literature mining tool for protein research", "biomedical knowledge graph builder", "text mining tool for drug discovery"],
+   "domains": ["biology", "medicine", "science"],
+   "not_for": ["open-ended chat or answering questions directly", "finding entities other than proteins", "modeling protein structure"]
+  },
+  "official_url": "https://huggingface.co/OpenMed/OpenMed-NER-ProteinDetect-SuperClinical-141M",
+  "sources": ["https://huggingface.co/OpenMed/OpenMed-NER-ProteinDetect-SuperClinical-141M"],
+  "notes": ""
+ },
+ {
+  "id": "OpenMed/OpenMed-NER-DNADetect-SuperMedical-125M",
+  "name": "OpenMed-NER-DNADetect-SuperMedical-125M",
+  "creator": "OpenMed",
+  "card": {
+   "what": "Open-weights biomedical NER model by OpenMed that finds DNA, RNA, protein, cell line and cell type mentions in medical text.",
+   "kind": "named entity recognition",
+   "input": ["text"],
+   "output": ["entities"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": ["finding DNA and RNA mentions in research text", "tagging cell lines and cell types in biomedical documents", "extracting protein mentions from clinical text"],
+   "product_uses": ["literature mining tool for genomics research", "biomedical knowledge graph builder", "text mining tool for drug discovery"],
+   "domains": ["biology", "medicine", "science"],
+   "not_for": ["open-ended chat or answering questions directly", "analyzing raw DNA sequences", "diagnosing patients"]
+  },
+  "official_url": "https://huggingface.co/OpenMed/OpenMed-NER-DNADetect-SuperMedical-125M",
+  "sources": ["https://huggingface.co/OpenMed/OpenMed-NER-DNADetect-SuperMedical-125M"],
+  "notes": ""
+ },
+ {
+  "id": "OpenMed/OpenMed-NER-ChemicalDetect-ModernMed-149M",
+  "name": "OpenMed-NER-ChemicalDetect-ModernMed-149M",
+  "creator": "OpenMed",
+  "card": {
+   "what": "Open-weights biomedical NER model by OpenMed that finds chemical and drug names in medical text.",
+   "kind": "named entity recognition",
+   "input": ["text"],
+   "output": ["entities"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": ["finding medication names in patient records", "extracting chemical compounds from research literature", "flagging drug mentions for interaction monitoring"],
+   "product_uses": ["medication extraction tool for clinical records", "literature mining tool for drug discovery", "adverse event monitoring pipeline"],
+   "domains": ["medicine", "science"],
+   "not_for": ["open-ended chat or answering questions directly", "finding entities other than chemicals", "predicting drug interactions"]
+  },
+  "official_url": "https://huggingface.co/OpenMed/OpenMed-NER-ChemicalDetect-ModernMed-149M",
+  "sources": ["https://huggingface.co/OpenMed/OpenMed-NER-ChemicalDetect-ModernMed-149M"],
+  "notes": ""
+ }
+]

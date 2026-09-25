@@ -1,0 +1,444 @@
+[
+ {
+  "id": "mistralai/mistral-ocr",
+  "layer": 3,
+  "name": "Mistral OCR",
+  "creator": "Mistral AI",
+  "creator_slug": "mistralai",
+  "hf_org": "mistralai",
+  "card": {
+   "what": "OCR and document understanding API by Mistral AI that turns PDFs and images into structured markdown.",
+   "kind": "OCR and documents",
+   "input": [
+    "document",
+    "image"
+   ],
+   "output": [
+    "text",
+    "table"
+   ],
+   "interaction": "task model",
+   "access": "hosted API",
+   "languages": "multilingual",
+   "best_at": [
+    "extracting text, tables and equations from scanned PDFs",
+    "converting documents into structured markdown",
+    "keeping reading order across multi-column pages",
+    "pulling out images with their position on the page"
+   ],
+   "product_uses": [
+    "app that digitizes scanned paperwork",
+    "tool that turns PDFs into searchable text",
+    "pipeline that feeds documents into a RAG system",
+    "academic paper archiving tool"
+   ],
+   "domains": [
+    "general",
+    "science",
+    "legal"
+   ],
+   "not_for": [
+    "holding a conversation about the document's content",
+    "keeping bold, italic or underline text formatting",
+    "generating or editing documents from scratch"
+   ]
+  },
+  "official_url": "https://docs.mistral.ai/api/endpoint/ocr",
+  "sources": [
+   "https://docs.mistral.ai/api/endpoint/ocr"
+  ],
+  "notes": ""
+ },
+ {
+  "id": "google/document-ai",
+  "layer": 3,
+  "name": "Document AI",
+  "creator": "Google",
+  "creator_slug": "google",
+  "hf_org": null,
+  "card": {
+   "what": "Document processing platform API by Google Cloud that turns unstructured documents into structured data.",
+   "kind": "OCR and documents",
+   "input": [
+    "document",
+    "image"
+   ],
+   "output": [
+    "text",
+    "table",
+    "entities"
+   ],
+   "interaction": "task model",
+   "access": "hosted API",
+   "languages": "multilingual",
+   "best_at": [
+    "extracting text and layout from scanned documents",
+    "pulling key-value pairs and entities out of forms",
+    "classifying and splitting document types",
+    "extracting fields from invoices, receipts and ID cards"
+   ],
+   "product_uses": [
+    "invoice processing tool for accounts payable",
+    "app that extracts data from medical intake forms",
+    "identity verification tool that reads ID cards",
+    "contract analysis tool for business terms"
+   ],
+   "domains": [
+    "general",
+    "finance",
+    "legal",
+    "medicine"
+   ],
+   "not_for": [
+    "holding a conversation about the document's content",
+    "generating new documents",
+    "classifying a photo that is not a document"
+   ]
+  },
+  "official_url": "https://docs.cloud.google.com/document-ai/docs/overview",
+  "sources": [
+   "https://docs.cloud.google.com/document-ai/docs/overview"
+  ],
+  "notes": ""
+ },
+ {
+  "id": "microsoft/azure-ai-document-intelligence",
+  "layer": 3,
+  "name": "Azure AI Document Intelligence",
+  "creator": "Microsoft",
+  "creator_slug": "microsoft",
+  "hf_org": null,
+  "card": {
+   "what": "Document processing API by Microsoft Azure that extracts text, layout and key fields from forms and documents.",
+   "kind": "OCR and documents",
+   "input": [
+    "document",
+    "image"
+   ],
+   "output": [
+    "text",
+    "table",
+    "entities"
+   ],
+   "interaction": "task model",
+   "access": "hosted API",
+   "languages": "multilingual",
+   "best_at": [
+    "extracting text and layout from scanned pages",
+    "reading key fields from invoices, receipts and pay stubs",
+    "extracting data from passports and ID cards",
+    "detecting tables, selection marks and key-value pairs"
+   ],
+   "product_uses": [
+    "invoice processing tool for accounts payable",
+    "expense management app that reads receipts",
+    "identity verification tool for KYC checks",
+    "app that digitizes handwritten notes"
+   ],
+   "domains": [
+    "general",
+    "finance",
+    "legal"
+   ],
+   "not_for": [
+    "holding a conversation about the document's content",
+    "generating new documents",
+    "training a custom model without labeled data"
+   ]
+  },
+  "official_url": "https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/overview",
+  "sources": [
+   "https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/overview"
+  ],
+  "notes": ""
+ },
+ {
+  "id": "amazon/textract",
+  "layer": 3,
+  "name": "Amazon Textract",
+  "creator": "Amazon",
+  "creator_slug": "amazon",
+  "hf_org": null,
+  "card": {
+   "what": "Document processing API by Amazon Web Services that extracts printed text, handwriting, tables and forms.",
+   "kind": "OCR and documents",
+   "input": [
+    "document",
+    "image"
+   ],
+   "output": [
+    "text",
+    "table"
+   ],
+   "interaction": "task model",
+   "access": "hosted API",
+   "languages": "multilingual",
+   "best_at": [
+    "extracting printed and handwritten text from scans",
+    "extracting tables and structured layout from documents",
+    "pulling form fields from applications",
+    "reading data from loan, tax and insurance forms"
+   ],
+   "product_uses": [
+    "loan and mortgage application processing tool",
+    "app that extracts patient data from intake forms",
+    "government form processing tool",
+    "expense report automation tool"
+   ],
+   "domains": [
+    "general",
+    "finance",
+    "medicine"
+   ],
+   "not_for": [
+    "holding a conversation about the document's content",
+    "generating new documents",
+    "detecting content unsafe for a platform"
+   ]
+  },
+  "official_url": "https://aws.amazon.com/textract/",
+  "sources": [
+   "https://aws.amazon.com/textract/"
+  ],
+  "notes": ""
+ },
+ {
+  "id": "llamaindex/llamaparse",
+  "layer": 3,
+  "name": "LlamaParse",
+  "creator": "LlamaIndex",
+  "creator_slug": "llamaindex",
+  "hf_org": null,
+  "card": {
+   "what": "Document parsing API by LlamaIndex that converts files into structured text for retrieval-augmented generation.",
+   "kind": "OCR and documents",
+   "input": [
+    "document"
+   ],
+   "output": [
+    "text",
+    "table"
+   ],
+   "interaction": "task model",
+   "access": "hosted API",
+   "languages": "multilingual",
+   "best_at": [
+    "converting PDFs and office files into clean markdown",
+    "preparing documents for retrieval-augmented generation",
+    "extracting tables from mixed-format documents",
+    "parsing slide decks and spreadsheets into text"
+   ],
+   "product_uses": [
+    "pipeline that feeds documents into a RAG chatbot",
+    "app that indexes internal documentation for search",
+    "tool that converts reports into LLM-ready text",
+    "knowledge base builder from mixed file types"
+   ],
+   "domains": [
+    "general",
+    "software"
+   ],
+   "not_for": [
+    "holding a conversation about the document's content",
+    "generating new documents",
+    "answering questions on its own (it only parses, an LLM answers)"
+   ]
+  },
+  "official_url": "https://developers.llamaindex.ai/python/framework/module_guides/loading/connector/llama_parse/",
+  "sources": [
+   "https://developers.llamaindex.ai/python/framework/module_guides/loading/connector/llama_parse/"
+  ],
+  "notes": ""
+ },
+ {
+  "id": "openai/omni-moderation-latest",
+  "layer": 3,
+  "name": "OpenAI Moderation",
+  "creator": "OpenAI",
+  "creator_slug": "openai",
+  "hf_org": "openai",
+  "card": {
+   "what": "Moderation API by OpenAI that flags harmful text and images against a fixed set of safety categories.",
+   "kind": "moderation and safety",
+   "input": [
+    "text",
+    "image"
+   ],
+   "output": [
+    "labels"
+   ],
+   "interaction": "task model",
+   "access": "hosted API",
+   "languages": "multilingual",
+   "best_at": [
+    "flagging harassment, hate and violent content in text",
+    "flagging sexual, self-harm and violent content in images",
+    "screening user submissions before they reach an app",
+    "moderating AI-generated responses before showing them"
+   ],
+   "product_uses": [
+    "content filter for a chat app",
+    "moderation layer for a chatbot's replies",
+    "tool that screens user-uploaded images",
+    "trust and safety pipeline for a forum"
+   ],
+   "domains": [
+    "general",
+    "customer support"
+   ],
+   "not_for": [
+    "detecting child sexual abuse material (not designed for this)",
+    "moderating audio content",
+    "holding a conversation or answering questions"
+   ]
+  },
+  "official_url": "https://developers.openai.com/api/docs/guides/moderation",
+  "sources": [
+   "https://developers.openai.com/api/docs/guides/moderation"
+  ],
+  "notes": ""
+ },
+ {
+  "id": "google/perspective-api",
+  "layer": 3,
+  "name": "Perspective API",
+  "creator": "Google (Jigsaw)",
+  "creator_slug": "google",
+  "hf_org": null,
+  "card": {
+   "what": "Text moderation API by Google's Jigsaw team that scores comments for toxicity and related attributes.",
+   "kind": "moderation and safety",
+   "input": [
+    "text"
+   ],
+   "output": [
+    "labels"
+   ],
+   "interaction": "task model",
+   "access": "hosted API",
+   "languages": "multilingual",
+   "best_at": [
+    "scoring how toxic a comment is likely to be perceived",
+    "flagging insults, threats and identity attacks",
+    "flagging profanity in user comments",
+    "screening comments before publishing them"
+   ],
+   "product_uses": [
+    "comment moderation tool for a news site",
+    "toxicity filter for a forum or community app",
+    "tool that routes flagged comments for human review",
+    "moderation dashboard for social platforms"
+   ],
+   "domains": [
+    "general",
+    "media"
+   ],
+   "not_for": [
+    "moderating images or audio",
+    "holding a conversation or answering questions",
+    "detecting sexual or violent content categories"
+   ]
+  },
+  "official_url": "https://developers.perspectiveapi.com/s/about-the-api",
+  "sources": [
+   "https://developers.perspectiveapi.com/s/about-the-api-attributes-and-languages"
+  ],
+  "notes": "Página oficial no cargó por WebFetch (contenido dinámico); confirmado por búsqueda web sobre el mismo dominio oficial."
+ },
+ {
+  "id": "meta-llama/llama-guard-4-12b",
+  "layer": 3,
+  "name": "Llama Guard 4",
+  "creator": "Meta",
+  "creator_slug": "meta-llama",
+  "hf_org": "meta-llama",
+  "card": {
+   "what": "Open-weights safety classifier by Meta that flags unsafe text and image content in chat prompts and replies.",
+   "kind": "moderation and safety",
+   "input": [
+    "text",
+    "image"
+   ],
+   "output": [
+    "labels"
+   ],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "multilingual",
+   "best_at": [
+    "flagging unsafe user prompts before they reach a chat model",
+    "flagging unsafe replies before showing them to a user",
+    "labelling which safety category a message violates",
+    "screening prompts and images together in one pass"
+   ],
+   "product_uses": [
+    "guardrail layer in front of a chatbot",
+    "content filter for a multimodal AI assistant",
+    "moderation step in an agent pipeline",
+    "safety check for user-uploaded images and captions"
+   ],
+   "domains": [
+    "general",
+    "software"
+   ],
+   "not_for": [
+    "holding a conversation or answering questions",
+    "moderating audio content",
+    "detecting well-crafted prompt injection attacks reliably"
+   ]
+  },
+  "official_url": "https://huggingface.co/meta-llama/Llama-Guard-4-12B",
+  "sources": [
+   "https://huggingface.co/meta-llama/Llama-Guard-4-12B"
+  ],
+  "notes": ""
+ },
+ {
+  "id": "google/shieldgemma-2",
+  "layer": 3,
+  "name": "ShieldGemma 2",
+  "creator": "Google",
+  "creator_slug": "google",
+  "hf_org": "google",
+  "card": {
+   "what": "Open-weights safety classifier by Google, built on Gemma, that evaluates text and images against safety policies.",
+   "kind": "moderation and safety",
+   "input": [
+    "text",
+    "image"
+   ],
+   "output": [
+    "labels"
+   ],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "multilingual",
+   "best_at": [
+    "labelling images as safe or unsafe against defined policies",
+    "evaluating chat prompts for policy violations",
+    "evaluating generated replies for policy violations",
+    "fine-tuning to a custom safety policy"
+   ],
+   "product_uses": [
+    "guardrail layer in front of an image generator",
+    "content filter for a chat app",
+    "moderation step in an agent pipeline",
+    "custom safety classifier for a specific platform policy"
+   ],
+   "domains": [
+    "general",
+    "software"
+   ],
+   "not_for": [
+    "holding a conversation or answering questions",
+    "moderating audio content",
+    "generating images or text"
+   ]
+  },
+  "official_url": "https://ai.google.dev/gemma/docs/shieldgemma",
+  "sources": [
+   "https://ai.google.dev/gemma/docs/shieldgemma"
+  ],
+  "notes": ""
+ }
+]

@@ -1,0 +1,444 @@
+[
+ {
+  "id": "amazon/nova-premier-v1",
+  "name": "Amazon: Nova Premier 1.0",
+  "creator": "amazon",
+  "card": {
+   "what": "Amazon's most capable Nova model for complex reasoning, multi-step agent workflows and teaching smaller models.",
+   "kind": "multimodal LLM",
+   "input": ["text", "image", "video"],
+   "output": ["text"],
+   "interaction": "chat and instructions",
+   "access": "hosted API",
+   "languages": "multilingual",
+   "best_at": [
+    "coordinating multi-step plans across multiple tools",
+    "analyzing long documents, codebases and videos",
+    "acting as a teacher model for distillation",
+    "understanding images and video alongside text"
+   ],
+   "product_uses": [
+    "multi-agent orchestration platform for complex workflows",
+    "investment research and financial analysis assistant",
+    "tool that distills a smaller custom model",
+    "long-document and codebase analysis tool"
+   ],
+   "domains": ["general", "finance", "software"],
+   "not_for": [
+    "processing audio input",
+    "generating images or video"
+   ]
+  },
+  "official_url": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-nova-premier.html",
+  "sources": [
+   "https://aws.amazon.com/blogs/aws/amazon-nova-premier-our-most-capable-model-for-complex-tasks-and-teacher-for-model-distillation/",
+   "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-nova-premier.html",
+   "https://www.amazon.science/publications/amazon-nova-premier-technical-report-and-model-card"
+  ],
+  "notes": ""
+ },
+ {
+  "id": "amazon/nova-2-lite-v1",
+  "name": "Amazon: Nova 2 Lite",
+  "creator": "amazon",
+  "card": {
+   "what": "Amazon's fast, cost-effective Nova reasoning model for everyday chat, agentic and document-processing workloads.",
+   "kind": "multimodal LLM",
+   "input": ["text", "image", "video", "document"],
+   "output": ["text"],
+   "interaction": "chat and instructions",
+   "access": "hosted API",
+   "languages": "multilingual",
+   "best_at": [
+    "reasoning step by step before answering",
+    "processing text, images, video and documents",
+    "calling tools and functions during a task",
+    "automating everyday business and customer-support workflows"
+   ],
+   "product_uses": [
+    "customer-support chatbot with tool use",
+    "document-processing and summarization tool",
+    "business-process automation agent",
+    "code-generation assistant for developers"
+   ],
+   "domains": ["general", "customer support", "software"],
+   "not_for": [
+    "generating images, audio or video",
+    "self-hosting (hosted API only, no open weights)"
+   ]
+  },
+  "official_url": "https://docs.aws.amazon.com/ai/responsible-ai/nova-2-lite/overview.html",
+  "sources": [
+   "https://aws.amazon.com/blogs/aws/introducing-amazon-nova-2-lite-a-fast-cost-effective-reasoning-model/",
+   "https://openrouter.ai/amazon/nova-2-lite-v1"
+  ],
+  "notes": ""
+ },
+ {
+  "id": "anthropic/claude-opus-5.5",
+  "name": "Anthropic: Claude Opus 5.5",
+  "creator": "anthropic",
+  "card": {
+   "what": "Anthropic's flagship Claude model built for long-running agentic coding and professional knowledge work.",
+   "kind": "multimodal LLM",
+   "input": ["text", "image", "document"],
+   "output": ["text"],
+   "interaction": "chat and instructions",
+   "access": "hosted API",
+   "languages": "multilingual",
+   "best_at": [
+    "handling long, multi-step coding migrations",
+    "operating computers and software tools autonomously",
+    "coordinating multiple AI agents at once",
+    "analyzing financial and business documents"
+   ],
+   "product_uses": [
+    "autonomous coding agent for large codebases",
+    "financial and business research assistant",
+    "multi-agent orchestration system",
+    "computer-use agent that operates software"
+   ],
+   "domains": ["general", "software", "finance"],
+   "not_for": [
+    "cybersecurity exploit development (routed to a different model)",
+    "advanced life-sciences research without verified access",
+    "self-hosting (no open weights)"
+   ]
+  },
+  "official_url": "https://www.anthropic.com/claude-opus-5-5",
+  "sources": [
+   "https://www.anthropic.com/claude-opus-5-5",
+   "https://platform.claude.com/docs/en/models/overview"
+  ],
+  "notes": ""
+ },
+ {
+  "id": "anthropic/claude-fable-5.1",
+  "name": "Anthropic: Claude Fable 5.1",
+  "creator": "anthropic",
+  "card": {
+   "what": "Anthropic's most advanced Claude model for demanding reasoning, long-horizon agentic work and scientific research.",
+   "kind": "multimodal LLM",
+   "input": ["text", "image", "document"],
+   "output": ["text"],
+   "interaction": "chat and instructions",
+   "access": "hosted API",
+   "languages": "multilingual",
+   "best_at": [
+    "sustaining long-running autonomous problem-solving sessions",
+    "fixing root causes instead of surface symptoms",
+    "supporting scientific research and analysis",
+    "handling demanding multi-step coding tasks"
+   ],
+   "product_uses": [
+    "autonomous research and analysis assistant",
+    "large-scale code refactoring agent",
+    "long-running task-automation system",
+    "scientific literature analysis tool"
+   ],
+   "domains": ["general", "software", "science"],
+   "not_for": [
+    "cybersecurity exploitation tasks (restricted, use Claude Mythos instead)",
+    "advanced life-sciences research without verified access",
+    "self-hosting (no open weights)"
+   ]
+  },
+  "official_url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+  "sources": [
+   "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+   "https://platform.claude.com/docs/en/models/overview"
+  ],
+  "notes": ""
+ },
+ {
+  "id": "anthropic/claude-sonnet-5",
+  "name": "Anthropic: Claude Sonnet 5",
+  "creator": "anthropic",
+  "card": {
+   "what": "Anthropic's balanced Claude model combining speed and intelligence for everyday agentic coding and knowledge work.",
+   "kind": "multimodal LLM",
+   "input": ["text", "image", "document"],
+   "output": ["text"],
+   "interaction": "chat and instructions",
+   "access": "hosted API",
+   "languages": "multilingual",
+   "best_at": [
+    "planning and running multi-step agent tasks",
+    "using tools like browsers and terminals",
+    "checking its own work without being asked",
+    "handling everyday coding and reasoning tasks"
+   ],
+   "product_uses": [
+    "coding agent that plans and ships changes",
+    "customer support and business-process automation bot",
+    "browser and terminal automation agent",
+    "everyday knowledge-work assistant"
+   ],
+   "domains": ["general", "software", "customer support"],
+   "not_for": [
+    "building working cybersecurity exploits",
+    "self-hosting (no open weights)"
+   ]
+  },
+  "official_url": "https://www.anthropic.com/news/claude-sonnet-5",
+  "sources": [
+   "https://www.anthropic.com/news/claude-sonnet-5",
+   "https://platform.claude.com/docs/en/models/overview"
+  ],
+  "notes": ""
+ },
+ {
+  "id": "bytedance-seed/seed-2-1-turbo",
+  "name": "ByteDance Seed: Seed 2.1 Turbo",
+  "creator": "bytedance-seed",
+  "card": {
+   "what": "ByteDance Seed's multimodal agent model for productivity tasks like planning, coding and tool use.",
+   "kind": "multimodal LLM",
+   "input": ["text", "image", "video", "document"],
+   "output": ["text"],
+   "interaction": "chat and instructions",
+   "access": "hosted API",
+   "languages": "multilingual",
+   "best_at": [
+    "planning and executing multi-step agent tasks",
+    "coding, debugging and validating software changes",
+    "understanding long videos and visual documents",
+    "switching between tools, browsers and files"
+   ],
+   "product_uses": [
+    "AI agent that plans and executes projects",
+    "coding assistant that debugs and validates code",
+    "video-content analysis tool",
+    "agent app that operates external tools"
+   ],
+   "domains": ["general", "software"],
+   "not_for": [
+    "generating images, video or audio",
+    "self-hosting (hosted API only, no open weights)"
+   ]
+  },
+  "official_url": "https://seed.bytedance.com/en/seed2_1",
+  "sources": [
+   "https://seed.bytedance.com/en/seed2_1",
+   "https://seed.bytedance.com/en/blog/seed2-1-officially-released-advancing-ai-productivity"
+  ],
+  "notes": ""
+ },
+ {
+  "id": "bytedance-seed/seed-2.0-code",
+  "name": "ByteDance Seed: Seed-2.0-Code",
+  "creator": "bytedance-seed",
+  "card": {
+   "what": "ByteDance Seed's coding-specialized agent model for multilingual software development and coding-agent workflows.",
+   "kind": "coding LLM",
+   "input": ["text", "code", "image", "video"],
+   "output": ["code", "text"],
+   "interaction": "chat and instructions",
+   "access": "hosted API",
+   "languages": "multilingual",
+   "best_at": [
+    "handling end-to-end coding-agent workflows",
+    "building and debugging frontend interfaces",
+    "working across multiple programming languages",
+    "solving competitive-programming and olympiad-style problems"
+   ],
+   "product_uses": [
+    "AI coding agent inside an IDE",
+    "frontend generator from screenshots or mockups",
+    "polyglot codebase refactoring assistant",
+    "autonomous code-review and debugging tool"
+   ],
+   "domains": ["software"],
+   "not_for": [
+    "general conversation unrelated to code",
+    "self-hosting (hosted API only, no open weights)"
+   ]
+  },
+  "official_url": "https://seed.bytedance.com/en/seed2",
+  "sources": [
+   "https://seed.bytedance.com/en/blog/seed-2-0-official-launch",
+   "https://seed.bytedance.com/en/seed2"
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cohere/command-a-plus",
+  "name": "Cohere: Command A+",
+  "creator": "cohere",
+  "card": {
+   "what": "Cohere's enterprise chat model that reasons over text and images and calls tools across many languages.",
+   "kind": "multimodal LLM",
+   "input": ["text", "image"],
+   "output": ["text"],
+   "interaction": "chat and instructions",
+   "access": "open weights and hosted API",
+   "languages": "multilingual",
+   "best_at": [
+    "reasoning over mixed text and image inputs",
+    "calling tools during agentic workflows",
+    "answering in many different languages",
+    "retrieving and reasoning over documents"
+   ],
+   "product_uses": [
+    "multilingual customer-support agent",
+    "document-heavy enterprise workflow assistant",
+    "assistant that reasons over photos and text",
+    "retrieval-augmented search assistant"
+   ],
+   "domains": ["general", "customer support", "finance"],
+   "not_for": [
+    "generating images, audio or video",
+    "vision-only tasks with no text output"
+   ]
+  },
+  "official_url": "https://docs.cohere.com/docs/command-a-plus",
+  "sources": [
+   "https://docs.cohere.com/docs/command-a-plus",
+   "https://cohere.com/blog/command-a-plus"
+  ],
+  "notes": ""
+ },
+ {
+  "id": "deepseek/deepseek-v4-pro-0813",
+  "name": "DeepSeek: DeepSeek V4 Pro 0813",
+  "creator": "deepseek",
+  "card": {
+   "what": "DeepSeek's chat model with adjustable reasoning effort, built for agentic coding and terminal tasks.",
+   "kind": "chat LLM",
+   "input": ["text"],
+   "output": ["text"],
+   "interaction": "chat and instructions",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": [
+    "operating coding agents inside a terminal",
+    "solving software-engineering benchmark tasks",
+    "adjusting reasoning depth for harder problems",
+    "answering general knowledge questions"
+   ],
+   "product_uses": [
+    "coding agent that operates a terminal or IDE",
+    "software-engineering assistant for pull requests",
+    "research chatbot with tunable reasoning depth",
+    "developer tool for agentic workflows"
+   ],
+   "domains": ["general", "software"],
+   "not_for": [
+    "reading images, audio or video (text-only model)",
+    "real-time voice conversation"
+   ]
+  },
+  "official_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813",
+  "sources": [
+   "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813/raw/main/README.md"
+  ],
+  "notes": "El README no especifica idiomas soportados; se dejó English por precaución, aunque DeepSeek suele tener uso multilingüe real."
+ },
+ {
+  "id": "deepseek/deepseek-v4.1-flash",
+  "name": "DeepSeek: DeepSeek V4.1 Flash",
+  "creator": "deepseek",
+  "card": {
+   "what": "DeepSeek's multimodal chat model that reads images and text for agentic coding and reasoning tasks.",
+   "kind": "multimodal LLM",
+   "input": ["text", "image"],
+   "output": ["text"],
+   "interaction": "chat and instructions",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": [
+    "handling long-context agentic coding tasks",
+    "reading images alongside text prompts",
+    "solving mathematical and logical reasoning problems",
+    "operating coding agents inside a terminal"
+   ],
+   "product_uses": [
+    "coding agent for long, complex codebases",
+    "visual question-answering assistant",
+    "terminal automation tool for developers",
+    "research chatbot with tunable reasoning depth"
+   ],
+   "domains": ["general", "software"],
+   "not_for": [
+    "generating images, audio or video",
+    "transcribing or generating speech"
+   ]
+  },
+  "official_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
+  "sources": [
+   "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/raw/main/README.md"
+  ],
+  "notes": "El README no especifica idiomas soportados; se dejó English por precaución, aunque DeepSeek suele tener uso multilingüe real."
+ },
+ {
+  "id": "deepseek/deepseek-v4-flash-vision-exp",
+  "name": "DeepSeek: DeepSeek V4 Flash Vision Exp",
+  "creator": "deepseek",
+  "card": {
+   "what": "DeepSeek's experimental multimodal model adding image understanding to agentic coding and tool-use tasks.",
+   "kind": "multimodal LLM",
+   "input": ["text", "image"],
+   "output": ["text"],
+   "interaction": "chat and instructions",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": [
+    "reading charts, screenshots and UI images",
+    "handling multimodal agent tasks with tools",
+    "combining visual context with coding tasks"
+   ],
+   "product_uses": [
+    "visual coding agent that reads screenshots",
+    "chart and document analysis tool",
+    "browser or UI automation agent"
+   ],
+   "domains": ["general", "software"],
+   "not_for": [
+    "generating images, audio or video",
+    "production use (experimental, early-stage model)"
+   ]
+  },
+  "official_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+  "sources": [
+   "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/raw/main/README.md"
+  ],
+  "notes": "El README no especifica idiomas soportados; se dejó English por precaución, aunque DeepSeek suele tener uso multilingüe real."
+ },
+ {
+  "id": "google/gemini-3.8-flash",
+  "name": "Google: Gemini 3.8 Flash",
+  "creator": "google",
+  "card": {
+   "what": "Google's fast Gemini model built for long-horizon software engineering, autonomous agents and enterprise workflows.",
+   "kind": "multimodal LLM",
+   "input": ["text", "image", "video", "audio", "document"],
+   "output": ["text"],
+   "interaction": "chat and instructions",
+   "access": "hosted API",
+   "languages": "multilingual",
+   "best_at": [
+    "refactoring code across multiple files",
+    "planning and orchestrating multi-step agent tasks",
+    "reasoning over text, images, audio, video and documents",
+    "automating complex enterprise workflows"
+   ],
+   "product_uses": [
+    "autonomous coding agent for large repositories",
+    "enterprise workflow automation assistant",
+    "document and chart analysis tool",
+    "multi-tool AI agent platform"
+   ],
+   "domains": ["general", "software"],
+   "not_for": [
+    "generating images or audio",
+    "real-time voice conversation"
+   ]
+  },
+  "official_url": "https://ai.google.dev/gemini-api/docs/models/gemini-3.8-flash",
+  "sources": [
+   "https://ai.google.dev/gemini-api/docs/latest-model",
+   "https://ai.google.dev/gemini-api/docs/models/gemini-3.8-flash"
+  ],
+  "notes": ""
+ }
+]

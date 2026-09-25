@@ -1,0 +1,146 @@
+[
+ {
+  "id": "hexgrad/Kokoro-82M",
+  "name": "Kokoro-82M",
+  "creator": "hexgrad",
+  "layer": 2,
+  "hf_task": "text-to-speech",
+  "license": "apache-2.0",
+  "known_sources": [
+   "https://huggingface.co/hexgrad/Kokoro-82M",
+   "https://huggingface.co/hexgrad/Kokoro-82M/blob/main/README.md"
+  ]
+ },
+ {
+  "id": "k2-fsa/OmniVoice",
+  "name": "OmniVoice",
+  "creator": "k2-fsa",
+  "layer": 2,
+  "hf_task": "text-to-speech",
+  "license": null,
+  "known_sources": [
+   "https://huggingface.co/k2-fsa/OmniVoice",
+   "https://huggingface.co/k2-fsa/OmniVoice/blob/main/README.md"
+  ]
+ },
+ {
+  "id": "FastVideo/FastVideo-FastH3-4-step-Preview-v1-VSA-DataFree",
+  "name": "FastVideo-FastH3-4-step-Preview-v1-VSA-DataFree",
+  "creator": "FastVideo",
+  "layer": 2,
+  "hf_task": "text-to-video",
+  "license": "other",
+  "known_sources": [
+   "https://huggingface.co/FastVideo/FastVideo-FastH3-4-step-Preview-v1-VSA-DataFree",
+   "https://huggingface.co/FastVideo/FastVideo-FastH3-4-step-Preview-v1-VSA-DataFree/blob/main/README.md"
+  ]
+ },
+ {
+  "id": "SulphurAI/Sulphur-2-base",
+  "name": "Sulphur-2-base",
+  "creator": "SulphurAI",
+  "layer": 2,
+  "hf_task": "text-to-video",
+  "license": null,
+  "known_sources": [
+   "https://huggingface.co/SulphurAI/Sulphur-2-base/blob/main/README.md",
+   "https://huggingface.co/SulphurAI/Sulphur-2-base"
+  ]
+ },
+ {
+  "id": "Wan-AI/Wan2.1-T2V-1.3B-Diffusers",
+  "name": "Wan2.1-T2V-1.3B-Diffusers",
+  "creator": "Wan-AI",
+  "layer": 2,
+  "hf_task": "text-to-video",
+  "license": "apache-2.0",
+  "known_sources": [
+   "https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B-Diffusers/blob/main/README.md",
+   "https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B-Diffusers"
+  ]
+ },
+ {
+  "id": "Wan-AI/Wan2.2-TI2V-5B-Diffusers",
+  "name": "Wan2.2-TI2V-5B-Diffusers",
+  "creator": "Wan-AI",
+  "layer": 2,
+  "hf_task": "text-to-video",
+  "license": "apache-2.0",
+  "known_sources": [
+   "https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B-Diffusers",
+   "https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B-Diffusers/blob/main/README.md"
+  ]
+ },
+ {
+  "id": "amazon/chronos-bolt-small",
+  "name": "chronos-bolt-small",
+  "creator": "amazon",
+  "layer": 2,
+  "hf_task": "time-series-forecasting",
+  "license": "apache-2.0",
+  "known_sources": [
+   "https://huggingface.co/amazon/chronos-bolt-small",
+   "https://huggingface.co/amazon/chronos-bolt-small/blob/main/README.md"
+  ]
+ },
+ {
+  "id": "OpenMed/OpenMed-NER-DiseaseDetect-BioMed-335M",
+  "name": "OpenMed-NER-DiseaseDetect-BioMed-335M",
+  "creator": "OpenMed",
+  "layer": 2,
+  "hf_task": "token-classification",
+  "license": "apache-2.0",
+  "known_sources": [
+   "https://huggingface.co/OpenMed/OpenMed-NER-DiseaseDetect-BioMed-335M",
+   "https://huggingface.co/OpenMed/OpenMed-NER-DiseaseDetect-BioMed-335M/blob/main/README.md"
+  ]
+ },
+ {
+  "id": "OpenMed/OpenMed-PII-Italian-ClinicalBGE-Large-335M-v1",
+  "name": "OpenMed-PII-Italian-ClinicalBGE-Large-335M-v1",
+  "creator": "OpenMed",
+  "layer": 2,
+  "hf_task": "token-classification",
+  "license": "apache-2.0",
+  "known_sources": [
+   "https://huggingface.co/OpenMed/OpenMed-PII-Italian-ClinicalBGE-Large-335M-v1",
+   "https://huggingface.co/OpenMed/OpenMed-PII-Italian-ClinicalBGE-Large-335M-v1/blob/main/README.md"
+  ]
+ },
+ {
+  "id": "OpenMed/OpenMed-NER-ProteinDetect-SuperClinical-141M",
+  "name": "OpenMed-NER-ProteinDetect-SuperClinical-141M",
+  "creator": "OpenMed",
+  "layer": 2,
+  "hf_task": "token-classification",
+  "license": "apache-2.0",
+  "known_sources": [
+   "https://huggingface.co/OpenMed/OpenMed-NER-ProteinDetect-SuperClinical-141M/blob/main/README.md",
+   "https://huggingface.co/OpenMed/OpenMed-NER-ProteinDetect-SuperClinical-141M"
+  ]
+ },
+ {
+  "id": "OpenMed/OpenMed-NER-DNADetect-SuperMedical-125M",
+  "name": "OpenMed-NER-DNADetect-SuperMedical-125M",
+  "creator": "OpenMed",
+  "layer": 2,
+  "hf_task": "token-classification",
+  "license": "apache-2.0",
+  "known_sources": [
+   "https://huggingface.co/OpenMed/OpenMed-NER-DNADetect-SuperMedical-125M",
+   "https://huggingface.co/OpenMed/OpenMed-NER-DNADetect-SuperMedical-125M/blob/main/README.md"
+  ]
+ },
+ {
+  "id": "OpenMed/OpenMed-NER-ChemicalDetect-ModernMed-149M",
+  "name": "OpenMed-NER-ChemicalDetect-ModernMed-149M",
+  "creator": "OpenMed",
+  "layer": 2,
+  "hf_task": "token-classification",
+  "license": "apache-2.0",
+  "known_sources": [
+   "https://huggingface.co/OpenMed/OpenMed-NER-ChemicalDetect-ModernMed-149M/blob/main/README.md",
+   "https://huggingface.co/OpenMed/OpenMed-NER-ChemicalDetect-ModernMed-149M"
+  ]
+ }
+]

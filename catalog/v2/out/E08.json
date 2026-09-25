@@ -1,0 +1,420 @@
+[
+ {
+  "id": "briaai/RMBG-2.0",
+  "name": "RMBG-2.0",
+  "creator": "BRIA AI",
+  "card": {
+   "what": "Background removal model by BRIA AI that separates the foreground subject from the background in an image.",
+   "kind": "image editing",
+   "input": ["image"],
+   "output": ["image"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": [
+    "removing backgrounds from product and portrait photos",
+    "isolating the foreground subject in complex images",
+    "producing a soft alpha mask for clean edges",
+    "processing e-commerce, advertising and gaming imagery"
+   ],
+   "product_uses": [
+    "background remover for a product photography app",
+    "profile picture background removal tool",
+    "e-commerce photo editing pipeline",
+    "ad creative compositing tool"
+   ],
+   "domains": ["general", "retail", "media"],
+   "not_for": [
+    "editing an image beyond removing its background",
+    "detecting or labeling objects in the image",
+    "removing backgrounds from video (works on single images)"
+   ]
+  },
+  "official_url": "https://huggingface.co/briaai/RMBG-2.0",
+  "sources": [
+   "https://huggingface.co/briaai/RMBG-2.0",
+   "https://github.com/Bria-AI/RMBG-2.0"
+  ],
+  "notes": "El README en huggingface.co/briaai/RMBG-2.0/raw/main/README.md devolvió 401 (gated); se verificó con la página renderizada de Hugging Face y el repo oficial en GitHub."
+ },
+ {
+  "id": "facebook/mask2former-swin-large-cityscapes-semantic",
+  "name": "mask2former-swin-large-cityscapes-semantic",
+  "creator": "Facebook/Meta",
+  "card": {
+   "what": "Segmentation model by Meta that labels city street scenes from the Cityscapes dataset by category, pixel by pixel.",
+   "kind": "image segmentation",
+   "input": ["image"],
+   "output": ["masks", "labels"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": [
+    "segmenting urban street scenes into semantic categories",
+    "identifying roads, vehicles, pedestrians and buildings in photos",
+    "labeling every pixel of a city street image",
+    "supporting perception pipelines for autonomous driving"
+   ],
+   "product_uses": [
+    "autonomous driving perception module",
+    "urban scene analysis dashboard",
+    "smart city traffic monitoring tool",
+    "street-view mapping and annotation tool"
+   ],
+   "domains": ["general"],
+   "not_for": [
+    "scenes other than urban streets (trained on Cityscapes)",
+    "telling apart individual objects of the same class (semantic labels only)",
+    "generating or editing images"
+   ]
+  },
+  "official_url": "https://huggingface.co/facebook/mask2former-swin-large-cityscapes-semantic",
+  "sources": ["https://huggingface.co/facebook/mask2former-swin-large-cityscapes-semantic/raw/main/README.md"],
+  "notes": ""
+ },
+ {
+  "id": "mfaytin/mask2former-satellite",
+  "name": "mask2former-satellite",
+  "creator": "mfaytin",
+  "card": {
+   "what": "Segmentation model fine-tuned on satellite and aerial imagery that classifies land cover by category.",
+   "kind": "image segmentation",
+   "input": ["satellite image"],
+   "output": ["masks", "labels"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": [
+    "classifying land cover from satellite and aerial images",
+    "mapping buildings, roads, cropland and water bodies",
+    "outlining land-use regions pixel by pixel",
+    "supporting environmental and urban land monitoring"
+   ],
+   "product_uses": [
+    "land-use and land-cover mapping tool",
+    "urban sprawl monitoring dashboard",
+    "environmental impact assessment app",
+    "GIS layer generator from satellite imagery"
+   ],
+   "domains": ["geospatial", "science"],
+   "not_for": [
+    "ground-level or non-satellite photos",
+    "imagery from sensors or regions very different from its training data",
+    "generating or editing images"
+   ]
+  },
+  "official_url": "https://huggingface.co/mfaytin/mask2former-satellite",
+  "sources": ["https://huggingface.co/mfaytin/mask2former-satellite/raw/main/README.md"],
+  "notes": ""
+ },
+ {
+  "id": "nvidia/segformer-b0-finetuned-ade-512-512",
+  "name": "segformer-b0-finetuned-ade-512-512",
+  "creator": "NVIDIA",
+  "card": {
+   "what": "Compact segmentation model by NVIDIA that labels indoor and outdoor scene regions by category, pixel by pixel.",
+   "kind": "image segmentation",
+   "input": ["image"],
+   "output": ["masks", "labels"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": [
+    "segmenting indoor and outdoor scenes into regions",
+    "labeling common objects and surfaces in photos",
+    "outlining walls, furniture, sky and vegetation",
+    "running scene segmentation with a lightweight model"
+   ],
+   "product_uses": [
+    "scene understanding module for a robot or drone",
+    "room layout detector for an interior design app",
+    "background and foreground segmentation for AR filters",
+    "photo editing tool that selects scene regions"
+   ],
+   "domains": ["general"],
+   "not_for": [
+    "urban street-specific categories like Cityscapes-trained models provide",
+    "telling apart individual object instances (semantic labels only)",
+    "generating or editing images"
+   ]
+  },
+  "official_url": "https://huggingface.co/nvidia/segformer-b0-finetuned-ade-512-512",
+  "sources": ["https://huggingface.co/nvidia/segformer-b0-finetuned-ade-512-512/raw/main/README.md"],
+  "notes": ""
+ },
+ {
+  "id": "baidu/Unlimited-OCR",
+  "name": "Unlimited-OCR",
+  "creator": "Baidu",
+  "card": {
+   "what": "OCR model by Baidu that reads text from images, multi-page documents and PDFs while keeping layout.",
+   "kind": "OCR and documents",
+   "input": ["image", "document"],
+   "output": ["text"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "multilingual",
+   "best_at": [
+    "extracting text from long, multi-page documents",
+    "parsing PDFs while preserving layout and structure",
+    "reading text from scanned pages and forms",
+    "converting scanned documents into structured text"
+   ],
+   "product_uses": [
+    "document digitization pipeline",
+    "PDF-to-text conversion tool",
+    "book or archive scanning app",
+    "business form processing system"
+   ],
+   "domains": ["general"],
+   "not_for": [
+    "open-ended chat or answering unrelated questions",
+    "generating new text unrelated to the document (extracts existing content only)"
+   ]
+  },
+  "official_url": "https://huggingface.co/baidu/Unlimited-OCR",
+  "sources": ["https://huggingface.co/baidu/Unlimited-OCR/raw/main/README.md"],
+  "notes": ""
+ },
+ {
+  "id": "datalab-to/chandra-ocr-2",
+  "name": "chandra-ocr-2",
+  "creator": "Datalab",
+  "card": {
+   "what": "OCR model by Datalab that converts documents into markdown, HTML or JSON while preserving layout.",
+   "kind": "OCR and documents",
+   "input": ["image", "document"],
+   "output": ["text"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "multilingual",
+   "best_at": [
+    "extracting text from documents into markdown or HTML",
+    "reading handwriting from scanned pages",
+    "reconstructing forms, checkboxes and tables accurately",
+    "extracting images, diagrams and captions from documents"
+   ],
+   "product_uses": [
+    "PDF-to-markdown conversion tool",
+    "form and checkbox digitization app",
+    "document intelligence pipeline for structured data",
+    "table extraction tool for reports"
+   ],
+   "domains": ["general"],
+   "not_for": [
+    "open-ended chat or conversation",
+    "generating new documents or text from scratch (extracts existing content only)"
+   ]
+  },
+  "official_url": "https://huggingface.co/datalab-to/chandra-ocr-2",
+  "sources": ["https://huggingface.co/datalab-to/chandra-ocr-2/raw/main/README.md"],
+  "notes": ""
+ },
+ {
+  "id": "datalab-to/surya-ocr-2",
+  "name": "surya-ocr-2",
+  "creator": "Datalab",
+  "card": {
+   "what": "OCR model by Datalab that reads documents, detects their layout and recognizes tables.",
+   "kind": "OCR and documents",
+   "input": ["image", "document"],
+   "output": ["text", "table"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "multilingual",
+   "best_at": [
+    "extracting text from complex documents with layout detection",
+    "recognizing table rows, columns and structure",
+    "detecting layout elements like headers, captions and figures",
+    "converting documents into structured, machine-readable output"
+   ],
+   "product_uses": [
+    "document layout analysis tool",
+    "table extraction tool for reports and invoices",
+    "PDF parsing pipeline for structured data",
+    "document intelligence backend for a business app"
+   ],
+   "domains": ["general"],
+   "not_for": [
+    "reading text in photos of natural scenes (built for documents)",
+    "open-ended chat or conversation"
+   ]
+  },
+  "official_url": "https://huggingface.co/datalab-to/surya-ocr-2",
+  "sources": ["https://huggingface.co/datalab-to/surya-ocr-2/raw/main/README.md"],
+  "notes": ""
+ },
+ {
+  "id": "deepseek-ai/DeepSeek-OCR",
+  "name": "DeepSeek-OCR",
+  "creator": "DeepSeek",
+  "card": {
+   "what": "Vision-language model by DeepSeek that converts document images into markdown while reading their text and layout.",
+   "kind": "OCR and documents",
+   "input": ["image", "document"],
+   "output": ["text"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "multilingual",
+   "best_at": [
+    "converting document images into markdown text",
+    "extracting text from documents and forms",
+    "reading tables and charts inside documents",
+    "understanding document layout and structure"
+   ],
+   "product_uses": [
+    "PDF-to-markdown conversion tool",
+    "document understanding backend for a business app",
+    "invoice and form data extraction tool",
+    "content extraction pipeline for scanned documents"
+   ],
+   "domains": ["general"],
+   "not_for": [
+    "open-ended chat or conversation",
+    "generating new text unrelated to the input document"
+   ]
+  },
+  "official_url": "https://huggingface.co/deepseek-ai/DeepSeek-OCR",
+  "sources": ["https://huggingface.co/deepseek-ai/DeepSeek-OCR/raw/main/README.md"],
+  "notes": ""
+ },
+ {
+  "id": "PaddlePaddle/PP-OCRv5_server_det",
+  "name": "PP-OCRv5_server_det",
+  "creator": "PaddlePaddle",
+  "card": {
+   "what": "Text detection model by PaddlePaddle that finds and boxes text regions in images without reading them.",
+   "kind": "object detection",
+   "input": ["image"],
+   "output": ["boxes"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "Simplified Chinese, Traditional Chinese, English, Japanese",
+   "best_at": [
+    "locating text regions in complex document layouts",
+    "detecting rotated, curved or vertical text",
+    "finding handwritten text regions in images",
+    "boxing text in license plates and signage"
+   ],
+   "product_uses": [
+    "text region detector for an OCR pipeline",
+    "license plate localization tool",
+    "document layout pre-processing step for OCR",
+    "sign and label detector for images"
+   ],
+   "domains": ["general"],
+   "not_for": [
+    "reading or recognizing the text characters (detection only, no recognition)",
+    "open-ended chat or conversation"
+   ]
+  },
+  "official_url": "https://huggingface.co/PaddlePaddle/PP-OCRv5_server_det",
+  "sources": ["https://huggingface.co/PaddlePaddle/PP-OCRv5_server_det/raw/main/README.md"],
+  "notes": ""
+ },
+ {
+  "id": "Salesforce/blip-image-captioning-base",
+  "name": "blip-image-captioning-base",
+  "creator": "Salesforce",
+  "card": {
+   "what": "Image captioning model by Salesforce that describes the content of a photo in a short caption.",
+   "kind": "image captioning",
+   "input": ["image"],
+   "output": ["text"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": [
+    "generating a short caption for a photo",
+    "describing the main subject of an image",
+    "producing captions guided by a starting phrase",
+    "generating alt text for accessibility"
+   ],
+   "product_uses": [
+    "auto alt-text generator for a website",
+    "photo caption feature for a social app",
+    "image search tool based on captions",
+    "content accessibility tool for images"
+   ],
+   "domains": ["general", "media"],
+   "not_for": [
+    "answering open-ended questions about an image",
+    "complex visual reasoning about relationships between objects",
+    "generating or editing images"
+   ]
+  },
+  "official_url": "https://huggingface.co/Salesforce/blip-image-captioning-base",
+  "sources": ["https://huggingface.co/Salesforce/blip-image-captioning-base/raw/main/README.md"],
+  "notes": ""
+ },
+ {
+  "id": "Salesforce/blip-image-captioning-large",
+  "name": "blip-image-captioning-large",
+  "creator": "Salesforce",
+  "card": {
+   "what": "Image captioning model by Salesforce that generates detailed descriptions of a photo's content.",
+   "kind": "image captioning",
+   "input": ["image"],
+   "output": ["text"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": [
+    "generating detailed captions for a photo",
+    "describing the main subject and setting of an image",
+    "producing captions guided by a starting phrase",
+    "generating alt text for accessibility"
+   ],
+   "product_uses": [
+    "auto alt-text generator for a website",
+    "photo caption feature for a media app",
+    "image search tool based on captions",
+    "content accessibility tool for images"
+   ],
+   "domains": ["general", "media"],
+   "not_for": [
+    "answering open-ended questions about an image",
+    "complex visual reasoning about relationships between objects",
+    "generating or editing images"
+   ]
+  },
+  "official_url": "https://huggingface.co/Salesforce/blip-image-captioning-large",
+  "sources": ["https://huggingface.co/Salesforce/blip-image-captioning-large/raw/main/README.md"],
+  "notes": ""
+ },
+ {
+  "id": "kha-white/manga-ocr-base",
+  "name": "manga-ocr-base",
+  "creator": "kha-white",
+  "card": {
+   "what": "OCR model by kha-white that reads Japanese text, specialized for manga and comics.",
+   "kind": "OCR and documents",
+   "input": ["image"],
+   "output": ["text"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "Japanese",
+   "best_at": [
+    "reading Japanese text in manga panels",
+    "recognizing vertical and horizontal Japanese text",
+    "reading text with furigana (ruby characters)",
+    "handling text overlaid on manga artwork"
+   ],
+   "product_uses": [
+    "manga translation app text extractor",
+    "Japanese comic digitization tool",
+    "furigana-aware reading assistant for manga",
+    "Japanese document OCR tool"
+   ],
+   "domains": ["media"],
+   "not_for": [
+    "non-Japanese text",
+    "handwritten or cursive Japanese text",
+    "translating the extracted text (reads Japanese only, does not translate)"
+   ]
+  },
+  "official_url": "https://huggingface.co/kha-white/manga-ocr-base",
+  "sources": ["https://huggingface.co/kha-white/manga-ocr-base/raw/main/README.md"],
+  "notes": ""
+ }
+]

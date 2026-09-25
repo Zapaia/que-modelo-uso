@@ -1,0 +1,146 @@
+[
+ {
+  "id": "StanfordAIMI/stanford-deidentifier-base",
+  "name": "stanford-deidentifier-base",
+  "creator": "StanfordAIMI",
+  "layer": 2,
+  "hf_task": "token-classification",
+  "license": "mit",
+  "known_sources": [
+   "https://huggingface.co/StanfordAIMI/stanford-deidentifier-base/blob/main/README.md",
+   "https://huggingface.co/StanfordAIMI/stanford-deidentifier-base"
+  ]
+ },
+ {
+  "id": "celiudos/legal-bert-lgpd",
+  "name": "legal-bert-lgpd",
+  "creator": "celiudos",
+  "layer": 2,
+  "hf_task": "token-classification",
+  "license": "mit",
+  "known_sources": [
+   "https://huggingface.co/celiudos/legal-bert-lgpd",
+   "https://huggingface.co/celiudos/legal-bert-lgpd/blob/main/README.md"
+  ]
+ },
+ {
+  "id": "d4data/biomedical-ner-all",
+  "name": "biomedical-ner-all",
+  "creator": "d4data",
+  "layer": 2,
+  "hf_task": "token-classification",
+  "license": "apache-2.0",
+  "known_sources": [
+   "https://huggingface.co/d4data/biomedical-ner-all/blob/main/README.md",
+   "https://huggingface.co/d4data/biomedical-ner-all"
+  ]
+ },
+ {
+  "id": "dbmdz/bert-large-cased-finetuned-conll03-english",
+  "name": "bert-large-cased-finetuned-conll03-english",
+  "creator": "dbmdz",
+  "layer": 2,
+  "hf_task": "token-classification",
+  "license": null,
+  "known_sources": [
+   "https://huggingface.co/dbmdz/bert-large-cased-finetuned-conll03-english/blob/main/README.md",
+   "https://huggingface.co/dbmdz/bert-large-cased-finetuned-conll03-english"
+  ]
+ },
+ {
+  "id": "dslim/bert-base-NER",
+  "name": "bert-base-NER",
+  "creator": "dslim",
+  "layer": 2,
+  "hf_task": "token-classification",
+  "license": "mit",
+  "known_sources": [
+   "https://huggingface.co/dslim/bert-base-NER",
+   "https://huggingface.co/dslim/bert-base-NER/blob/main/README.md"
+  ]
+ },
+ {
+  "id": "lfcc/bert-portuguese-ner",
+  "name": "bert-portuguese-ner",
+  "creator": "lfcc",
+  "layer": 2,
+  "hf_task": "token-classification",
+  "license": "mit",
+  "known_sources": [
+   "https://huggingface.co/lfcc/bert-portuguese-ner",
+   "https://huggingface.co/lfcc/bert-portuguese-ner/blob/main/README.md"
+  ]
+ },
+ {
+  "id": "w11wo/indonesian-roberta-base-posp-tagger",
+  "name": "indonesian-roberta-base-posp-tagger",
+  "creator": "w11wo",
+  "layer": 2,
+  "hf_task": "token-classification",
+  "license": "mit",
+  "known_sources": [
+   "https://huggingface.co/w11wo/indonesian-roberta-base-posp-tagger/blob/main/README.md",
+   "https://huggingface.co/w11wo/indonesian-roberta-base-posp-tagger"
+  ]
+ },
+ {
+  "id": "Helsinki-NLP/opus-mt-nl-en",
+  "name": "opus-mt-nl-en",
+  "creator": "Helsinki-NLP",
+  "layer": 2,
+  "hf_task": "translation",
+  "license": "apache-2.0",
+  "known_sources": [
+   "https://huggingface.co/Helsinki-NLP/opus-mt-nl-en",
+   "https://huggingface.co/Helsinki-NLP/opus-mt-nl-en/blob/main/README.md"
+  ]
+ },
+ {
+  "id": "Helsinki-NLP/opus-mt-fr-en",
+  "name": "opus-mt-fr-en",
+  "creator": "Helsinki-NLP",
+  "layer": 2,
+  "hf_task": "translation",
+  "license": "apache-2.0",
+  "known_sources": [
+   "https://huggingface.co/Helsinki-NLP/opus-mt-fr-en/blob/main/README.md",
+   "https://huggingface.co/Helsinki-NLP/opus-mt-fr-en"
+  ]
+ },
+ {
+  "id": "facebook/nllb-200-distilled-600M",
+  "name": "nllb-200-distilled-600M",
+  "creator": "facebook",
+  "layer": 2,
+  "hf_task": "translation",
+  "license": "cc-by-nc-4.0",
+  "known_sources": [
+   "https://huggingface.co/facebook/nllb-200-distilled-600M/blob/main/README.md",
+   "https://huggingface.co/facebook/nllb-200-distilled-600M"
+  ]
+ },
+ {
+  "id": "google-t5/t5-base",
+  "name": "t5-base",
+  "creator": "google-t5",
+  "layer": 2,
+  "hf_task": "translation",
+  "license": "apache-2.0",
+  "known_sources": [
+   "https://huggingface.co/google-t5/t5-base",
+   "https://huggingface.co/google-t5/t5-base/blob/main/README.md"
+  ]
+ },
+ {
+  "id": "MCG-NJU/videomae-base",
+  "name": "videomae-base",
+  "creator": "MCG-NJU",
+  "layer": 2,
+  "hf_task": "video-classification",
+  "license": "cc-by-nc-4.0",
+  "known_sources": [
+   "https://huggingface.co/MCG-NJU/videomae-base",
+   "https://huggingface.co/MCG-NJU/videomae-base/blob/main/README.md"
+  ]
+ }
+]

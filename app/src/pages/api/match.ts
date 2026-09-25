@@ -18,7 +18,7 @@ export const POST: APIRoute = async ({ request }) => {
   }
   const models = ids.flatMap((id) => {
     const m = byId.get(id);
-    return m ? [{ id: m.id, name: m.name, description: m.description }] : [];
+    return m ? [{ id: m.id, name: m.name, description: m.description, card: (m as { card?: Record<string, unknown> }).card }] : [];
   });
   try {
     return Response.json({ scores: await scoreBatch(text, models) });

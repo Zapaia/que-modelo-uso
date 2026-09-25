@@ -1,0 +1,158 @@
+[
+ {
+  "id": "protonx-models/protonx-legal-tc",
+  "name": "protonx-legal-tc",
+  "creator": "protonx-models",
+  "layer": 2,
+  "hf_task": null,
+  "license": null,
+  "known_sources": [
+   "https://huggingface.co/protonx-models/protonx-legal-tc/blob/main/README.md",
+   "https://huggingface.co/protonx-models/protonx-legal-tc"
+  ],
+  "old_description_hint": "Seq2Seq Transformer for Vietnamese legal text correction and OCR post-processing. Best at: correcting OCR errors, diacritic restoration, and normalizing legal Vietnamese documents. Domains: legal, Vietnamese language, document processing. Typical uses: OCR output cleanup, government decree normalization, contract proofreading, administrative document processing. Not suited for: non-Vietnamese text or general-domain grammar correction."
+ },
+ {
+  "id": "zhihan1996/DNABERT-2-117M",
+  "name": "DNABERT-2-117M",
+  "creator": "zhihan1996",
+  "layer": 2,
+  "hf_task": null,
+  "license": null,
+  "known_sources": [
+   "https://huggingface.co/zhihan1996/DNABERT-2-117M",
+   "https://huggingface.co/zhihan1996/DNABERT-2-117M/blob/main/README.md"
+  ],
+  "old_description_hint": "Transformer-based genome foundation model trained on multi-species DNA sequences for biological representation learning. Best at: encoding DNA sequences into meaningful embeddings for downstream genomic tasks. Domains: genomics, bioinformatics, molecular biology. Typical uses: DNA sequence classification, genome analysis, embedding generation for genetic research. Not suited for: non-DNA sequences, protein sequences, or non-genomic tasks."
+ },
+ {
+  "id": "MIT/ast-finetuned-audioset-10-10-0.4593",
+  "name": "ast-finetuned-audioset-10-10-0.4593",
+  "creator": "MIT",
+  "layer": 2,
+  "hf_task": "audio-classification",
+  "license": "bsd-3-clause",
+  "known_sources": [
+   "https://huggingface.co/MIT/ast-finetuned-audioset-10-10-0.4593",
+   "https://huggingface.co/MIT/ast-finetuned-audioset-10-10-0.4593/blob/main/README.md"
+  ],
+  "old_description_hint": "Audio Spectrogram Transformer by MIT fine-tuned on AudioSet for sound classification. Best at: General-purpose audio event and environmental sound classification. Typical uses: Sound event detection, acoustic environment monitoring, audio indexing and retrieval. Not suited for: Speech-specific tasks, real-time edge inference requirements."
+ },
+ {
+  "id": "audeering/wav2vec2-large-robust-24-ft-age-gender",
+  "name": "wav2vec2-large-robust-24-ft-age-gender",
+  "creator": "audeering",
+  "layer": 2,
+  "hf_task": "audio-classification",
+  "license": "cc-by-nc-sa-4.0",
+  "known_sources": [
+   "https://huggingface.co/audeering/wav2vec2-large-robust-24-ft-age-gender/blob/main/README.md",
+   "https://huggingface.co/audeering/wav2vec2-large-robust-24-ft-age-gender"
+  ],
+  "old_description_hint": "Wav2Vec2 large model fine-tuned for speaker age and gender prediction from audio. Best at: Estimating approximate speaker age and gender classification from speech signals. Typical uses: Speaker profiling, demographic analysis, voice authentication, content moderation. Not suited for: Speech transcription, non-speech audio analysis."
+ },
+ {
+  "id": "facebook/audiobox-aesthetics",
+  "name": "audiobox-aesthetics",
+  "creator": "facebook",
+  "layer": 2,
+  "hf_task": "audio-classification",
+  "license": "cc-by-4.0",
+  "known_sources": [
+   "https://huggingface.co/facebook/audiobox-aesthetics/blob/main/README.md",
+   "https://huggingface.co/facebook/audiobox-aesthetics"
+  ],
+  "old_description_hint": "Meta's unified automatic quality assessment model for speech, music, and sound. Best at: Evaluating production quality across multiple aesthetic dimensions. Typical uses: Automatic audio QA, content quality filtering, benchmark automation for audio products. Not suited for: Subjective artistic style assessment, genre-specific evaluation."
+ },
+ {
+  "id": "laion/clap-htsat-fused",
+  "name": "clap-htsat-fused",
+  "creator": "laion",
+  "layer": 2,
+  "hf_task": "audio-classification",
+  "license": "apache-2.0",
+  "known_sources": [
+   "https://huggingface.co/laion/clap-htsat-fused",
+   "https://huggingface.co/laion/clap-htsat-fused/blob/main/README.md"
+  ],
+  "old_description_hint": "LAION's Contrastive Language-Audio Pretraining model for audio understanding. Best at: Zero-shot audio classification using natural language descriptions. Typical uses: Sound event detection, audio tagging, text-to-audio retrieval, acoustic scene analysis. Not suited for: Speech transcription, music generation, single-modality tasks."
+ },
+ {
+  "id": "jonatasgrosman/wav2vec2-large-xlsr-53-japanese",
+  "name": "wav2vec2-large-xlsr-53-japanese",
+  "creator": "jonatasgrosman",
+  "layer": 2,
+  "hf_task": "automatic-speech-recognition",
+  "license": "apache-2.0",
+  "known_sources": [
+   "https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-japanese",
+   "https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-japanese/blob/main/README.md"
+  ],
+  "old_description_hint": "Fine-tuned Wav2Vec2 model for Japanese automatic speech recognition by Jonatas Grosman. Best at: Transcribing Japanese speech at 16kHz. Typical uses: Meeting transcription, voice commands, subtitle generation in Japanese. Not suited for: Other languages, audio outside 16kHz specification."
+ },
+ {
+  "id": "jonatasgrosman/wav2vec2-large-xlsr-53-portuguese",
+  "name": "wav2vec2-large-xlsr-53-portuguese",
+  "creator": "jonatasgrosman",
+  "layer": 2,
+  "hf_task": "automatic-speech-recognition",
+  "license": "apache-2.0",
+  "known_sources": [
+   "https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-portuguese/blob/main/README.md",
+   "https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-portuguese"
+  ],
+  "old_description_hint": "Fine-tuned Wav2Vec2 model for Portuguese automatic speech recognition by Jonatas Grosman. Best at: Transcribing Portuguese speech (Brazilian and Portugal variants) at 16kHz. Typical uses: Portuguese meeting transcription, voice notes, subtitle generation. Not suited for: Other languages, audio sampled below 16kHz."
+ },
+ {
+  "id": "openai/whisper-large-v3-turbo",
+  "name": "whisper-large-v3-turbo",
+  "creator": "openai",
+  "layer": 2,
+  "hf_task": "automatic-speech-recognition",
+  "license": "mit",
+  "known_sources": [
+   "https://huggingface.co/openai/whisper-large-v3-turbo/blob/main/README.md",
+   "https://huggingface.co/openai/whisper-large-v3-turbo"
+  ],
+  "old_description_hint": "Pruned Whisper large-v3 by OpenAI with reduced decoder layers for faster inference. Best at: Multilingual speech transcription and speech-to-English translation. Typical uses: Real-time meeting transcription, video captioning, live stream transcription. Not suited for: Maximum accuracy requirements, requires accepting minor quality trade-off for speed."
+ },
+ {
+  "id": "pyannote/speaker-diarization-3.1",
+  "name": "speaker-diarization-3.1",
+  "creator": "pyannote",
+  "layer": 2,
+  "hf_task": "automatic-speech-recognition",
+  "license": "mit",
+  "known_sources": [
+   "https://huggingface.co/pyannote/speaker-diarization-3.1",
+   "https://github.com/pyannote/hf-speaker-diarization-3.1"
+  ],
+  "old_description_hint": "Speaker diarization pipeline from pyannote for identifying and tracking speakers in audio. Best at: determining who speaks and when in conversations. Domains: audio processing, meeting transcription. Typical uses: speaker attribution in transcripts, speech processing, audio analysis. Not suited for: real-time streaming or very noisy audio."
+ },
+ {
+  "id": "pyannote/speaker-diarization-community-1",
+  "name": "speaker-diarization-community-1",
+  "creator": "pyannote",
+  "layer": 2,
+  "hf_task": "automatic-speech-recognition",
+  "license": "cc-by-4.0",
+  "known_sources": [
+   "https://huggingface.co/pyannote/speaker-diarization-community-1",
+   "https://www.pyannote.ai/blog/community-1"
+  ],
+  "old_description_hint": "Open-source speaker diarization model from pyannote for identifying and tracking speakers in conversations with improved speaker assignment. Best at: determining speaker identity and counting distinct speakers. Domains: audio processing, transcription services. Typical uses: meeting transcription, speaker attribution, audio segmentation. Not suited for: heavily overlapped speech scenarios."
+ },
+ {
+  "id": "Intel/dpt-hybrid-midas",
+  "name": "dpt-hybrid-midas",
+  "creator": "Intel",
+  "layer": 2,
+  "hf_task": "depth-estimation",
+  "license": "apache-2.0",
+  "known_sources": [
+   "https://huggingface.co/Intel/dpt-hybrid-midas",
+   "https://huggingface.co/Intel/dpt-hybrid-midas/blob/main/README.md"
+  ],
+  "old_description_hint": "DPT-Hybrid (MiDaS 3.0) monocular depth estimator by Intel. Vision Transformer backbone trained on 1.4M images (MIX 6 dataset). Best at: zero-shot cross-dataset depth estimation. Typical uses: 3D scene reconstruction, augmented reality, robotics. Not suited for: fine-tuning without substantial data."
+ }
+]

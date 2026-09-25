@@ -1,0 +1,399 @@
+[
+ {
+  "id": "protonx-models/protonx-legal-tc",
+  "name": "protonx-legal-tc",
+  "creator": "ProtonX",
+  "card": {
+   "what": "Vietnamese text correction model by ProtonX that fixes OCR errors and diacritics in legal and government documents.",
+   "kind": "OCR and documents",
+   "input": ["text"],
+   "output": ["text"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "Vietnamese",
+   "best_at": [
+    "correcting OCR errors in scanned legal documents",
+    "restoring missing Vietnamese diacritics",
+    "normalizing government decrees and contracts",
+    "fixing punctuation and word segmentation errors"
+   ],
+   "product_uses": [
+    "OCR cleanup tool for scanned Vietnamese legal documents",
+    "government document normalization pipeline",
+    "contract proofreading assistant"
+   ],
+   "domains": ["legal"],
+   "not_for": [
+    "correcting text in languages other than Vietnamese",
+    "rewriting or paraphrasing text beyond fixing errors",
+    "extracting text from images directly (needs OCR output as input)"
+   ]
+  },
+  "official_url": "https://huggingface.co/protonx-models/protonx-legal-tc",
+  "sources": ["https://huggingface.co/protonx-models/protonx-legal-tc/raw/main/README.md"],
+  "notes": "No hay categoría exacta de 'corrección de texto' en el vocabulario; se usó 'OCR and documents' por ser la más cercana (limpieza de texto ya extraído por OCR, no extracción desde imagen)."
+ },
+ {
+  "id": "zhihan1996/DNABERT-2-117M",
+  "name": "DNABERT-2-117M",
+  "creator": "Northwestern University (MAGICS Lab)",
+  "card": {
+   "what": "Genome foundation model by researchers at Northwestern University that encodes DNA sequences from multiple species into embeddings.",
+   "kind": "biology and protein",
+   "input": ["biological sequence"],
+   "output": ["embedding"],
+   "interaction": "embedding model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": [
+    "encoding DNA sequences from multiple species into embeddings",
+    "generating fixed-length vector representations of genomic sequences",
+    "supporting genomic sequence similarity and clustering tasks",
+    "powering downstream genomic classification when fine-tuned"
+   ],
+   "product_uses": [
+    "genomic sequence similarity search tool",
+    "DNA sequence clustering pipeline for research",
+    "feature extraction backbone for a genomics classifier"
+   ],
+   "domains": ["biology", "science"],
+   "not_for": [
+    "open-ended chat or text generation",
+    "analyzing protein sequences directly (DNA only)"
+   ]
+  },
+  "official_url": "https://huggingface.co/zhihan1996/DNABERT-2-117M",
+  "sources": ["https://huggingface.co/zhihan1996/DNABERT-2-117M/raw/main/README.md"],
+  "notes": "No se encontró información de licencia en el README."
+ },
+ {
+  "id": "MIT/ast-finetuned-audioset-10-10-0.4593",
+  "name": "ast-finetuned-audioset-10-10-0.4593",
+  "creator": "MIT",
+  "card": {
+   "what": "Audio Spectrogram Transformer by MIT that classifies everyday sounds into AudioSet categories.",
+   "kind": "audio classification",
+   "input": ["audio"],
+   "output": ["labels"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": [
+    "classifying everyday sounds into AudioSet categories",
+    "detecting sound events in an audio clip",
+    "tagging audio recordings by content type"
+   ],
+   "product_uses": [
+    "sound event detection tool for security cameras",
+    "audio content tagging system for a media library",
+    "acoustic environment monitoring app"
+   ],
+   "domains": ["general", "media"],
+   "not_for": [
+    "transcribing speech to text",
+    "identifying who is speaking",
+    "labeling audio with categories outside the AudioSet list"
+   ]
+  },
+  "official_url": "https://huggingface.co/MIT/ast-finetuned-audioset-10-10-0.4593",
+  "sources": ["https://huggingface.co/MIT/ast-finetuned-audioset-10-10-0.4593/raw/main/README.md"],
+  "notes": ""
+ },
+ {
+  "id": "audeering/wav2vec2-large-robust-24-ft-age-gender",
+  "name": "wav2vec2-large-robust-24-ft-age-gender",
+  "creator": "audeering",
+  "card": {
+   "what": "Wav2Vec2 model fine-tuned by audeering that predicts a speaker's age and gender from speech audio.",
+   "kind": "audio classification",
+   "input": ["speech"],
+   "output": ["labels", "embedding"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "multilingual",
+   "best_at": [
+    "predicting speaker age from an audio clip",
+    "classifying speaker gender as child, female or male",
+    "extracting speaker-related audio embeddings"
+   ],
+   "product_uses": [
+    "voice-based demographic analytics tool",
+    "speaker profiling feature for a call center app",
+    "audio embeddings for a voice authentication system"
+   ],
+   "domains": ["general", "customer support"],
+   "not_for": [
+    "transcribing what is said in the audio",
+    "identifying a specific individual's identity",
+    "detecting emotions or spoken language"
+   ]
+  },
+  "official_url": "https://huggingface.co/audeering/wav2vec2-large-robust-24-ft-age-gender",
+  "sources": ["https://huggingface.co/audeering/wav2vec2-large-robust-24-ft-age-gender/raw/main/README.md"],
+  "notes": "Entrenado con datasets en varios idiomas (Common Voice, VoxCeleb2, TIMIT, aGender); el README no confirma explícitamente soporte multilingüe."
+ },
+ {
+  "id": "facebook/audiobox-aesthetics",
+  "name": "audiobox-aesthetics",
+  "creator": "Facebook/Meta",
+  "card": {
+   "what": "Meta model that scores speech, music and sound clips across production quality and content appeal.",
+   "kind": "audio classification",
+   "input": ["audio"],
+   "output": ["labels"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": [
+    "scoring audio clips on production quality and content appeal",
+    "evaluating speech, music and sound recordings automatically",
+    "filtering large audio datasets by aesthetic quality"
+   ],
+   "product_uses": [
+    "automatic quality control tool for a podcast platform",
+    "dataset curation pipeline for training audio models",
+    "audio quality scoring feature for a music app"
+   ],
+   "domains": ["general", "media"],
+   "not_for": [
+    "identifying what is being said or sung",
+    "classifying the genre or style of audio",
+    "editing or improving audio quality directly"
+   ]
+  },
+  "official_url": "https://huggingface.co/facebook/audiobox-aesthetics",
+  "sources": ["https://huggingface.co/facebook/audiobox-aesthetics/raw/main/README.md"],
+  "notes": ""
+ },
+ {
+  "id": "laion/clap-htsat-fused",
+  "name": "clap-htsat-fused",
+  "creator": "LAION",
+  "card": {
+   "what": "LAION's Contrastive Language-Audio Pretraining model that classifies and retrieves audio using natural language descriptions.",
+   "kind": "audio classification",
+   "input": ["audio", "text"],
+   "output": ["labels", "embedding"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": [
+    "classifying audio clips using natural language category names",
+    "retrieving audio clips that match a text description",
+    "generating comparable embeddings for audio and text",
+    "tagging sound events without task-specific training"
+   ],
+   "product_uses": [
+    "audio search engine driven by text queries",
+    "sound tagging tool for a media library",
+    "audio-text retrieval feature for a content app"
+   ],
+   "domains": ["general", "media"],
+   "not_for": [
+    "transcribing speech to text",
+    "generating audio or music",
+    "identifying individual speakers"
+   ]
+  },
+  "official_url": "https://huggingface.co/laion/clap-htsat-fused",
+  "sources": ["https://huggingface.co/laion/clap-htsat-fused/raw/main/README.md"],
+  "notes": ""
+ },
+ {
+  "id": "jonatasgrosman/wav2vec2-large-xlsr-53-japanese",
+  "name": "wav2vec2-large-xlsr-53-japanese",
+  "creator": "Jonatas Grosman",
+  "card": {
+   "what": "Wav2Vec2 model fine-tuned by Jonatas Grosman for automatic speech recognition in Japanese.",
+   "kind": "speech-to-text",
+   "input": ["speech"],
+   "output": ["text"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "Japanese",
+   "best_at": [
+    "transcribing Japanese speech into text",
+    "converting recorded Japanese audio into subtitles",
+    "powering Japanese voice command recognition"
+   ],
+   "product_uses": [
+    "Japanese meeting transcription tool",
+    "subtitle generator for Japanese videos",
+    "voice command feature for a Japanese app"
+   ],
+   "domains": ["general", "media"],
+   "not_for": [
+    "transcribing languages other than Japanese",
+    "identifying who is speaking (no speaker labels)"
+   ]
+  },
+  "official_url": "https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-japanese",
+  "sources": ["https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-japanese/raw/main/README.md"],
+  "notes": ""
+ },
+ {
+  "id": "jonatasgrosman/wav2vec2-large-xlsr-53-portuguese",
+  "name": "wav2vec2-large-xlsr-53-portuguese",
+  "creator": "Jonatas Grosman",
+  "card": {
+   "what": "Wav2Vec2 model fine-tuned by Jonatas Grosman for automatic speech recognition in Portuguese.",
+   "kind": "speech-to-text",
+   "input": ["speech"],
+   "output": ["text"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "Portuguese",
+   "best_at": [
+    "transcribing Portuguese speech into text",
+    "converting recorded Portuguese audio into subtitles",
+    "powering Portuguese voice command recognition"
+   ],
+   "product_uses": [
+    "Portuguese meeting transcription tool",
+    "subtitle generator for Portuguese videos",
+    "voice notes transcription app for Portuguese"
+   ],
+   "domains": ["general", "media"],
+   "not_for": [
+    "transcribing languages other than Portuguese",
+    "identifying who is speaking (no speaker labels)"
+   ]
+  },
+  "official_url": "https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-portuguese",
+  "sources": ["https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-portuguese/raw/main/README.md"],
+  "notes": ""
+ },
+ {
+  "id": "openai/whisper-large-v3-turbo",
+  "name": "whisper-large-v3-turbo",
+  "creator": "OpenAI",
+  "card": {
+   "what": "Faster, distilled version of Whisper large-v3 by OpenAI that transcribes and translates speech into text.",
+   "kind": "speech-to-text",
+   "input": ["speech"],
+   "output": ["text"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "multilingual",
+   "best_at": [
+    "transcribing speech in many languages",
+    "translating speech into English text",
+    "transcribing long recordings with timestamps",
+    "captioning videos and podcasts quickly"
+   ],
+   "product_uses": [
+    "video captioning and subtitling tool",
+    "voice notes transcription app",
+    "multilingual meeting transcription tool",
+    "content localization pipeline"
+   ],
+   "domains": ["general", "media"],
+   "not_for": [
+    "telling who spoke (no speaker labels)",
+    "generating speech"
+   ]
+  },
+  "official_url": "https://huggingface.co/openai/whisper-large-v3-turbo",
+  "sources": ["https://huggingface.co/openai/whisper-large-v3-turbo/raw/main/README.md"],
+  "notes": ""
+ },
+ {
+  "id": "pyannote/speaker-diarization-3.1",
+  "name": "speaker-diarization-3.1",
+  "creator": "pyannote",
+  "card": {
+   "what": "Pipeline by pyannote that identifies who is speaking and when in an audio recording.",
+   "kind": "speaker diarization",
+   "input": ["speech"],
+   "output": ["labels"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": [
+    "identifying who is speaking and when",
+    "segmenting multi-speaker audio recordings by speaker",
+    "counting the number of distinct speakers"
+   ],
+   "product_uses": [
+    "speaker labeling feature for a meeting transcription app",
+    "speaker attribution tool for podcast editing",
+    "call center conversation analysis pipeline"
+   ],
+   "domains": ["general", "media", "customer support"],
+   "not_for": [
+    "transcribing the words that are spoken",
+    "identifying a speaker's real-world identity",
+    "generating speech or audio"
+   ]
+  },
+  "official_url": "https://huggingface.co/pyannote/speaker-diarization-3.1",
+  "sources": ["https://huggingface.co/pyannote/speaker-diarization-3.1"],
+  "notes": ""
+ },
+ {
+  "id": "pyannote/speaker-diarization-community-1",
+  "name": "speaker-diarization-community-1",
+  "creator": "pyannote",
+  "card": {
+   "what": "Newer speaker diarization pipeline by pyannote with improved speaker assignment and counting accuracy.",
+   "kind": "speaker diarization",
+   "input": ["speech"],
+   "output": ["labels"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": [
+    "identifying who is speaking and when",
+    "assigning and counting speakers more accurately",
+    "reconciling speaker labels with transcription timestamps"
+   ],
+   "product_uses": [
+    "speaker labeling feature for a meeting transcription app",
+    "podcast speaker attribution tool",
+    "conference recording analysis pipeline"
+   ],
+   "domains": ["general", "media", "customer support"],
+   "not_for": [
+    "transcribing the words that are spoken",
+    "identifying a speaker's real-world identity",
+    "generating speech or audio"
+   ]
+  },
+  "official_url": "https://huggingface.co/pyannote/speaker-diarization-community-1",
+  "sources": ["https://huggingface.co/pyannote/speaker-diarization-community-1"],
+  "notes": ""
+ },
+ {
+  "id": "Intel/dpt-hybrid-midas",
+  "name": "dpt-hybrid-midas",
+  "creator": "Intel",
+  "card": {
+   "what": "Vision Transformer model by Intel, also known as MiDaS, that estimates depth from a single image.",
+   "kind": "depth estimation",
+   "input": ["image"],
+   "output": ["depth map"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": [
+    "estimating depth from a single photo",
+    "producing depth maps for 3D scene understanding",
+    "supporting robotics and AR spatial perception"
+   ],
+   "product_uses": [
+    "depth mapping feature for an AR app",
+    "3D scene reconstruction tool from photos",
+    "obstacle distance estimation for a robotics app"
+   ],
+   "domains": ["general", "science"],
+   "not_for": [
+    "generating or editing images",
+    "detecting or classifying objects in an image",
+    "producing exact real-world distance measurements"
+   ]
+  },
+  "official_url": "https://huggingface.co/Intel/dpt-hybrid-midas",
+  "sources": ["https://huggingface.co/Intel/dpt-hybrid-midas/raw/main/README.md"],
+  "notes": ""
+ }
+]

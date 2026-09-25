@@ -1,0 +1,158 @@
+[
+ {
+  "id": "neulab/codebert-python",
+  "name": "codebert-python",
+  "creator": "neulab",
+  "layer": 2,
+  "hf_task": "fill-mask",
+  "license": null,
+  "known_sources": [
+   "https://huggingface.co/neulab/codebert-python",
+   "https://huggingface.co/neulab/codebert-python/blob/main/README.md"
+  ],
+  "old_description_hint": "CodeBERT language model trained on Python code for masked language modeling. Best at: generating contextual embeddings for Python source code and code evaluation. Domains: software development, code quality, machine learning. Typical uses: code generation evaluation via CodeBERTScore, code similarity assessment, source code analysis. Not suited for: non-Python code or general NLP tasks."
+ },
+ {
+  "id": "nlpaueb/legal-bert-base-uncased",
+  "name": "legal-bert-base-uncased",
+  "creator": "nlpaueb",
+  "layer": 2,
+  "hf_task": "fill-mask",
+  "license": "cc-by-sa-4.0",
+  "known_sources": [
+   "https://huggingface.co/nlpaueb/legal-bert-base-uncased",
+   "https://huggingface.co/nlpaueb/legal-bert-base-uncased/blob/main/README.md"
+  ],
+  "old_description_hint": "BERT variant trained on diverse English legal texts including legislation, contracts, and court cases. Best at: legal document classification, contract analysis, statute understanding, and legal NLP tasks. Domains: law, contracts, legislation, legal technology. Typical uses: contract clause classification, legal document categorization, computational law applications. Not suited for: non-English legal systems or general-domain text."
+ },
+ {
+  "id": "yikuan8/Clinical-Longformer",
+  "name": "Clinical-Longformer",
+  "creator": "yikuan8",
+  "layer": 2,
+  "hf_task": "fill-mask",
+  "license": null,
+  "known_sources": [
+   "https://huggingface.co/yikuan8/Clinical-Longformer",
+   "https://huggingface.co/yikuan8/Clinical-Longformer/blob/main/README.md"
+  ],
+  "old_description_hint": "Longformer variant pre-trained on MIMIC-III clinical notes, supporting up to 4,096 input tokens for long document processing. Best at: NER, question answering, natural language inference, and text classification on extended clinical texts. Domains: clinical healthcare. Typical uses: analysis of long clinical documents, discharge summaries, comprehensive medical record understanding. Not suited for: short-text tasks or general-domain use."
+ },
+ {
+  "id": "Falconsai/nsfw_image_detection",
+  "name": "nsfw_image_detection",
+  "creator": "Falconsai",
+  "layer": 2,
+  "hf_task": "image-classification",
+  "license": "apache-2.0",
+  "known_sources": [
+   "https://huggingface.co/Falconsai/nsfw_image_detection/blob/main/README.md",
+   "https://huggingface.co/Falconsai/nsfw_image_detection"
+  ],
+  "old_description_hint": "Fine-tuned Vision Transformer for content moderation. Trained on 80,000 diverse images with binary classification (normal/NSFW). Best at: detecting inappropriate images for content filtering. Domains: social media, user-generated content platforms. Typical uses: photo review pipelines, automated content screening. Not suited for: nuanced aesthetic judgments."
+ },
+ {
+  "id": "google/vit-base-patch16-224",
+  "name": "vit-base-patch16-224",
+  "creator": "google",
+  "layer": 2,
+  "hf_task": "image-classification",
+  "license": "apache-2.0",
+  "known_sources": [
+   "https://huggingface.co/google/vit-base-patch16-224/blob/main/README.md",
+   "https://huggingface.co/google/vit-base-patch16-224"
+  ],
+  "old_description_hint": "Vision Transformer model by Google for image classification. Pre-trained on ImageNet-21k and fine-tuned on ImageNet-1k. Best at: 1,000-class image classification at 224x224 resolution. Typical uses: object recognition, image tagging, transfer learning backbone. Not suited for: real-time inference on resource-constrained devices."
+ },
+ {
+  "id": "prithivMLmods/Weather-Image-Classification",
+  "name": "Weather-Image-Classification",
+  "creator": "prithivMLmods",
+  "layer": 2,
+  "hf_task": "image-classification",
+  "license": "apache-2.0",
+  "known_sources": [
+   "https://huggingface.co/prithivMLmods/Weather-Image-Classification/blob/main/README.md",
+   "https://huggingface.co/prithivMLmods/Weather-Image-Classification"
+  ],
+  "old_description_hint": "Vision-language classifier fine-tuned from SiglIP for weather condition recognition in images. Best at: identifying weather conditions (sunny, cloudy, rainy, snowy, foggy) from visual data. Domains: computer vision, weather, environmental monitoring. Typical uses: automated weather tagging for media, autonomous vehicle enhancement, smart surveillance systems. Not suited for: weather forecasting or numerical data analysis."
+ },
+ {
+  "id": "timm/mobilenetv3_small_100.lamb_in1k",
+  "name": "mobilenetv3_small_100.lamb_in1k",
+  "creator": "timm",
+  "layer": 2,
+  "hf_task": "image-classification",
+  "license": "apache-2.0",
+  "known_sources": [
+   "https://huggingface.co/timm/mobilenetv3_small_100.lamb_in1k",
+   "https://huggingface.co/timm/mobilenetv3_small_100.lamb_in1k/blob/main/README.md"
+  ],
+  "old_description_hint": "MobileNetV3 small (2.5M params) image classifier trained on ImageNet-1k by timm library. Best at: Efficient image classification on mobile and edge devices. Typical uses: Real-time mobile image recognition, embedded vision systems, edge inference. Not suited for: Audio processing, text understanding, high-accuracy requirements."
+ },
+ {
+  "id": "timm/resnet18.a1_in1k",
+  "name": "resnet18.a1_in1k",
+  "creator": "timm",
+  "layer": 2,
+  "hf_task": "image-classification",
+  "license": "apache-2.0",
+  "known_sources": [
+   "https://huggingface.co/timm/resnet18.a1_in1k",
+   "https://huggingface.co/timm/resnet18.a1_in1k/blob/main/README.md"
+  ],
+  "old_description_hint": "ResNet-18 architecture trained on ImageNet-1k via timm library. Lightweight 11.7M parameter model for image classification. Best at: efficient 1,000-class image recognition. Typical uses: feature extraction, backbone for downstream tasks, real-time inference. Not suited for: small object detection or pixel-level tasks."
+ },
+ {
+  "id": "ibm-nasa-geospatial/Prithvi-WxC-1.0-2300M",
+  "name": "Prithvi-WxC-1.0-2300M",
+  "creator": "ibm-nasa-geospatial",
+  "layer": 2,
+  "hf_task": "image-feature-extraction",
+  "license": "cdla-permissive-2.0",
+  "known_sources": [
+   "https://huggingface.co/ibm-nasa-geospatial/Prithvi-WxC-1.0-2300M/blob/main/README.md",
+   "https://huggingface.co/ibm-nasa-geospatial/Prithvi-WxC-1.0-2300M"
+  ],
+  "old_description_hint": "IBM-NASA 2.3B parameter foundation model for weather and climate trained on MERRA-2 atmospheric data for forecasting and reconstruction. Best at: weather prediction and atmospheric state reconstruction from partial observations. Domains: meteorology, climate modeling. Typical uses: weather forecasting, downscaling, gravity wave parameterization, climate downscaling. Not suited for: long-range seasonal forecasting without adaptation."
+ },
+ {
+  "id": "CIDAS/clipseg-rd64-refined",
+  "name": "clipseg-rd64-refined",
+  "creator": "CIDAS",
+  "layer": 2,
+  "hf_task": "image-segmentation",
+  "license": "apache-2.0",
+  "known_sources": [
+   "https://huggingface.co/CIDAS/clipseg-rd64-refined/blob/main/README.md",
+   "https://huggingface.co/CIDAS/clipseg-rd64-refined"
+  ],
+  "old_description_hint": "CLIPSeg model for zero-shot and one-shot image segmentation. Combines CLIP with segmentation capability. Best at: segmenting objects based on text or image prompts without task-specific training. Typical uses: interactive image editing, visual search, content removal. Not suited for: real-time inference on edge devices."
+ },
+ {
+  "id": "Pranilllllll/segformer-satellite-segementation",
+  "name": "segformer-satellite-segementation",
+  "creator": "Pranilllllll",
+  "layer": 2,
+  "hf_task": "image-segmentation",
+  "license": "mit",
+  "known_sources": [
+   "https://huggingface.co/Pranilllllll/segformer-satellite-segementation/blob/main/README.md",
+   "https://huggingface.co/Pranilllllll/segformer-satellite-segementation"
+  ],
+  "old_description_hint": "SegFormer-B0 semantic segmentation model fine-tuned on Kathmandu Valley satellite imagery for land-use classification. Best at: classifying pixels into urban and land-cover categories in satellite imagery. Domains: earth observation, urban planning, geospatial analysis. Typical uses: urban planning studies, land-use mapping, geographic analysis. Not suited for: regions outside training area or non-satellite imagery."
+ },
+ {
+  "id": "ZhengPeng7/BiRefNet",
+  "name": "BiRefNet",
+  "creator": "ZhengPeng7",
+  "layer": 2,
+  "hf_task": "image-segmentation",
+  "license": "mit",
+  "known_sources": [
+   "https://huggingface.co/ZhengPeng7/BiRefNet",
+   "https://huggingface.co/ZhengPeng7/BiRefNet/blob/main/README.md"
+  ],
+  "old_description_hint": "BiRefNet for high-resolution dichotomous image segmentation (salient object detection). Produces binary masks separating foreground from background. Best at: precise object/subject extraction at 1024x1024 resolution. Domains: photography, e-commerce, design. Typical uses: product background removal, portrait extraction. Not suited for: multi-class semantic segmentation."
+ }
+]

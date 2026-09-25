@@ -1,0 +1,145 @@
+[
+ {
+  "id": "distilbert/distilbert-base-uncased-finetuned-sst-2-english",
+  "name": "distilbert-base-uncased-finetuned-sst-2-english",
+  "creator": "distilbert",
+  "layer": 2,
+  "hf_task": "text-classification",
+  "license": "apache-2.0",
+  "known_sources": [
+   "https://huggingface.co/distilbert/distilbert-base-uncased-finetuned-sst-2-english/blob/main/README.md",
+   "https://huggingface.co/distilbert/distilbert-base-uncased-finetuned-sst-2-english"
+  ]
+ },
+ {
+  "id": "martin-ha/toxic-comment-model",
+  "name": "toxic-comment-model",
+  "creator": "martin-ha",
+  "layer": 2,
+  "hf_task": "text-classification",
+  "license": null,
+  "known_sources": [
+   "https://huggingface.co/martin-ha/toxic-comment-model",
+   "https://huggingface.co/martin-ha/toxic-comment-model/blob/main/README.md"
+  ]
+ },
+ {
+  "id": "meta-llama/Prompt-Guard-86M",
+  "name": "Prompt-Guard-86M",
+  "creator": "meta-llama",
+  "layer": 2,
+  "hf_task": "text-classification",
+  "license": "llama3.1",
+  "known_sources": [
+   "https://github.com/meta-llama/PurpleLlama/blob/main/Prompt-Guard/MODEL_CARD.md",
+   "https://huggingface.co/meta-llama/Prompt-Guard-86M"
+  ]
+ },
+ {
+  "id": "nickmuchi/finbert-tone-finetuned-finance-topic-classification",
+  "name": "finbert-tone-finetuned-finance-topic-classification",
+  "creator": "nickmuchi",
+  "layer": 2,
+  "hf_task": "text-classification",
+  "license": null,
+  "known_sources": [
+   "https://huggingface.co/nickmuchi/finbert-tone-finetuned-finance-topic-classification"
+  ]
+ },
+ {
+  "id": "s-nlp/roberta_toxicity_classifier",
+  "name": "roberta_toxicity_classifier",
+  "creator": "s-nlp",
+  "layer": 2,
+  "hf_task": "text-classification",
+  "license": "openrail++",
+  "known_sources": [
+   "https://huggingface.co/s-nlp/roberta_toxicity_classifier",
+   "https://huggingface.co/s-nlp/roberta_toxicity_classifier/blob/main/README.md"
+  ]
+ },
+ {
+  "id": "unitary/unbiased-toxic-roberta",
+  "name": "unbiased-toxic-roberta",
+  "creator": "unitary",
+  "layer": 2,
+  "hf_task": "text-classification",
+  "license": "apache-2.0",
+  "known_sources": [
+   "https://huggingface.co/unitary/unbiased-toxic-roberta",
+   "https://huggingface.co/unitary/unbiased-toxic-roberta/blob/main/README.md"
+  ]
+ },
+ {
+  "id": "yiyanghkust/finbert-tone",
+  "name": "finbert-tone",
+  "creator": "yiyanghkust",
+  "layer": 2,
+  "hf_task": "text-classification",
+  "license": null,
+  "known_sources": [
+   "https://huggingface.co/yiyanghkust/finbert-tone/blob/main/README.md",
+   "https://huggingface.co/yiyanghkust/finbert-tone"
+  ]
+ },
+ {
+  "id": "yiyanghkust/finbert-esg",
+  "name": "finbert-esg",
+  "creator": "yiyanghkust",
+  "layer": 2,
+  "hf_task": "text-classification",
+  "license": null,
+  "known_sources": [
+   "https://huggingface.co/yiyanghkust/finbert-esg",
+   "https://huggingface.co/yiyanghkust/finbert-esg/blob/main/README.md"
+  ]
+ },
+ {
+  "id": "yiyanghkust/finbert-tone-chinese",
+  "name": "finbert-tone-chinese",
+  "creator": "yiyanghkust",
+  "layer": 2,
+  "hf_task": "text-classification",
+  "license": "apache-2.0",
+  "known_sources": [
+   "https://huggingface.co/yiyanghkust/finbert-tone-chinese/blob/main/README.md",
+   "https://huggingface.co/yiyanghkust/finbert-tone-chinese"
+  ]
+ },
+ {
+  "id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+  "name": "Qwen2.5-Math-1.5B-Instruct",
+  "creator": "Qwen",
+  "layer": 2,
+  "hf_task": "text-generation",
+  "license": "apache-2.0",
+  "known_sources": [
+   "https://huggingface.co/Qwen/Qwen2.5-Math-1.5B-Instruct/blob/main/README.md",
+   "https://huggingface.co/Qwen/Qwen2.5-Math-1.5B-Instruct"
+  ]
+ },
+ {
+  "id": "microsoft/BioGPT-Large",
+  "name": "BioGPT-Large",
+  "creator": "microsoft",
+  "layer": 2,
+  "hf_task": "text-generation",
+  "license": "mit",
+  "known_sources": [
+   "https://huggingface.co/microsoft/BioGPT-Large",
+   "https://huggingface.co/microsoft/BioGPT-Large/blob/main/README.md"
+  ]
+ },
+ {
+  "id": "Alibaba-NLP/gte-reranker-modernbert-base",
+  "name": "gte-reranker-modernbert-base",
+  "creator": "Alibaba-NLP",
+  "layer": 2,
+  "hf_task": "text-ranking",
+  "license": "apache-2.0",
+  "known_sources": [
+   "https://huggingface.co/Alibaba-NLP/gte-reranker-modernbert-base/blob/main/README.md",
+   "https://huggingface.co/Alibaba-NLP/gte-reranker-modernbert-base"
+  ]
+ }
+]

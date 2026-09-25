@@ -1,0 +1,378 @@
+[
+  {
+    "id": "meshy-ai/meshy-7",
+    "layer": 3,
+    "name": "Meshy-7",
+    "creator": "Meshy",
+    "creator_slug": "meshy-ai",
+    "hf_org": null,
+    "card": {
+      "what": "3D generation API model by Meshy that creates 3D meshes from text or images.",
+      "kind": "3D generation",
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "3d model"
+      ],
+      "interaction": "task model",
+      "access": "hosted API",
+      "languages": "English",
+      "best_at": [
+        "generating game-ready 3D assets from a text description",
+        "converting a single product photo into a 3D model",
+        "combining multiple images into one consistent 3D model",
+        "producing meshes for 3D printing"
+      ],
+      "product_uses": [
+        "game asset generator",
+        "3D printing app from a photo",
+        "avatar creator for VR",
+        "product visualization tool for e-commerce"
+      ],
+      "domains": [
+        "general",
+        "retail"
+      ],
+      "not_for": [
+        "generating flat 2D images",
+        "generating video or animation",
+        "editing a photo"
+      ]
+    },
+    "official_url": "https://docs.meshy.ai/",
+    "sources": [
+      "https://docs.meshy.ai/",
+      "https://www.meshy.ai/api"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "tripo3d/tripo-p1",
+    "layer": 3,
+    "name": "Tripo P1",
+    "creator": "Tripo",
+    "creator_slug": "tripo3d",
+    "hf_org": null,
+    "card": {
+      "what": "3D generation API model by Tripo that creates 3D meshes from text, images or multiple views.",
+      "kind": "3D generation",
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "3d model"
+      ],
+      "interaction": "task model",
+      "access": "hosted API",
+      "languages": "English",
+      "best_at": [
+        "generating a 3D model from a text description",
+        "converting a single reference image into a 3D model",
+        "combining multiple views of an object into one 3D model",
+        "producing clean low-poly meshes for games"
+      ],
+      "product_uses": [
+        "game asset generator",
+        "3D model marketplace tool",
+        "product visualization tool for e-commerce",
+        "app that turns sketches into 3D figures"
+      ],
+      "domains": [
+        "general",
+        "retail"
+      ],
+      "not_for": [
+        "generating flat 2D images",
+        "generating video or animation",
+        "editing a photo"
+      ]
+    },
+    "official_url": "https://www.tripo3d.ai/",
+    "sources": [
+      "https://docs.tripo3d.ai/get-started/overview.html"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "tencent/hunyuan3d-2.1",
+    "layer": 3,
+    "name": "Hunyuan3D 2.1",
+    "creator": "Tencent",
+    "creator_slug": "tencent",
+    "hf_org": "tencent",
+    "card": {
+      "what": "Open-weights 3D generation model by Tencent that creates 3D assets with production-ready materials.",
+      "kind": "3D generation",
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "3d model"
+      ],
+      "interaction": "task model",
+      "access": "open weights",
+      "languages": "English",
+      "best_at": [
+        "generating a 3D asset from a single image",
+        "generating a 3D asset from a text description",
+        "adding realistic surface materials to a generated mesh"
+      ],
+      "product_uses": [
+        "game asset generator",
+        "3D model marketplace tool",
+        "product visualization tool for e-commerce"
+      ],
+      "domains": [
+        "general",
+        "retail"
+      ],
+      "not_for": [
+        "generating flat 2D images",
+        "generating video or animation",
+        "editing a photo"
+      ]
+    },
+    "official_url": "https://huggingface.co/tencent/Hunyuan3D-2.1",
+    "sources": [
+      "https://huggingface.co/tencent/Hunyuan3D-2.1"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "deemos/hyper3d-rodin",
+    "layer": 3,
+    "name": "Hyper3D Rodin",
+    "creator": "Deemos",
+    "creator_slug": "deemos",
+    "hf_org": "Deemos",
+    "card": {
+      "what": "3D generation API model by Deemos that creates detailed, controllable 3D assets from images or text.",
+      "kind": "3D generation",
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "3d model"
+      ],
+      "interaction": "task model",
+      "access": "hosted API",
+      "languages": "English",
+      "best_at": [
+        "generating a 3D asset from a text prompt",
+        "generating a 3D asset from single or multi-view images",
+        "converting a sketch or product photo into a 3D model",
+        "producing meshes with clean topology and materials"
+      ],
+      "product_uses": [
+        "game asset generator",
+        "product visualization tool for e-commerce",
+        "app that turns a photo into a 3D printable model",
+        "architecture and character design tool"
+      ],
+      "domains": [
+        "general",
+        "retail"
+      ],
+      "not_for": [
+        "generating flat 2D images",
+        "generating video or animation",
+        "editing a photo"
+      ]
+    },
+    "official_url": "https://hyper3d.ai/",
+    "sources": [
+      "https://hyper3d.ai/"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "microsoft/trellis-image-large",
+    "layer": 3,
+    "name": "TRELLIS Image Large",
+    "creator": "Microsoft",
+    "creator_slug": "microsoft",
+    "hf_org": "microsoft",
+    "card": {
+      "what": "Open-weights 3D generative model by Microsoft that creates 3D models from a single image.",
+      "kind": "3D generation",
+      "input": [
+        "image"
+      ],
+      "output": [
+        "3d model"
+      ],
+      "interaction": "task model",
+      "access": "open weights",
+      "languages": "English",
+      "best_at": [
+        "generating a 3D model from a single reference image",
+        "producing structured 3D representations for downstream rendering"
+      ],
+      "product_uses": [
+        "3D model generator app",
+        "game asset pipeline",
+        "product visualization tool for e-commerce"
+      ],
+      "domains": [
+        "general",
+        "retail"
+      ],
+      "not_for": [
+        "generating a 3D model from a text description alone",
+        "generating flat 2D images",
+        "generating video or animation"
+      ]
+    },
+    "official_url": "https://huggingface.co/microsoft/TRELLIS-image-large",
+    "sources": [
+      "https://huggingface.co/microsoft/TRELLIS-image-large"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "google/timesfm-2.5-200m",
+    "layer": 3,
+    "name": "TimesFM 2.5",
+    "creator": "Google",
+    "creator_slug": "google",
+    "hf_org": "google",
+    "card": {
+      "what": "Open-weights foundation model by Google for forecasting future values of numeric time series.",
+      "kind": "time-series forecasting",
+      "input": [
+        "time series"
+      ],
+      "output": [
+        "time series"
+      ],
+      "interaction": "task model",
+      "access": "open weights",
+      "languages": "English",
+      "best_at": [
+        "forecasting future values from a historical numeric series without extra training",
+        "forecasting across retail, finance, manufacturing and other numeric domains",
+        "probabilistic forecasts with a range of likely values"
+      ],
+      "product_uses": [
+        "demand forecasting dashboard",
+        "sales prediction tool",
+        "capacity planning app",
+        "anomaly monitoring system based on forecast deviation"
+      ],
+      "domains": [
+        "general",
+        "finance",
+        "retail"
+      ],
+      "not_for": [
+        "forecasting from text or images",
+        "open-ended chat or answering questions",
+        "classifying text or images"
+      ]
+    },
+    "official_url": "https://huggingface.co/google/timesfm-2.5-200m-pytorch",
+    "sources": [
+      "https://huggingface.co/google/timesfm-2.5-200m-pytorch",
+      "https://research.google/blog/a-decoder-only-foundation-model-for-time-series-forecasting/"
+    ],
+    "notes": "Links corregidos a mano (el repo google/timesfm-2.5-200m no existe; el real es -pytorch). best_at \"longer forecasts than the input history\" sacado: el blog habla del largo del parche de salida, no del horizonte. Existe TimesFM 3.0 (ago 2026) con licencia no comercial; se eligió 2.5 (Apache 2.0) por decisión de Ramiro."
+  },
+  {
+    "id": "nixtla/timegpt-1",
+    "layer": 3,
+    "name": "TimeGPT-1",
+    "creator": "Nixtla",
+    "creator_slug": "nixtla",
+    "hf_org": "Nixtla",
+    "card": {
+      "what": "Time-series forecasting API model by Nixtla that predicts future values and detects anomalies.",
+      "kind": "time-series forecasting",
+      "input": [
+        "time series"
+      ],
+      "output": [
+        "time series"
+      ],
+      "interaction": "task model",
+      "access": "hosted API",
+      "languages": "English",
+      "best_at": [
+        "forecasting future values from a historical numeric series without extra training",
+        "detecting anomalies in a time series",
+        "producing forecasts using external variables alongside the series",
+        "estimating prediction intervals around a forecast"
+      ],
+      "product_uses": [
+        "demand forecasting dashboard",
+        "real-time anomaly detection tool",
+        "web traffic prediction app",
+        "financial price forecasting tool"
+      ],
+      "domains": [
+        "general",
+        "finance",
+        "retail"
+      ],
+      "not_for": [
+        "forecasting from text or images",
+        "open-ended chat or answering questions",
+        "classifying text or images"
+      ]
+    },
+    "official_url": "https://www.nixtla.io/docs/getting-started-about_timegpt",
+    "sources": [
+      "https://www.nixtla.io/docs/getting-started-about_timegpt"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "salesforce/moirai-2.0-r-small",
+    "layer": 3,
+    "name": "Moirai 2.0",
+    "creator": "Salesforce",
+    "creator_slug": "salesforce",
+    "hf_org": "Salesforce",
+    "card": {
+      "what": "Open-weights universal forecasting model by Salesforce that predicts future values of numeric time series.",
+      "kind": "time-series forecasting",
+      "input": [
+        "time series"
+      ],
+      "output": [
+        "time series"
+      ],
+      "interaction": "task model",
+      "access": "open weights",
+      "languages": "English",
+      "best_at": [
+        "forecasting future values from a historical numeric series without extra training",
+        "producing quantile-based forecasts to express uncertainty",
+        "handling series with missing values"
+      ],
+      "product_uses": [
+        "demand forecasting dashboard",
+        "financial price forecasting tool",
+        "capacity planning app"
+      ],
+      "domains": [
+        "general",
+        "finance"
+      ],
+      "not_for": [
+        "forecasting from text or images",
+        "open-ended chat or answering questions",
+        "classifying text or images"
+      ]
+    },
+    "official_url": "https://huggingface.co/Salesforce/moirai-2.0-R-small",
+    "sources": [
+      "https://huggingface.co/Salesforce/moirai-2.0-R-small"
+    ],
+    "notes": "Salesforce describes the model as research-purposes only; not verified for production forecasting."
+  }
+]

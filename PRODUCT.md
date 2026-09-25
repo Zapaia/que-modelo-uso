@@ -22,7 +22,7 @@ La clasificación la hace Jev, un modelo de decisión que evalúa cada modelo de
 Una sola pantalla. Demo pública en una URL de Webflow Cloud, usada por pocas personas. La lógica de selección sigue a Chip Huyen (AI Engineering, cap. 4): atributos duros, información pública, balance calidad/costo/latencia.
 
 ## Capabilities and Constraints
-- Catálogo estático de 186 modelos (`catalog/catalog.json`): 48 LLMs generales (36 con calidad y precio de Artificial Analysis) y 138 modelos especializados de Hugging Face sin benchmark.
+- Catálogo estático de 243 modelos (`catalog/v2/catalog_v2.json`): 48 LLMs generales (36 con calidad y precio de Artificial Analysis), 138 modelos especializados de Hugging Face y 57 modelos de tareas específicas, la mayoría por API (voz, imagen, video, música, embeddings, OCR y moderación, 3D, series temporales). Los especializados no tienen benchmark.
 - Jev vía Vercel AI Gateway, en tandas chicas (~19 preguntas) en paralelo con reintentos. Latencia medida: primera tanda ~0,5 s, catálogo completo ~1,5 s cuando el servicio no está saturado.
 - Filtros manuales: costo máximo y velocidad, en el navegador.
 - Switch "incluir modelos sin datos": suma modelos recomendados solo por encaje semántico, marcados como menos confiables; nunca van al gráfico.
@@ -36,7 +36,7 @@ Una sola pantalla. Demo pública en una URL de Webflow Cloud, usada por pocas pe
 - El levantamiento es el protagonista. El gráfico se arma aparte, no sincronizado.
 
 ## Evidence on Hand
-- `catalog/catalog.json`: 186 descripciones con fuente y link oficial verificados.
+- `catalog/v2/catalog_v2.json`: 243 fichas con vocabulario cerrado, con fuentes y link oficial verificados.
 - Números de Artificial Analysis (índice de inteligencia, precio combinado, velocidad). Atribución obligatoria: "Datos de benchmark: Artificial Analysis".
 - No hay testimonios, usuarios ni métricas de uso: no se inventan.
 

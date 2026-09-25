@@ -1,0 +1,254 @@
+[
+ {
+  "id": "distilbert/distilbert-base-uncased-finetuned-sst-2-english",
+  "name": "distilbert-base-uncased-finetuned-sst-2-english",
+  "creator": "Hugging Face",
+  "card": {
+   "what": "DistilBERT model fine-tuned by Hugging Face that classifies English text as positive or negative sentiment.",
+   "kind": "text classification",
+   "input": ["text"],
+   "output": ["labels"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": ["classifying sentiment of product reviews", "detecting positive or negative tone in text", "scoring sentiment in social media posts"],
+   "product_uses": ["app that analyzes customer reviews", "dashboard that tracks brand sentiment on social media", "tool that flags negative feedback tickets"],
+   "domains": ["general", "retail", "customer support"],
+   "not_for": ["open-ended chat or answering questions", "detecting emotions beyond positive or negative", "classifying non-English text"]
+  },
+  "official_url": "https://huggingface.co/distilbert/distilbert-base-uncased-finetuned-sst-2-english",
+  "sources": ["https://huggingface.co/distilbert/distilbert-base-uncased-finetuned-sst-2-english"],
+  "notes": ""
+ },
+ {
+  "id": "martin-ha/toxic-comment-model",
+  "name": "toxic-comment-model",
+  "creator": "martin-ha",
+  "card": {
+   "what": "DistilBERT model by martin-ha that classifies English comments as toxic or non-toxic.",
+   "kind": "text classification",
+   "input": ["text"],
+   "output": ["labels"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": ["detecting toxic or abusive comments", "flagging harmful language online", "screening user-generated text for toxicity"],
+   "product_uses": ["comment moderation tool for forums", "chat moderation bot for online communities", "content filter for social platforms"],
+   "domains": ["general", "customer support", "media"],
+   "not_for": ["open-ended chat", "classifying non-English text", "labeling specific types of toxicity beyond toxic/non-toxic"]
+  },
+  "official_url": "https://huggingface.co/martin-ha/toxic-comment-model",
+  "sources": ["https://huggingface.co/martin-ha/toxic-comment-model"],
+  "notes": ""
+ },
+ {
+  "id": "meta-llama/Prompt-Guard-86M",
+  "name": "Prompt-Guard-86M",
+  "creator": "Meta",
+  "card": {
+   "what": "Text classifier by Meta that detects prompt injection and jailbreak attempts in text sent to an LLM.",
+   "kind": "moderation and safety",
+   "input": ["text"],
+   "output": ["labels"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English, French, German, Hindi, Italian",
+   "best_at": ["detecting prompt injection attempts", "flagging jailbreak attempts in user input", "identifying malicious instructions hidden in third-party text"],
+   "product_uses": ["guardrail layer for an LLM chatbot", "input filter for an AI agent that reads external documents", "security tool that screens API responses before feeding an LLM"],
+   "domains": ["software", "general"],
+   "not_for": ["generating or holding conversations", "detecting general toxicity or hate speech"]
+  },
+  "official_url": "https://huggingface.co/meta-llama/Prompt-Guard-86M",
+  "sources": ["https://huggingface.co/meta-llama/Prompt-Guard-86M", "https://github.com/meta-llama/PurpleLlama/blob/main/Prompt-Guard/MODEL_CARD.md"],
+  "notes": ""
+ },
+ {
+  "id": "nickmuchi/finbert-tone-finetuned-finance-topic-classification",
+  "name": "finbert-tone-finetuned-finance-topic-classification",
+  "creator": "nickmuchi",
+  "card": {
+   "what": "BERT model fine-tuned by nickmuchi from FinBERT-tone that classifies financial tweets by topic.",
+   "kind": "text classification",
+   "input": ["text"],
+   "output": ["labels"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": ["classifying financial tweets by topic", "sorting financial social media posts into categories", "tagging finance-related text by subject"],
+   "product_uses": ["app that organizes financial news by topic", "dashboard that filters financial social media posts by category", "tool that routes financial mentions to the right team"],
+   "domains": ["finance"],
+   "not_for": ["detecting sentiment or tone (only topic)", "open-ended chat", "classifying non-English text"]
+  },
+  "official_url": "https://huggingface.co/nickmuchi/finbert-tone-finetuned-finance-topic-classification",
+  "sources": ["https://huggingface.co/nickmuchi/finbert-tone-finetuned-finance-topic-classification"],
+  "notes": ""
+ },
+ {
+  "id": "s-nlp/roberta_toxicity_classifier",
+  "name": "roberta_toxicity_classifier",
+  "creator": "s-nlp",
+  "card": {
+   "what": "RoBERTa model by s-nlp trained on Jigsaw data that classifies English text as toxic or neutral.",
+   "kind": "text classification",
+   "input": ["text"],
+   "output": ["labels"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": ["detecting toxic comments in English text", "distinguishing neutral from toxic language", "screening text for toxicity"],
+   "product_uses": ["comment moderation system", "chat filter for toxic language", "content review tool for forums"],
+   "domains": ["general", "customer support", "media"],
+   "not_for": ["open-ended chat", "classifying non-English text", "labeling specific toxicity subtypes beyond toxic/neutral"]
+  },
+  "official_url": "https://huggingface.co/s-nlp/roberta_toxicity_classifier",
+  "sources": ["https://huggingface.co/s-nlp/roberta_toxicity_classifier"],
+  "notes": ""
+ },
+ {
+  "id": "unitary/unbiased-toxic-roberta",
+  "name": "unbiased-toxic-roberta",
+  "creator": "Unitary",
+  "card": {
+   "what": "RoBERTa model from Unitary's Detoxify library that scores text for multiple types of toxicity.",
+   "kind": "text classification",
+   "input": ["text"],
+   "output": ["labels"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English, French, Spanish, Italian, Portuguese",
+   "best_at": ["detecting insults, threats and obscenity in text", "flagging identity-based hate speech", "scoring multiple types of toxicity in comments"],
+   "product_uses": ["content moderation tool for online platforms", "comment filter that flags harassment", "research tool for studying toxic language"],
+   "domains": ["general", "customer support", "media"],
+   "not_for": ["open-ended chat", "classifying languages beyond the ones supported", "generating text"]
+  },
+  "official_url": "https://huggingface.co/unitary/unbiased-toxic-roberta",
+  "sources": ["https://huggingface.co/unitary/unbiased-toxic-roberta"],
+  "notes": ""
+ },
+ {
+  "id": "yiyanghkust/finbert-tone",
+  "name": "finbert-tone",
+  "creator": "yiyanghkust",
+  "card": {
+   "what": "BERT model fine-tuned for financial sentiment analysis of English text, based on the FinBERT research by Huang, Wang and Yang.",
+   "kind": "text classification",
+   "input": ["text"],
+   "output": ["labels"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": ["classifying sentiment in financial reports", "analyzing tone of earnings call transcripts", "scoring sentiment in analyst reports"],
+   "product_uses": ["tool that scores sentiment in company filings", "dashboard that tracks tone of earnings calls", "app that summarizes sentiment across financial news"],
+   "domains": ["finance"],
+   "not_for": ["open-ended chat", "classifying non-financial text reliably", "classifying non-English text"]
+  },
+  "official_url": "https://huggingface.co/yiyanghkust/finbert-tone",
+  "sources": ["https://huggingface.co/yiyanghkust/finbert-tone"],
+  "notes": ""
+ },
+ {
+  "id": "yiyanghkust/finbert-esg",
+  "name": "finbert-esg",
+  "creator": "yiyanghkust",
+  "card": {
+   "what": "BERT model fine-tuned by yiyanghkust to classify financial text into environmental, social, governance or none categories.",
+   "kind": "text classification",
+   "input": ["text"],
+   "output": ["labels"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": ["classifying text by ESG category", "identifying environmental, social or governance content", "screening sustainability reports by topic"],
+   "product_uses": ["tool that scores ESG content in company reports", "app that screens investments for ESG criteria", "dashboard that tags sustainability disclosures by category"],
+   "domains": ["finance"],
+   "not_for": ["detecting sentiment or tone (only ESG category)", "open-ended chat", "classifying non-English text"]
+  },
+  "official_url": "https://huggingface.co/yiyanghkust/finbert-esg",
+  "sources": ["https://huggingface.co/yiyanghkust/finbert-esg"],
+  "notes": ""
+ },
+ {
+  "id": "yiyanghkust/finbert-tone-chinese",
+  "name": "finbert-tone-chinese",
+  "creator": "yiyanghkust",
+  "card": {
+   "what": "BERT model fine-tuned by yiyanghkust for financial sentiment analysis of Chinese text.",
+   "kind": "text classification",
+   "input": ["text"],
+   "output": ["labels"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "Chinese",
+   "best_at": ["classifying sentiment in Chinese financial reports", "analyzing tone of Chinese analyst statements", "scoring sentiment in Chinese investor communications"],
+   "product_uses": ["tool that scores sentiment in Chinese company filings", "app that tracks tone of Chinese financial news", "dashboard for Chinese analyst report sentiment"],
+   "domains": ["finance"],
+   "not_for": ["open-ended chat", "classifying English or other language text", "classifying non-financial text"]
+  },
+  "official_url": "https://huggingface.co/yiyanghkust/finbert-tone-chinese",
+  "sources": ["https://huggingface.co/yiyanghkust/finbert-tone-chinese"],
+  "notes": ""
+ },
+ {
+  "id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+  "name": "Qwen2.5-Math-1.5B-Instruct",
+  "creator": "Qwen (Alibaba)",
+  "card": {
+   "what": "Instruction-tuned language model by Alibaba's Qwen team specialized in solving math problems.",
+   "kind": "chat LLM",
+   "input": ["text"],
+   "output": ["text"],
+   "interaction": "chat and instructions",
+   "access": "open weights",
+   "languages": "English, Chinese",
+   "best_at": ["solving math word problems step by step", "solving algebra and calculus problems", "showing chain-of-thought reasoning for math", "computing exact answers with tool-integrated reasoning"],
+   "product_uses": ["math tutoring app", "homework helper chatbot", "app that checks step-by-step math solutions"],
+   "domains": ["education", "science"],
+   "not_for": ["general conversation outside math", "coding tasks", "creative writing or open-domain question answering"]
+  },
+  "official_url": "https://huggingface.co/Qwen/Qwen2.5-Math-1.5B-Instruct",
+  "sources": ["https://huggingface.co/Qwen/Qwen2.5-Math-1.5B-Instruct"],
+  "notes": ""
+ },
+ {
+  "id": "microsoft/BioGPT-Large",
+  "name": "BioGPT-Large",
+  "creator": "Microsoft",
+  "card": {
+   "what": "Generative language model by Microsoft pretrained on biomedical literature for biomedical text mining and generation.",
+   "kind": "base language model",
+   "input": ["text"],
+   "output": ["text"],
+   "interaction": "base model: needs fine-tuning",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": ["modeling biomedical and scientific text", "generating biomedical text continuations", "serving as a backbone for biomedical text mining after fine-tuning"],
+   "product_uses": ["biomedical literature mining tool built by fine-tuning it", "biomedical relation extraction tool built by fine-tuning it", "biomedical question answering tool built by fine-tuning it"],
+   "domains": ["medicine", "biology", "science"],
+   "not_for": ["using directly for open-ended chat without fine-tuning", "following instructions out of the box", "generating reliable general-domain text"]
+  },
+  "official_url": "https://huggingface.co/microsoft/BioGPT-Large",
+  "sources": ["https://huggingface.co/microsoft/BioGPT-Large"],
+  "notes": ""
+ },
+ {
+  "id": "Alibaba-NLP/gte-reranker-modernbert-base",
+  "name": "gte-reranker-modernbert-base",
+  "creator": "Alibaba-NLP (Tongyi Lab)",
+  "card": {
+   "what": "Reranking model by Alibaba's Tongyi Lab, built on ModernBERT, that scores how relevant a passage is to a query.",
+   "kind": "reranker",
+   "input": ["text"],
+   "output": ["labels"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": ["reordering search results by relevance", "scoring how well a passage answers a query", "reranking retrieved documents in a retrieval pipeline"],
+   "product_uses": ["search engine that reranks results for relevance", "retrieval-augmented chatbot that reorders retrieved passages", "document retrieval tool for enterprise search"],
+   "domains": ["software", "general"],
+   "not_for": ["generating text or answers", "open-ended chat", "reranking non-English content reliably"]
+  },
+  "official_url": "https://huggingface.co/Alibaba-NLP/gte-reranker-modernbert-base",
+  "sources": ["https://huggingface.co/Alibaba-NLP/gte-reranker-modernbert-base"],
+  "notes": ""
+ }
+]

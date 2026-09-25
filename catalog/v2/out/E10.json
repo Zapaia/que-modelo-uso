@@ -1,0 +1,254 @@
+[
+ {
+  "id": "facebook/bart-large-cnn",
+  "name": "bart-large-cnn",
+  "creator": "facebook",
+  "card": {
+   "what": "Sequence-to-sequence model by Meta AI fine-tuned on news articles for text summarization.",
+   "kind": "summarization",
+   "input": ["text"],
+   "output": ["text"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": ["condensing long news articles into short summaries", "generating abstractive summaries of documents"],
+   "product_uses": ["app that summarizes news articles", "tool that shortens long reports into briefs", "browser extension that summarizes web pages"],
+   "domains": ["general", "media"],
+   "not_for": ["open-ended chat or answering questions directly", "summarizing conversational chat logs or dialogue"]
+  },
+  "official_url": "https://huggingface.co/facebook/bart-large-cnn",
+  "sources": ["https://huggingface.co/facebook/bart-large-cnn"],
+  "notes": ""
+ },
+ {
+  "id": "google/pegasus-xsum",
+  "name": "pegasus-xsum",
+  "creator": "google",
+  "card": {
+   "what": "Transformer model by Google fine-tuned for abstractive, single-sentence style summarization of articles.",
+   "kind": "summarization",
+   "input": ["text"],
+   "output": ["text"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": ["generating very short abstractive summaries", "condensing news articles into one-line summaries"],
+   "product_uses": ["app that summarizes news articles", "tool that generates headlines from articles", "content app showing quick article digests"],
+   "domains": ["general", "media"],
+   "not_for": ["open-ended chat or answering questions directly", "producing long, detailed summaries"]
+  },
+  "official_url": "https://huggingface.co/google/pegasus-xsum",
+  "sources": ["https://huggingface.co/google/pegasus-xsum"],
+  "notes": ""
+ },
+ {
+  "id": "philschmid/bart-large-cnn-samsum",
+  "name": "bart-large-cnn-samsum",
+  "creator": "philschmid",
+  "card": {
+   "what": "BART model fine-tuned on dialogue data to summarize conversations and chat exchanges.",
+   "kind": "summarization",
+   "input": ["text"],
+   "output": ["text"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": ["summarizing chat conversations", "condensing dialogue transcripts into short summaries"],
+   "product_uses": ["app that summarizes team chat threads", "meeting chat summarizer", "customer support ticket summarizer"],
+   "domains": ["general", "customer support"],
+   "not_for": ["open-ended chat or answering questions directly", "summarizing long news articles or formal documents"]
+  },
+  "official_url": "https://huggingface.co/philschmid/bart-large-cnn-samsum",
+  "sources": ["https://huggingface.co/philschmid/bart-large-cnn-samsum"],
+  "notes": ""
+ },
+ {
+  "id": "sshleifer/distilbart-cnn-12-6",
+  "name": "distilbart-cnn-12-6",
+  "creator": "sshleifer",
+  "card": {
+   "what": "Distilled, smaller version of BART fine-tuned on news articles for faster text summarization.",
+   "kind": "summarization",
+   "input": ["text"],
+   "output": ["text"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": ["condensing long news articles into short summaries", "generating abstractive summaries quickly"],
+   "product_uses": ["app that summarizes news articles", "tool that shortens long reports into briefs", "browser extension that summarizes web pages"],
+   "domains": ["general", "media"],
+   "not_for": ["open-ended chat or answering questions directly", "summarizing conversational chat logs or dialogue"]
+  },
+  "official_url": "https://huggingface.co/sshleifer/distilbart-cnn-12-6",
+  "sources": ["https://huggingface.co/sshleifer/distilbart-cnn-12-6"],
+  "notes": ""
+ },
+ {
+  "id": "google/tapas-large-finetuned-sqa",
+  "name": "tapas-large-finetuned-sqa",
+  "creator": "google",
+  "card": {
+   "what": "BERT-based model by Google fine-tuned to answer sequences of related questions about a table.",
+   "kind": "question answering",
+   "input": ["text", "table"],
+   "output": ["text"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": ["answering follow-up questions about a table", "selecting table cells that answer a question"],
+   "product_uses": ["app that answers questions about a spreadsheet", "chatbot that queries a data table conversationally", "tool for exploring Wikipedia-style tables"],
+   "domains": ["general"],
+   "not_for": ["open-ended chat or answering questions without a table", "generating free-form text answers"]
+  },
+  "official_url": "https://huggingface.co/google/tapas-large-finetuned-sqa",
+  "sources": ["https://huggingface.co/google/tapas-large-finetuned-sqa"],
+  "notes": ""
+ },
+ {
+  "id": "google/tapas-base-finetuned-wtq",
+  "name": "tapas-base-finetuned-wtq",
+  "creator": "google",
+  "card": {
+   "what": "BERT-based model by Google fine-tuned to answer single natural language questions about a table.",
+   "kind": "question answering",
+   "input": ["text", "table"],
+   "output": ["text"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": ["answering questions about a table", "selecting or aggregating table cells to answer a query"],
+   "product_uses": ["app that answers questions about a spreadsheet", "tool for querying data tables in natural language", "dashboard assistant for tabular reports"],
+   "domains": ["general"],
+   "not_for": ["open-ended chat or answering questions without a table", "generating free-form text answers"]
+  },
+  "official_url": "https://huggingface.co/google/tapas-base-finetuned-wtq",
+  "sources": ["https://huggingface.co/google/tapas-base-finetuned-wtq"],
+  "notes": ""
+ },
+ {
+  "id": "microsoft/tapex-base-finetuned-wikisql",
+  "name": "tapex-base-finetuned-wikisql",
+  "creator": "microsoft",
+  "card": {
+   "what": "BART-based model by Microsoft fine-tuned to answer natural language questions over tables like a SQL executor.",
+   "kind": "question answering",
+   "input": ["text", "table"],
+   "output": ["text"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": ["answering simple factual questions about a table", "extracting specific values from tabular data"],
+   "product_uses": ["app that answers questions about a spreadsheet", "tool for querying data tables in natural language", "internal analytics assistant for structured data"],
+   "domains": ["general"],
+   "not_for": ["open-ended chat or answering questions without a table", "complex multi-step reasoning over tables"]
+  },
+  "official_url": "https://huggingface.co/microsoft/tapex-base-finetuned-wikisql",
+  "sources": ["https://huggingface.co/microsoft/tapex-base-finetuned-wikisql"],
+  "notes": ""
+ },
+ {
+  "id": "BAAI/bge-reranker-v2-m3",
+  "name": "bge-reranker-v2-m3",
+  "creator": "BAAI",
+  "card": {
+   "what": "Multilingual reranker model by BAAI that scores how relevant a document is to a query.",
+   "kind": "reranker",
+   "input": ["text"],
+   "output": ["labels"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "multilingual",
+   "best_at": ["reordering search results by relevance to a query", "improving ranking quality in retrieval pipelines"],
+   "product_uses": ["search engine that reorders results by relevance", "RAG chatbot that picks the best passages before answering", "document search tool"],
+   "domains": ["general", "software"],
+   "not_for": ["open-ended chat or answering questions directly", "generating text or embeddings for search indexing"]
+  },
+  "official_url": "https://huggingface.co/BAAI/bge-reranker-v2-m3",
+  "sources": ["https://huggingface.co/BAAI/bge-reranker-v2-m3"],
+  "notes": ""
+ },
+ {
+  "id": "BAAI/bge-reranker-base",
+  "name": "bge-reranker-base",
+  "creator": "BAAI",
+  "card": {
+   "what": "Reranker model by BAAI that scores how relevant a document is to a query in Chinese and English.",
+   "kind": "reranker",
+   "input": ["text"],
+   "output": ["labels"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English, Chinese",
+   "best_at": ["reordering search results by relevance to a query", "improving ranking quality in retrieval pipelines"],
+   "product_uses": ["search engine that reorders results by relevance", "RAG chatbot that picks the best passages before answering", "document search tool"],
+   "domains": ["general", "software"],
+   "not_for": ["open-ended chat or answering questions directly", "generating text or embeddings for search indexing"]
+  },
+  "official_url": "https://huggingface.co/BAAI/bge-reranker-base",
+  "sources": ["https://huggingface.co/BAAI/bge-reranker-base"],
+  "notes": ""
+ },
+ {
+  "id": "ProsusAI/finbert",
+  "name": "finbert",
+  "creator": "ProsusAI",
+  "card": {
+   "what": "BERT model fine-tuned by ProsusAI to classify sentiment in financial text.",
+   "kind": "text classification",
+   "input": ["text"],
+   "output": ["labels"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": ["classifying financial news as positive, negative or neutral", "detecting sentiment in earnings reports and filings"],
+   "product_uses": ["app that scores sentiment of financial news", "trading dashboard with news sentiment signals", "tool that monitors sentiment in company reports"],
+   "domains": ["finance"],
+   "not_for": ["open-ended chat or answering questions directly", "sentiment analysis outside financial text"]
+  },
+  "official_url": "https://huggingface.co/ProsusAI/finbert",
+  "sources": ["https://huggingface.co/ProsusAI/finbert"],
+  "notes": ""
+ },
+ {
+  "id": "Qwen/Qwen2.5-Math-PRM-7B",
+  "name": "Qwen2.5-Math-PRM-7B",
+  "creator": "Qwen",
+  "card": {
+   "what": "Process reward model by Qwen that scores the quality of each step in a math solution.",
+   "kind": "text classification",
+   "input": ["text"],
+   "output": ["labels"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English, Chinese",
+   "best_at": ["scoring step-by-step math reasoning quality", "finding errors in intermediate math solution steps", "selecting the best solution among several candidates"],
+   "product_uses": ["tool that checks a math tutoring app's step-by-step solutions", "system that picks the best answer from multiple AI-generated math solutions", "math homework checker that flags reasoning errors"],
+   "domains": ["education", "science"],
+   "not_for": ["open-ended chat or answering questions directly", "generating math solutions from scratch"]
+  },
+  "official_url": "https://huggingface.co/Qwen/Qwen2.5-Math-PRM-7B",
+  "sources": ["https://huggingface.co/Qwen/Qwen2.5-Math-PRM-7B"],
+  "notes": ""
+ },
+ {
+  "id": "SamLowe/roberta-base-go_emotions",
+  "name": "roberta-base-go_emotions",
+  "creator": "SamLowe",
+  "card": {
+   "what": "RoBERTa model fine-tuned to detect multiple emotions expressed in a piece of English text.",
+   "kind": "text classification",
+   "input": ["text"],
+   "output": ["labels"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": ["detecting multiple emotions in a text", "labeling social media posts with emotion categories", "flagging emotional tone in customer messages"],
+   "product_uses": ["app that tags emotions in social media posts", "customer support tool that detects frustration or gratitude", "mental health journaling app that tracks emotions"],
+   "domains": ["general", "customer support"],
+   "not_for": ["open-ended chat or answering questions directly", "detecting emotion from speech or facial expressions"]
+  },
+  "official_url": "https://huggingface.co/SamLowe/roberta-base-go_emotions",
+  "sources": ["https://huggingface.co/SamLowe/roberta-base-go_emotions"],
+  "notes": ""
+ }
+]

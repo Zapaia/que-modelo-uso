@@ -1,0 +1,404 @@
+[
+  {
+    "id": "openai/gpt-image-2.5-sunburst",
+    "layer": 3,
+    "name": "GPT Image 2.5 Sunburst",
+    "creator": "OpenAI",
+    "creator_slug": "openai",
+    "hf_org": "openai",
+    "card": {
+      "what": "Image generation and editing API model by OpenAI, tuned for precise instruction-based edits.",
+      "kind": "image editing",
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "image"
+      ],
+      "interaction": "task model",
+      "access": "hosted API",
+      "languages": "multilingual",
+      "best_at": [
+        "generating an image from a text prompt",
+        "editing an existing photo with a text instruction",
+        "inpainting a masked region of an image",
+        "using a reference image to guide a new generation"
+      ],
+      "product_uses": [
+        "product photo editing tool",
+        "app that removes or replaces objects in a photo",
+        "marketing image generator",
+        "design mockup generator"
+      ],
+      "domains": [
+        "general",
+        "media",
+        "retail"
+      ],
+      "not_for": [
+        "generating video",
+        "generating speech or audio",
+        "open-ended chat about a topic unrelated to images"
+      ]
+    },
+    "official_url": "https://developers.openai.com/api/docs/guides/image-generation",
+    "sources": [
+      "https://developers.openai.com/api/docs/guides/image-generation",
+      "https://developers.openai.com/api/docs/models/gpt-image-2.5-sunburst"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "black-forest-labs/flux-2",
+    "layer": 3,
+    "name": "FLUX.2",
+    "creator": "Black Forest Labs",
+    "creator_slug": "black-forest-labs",
+    "hf_org": "black-forest-labs",
+    "card": {
+      "what": "Image generation and editing API model family by Black Forest Labs for photorealistic images and multi-reference edits.",
+      "kind": "image editing",
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "image"
+      ],
+      "interaction": "task model",
+      "access": "open weights and hosted API",
+      "languages": "English",
+      "best_at": [
+        "generating photorealistic images from a text prompt",
+        "editing an image while keeping a character or product consistent",
+        "combining several reference images into one composition",
+        "matching an exact brand color by hex code"
+      ],
+      "product_uses": [
+        "product visualization tool for e-commerce",
+        "marketing asset generator",
+        "UI mockup generator",
+        "app that restyles a photo from a reference image"
+      ],
+      "domains": [
+        "general",
+        "media",
+        "retail"
+      ],
+      "not_for": [
+        "generating video",
+        "generating speech or audio",
+        "open-ended chat"
+      ]
+    },
+    "official_url": "https://bfl.ai/models/flux-2",
+    "sources": [
+      "https://bfl.ai/models/flux-2",
+      "https://docs.bfl.ai/",
+      "https://huggingface.co/black-forest-labs"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "ideogram/ideogram-3.0",
+    "layer": 3,
+    "name": "Ideogram 3.0",
+    "creator": "Ideogram",
+    "creator_slug": "ideogram",
+    "hf_org": "ideogram-ai",
+    "card": {
+      "what": "Text-to-image and image editing API model by Ideogram, known for rendering readable text inside images.",
+      "kind": "text-to-image",
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "image"
+      ],
+      "interaction": "task model",
+      "access": "hosted API",
+      "languages": "English",
+      "best_at": [
+        "generating images from a text prompt",
+        "rendering readable logos, posters and text inside an image",
+        "inpainting a masked region with a mask and prompt",
+        "matching a chosen visual style from a reference image"
+      ],
+      "product_uses": [
+        "logo and poster generator",
+        "social media graphics tool",
+        "app that edits part of an uploaded image",
+        "packaging design generator"
+      ],
+      "domains": [
+        "general",
+        "media",
+        "retail"
+      ],
+      "not_for": [
+        "generating video",
+        "generating speech or audio",
+        "open-ended chat"
+      ]
+    },
+    "official_url": "https://developer.ideogram.ai/ideogram-api/api-overview",
+    "sources": [
+      "https://developer.ideogram.ai/api-reference/api-reference/generate-v3",
+      "https://developer.ideogram.ai/api-reference/api-reference/edit",
+      "https://huggingface.co/ideogram-ai"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "recraft/recraft-v4.1",
+    "layer": 3,
+    "name": "Recraft V4.1",
+    "creator": "Recraft",
+    "creator_slug": "recraft",
+    "hf_org": null,
+    "card": {
+      "what": "Text-to-image API model by Recraft that generates raster images, editable vector graphics and product mockups.",
+      "kind": "text-to-image",
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "image"
+      ],
+      "interaction": "task model",
+      "access": "hosted API",
+      "languages": "English",
+      "best_at": [
+        "generating photorealistic images from a text prompt",
+        "generating editable vector illustrations and icons",
+        "generating product mockup shots with flat, predictable backgrounds",
+        "matching a chosen style from a reference image"
+      ],
+      "product_uses": [
+        "vector icon and illustration generator",
+        "product mockup generator for e-commerce",
+        "brand asset generator",
+        "app that generates marketing graphics"
+      ],
+      "domains": [
+        "general",
+        "media",
+        "retail"
+      ],
+      "not_for": [
+        "generating video",
+        "generating speech or audio",
+        "open-ended chat"
+      ]
+    },
+    "official_url": "https://www.recraft.ai/docs",
+    "sources": [
+      "https://www.recraft.ai/docs"
+    ],
+    "notes": "No se encontró organización oficial de Recraft en Hugging Face."
+  },
+  {
+    "id": "stability-ai/stable-diffusion-3.5-large",
+    "layer": 3,
+    "name": "Stable Diffusion 3.5 Large (Stable Image API)",
+    "creator": "Stability AI",
+    "creator_slug": "stability-ai",
+    "hf_org": "stabilityai",
+    "card": {
+      "what": "Text-to-image model by Stability AI, offered as open weights and through the Stable Image API with a suite of editing tools.",
+      "kind": "image editing",
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "image"
+      ],
+      "interaction": "task model",
+      "access": "open weights and hosted API",
+      "languages": "English",
+      "best_at": [
+        "generating images from a text prompt with strong prompt adherence",
+        "removing the background from a photo",
+        "erasing an object from a photo",
+        "replacing part of an image using a text description (search-and-replace and inpaint)"
+      ],
+      "product_uses": [
+        "product photo background removal tool",
+        "app that edits or retouches uploaded photos",
+        "creative image generator for design workflows",
+        "e-commerce photo editing tool"
+      ],
+      "domains": [
+        "general",
+        "media",
+        "retail"
+      ],
+      "not_for": [
+        "generating video",
+        "generating speech or audio",
+        "open-ended chat"
+      ]
+    },
+    "official_url": "https://stability.ai/stable-image",
+    "sources": [
+      "https://stability.ai/stable-image",
+      "https://huggingface.co/stabilityai"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "adobe/firefly-image-5",
+    "layer": 3,
+    "name": "Firefly Image 5",
+    "creator": "Adobe",
+    "creator_slug": "adobe",
+    "hf_org": null,
+    "card": {
+      "what": "Text-to-image and instruction-based editing API model by Adobe Firefly for commercially safe content generation.",
+      "kind": "image editing",
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "image"
+      ],
+      "interaction": "task model",
+      "access": "hosted API",
+      "languages": "English",
+      "best_at": [
+        "generating images from a text prompt",
+        "editing an image using a plain-language instruction",
+        "generating product shots with varied backgrounds",
+        "applying a trained custom brand style to a generated image"
+      ],
+      "product_uses": [
+        "brand asset generator",
+        "product photo generator for marketing",
+        "app that lets users edit a photo with a text instruction",
+        "creative content tool for design teams"
+      ],
+      "domains": [
+        "general",
+        "media",
+        "retail"
+      ],
+      "not_for": [
+        "generating video",
+        "generating speech or audio",
+        "open-ended chat"
+      ]
+    },
+    "official_url": "https://developer.adobe.com/firefly-services/docs/firefly-api/",
+    "sources": [
+      "https://developer.adobe.com/firefly-services/docs/firefly-api/",
+      "https://huggingface.co/adobe"
+    ],
+    "notes": "Adobe no publica pesos ni modelos en su organización de Hugging Face."
+  },
+  {
+    "id": "bria/bria-3.2",
+    "layer": 3,
+    "name": "Bria API",
+    "creator": "Bria",
+    "creator_slug": "bria",
+    "hf_org": "briaai",
+    "card": {
+      "what": "Text-to-image generation and image editing API by Bria, built on fully licensed training data for commercial use.",
+      "kind": "image editing",
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "image"
+      ],
+      "interaction": "task model",
+      "access": "open weights and hosted API",
+      "languages": "English",
+      "best_at": [
+        "generating images from a text prompt",
+        "removing the background from a photo",
+        "filling in or replacing part of an image (generative fill)",
+        "enhancing a product shot for e-commerce"
+      ],
+      "product_uses": [
+        "e-commerce product photo tool",
+        "background removal app",
+        "ad creative generator",
+        "app that edits a photo from a text instruction"
+      ],
+      "domains": [
+        "general",
+        "retail",
+        "media"
+      ],
+      "not_for": [
+        "generating video",
+        "generating speech or audio",
+        "open-ended chat"
+      ]
+    },
+    "official_url": "https://docs.bria.ai/",
+    "sources": [
+      "https://docs.bria.ai/",
+      "https://huggingface.co/briaai"
+    ],
+    "notes": ""
+  },
+  {
+    "id": "bytedance/seedream-5.0",
+    "layer": 3,
+    "name": "Seedream 5.0",
+    "creator": "ByteDance",
+    "creator_slug": "bytedance",
+    "hf_org": "bytedance",
+    "card": {
+      "what": "Text-to-image generation and editing API model by ByteDance that unifies generation and editing in one endpoint.",
+      "kind": "image editing",
+      "input": [
+        "text",
+        "image"
+      ],
+      "output": [
+        "image"
+      ],
+      "interaction": "task model",
+      "access": "hosted API",
+      "languages": "English, Chinese",
+      "best_at": [
+        "generating images from a text prompt",
+        "editing an image with a text instruction (add, remove, replace)",
+        "fusing several reference images into one composition",
+        "generating a batch sequence of related images"
+      ],
+      "product_uses": [
+        "app that edits a photo from a text instruction",
+        "marketing image generator",
+        "storyboard or comic panel generator",
+        "e-commerce product image tool"
+      ],
+      "domains": [
+        "general",
+        "media",
+        "retail"
+      ],
+      "not_for": [
+        "generating video",
+        "generating speech or audio",
+        "open-ended chat"
+      ]
+    },
+    "official_url": "https://docs.byteplus.com/en/docs/ModelArk/1099455",
+    "sources": [
+      "https://docs.byteplus.com/en/docs/ModelArk/1099455",
+      "https://seed.bytedance.com/en/seedream4_0",
+      "https://huggingface.co/bytedance"
+    ],
+    "notes": "Documentación oficial detallada de Seedream 5.0 está en la consola de BytePlus ModelArk; se citan la página general y el anuncio de Seedream 4.0 como referencia de la línea de producto."
+  }
+]

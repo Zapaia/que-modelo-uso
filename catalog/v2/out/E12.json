@@ -1,0 +1,254 @@
+[
+ {
+  "id": "facebook/musicgen-medium",
+  "name": "musicgen-medium",
+  "creator": "Meta AI (FAIR)",
+  "card": {
+   "what": "Text-to-music model by Meta AI that generates instrumental music from text descriptions or a melody.",
+   "kind": "music generation",
+   "input": ["text", "audio"],
+   "output": ["audio"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": ["generating instrumental music from text descriptions", "generating music conditioned on a melody", "producing short musical clips for prototyping"],
+   "product_uses": ["app that generates background music from a text prompt", "tool that creates instrumental soundtracks for videos", "music prototyping tool for game developers"],
+   "domains": ["media", "general"],
+   "not_for": ["generating vocals or singing", "generating speech", "open-ended chat"]
+  },
+  "official_url": "https://huggingface.co/facebook/musicgen-medium",
+  "sources": ["https://huggingface.co/facebook/musicgen-medium"],
+  "notes": ""
+ },
+ {
+  "id": "facebook/musicgen-small",
+  "name": "musicgen-small",
+  "creator": "Meta AI (FAIR)",
+  "card": {
+   "what": "Text-to-music model by Meta AI, a smaller version of MusicGen that generates instrumental music from text.",
+   "kind": "music generation",
+   "input": ["text", "audio"],
+   "output": ["audio"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": ["generating instrumental music from text descriptions", "creating background music for projects", "generating short music clips for experimentation"],
+   "product_uses": ["app that generates background music from a text prompt", "music prototyping tool for content creators", "educational tool for exploring music generation"],
+   "domains": ["media", "general"],
+   "not_for": ["generating vocals or singing", "generating speech", "open-ended chat"]
+  },
+  "official_url": "https://huggingface.co/facebook/musicgen-small",
+  "sources": ["https://huggingface.co/facebook/musicgen-small"],
+  "notes": ""
+ },
+ {
+  "id": "stabilityai/stable-audio-3-medium",
+  "name": "stable-audio-3-medium",
+  "creator": "Stability AI",
+  "card": {
+   "what": "Latent diffusion model by Stability AI that generates and edits music and sound effects from text prompts.",
+   "kind": "audio generation",
+   "input": ["text"],
+   "output": ["audio"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": ["generating sound effects from a text prompt", "generating music from a text description", "editing existing audio through inpainting", "producing variable-length audio clips quickly"],
+   "product_uses": ["app that generates sound effects for games", "tool that creates royalty-free background music", "audio editing tool for podcasts"],
+   "domains": ["media", "general"],
+   "not_for": ["generating speech", "open-ended chat", "generating video"]
+  },
+  "official_url": "https://huggingface.co/stabilityai/stable-audio-3-medium",
+  "sources": ["https://huggingface.co/stabilityai/stable-audio-3-medium"],
+  "notes": ""
+ },
+ {
+  "id": "Lykon/dreamshaper-7",
+  "name": "dreamshaper-7",
+  "creator": "Lykon",
+  "card": {
+   "what": "Fine-tuned Stable Diffusion text-to-image model by Lykon for artistic and stylized image generation.",
+   "kind": "text-to-image",
+   "input": ["text"],
+   "output": ["image"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": ["generating stylized and artistic images from text", "generating anime-style artwork", "generating realistic portraits from text descriptions"],
+   "product_uses": ["app that generates artwork from a text prompt", "anime avatar generator", "concept art tool for artists"],
+   "domains": ["media", "general"],
+   "not_for": ["editing an existing photo", "open-ended chat", "generating video"]
+  },
+  "official_url": "https://huggingface.co/Lykon/dreamshaper-7",
+  "sources": ["https://huggingface.co/Lykon/dreamshaper-7"],
+  "notes": ""
+ },
+ {
+  "id": "RunDiffusion/Juggernaut-XL-v9",
+  "name": "Juggernaut-XL-v9",
+  "creator": "RunDiffusion and KandooAI",
+  "card": {
+   "what": "Fine-tuned Stable Diffusion XL model by RunDiffusion and KandooAI for photorealistic image generation.",
+   "kind": "text-to-image",
+   "input": ["text"],
+   "output": ["image"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": ["generating photorealistic images from text prompts", "generating portrait and product photography concepts", "generating architectural and landscape scenes"],
+   "product_uses": ["app that generates photorealistic marketing images", "concept art tool for photography studios", "product mockup generator"],
+   "domains": ["media", "retail", "general"],
+   "not_for": ["editing an existing photo", "open-ended chat", "generating video"]
+  },
+  "official_url": "https://huggingface.co/RunDiffusion/Juggernaut-XL-v9",
+  "sources": ["https://huggingface.co/RunDiffusion/Juggernaut-XL-v9"],
+  "notes": ""
+ },
+ {
+  "id": "black-forest-labs/FLUX.1-dev",
+  "name": "FLUX.1-dev",
+  "creator": "Black Forest Labs",
+  "card": {
+   "what": "Text-to-image generation model by Black Forest Labs that creates images from text prompts.",
+   "kind": "text-to-image",
+   "input": ["text"],
+   "output": ["image"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": ["generating images from text prompts", "generating artistic and scientific visualizations", "generating creative concept art"],
+   "product_uses": ["app that generates images from a text prompt", "creative design tool for artists", "marketing image generator"],
+   "domains": ["media", "general"],
+   "not_for": ["editing an existing photo", "open-ended chat", "generating video"]
+  },
+  "official_url": "https://huggingface.co/black-forest-labs/FLUX.1-dev",
+  "sources": ["https://huggingface.co/black-forest-labs/FLUX.1-dev"],
+  "notes": ""
+ },
+ {
+  "id": "stabilityai/sdxl-turbo",
+  "name": "sdxl-turbo",
+  "creator": "Stability AI",
+  "card": {
+   "what": "Fast text-to-image model by Stability AI that generates images from text prompts in very few steps.",
+   "kind": "text-to-image",
+   "input": ["text"],
+   "output": ["image"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": ["generating images quickly from text prompts", "generating real-time visual previews from prompts", "producing artistic and design concepts"],
+   "product_uses": ["app that generates instant image previews from prompts", "real-time creative sketching tool", "interactive art generation tool"],
+   "domains": ["media", "general"],
+   "not_for": ["editing an existing photo", "generating legible text in images", "open-ended chat"]
+  },
+  "official_url": "https://huggingface.co/stabilityai/sdxl-turbo",
+  "sources": ["https://huggingface.co/stabilityai/sdxl-turbo"],
+  "notes": ""
+ },
+ {
+  "id": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "name": "stable-diffusion-v1-5",
+  "creator": "CompVis / RunwayML",
+  "card": {
+   "what": "Latent diffusion model that generates images from text descriptions, originally developed by CompVis and RunwayML.",
+   "kind": "text-to-image",
+   "input": ["text"],
+   "output": ["image"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": ["generating images from text prompts", "generating artistic and design concepts", "producing illustrations for creative projects"],
+   "product_uses": ["app that generates artwork from a text prompt", "illustration tool for designers", "educational tool for exploring generative art"],
+   "domains": ["media", "general"],
+   "not_for": ["editing an existing photo", "generating legible text in images", "open-ended chat"]
+  },
+  "official_url": "https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "sources": ["https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5"],
+  "notes": ""
+ },
+ {
+  "id": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+  "name": "Qwen3-TTS-12Hz-1.7B-CustomVoice",
+  "creator": "Qwen",
+  "card": {
+   "what": "Text-to-speech model by Qwen that synthesizes speech in preset voices with adjustable emotion and tone.",
+   "kind": "text-to-speech",
+   "input": ["text"],
+   "output": ["speech"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "multilingual",
+   "best_at": ["generating speech in a chosen preset voice", "generating speech with adjustable emotion and tone", "generating multilingual voice narration"],
+   "product_uses": ["app that narrates text with a custom voice", "multilingual voiceover generator", "game that gives characters spoken voices"],
+   "domains": ["media", "general"],
+   "not_for": ["cloning a specific person's voice from an audio sample", "open-ended chat", "transcribing speech into text"]
+  },
+  "official_url": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+  "sources": ["https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice"],
+  "notes": ""
+ },
+ {
+  "id": "Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice",
+  "name": "Qwen3-TTS-12Hz-0.6B-CustomVoice",
+  "creator": "Qwen",
+  "card": {
+   "what": "Text-to-speech model by Qwen, a smaller version that synthesizes speech in preset voices with style control.",
+   "kind": "text-to-speech",
+   "input": ["text"],
+   "output": ["speech"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "multilingual",
+   "best_at": ["generating speech in a chosen preset voice", "generating emotionally expressive speech", "generating multilingual voice narration"],
+   "product_uses": ["app that narrates text with a custom voice", "multilingual voiceover generator", "low-latency voice streaming tool"],
+   "domains": ["media", "general"],
+   "not_for": ["cloning a specific person's voice from an audio sample", "open-ended chat", "transcribing speech into text"]
+  },
+  "official_url": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice",
+  "sources": ["https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice"],
+  "notes": ""
+ },
+ {
+  "id": "ResembleAI/chatterbox",
+  "name": "chatterbox",
+  "creator": "Resemble AI",
+  "card": {
+   "what": "Open-source text-to-speech model by Resemble AI that clones a voice from a short audio sample.",
+   "kind": "text-to-speech",
+   "input": ["text", "speech"],
+   "output": ["speech"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "multilingual",
+   "best_at": ["cloning a voice from a short audio sample", "generating speech in many languages", "generating expressive speech for characters"],
+   "product_uses": ["app that clones a voice for narration", "game that gives NPCs custom voices", "video dubbing tool with voice cloning"],
+   "domains": ["media", "general"],
+   "not_for": ["transcribing speech into text", "open-ended chat", "generating music"]
+  },
+  "official_url": "https://huggingface.co/ResembleAI/chatterbox",
+  "sources": ["https://huggingface.co/ResembleAI/chatterbox"],
+  "notes": ""
+ },
+ {
+  "id": "coqui/XTTS-v2",
+  "name": "XTTS-v2",
+  "creator": "Coqui",
+  "card": {
+   "what": "Multilingual text-to-speech model by Coqui that clones a voice from a short reference audio clip.",
+   "kind": "text-to-speech",
+   "input": ["text", "speech"],
+   "output": ["speech"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "multilingual",
+   "best_at": ["cloning a voice from a short audio sample", "generating speech across many languages", "generating cross-language voiceovers keeping speaker identity"],
+   "product_uses": ["app that generates multilingual voiceovers", "video dubbing tool with voice cloning", "audiobook narration tool with custom voices"],
+   "domains": ["media", "general"],
+   "not_for": ["transcribing speech into text", "open-ended chat", "generating music"]
+  },
+  "official_url": "https://huggingface.co/coqui/XTTS-v2",
+  "sources": ["https://huggingface.co/coqui/XTTS-v2"],
+  "notes": ""
+ }
+]

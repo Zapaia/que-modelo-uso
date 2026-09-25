@@ -1,0 +1,549 @@
+[
+ {
+  "id": "qwen/qwen3.8-27b",
+  "name": "Qwen: Qwen3.8 27B",
+  "creator": "Qwen",
+  "card": {
+   "what": "Vision-language chat model by Qwen that understands images and video and follows open-ended instructions.",
+   "kind": "multimodal LLM",
+   "input": [
+    "text",
+    "image",
+    "video",
+    "code"
+   ],
+   "output": [
+    "text",
+    "code"
+   ],
+   "interaction": "chat and instructions",
+   "access": "open weights and hosted API",
+   "languages": "multilingual",
+   "best_at": [
+    "writing and editing code",
+    "planning and completing multi-step agent tasks",
+    "understanding STEM diagrams and documents",
+    "understanding hour-scale videos"
+   ],
+   "product_uses": [
+    "coding assistant for a terminal or IDE",
+    "agent that browses the web or uses a computer",
+    "app that answers questions about a video",
+    "assistant that reads charts and diagrams"
+   ],
+   "domains": [
+    "general",
+    "software"
+   ],
+   "not_for": [
+    "generating images or video",
+    "producing spoken audio"
+   ]
+  },
+  "official_url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+  "sources": [
+   "https://huggingface.co/Qwen/Qwen3.8-27B",
+   "https://huggingface.co/Qwen/Qwen3.8-27B/raw/main/README.md"
+  ],
+  "notes": ""
+ },
+ {
+  "id": "qwen/qwen3.8-omni-flash",
+  "name": "Qwen: Qwen3.8 Omni Flash",
+  "creator": "Qwen",
+  "card": {
+   "what": "Multimodal model by Alibaba Cloud that understands and answers questions about audio and video content.",
+   "kind": "multimodal LLM",
+   "input": [
+    "text",
+    "image",
+    "audio",
+    "video"
+   ],
+   "output": [
+    "text"
+   ],
+   "interaction": "chat and instructions",
+   "access": "hosted API",
+   "languages": "multilingual",
+   "best_at": [
+    "understanding and describing video content",
+    "analyzing multichannel spatial audio",
+    "answering questions with live web search",
+    "holding tool-calling conversations"
+   ],
+   "product_uses": [
+    "app that summarizes uploaded videos",
+    "assistant that analyzes meeting recordings",
+    "chatbot with built-in web search",
+    "tool that reasons over audio and video together"
+   ],
+   "domains": [
+    "general",
+    "media"
+   ],
+   "not_for": [
+    "generating images, audio or video",
+    "transcribing speech into a written transcript"
+   ]
+  },
+  "official_url": "https://www.alibabacloud.com/help/en/model-studio/qwen3-8-omni-flash",
+  "sources": [
+   "https://www.alibabacloud.com/help/en/model-studio/qwen3-8-omni-flash"
+  ],
+  "notes": ""
+ },
+ {
+  "id": "tencent/hy3",
+  "name": "Tencent: Hy3",
+  "creator": "Tencent",
+  "card": {
+   "what": "Open-weights mixture-of-experts language model by Tencent for coding and long-context agentic work.",
+   "kind": "chat LLM",
+   "input": [
+    "text",
+    "code"
+   ],
+   "output": [
+    "text",
+    "code"
+   ],
+   "interaction": "chat and instructions",
+   "access": "open weights",
+   "languages": "English, Chinese",
+   "best_at": [
+    "writing and debugging code",
+    "handling long-context conversations",
+    "calling tools and functions",
+    "assisting with financial modeling",
+    "supporting frontend design work"
+   ],
+   "product_uses": [
+    "coding assistant for software projects",
+    "agent that automates office workflows",
+    "tool for financial modeling tasks",
+    "assistant for game development tasks"
+   ],
+   "domains": [
+    "general",
+    "software",
+    "finance"
+   ],
+   "not_for": [
+    "generating images, audio or video",
+    "translating speech or audio directly"
+   ]
+  },
+  "official_url": "https://huggingface.co/tencent/Hy3",
+  "sources": [
+   "https://huggingface.co/tencent/Hy3/raw/main/README.md",
+   "https://huggingface.co/tencent/Hy3"
+  ],
+  "notes": ""
+ },
+ {
+  "id": "tencent/hy-mt2-7b",
+  "name": "Tencent: Hy-MT2-7B",
+  "creator": "Tencent",
+  "card": {
+   "what": "Translation model by Tencent Hunyuan that translates text between many languages following custom instructions.",
+   "kind": "translation",
+   "input": [
+    "text"
+   ],
+   "output": [
+    "text"
+   ],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "Chinese, English, Spanish, French, Arabic",
+   "best_at": [
+    "translating text between many languages",
+    "following custom terminology and style instructions",
+    "translating business and domain-specific text",
+    "adapting translations to personal preferences"
+   ],
+   "product_uses": [
+    "translation feature inside a chat or support app",
+    "localization tool for product content",
+    "app that translates documents for business use",
+    "customer support tool for multilingual replies"
+   ],
+   "domains": [
+    "general"
+   ],
+   "not_for": [
+    "open-ended chat unrelated to translation",
+    "generating original text not tied to a source"
+   ]
+  },
+  "official_url": "https://huggingface.co/tencent/Hy-MT2-7B",
+  "sources": [
+   "https://huggingface.co/tencent/Hy-MT2-7B/raw/main/README.md",
+   "https://www.tencentcloud.com/techpedia/144776"
+  ],
+  "notes": ""
+ },
+ {
+  "id": "x-ai/grok-4.7",
+  "name": "SpaceXAI: Grok 4.7",
+  "creator": "SpaceXAI",
+  "card": {
+   "what": "Frontier chat model by SpaceXAI built for coding, agentic tasks and knowledge work.",
+   "kind": "chat LLM",
+   "input": [
+    "text",
+    "image"
+   ],
+   "output": [
+    "text"
+   ],
+   "interaction": "chat and instructions",
+   "access": "hosted API",
+   "languages": "multilingual",
+   "best_at": [
+    "finding and fixing bugs in code",
+    "answering questions with web and social search",
+    "executing code as part of a task",
+    "calling external functions and tools"
+   ],
+   "product_uses": [
+    "coding assistant for software teams",
+    "research agent that searches the web",
+    "chatbot that calls external tools",
+    "app that answers questions about an image"
+   ],
+   "domains": [
+    "general",
+    "software"
+   ],
+   "not_for": [
+    "generating images, audio or video",
+    "transcribing or generating speech"
+   ]
+  },
+  "official_url": "https://docs.x.ai/developers/grok-4-7",
+  "sources": [
+   "https://docs.x.ai/developers/grok-4-7"
+  ],
+  "notes": ""
+ },
+ {
+  "id": "x-ai/grok-build-0.1",
+  "name": "SpaceXAI: Grok Build 0.1",
+  "creator": "SpaceXAI",
+  "card": {
+   "what": "Coding model by SpaceXAI built for agentic software engineering and workflow tasks.",
+   "kind": "coding LLM",
+   "input": [
+    "text",
+    "image",
+    "code"
+   ],
+   "output": [
+    "text",
+    "code"
+   ],
+   "interaction": "chat and instructions",
+   "access": "hosted API",
+   "languages": "English",
+   "best_at": [
+    "writing and editing code",
+    "planning multi-step engineering tasks",
+    "calling functions and tools",
+    "returning structured outputs"
+   ],
+   "product_uses": [
+    "coding agent for a software project",
+    "workflow automation tool for engineering tasks",
+    "assistant that plans and executes coding tasks",
+    "app that reviews code from screenshots"
+   ],
+   "domains": [
+    "software"
+   ],
+   "not_for": [
+    "generating images, audio or video",
+    "open-ended conversation unrelated to code"
+   ]
+  },
+  "official_url": "https://docs.x.ai/developers/models/grok-build-0.1",
+  "sources": [
+   "https://docs.x.ai/developers/models/grok-build-0.1",
+   "https://openrouter.ai/x-ai/grok-build-0.1"
+  ],
+  "notes": ""
+ },
+ {
+  "id": "z-ai/glm-5.3",
+  "name": "Z.ai: GLM 5.3",
+  "creator": "Z.ai",
+  "card": {
+   "what": "Open-weights chat model by Z.ai focused on complex coding and long-horizon agent tasks.",
+   "kind": "coding LLM",
+   "input": [
+    "text",
+    "code"
+   ],
+   "output": [
+    "text",
+    "code"
+   ],
+   "interaction": "chat and instructions",
+   "access": "open weights and hosted API",
+   "languages": "English, Chinese",
+   "best_at": [
+    "solving software engineering problems",
+    "automating tasks with tools",
+    "analyzing repositories in natural language",
+    "discovering security vulnerabilities in code"
+   ],
+   "product_uses": [
+    "autonomous coding agent for a repository",
+    "tool that automates office and workflow tasks",
+    "security tool that reviews code for vulnerabilities",
+    "assistant that explains a codebase"
+   ],
+   "domains": [
+    "software"
+   ],
+   "not_for": [
+    "generating images, audio or video",
+    "open-ended chat unrelated to coding or agent tasks"
+   ]
+  },
+  "official_url": "https://huggingface.co/zai-org/GLM-5.3",
+  "sources": [
+   "https://huggingface.co/zai-org/GLM-5.3/raw/main/README.md",
+   "https://docs.z.ai/guides/llm/glm-5.3"
+  ],
+  "notes": ""
+ },
+ {
+  "id": "z-ai/glm-5.3-flash",
+  "name": "Z.ai: GLM 5.3 Flash",
+  "creator": "Z.ai",
+  "card": {
+   "what": "Natively multimodal chat model by Z.ai that reads text and images and answers in text.",
+   "kind": "multimodal LLM",
+   "input": [
+    "text",
+    "image"
+   ],
+   "output": [
+    "text",
+    "code"
+   ],
+   "interaction": "chat and instructions",
+   "access": "open weights and hosted API",
+   "languages": "English, Chinese",
+   "best_at": [
+    "writing and reviewing code",
+    "automating tasks with external tools",
+    "analyzing repositories in natural language",
+    "answering questions about an image"
+   ],
+   "product_uses": [
+    "coding assistant for a development team",
+    "agent that automates repetitive workflows",
+    "app that answers questions about uploaded images",
+    "assistant that analyzes a codebase"
+   ],
+   "domains": [
+    "software",
+    "general"
+   ],
+   "not_for": [
+    "generating images, audio or video",
+    "transcribing or generating speech"
+   ]
+  },
+  "official_url": "https://huggingface.co/zai-org/GLM-5.3-Flash",
+  "sources": [
+   "https://huggingface.co/zai-org/GLM-5.3-Flash/raw/main/README.md",
+   "https://z.ai/blog/glm-5.3-flash"
+  ],
+  "notes": ""
+ },
+ {
+  "id": "facebook/esmfold_v1",
+  "name": "esmfold_v1",
+  "creator": "Facebook/Meta",
+  "card": {
+   "what": "Protein folding model by Meta AI that predicts a protein's 3D structure from its sequence.",
+   "kind": "biology and protein",
+   "input": [
+    "biological sequence"
+   ],
+   "output": [
+    "3d model"
+   ],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": [
+    "predicting a protein's 3D structure",
+    "folding proteins without a database lookup step",
+    "generating structure predictions quickly"
+   ],
+   "product_uses": [
+    "research tool for structural biology",
+    "app that visualizes a predicted protein structure",
+    "pipeline that screens proteins by predicted shape"
+   ],
+   "domains": [
+    "biology",
+    "science"
+   ],
+   "not_for": [
+    "open-ended chat or answering questions directly",
+    "designing new protein sequences",
+    "predicting interactions between two proteins"
+   ]
+  },
+  "official_url": "https://huggingface.co/facebook/esmfold_v1",
+  "sources": [
+   "https://huggingface.co/facebook/esmfold_v1/raw/main/README.md",
+   "https://huggingface.co/facebook/esmfold_v1"
+  ],
+  "notes": ""
+ },
+ {
+  "id": "ibm-nasa-geospatial/Prithvi-EO-2.0-300M",
+  "name": "Prithvi-EO-2.0-300M",
+  "creator": "IBM and NASA",
+  "card": {
+   "what": "Earth observation foundation model by IBM, NASA and Jülich Supercomputing Centre for satellite imagery.",
+   "kind": "geospatial",
+   "input": [
+    "satellite image"
+   ],
+   "output": [
+    "embedding",
+    "masks"
+   ],
+   "interaction": "base model: needs fine-tuning",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": [
+    "segmenting crops across multiple time periods",
+    "detecting landslides from satellite imagery",
+    "extracting features from satellite image sequences",
+    "predicting carbon flux from land imagery"
+   ],
+   "product_uses": [
+    "crop monitoring tool fine-tuned on satellite imagery",
+    "landslide detection system",
+    "environmental monitoring dashboard",
+    "custom land-cover classification tool"
+   ],
+   "domains": [
+    "geospatial",
+    "science"
+   ],
+   "not_for": [
+    "direct use without fine-tuning on a task",
+    "open-ended chat or text generation",
+    "processing regular photos instead of satellite imagery"
+   ]
+  },
+  "official_url": "https://huggingface.co/ibm-nasa-geospatial/Prithvi-EO-2.0-300M",
+  "sources": [
+   "https://huggingface.co/ibm-nasa-geospatial/Prithvi-EO-2.0-300M/raw/main/README.md",
+   "https://huggingface.co/ibm-nasa-geospatial/Prithvi-EO-2.0-300M"
+  ],
+  "notes": ""
+ },
+ {
+  "id": "ibm-nasa-geospatial/Prithvi-EO-2.0-600M",
+  "name": "Prithvi-EO-2.0-600M",
+  "creator": "IBM and NASA",
+  "card": {
+   "what": "Earth observation foundation model by IBM, NASA and Jülich Supercomputing Centre for satellite imagery.",
+   "kind": "geospatial",
+   "input": [
+    "satellite image"
+   ],
+   "output": [
+    "embedding",
+    "masks"
+   ],
+   "interaction": "base model: needs fine-tuning",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": [
+    "segmenting crops across multiple time periods",
+    "detecting landslides from satellite imagery",
+    "extracting features from satellite image sequences",
+    "predicting carbon flux from land imagery"
+   ],
+   "product_uses": [
+    "crop monitoring tool fine-tuned on satellite imagery",
+    "landslide detection system",
+    "environmental monitoring dashboard",
+    "custom land-cover classification tool"
+   ],
+   "domains": [
+    "geospatial",
+    "science"
+   ],
+   "not_for": [
+    "direct use without fine-tuning on a task",
+    "open-ended chat or text generation",
+    "processing regular photos instead of satellite imagery"
+   ]
+  },
+  "official_url": "https://huggingface.co/ibm-nasa-geospatial/Prithvi-EO-2.0-600M",
+  "sources": [
+   "https://huggingface.co/ibm-nasa-geospatial/Prithvi-EO-2.0-600M/raw/main/README.md",
+   "https://huggingface.co/ibm-nasa-geospatial/Prithvi-EO-2.0-600M"
+  ],
+  "notes": ""
+ },
+ {
+  "id": "microsoft/aurora",
+  "name": "aurora",
+  "creator": "Microsoft",
+  "card": {
+   "what": "Foundation model by Microsoft that predicts atmospheric and ocean variables for environmental forecasting.",
+   "kind": "geospatial",
+   "input": [
+    "satellite image",
+    "time series"
+   ],
+   "output": [
+    "time series"
+   ],
+   "interaction": "base model: needs fine-tuning",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": [
+    "forecasting weather variables like temperature and wind",
+    "predicting air pollution levels",
+    "forecasting ocean wave conditions",
+    "tracking tropical cyclones"
+   ],
+   "product_uses": [
+    "weather forecasting tool fine-tuned for a region",
+    "air quality dashboard",
+    "ocean wave forecasting app",
+    "cyclone tracking system"
+   ],
+   "domains": [
+    "science",
+    "geospatial"
+   ],
+   "not_for": [
+    "direct operational decisions without expert review",
+    "tasks unrelated to environmental prediction",
+    "open-ended chat or text generation"
+   ]
+  },
+  "official_url": "https://huggingface.co/microsoft/aurora",
+  "sources": [
+   "https://huggingface.co/microsoft/aurora",
+   "https://github.com/microsoft/aurora"
+  ],
+  "notes": ""
+ }
+]

@@ -1,0 +1,502 @@
+[
+ {
+  "id": "zai-org/GLM-OCR",
+  "name": "GLM-OCR",
+  "creator": "zai-org",
+  "card": {
+   "what": "Multimodal document OCR model by Z.ai that extracts text, tables and formulas from documents.",
+   "kind": "OCR and documents",
+   "input": [
+    "image",
+    "document"
+   ],
+   "output": [
+    "text"
+   ],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "multilingual",
+   "best_at": [
+    "extracting text from scanned pages and PDFs",
+    "recognizing tables and formulas in documents",
+    "converting document images into structured data"
+   ],
+   "product_uses": [
+    "app for digitizing scanned contracts",
+    "tool that extracts tables from PDF reports",
+    "pipeline that turns forms into structured JSON"
+   ],
+   "domains": [
+    "general",
+    "software"
+   ],
+   "not_for": [
+    "open-ended chat or conversation",
+    "generating or editing images"
+   ]
+  },
+  "official_url": "https://huggingface.co/zai-org/GLM-OCR",
+  "sources": [
+   "https://huggingface.co/zai-org/GLM-OCR"
+  ],
+  "notes": ""
+ },
+ {
+  "id": "PaddlePaddle/PP-DocLayoutV3_safetensors",
+  "name": "PP-DocLayoutV3_safetensors",
+  "creator": "PaddlePaddle",
+  "card": {
+   "what": "Document layout detection model by PaddlePaddle that locates and orders regions in document images.",
+   "kind": "object detection",
+   "input": [
+    "document",
+    "image"
+   ],
+   "output": [
+    "boxes",
+    "labels"
+   ],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "multilingual",
+   "best_at": [
+    "detecting layout regions in scanned documents",
+    "finding reading order in skewed or curved pages",
+    "preprocessing documents before OCR"
+   ],
+   "product_uses": [
+    "app that splits a scanned page into sections",
+    "pipeline that preprocesses documents for an OCR system",
+    "tool for parsing photographed pages into structured layout"
+   ],
+   "domains": [
+    "general",
+    "software"
+   ],
+   "not_for": [
+    "reading or transcribing the actual text",
+    "open-ended chat or conversation"
+   ]
+  },
+  "official_url": "https://huggingface.co/PaddlePaddle/PP-DocLayoutV3_safetensors",
+  "sources": [
+   "https://huggingface.co/PaddlePaddle/PP-DocLayoutV3_safetensors"
+  ],
+  "notes": ""
+ },
+ {
+  "id": "PekingU/rtdetr_r101vd_coco_o365",
+  "name": "rtdetr_r101vd_coco_o365",
+  "creator": "PekingU",
+  "card": {
+   "what": "Real-time transformer-based object detector trained on COCO and Objects365 image datasets.",
+   "kind": "object detection",
+   "input": [
+    "image"
+   ],
+   "output": [
+    "boxes",
+    "labels"
+   ],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": [
+    "detecting common objects in photos in real time",
+    "localizing multiple object categories in an image",
+    "supporting live video object detection"
+   ],
+   "product_uses": [
+    "app that flags objects in security camera feeds",
+    "tool that counts products on a shelf photo",
+    "real-time detection feature for a mobile camera app"
+   ],
+   "domains": [
+    "general"
+   ],
+   "not_for": [
+    "classifying an entire image with one label",
+    "describing an image in text",
+    "open-ended chat or conversation"
+   ]
+  },
+  "official_url": "https://huggingface.co/PekingU/rtdetr_r101vd_coco_o365",
+  "sources": [
+   "https://huggingface.co/PekingU/rtdetr_r101vd_coco_o365"
+  ],
+  "notes": ""
+ },
+ {
+  "id": "Yifeng-Liu/rt-detr-finetuned-for-satellite-image-roofs-detection",
+  "name": "rt-detr-finetuned-for-satellite-image-roofs-detection",
+  "creator": "Yifeng-Liu",
+  "card": {
+   "what": "RT-DETR model fine-tuned to detect building roofs in satellite and aerial imagery.",
+   "kind": "geospatial",
+   "input": [
+    "satellite image"
+   ],
+   "output": [
+    "boxes",
+    "labels"
+   ],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": [
+    "detecting roofs in satellite or aerial photos",
+    "mapping building footprints from remote sensing images",
+    "annotating urban structures at scale"
+   ],
+   "product_uses": [
+    "app that maps rooftops for solar panel planning",
+    "tool that automates urban building inventories",
+    "pipeline that analyzes satellite images for city planning"
+   ],
+   "domains": [
+    "geospatial"
+   ],
+   "not_for": [
+    "detecting objects other than roofs",
+    "classifying non-satellite photos",
+    "open-ended chat or conversation"
+   ]
+  },
+  "official_url": "https://huggingface.co/Yifeng-Liu/rt-detr-finetuned-for-satellite-image-roofs-detection",
+  "sources": [
+   "https://huggingface.co/Yifeng-Liu/rt-detr-finetuned-for-satellite-image-roofs-detection"
+  ],
+  "notes": ""
+ },
+ {
+  "id": "hustvl/yolos-small",
+  "name": "yolos-small",
+  "creator": "hustvl",
+  "card": {
+   "what": "Vision Transformer fine-tuned for object detection on COCO images by HUST Vision Lab.",
+   "kind": "object detection",
+   "input": [
+    "image"
+   ],
+   "output": [
+    "boxes",
+    "labels"
+   ],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": [
+    "detecting common objects in photos",
+    "localizing objects with bounding boxes",
+    "labeling objects with COCO categories"
+   ],
+   "product_uses": [
+    "app that detects objects in uploaded photos",
+    "tool for automated photo tagging",
+    "prototype for a visual inventory scanner"
+   ],
+   "domains": [
+    "general"
+   ],
+   "not_for": [
+    "classifying an entire image with one label",
+    "describing an image in text",
+    "open-ended chat or conversation"
+   ]
+  },
+  "official_url": "https://huggingface.co/hustvl/yolos-small",
+  "sources": [
+   "https://huggingface.co/hustvl/yolos-small"
+  ],
+  "notes": ""
+ },
+ {
+  "id": "microsoft/table-transformer-structure-recognition",
+  "name": "table-transformer-structure-recognition",
+  "creator": "microsoft",
+  "card": {
+   "what": "DETR-based model by Microsoft that recognizes the internal row and column structure of tables.",
+   "kind": "object detection",
+   "input": [
+    "document",
+    "image"
+   ],
+   "output": [
+    "boxes",
+    "labels"
+   ],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": [
+    "identifying rows and columns inside a table image",
+    "recovering table structure from a document scan",
+    "preparing a table image for data extraction"
+   ],
+   "product_uses": [
+    "tool that converts a scanned table into a spreadsheet",
+    "pipeline that extracts tabular data from PDF reports",
+    "app that reconstructs table structure from photos"
+   ],
+   "domains": [
+    "general",
+    "software"
+   ],
+   "not_for": [
+    "finding where a table is on the page",
+    "reading the text inside table cells",
+    "open-ended chat or conversation"
+   ]
+  },
+  "official_url": "https://huggingface.co/microsoft/table-transformer-structure-recognition",
+  "sources": [
+   "https://huggingface.co/microsoft/table-transformer-structure-recognition"
+  ],
+  "notes": ""
+ },
+ {
+  "id": "microsoft/table-transformer-detection",
+  "name": "table-transformer-detection",
+  "creator": "microsoft",
+  "card": {
+   "what": "DETR-based model by Microsoft that detects the location of tables within document images.",
+   "kind": "object detection",
+   "input": [
+    "document",
+    "image"
+   ],
+   "output": [
+    "boxes",
+    "labels"
+   ],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": [
+    "finding tables on a scanned document page",
+    "locating table regions inside a PDF page image",
+    "preprocessing documents before table extraction"
+   ],
+   "product_uses": [
+    "pipeline that locates tables before extracting their data",
+    "tool that flags pages containing tables in a document set",
+    "app that crops tables out of scanned reports"
+   ],
+   "domains": [
+    "general",
+    "software"
+   ],
+   "not_for": [
+    "reading the rows and columns inside a table",
+    "reading the text inside table cells",
+    "open-ended chat or conversation"
+   ]
+  },
+  "official_url": "https://huggingface.co/microsoft/table-transformer-detection",
+  "sources": [
+   "https://huggingface.co/microsoft/table-transformer-detection"
+  ],
+  "notes": ""
+ },
+ {
+  "id": "BAAI/bge-m3",
+  "name": "bge-m3",
+  "creator": "BAAI",
+  "card": {
+   "what": "Multilingual text embedding model by BAAI that supports dense, sparse and multi-vector retrieval.",
+   "kind": "text embedding",
+   "input": [
+    "text"
+   ],
+   "output": [
+    "embedding"
+   ],
+   "interaction": "embedding model",
+   "access": "open weights",
+   "languages": "multilingual",
+   "best_at": [
+    "embedding long documents for semantic search",
+    "powering multilingual retrieval systems",
+    "supporting retrieval-augmented generation pipelines"
+   ],
+   "product_uses": [
+    "semantic search engine for a multilingual knowledge base",
+    "RAG chatbot backend",
+    "document similarity and clustering tool"
+   ],
+   "domains": [
+    "general"
+   ],
+   "not_for": [
+    "open-ended chat or answering questions directly",
+    "generating text"
+   ]
+  },
+  "official_url": "https://huggingface.co/BAAI/bge-m3",
+  "sources": [
+   "https://huggingface.co/BAAI/bge-m3"
+  ],
+  "notes": ""
+ },
+ {
+  "id": "Stern5497/sbert-legal-xlm-roberta-base",
+  "name": "sbert-legal-xlm-roberta-base",
+  "creator": "Stern5497",
+  "card": {
+   "what": "Sentence embedding model fine-tuned on legal text for semantic similarity and search.",
+   "kind": "text embedding",
+   "input": [
+    "text"
+   ],
+   "output": [
+    "embedding"
+   ],
+   "interaction": "embedding model",
+   "access": "open weights",
+   "languages": "multilingual",
+   "best_at": [
+    "embedding legal sentences and paragraphs",
+    "finding similar legal clauses or rulings",
+    "clustering legal documents by topic"
+   ],
+   "product_uses": [
+    "semantic search tool for legal case law",
+    "app that clusters contracts by similarity",
+    "search backend for a legal research platform"
+   ],
+   "domains": [
+    "legal"
+   ],
+   "not_for": [
+    "open-ended chat or answering questions directly",
+    "generating text"
+   ]
+  },
+  "official_url": "https://huggingface.co/Stern5497/sbert-legal-xlm-roberta-base",
+  "sources": [
+   "https://huggingface.co/Stern5497/sbert-legal-xlm-roberta-base"
+  ],
+  "notes": ""
+ },
+ {
+  "id": "intfloat/multilingual-e5-small",
+  "name": "multilingual-e5-small",
+  "creator": "intfloat",
+  "card": {
+   "what": "Small multilingual text embedding model by intfloat for retrieval and semantic search.",
+   "kind": "text embedding",
+   "input": [
+    "text"
+   ],
+   "output": [
+    "embedding"
+   ],
+   "interaction": "embedding model",
+   "access": "open weights",
+   "languages": "multilingual",
+   "best_at": [
+    "embedding queries and passages for search",
+    "powering cross-lingual document retrieval",
+    "clustering or classifying text by similarity"
+   ],
+   "product_uses": [
+    "lightweight semantic search for a multilingual app",
+    "cross-language document matching tool",
+    "retrieval backend for a low-resource RAG system"
+   ],
+   "domains": [
+    "general"
+   ],
+   "not_for": [
+    "open-ended chat or answering questions directly",
+    "generating text"
+   ]
+  },
+  "official_url": "https://huggingface.co/intfloat/multilingual-e5-small",
+  "sources": [
+   "https://huggingface.co/intfloat/multilingual-e5-small/raw/main/README.md"
+  ],
+  "notes": ""
+ },
+ {
+  "id": "nomic-ai/nomic-embed-text-v1.5",
+  "name": "nomic-embed-text-v1.5",
+  "creator": "nomic-ai",
+  "card": {
+   "what": "Text embedding model by Nomic AI with adjustable vector size for search and retrieval.",
+   "kind": "text embedding",
+   "input": [
+    "text"
+   ],
+   "output": [
+    "embedding"
+   ],
+   "interaction": "embedding model",
+   "access": "open weights and hosted API",
+   "languages": "English",
+   "best_at": [
+    "embedding documents for retrieval-augmented generation",
+    "powering semantic search over long documents",
+    "clustering and deduplicating text"
+   ],
+   "product_uses": [
+    "RAG chatbot backend",
+    "semantic search engine for internal documents",
+    "tool that deduplicates similar text entries"
+   ],
+   "domains": [
+    "general"
+   ],
+   "not_for": [
+    "open-ended chat or answering questions directly",
+    "generating text"
+   ]
+  },
+  "official_url": "https://huggingface.co/nomic-ai/nomic-embed-text-v1.5",
+  "sources": [
+   "https://huggingface.co/nomic-ai/nomic-embed-text-v1.5"
+  ],
+  "notes": ""
+ },
+ {
+  "id": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "name": "paraphrase-multilingual-MiniLM-L12-v2",
+  "creator": "sentence-transformers",
+  "card": {
+   "what": "Multilingual sentence embedding model for semantic search, clustering and paraphrase detection.",
+   "kind": "text embedding",
+   "input": [
+    "text"
+   ],
+   "output": [
+    "embedding"
+   ],
+   "interaction": "embedding model",
+   "access": "open weights",
+   "languages": "multilingual",
+   "best_at": [
+    "embedding sentences for semantic search",
+    "detecting paraphrases across languages",
+    "clustering short multilingual texts"
+   ],
+   "product_uses": [
+    "semantic search tool for a multilingual FAQ",
+    "app that detects duplicate or paraphrased content",
+    "clustering feature for customer feedback in many languages"
+   ],
+   "domains": [
+    "general"
+   ],
+   "not_for": [
+    "open-ended chat or answering questions directly",
+    "generating text",
+    "embedding very long documents (short sentences only)"
+   ]
+  },
+  "official_url": "https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "sources": [
+   "https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+  ],
+  "notes": ""
+ }
+]

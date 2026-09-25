@@ -1,0 +1,156 @@
+[
+ {
+  "id": "google-t5/t5-small",
+  "name": "t5-small",
+  "creator": "google-t5",
+  "layer": 2,
+  "hf_task": "translation",
+  "license": "apache-2.0",
+  "known_sources": [
+   "https://huggingface.co/google-t5/t5-small",
+   "https://huggingface.co/google-t5/t5-small/blob/main/README.md"
+  ],
+  "old_description_hint": "T5 Small encoder-decoder by Google (60M parameters). Best at: machine translation, summarization, question answering, text classification via unified text-to-text format. Languages: English, French, Romanian, German. Typical uses: translation between multiple languages, document summarization, QA systems, paraphrase generation. Not suited for: image understanding, specialized domain tasks, very long documents."
+ },
+ {
+  "id": "openai/whisper-large-v3",
+  "name": "whisper-large-v3",
+  "creator": "openai",
+  "layer": 2,
+  "hf_task": "automatic-speech-recognition",
+  "license": "apache-2.0",
+  "known_sources": [
+   "https://huggingface.co/openai/whisper-large-v3",
+   "https://huggingface.co/openai/whisper-large-v3/blob/main/README.md"
+  ],
+  "old_description_hint": "Whisper large-v3 by OpenAI for automatic speech recognition and translation, trained on 5M+ hours of multilingual audio. Best at: Multilingual speech transcription, speech translation to English across 99+ languages. Typical uses: Podcast transcription, documentary captioning, content localization. Not suited for: Real-time low-latency requirements, embedded/mobile-only deployments."
+ },
+ {
+  "id": "facebook/bart-large-mnli",
+  "name": "bart-large-mnli",
+  "creator": "facebook",
+  "layer": 2,
+  "hf_task": "zero-shot-classification",
+  "license": "mit",
+  "known_sources": [
+   "https://huggingface.co/facebook/bart-large-mnli/blob/main/README.md",
+   "https://huggingface.co/facebook/bart-large-mnli"
+  ],
+  "old_description_hint": "BART-large model trained on MultiNLI for zero-shot text classification. Best at: Classifying sequences into arbitrary categories without task-specific fine-tuning. Domains: General NLP, content classification. Typical uses: Topic assignment, content categorization, intent detection. Not suited for: Scenarios requiring in-domain accuracy, tasks needing labeled training data, dense prediction tasks."
+ },
+ {
+  "id": "sentence-transformers/all-MiniLM-L6-v2",
+  "name": "all-MiniLM-L6-v2",
+  "creator": "sentence-transformers",
+  "layer": 2,
+  "hf_task": "sentence-similarity",
+  "license": "apache-2.0",
+  "known_sources": [
+   "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/blob/main/README.md",
+   "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2"
+  ],
+  "old_description_hint": "Sentence embedding model producing 384-dimensional dense vectors trained on 1 billion sentence pairs. Best at: semantic search, text clustering, and similarity detection. Domains: information retrieval, NLP. Typical uses: semantic document search, clustering similar texts, paraphrase detection. Not suited for: multilingual tasks (English-optimized), very long documents."
+ },
+ {
+  "id": "anthropic/claude-haiku-4.5",
+  "name": "Anthropic: Claude Haiku 4.5",
+  "creator": "anthropic",
+  "layer": 1,
+  "hf_task": null,
+  "license": null,
+  "known_sources": [
+   "https://www.anthropic.com/news/claude-haiku-4-5"
+  ],
+  "old_description_hint": "Anthropic's fastest, most efficient model delivering near-frontier coding quality at fraction of cost. Best at: real-time applications, low-latency chat, customer service, pair programming, rapid assistance. Domains: customer support, real-time assistance, multi-agent orchestration, edge deployment. Typical uses: responsive chatbots, live customer assistance, agent coordination, rapid prototyping. Not suited for: complex reasoning or deep analysis requiring extensive processing."
+ },
+ {
+  "id": "openai/gpt-6-luna",
+  "name": "OpenAI: GPT-6 Luna",
+  "creator": "openai",
+  "layer": 1,
+  "hf_task": null,
+  "license": null,
+  "known_sources": [
+   "https://developers.openai.com/api/docs/guides/latest-model",
+   "https://openai.com/index/introducing-gpt-6-sol-and-luna/"
+  ],
+  "old_description_hint": "OpenAI's fast, cost-efficient model optimized for high-volume, straightforward tasks. Best at: classification, lightweight agentic work, straightforward tasks at scale. Domains: content processing, customer support, data extraction, text analysis. Typical uses: chatbots, content filtering, routine automation, high-throughput processing. Not suited for: complex reasoning, novel problem-solving, or multi-step workflows requiring deep analysis."
+ },
+ {
+  "id": "google/gemini-3-pro-image",
+  "name": "Google: Nano Banana Pro (Gemini 3 Pro Image)",
+  "creator": "google",
+  "layer": 1,
+  "hf_task": null,
+  "license": null,
+  "known_sources": [
+   "https://ai.google.dev/gemini-api/docs/models/gemini-3-pro-image"
+  ],
+  "old_description_hint": "Google's professional image generation and editing model for complex creative visual tasks. Best at: high-fidelity product mockups, professional graphic design, precise text rendering, consistent character generation across variations. Domains: design, marketing, product development, content creation. Typical uses: product mockups, brand asset creation, visual marketing content, professional design work. Not suited for: audio generation, cost-sensitive applications, or real-time generation requirements."
+ },
+ {
+  "id": "mistralai/codestral-2508",
+  "name": "Mistral: Codestral 2508",
+  "creator": "mistralai",
+  "layer": 1,
+  "hf_task": null,
+  "license": null,
+  "known_sources": [
+   "https://docs.mistral.ai/models/model-cards/codestral-25-08",
+   "https://mistral.ai/news/codestral-25-08/"
+  ],
+  "old_description_hint": "A code-specialized model from Mistral AI with 128k context supporting 80+ programming languages. Best at: fill-in-the-middle code completion, low-latency code generation, test generation. Domains: software development, code editors. Typical uses: real-time code completion, code correction, IDE integration via Mistral Code plugin. Not suited for: general-purpose reasoning, long-horizon planning."
+ },
+ {
+  "id": "stabilityai/stable-diffusion-xl-base-1.0",
+  "name": "stable-diffusion-xl-base-1.0",
+  "creator": "stabilityai",
+  "layer": 2,
+  "hf_task": "text-to-image",
+  "license": "openrail++",
+  "known_sources": [
+   "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0",
+   "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/blob/main/README.md"
+  ],
+  "old_description_hint": "SDXL base model for text-to-image generation by Stability AI. Ensemble-of-experts pipeline with optional refinement. Best at: photorealistic image synthesis from text prompts at various resolutions. Typical uses: creative design, prototyping, content generation. Not suited for: consistent character generation, precise text rendering."
+ },
+ {
+  "id": "microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract",
+  "name": "BiomedNLP-BiomedBERT-base-uncased-abstract",
+  "creator": "microsoft",
+  "layer": 2,
+  "hf_task": "fill-mask",
+  "license": "mit",
+  "known_sources": [
+   "https://huggingface.co/microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract/blob/main/README.md",
+   "https://huggingface.co/microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract"
+  ],
+  "old_description_hint": "BERT pre-trained from scratch on PubMed abstracts for biomedical NLP tasks. Best at: Understanding biomedical concepts and relationships in research abstracts. Domains: Biomedical research, medical literature, life sciences. Typical uses: Named entity recognition in abstracts, article classification, biomedical information extraction. Not suited for: Full-text biomedical analysis, general-domain NLP, non-English content."
+ },
+ {
+  "id": "amazon/chronos-2",
+  "name": "chronos-2",
+  "creator": "amazon",
+  "layer": 2,
+  "hf_task": "time-series-forecasting",
+  "license": "apache-2.0",
+  "known_sources": [
+   "https://huggingface.co/amazon/chronos-2/blob/main/README.md",
+   "https://huggingface.co/amazon/chronos-2"
+  ],
+  "old_description_hint": "Amazon's 120M-parameter encoder-only time series foundation model for zero-shot forecasting. Best at: Univariate, multivariate, and covariate-informed quantile forecasting. Domains: Time series forecasting, business analytics, industrial applications. Typical uses: Electricity demand prediction, financial series forecasting, sensor data prediction. Not suited for: Non-temporal data, real-time streaming, classification tasks."
+ },
+ {
+  "id": "stanford-crfm/BioMedLM",
+  "name": "BioMedLM",
+  "creator": "stanford-crfm",
+  "layer": 2,
+  "hf_task": "text-generation",
+  "license": "bigscience-bloom-rail-1.0",
+  "known_sources": [
+   "https://huggingface.co/stanford-crfm/BioMedLM/blob/main/README.md",
+   "https://huggingface.co/stanford-crfm/BioMedLM"
+  ],
+  "old_description_hint": "Stanford CRFM and MosaicML's 2.7B GPT-style language model trained exclusively on biomedical abstracts and papers. Best at: biomedical question answering and domain-specific language understanding. Domains: biomedical research, clinical informatics. Typical uses: biomedical QA systems, literature summarization, domain-specific fine-tuning. Not suited for: general-purpose text generation; not recommended for production NLG in medical contexts."
+ }
+]

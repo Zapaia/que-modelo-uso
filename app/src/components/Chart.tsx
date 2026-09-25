@@ -13,8 +13,16 @@ export interface Rect { x0: number; x1: number; y0: number; y1: number }
 
 /* El mismo gráfico en dos tamaños. En chico vive debajo de la fila; agrandado, al centro.
    Dentro de la caja, el área de datos deja margen para los números de los ejes. */
-export const SMALL: Rect = { x0: 0.4, x1: 0.6, y0: 0.585, y1: 0.745 };
-export const BIG: Rect = { x0: 0.22, x1: 0.7, y0: 0.3, y1: 0.76 };
+/** Celular (mismo corte que el montón): el gráfico agrandado entra en modo foco, con el
+ *  resto de la interfaz escondida, y los sin benchmark van debajo en vez de al costado. */
+export const COMPACT = window.matchMedia('(max-width: 640px)').matches;
+// En el celular la vista previa se estira a lo ancho: sin títulos de eje ni leyenda, entra.
+export const SMALL: Rect = COMPACT
+  ? { x0: 0.08, x1: 0.92, y0: 0.575, y1: 0.745 }
+  : { x0: 0.4, x1: 0.6, y0: 0.585, y1: 0.745 };
+export const BIG: Rect = COMPACT
+  ? { x0: 0.08, x1: 0.95, y0: 0.1, y1: 0.6 }
+  : { x0: 0.22, x1: 0.7, y0: 0.3, y1: 0.76 };
 const PAD = { l: 0.1, r: 0.03, t: 0.05, b: 0.12 }; // fracciones de la caja
 
 const inner = (r: Rect) => {
@@ -43,8 +51,13 @@ export function frontier(models: Model[]) {
 
 /** Lugar de cada modelo sin benchmark en el margen del gráfico grande. La columna de
  *  nombres HTML del margen usa el mismo paso vertical. */
-export const MARGIN = { fx: BIG.x1 + 0.035, fy0: BIG.y0 + 0.14, step: 0.062 };
-export const marginPos = (k: number) => ({ fx: MARGIN.fx, fy: MARGIN.fy0 + k * MARGIN.step });
+export const MARGIN = COMPACT
+  ? { fx: 0.1, fy0: BIG.y1 + 0.2, step: 0.05 }
+  : { fx: BIG.x1 + 0.035, fy0: BIG.y0 + 0.14, step: 0.062 };
+// En el celular, dos columnas debajo del gráfico; en escritorio, una columna al margen.
+export const marginPos = (k: number) => COMPACT
+  ? { fx: MARGIN.fx + (k % 2) * 0.46, fy: MARGIN.fy0 + Math.floor(k / 2) * MARGIN.step }
+  : { fx: MARGIN.fx, fy: MARGIN.fy0 + k * MARGIN.step };
 
 const priceLabel = (p: number) => (p < 1 ? p.toString().replace('.', ',') : String(p));
 const num = (n: number) => n.toLocaleString('es-AR', { maximumFractionDigits: n < 1 ? 2 : 1 });
@@ -128,7 +141,7 @@ export function CostChart({ models, loose, best, expanded, onToggle, hovered, on
         {models.map((m) => {
           const p = chartPos(m, r);
           return (
-            <li key={m.id} className={[best.has(m.id) && 'mejor', hovered === m.id && 'marcado'].filter(Boolean).join(' ')} style={{ left: `${lx(p.fx)}%`, top: `${ly(p.fy)}%` }}>
+            <li key={m.id} className={[best.has(m.id) && 'mejor', hovered === m.id && 'marcado', p.fx > 0.7 && 'derecha'].filter(Boolean).join(' ')} style={{ left: `${lx(p.fx)}%`, top: `${ly(p.fy)}%` }}>
               <a href={m.url} target="_blank" rel="noopener" title={m.name} aria-label={`${m.name}: calidad ${m.quality}, USD ${m.price} por millón de tokens`}
                 onMouseEnter={() => onHover(m.id)} onMouseLeave={() => onHover(null)} onFocus={() => onHover(m.id)} onBlur={() => onHover(null)}>
                 {m.logo ? <img src={m.logo} alt="" /> : <span className="sin-logo" />}
@@ -142,14 +155,14 @@ export function CostChart({ models, loose, best, expanded, onToggle, hovered, on
       {/* Margen: los sin benchmark, al costado del plano, como una nota al margen de la hoja. */}
       {expanded && loose.length > 0 && (
         <>
-          <div className="margen-regla" style={{ left: `${lx(MARGIN.fx - 0.022)}%`, top: `${ly(MARGIN.fy0 - 0.1)}%`, height: `${((loose.length * MARGIN.step + 0.06) / (r.y1 - r.y0)) * 100}%` }} />
-          <p className="margen-titulo" style={{ left: `${lx(MARGIN.fx - 0.014)}%`, top: `${ly(MARGIN.fy0 - 0.1)}%` }}>
+          {!COMPACT && <div className="margen-regla" style={{ left: `${lx(MARGIN.fx - 0.022)}%`, top: `${ly(MARGIN.fy0 - 0.1)}%`, height: `${((loose.length * MARGIN.step + 0.06) / (r.y1 - r.y0)) * 100}%` }} />}
+          <p className="margen-titulo" style={{ left: `${lx(MARGIN.fx - 0.014)}%`, top: `${ly(MARGIN.fy0 - (COMPACT ? 0.085 : 0.1))}%` }}>
             Sin benchmark público
             <span>Jev los recomienda; no hay costo ni calidad medidos.</span>
           </p>
           <ol className="margen" aria-label="Modelos sin benchmark público">
             {loose.map((m, k) => (
-              <li key={m.id} style={{ left: `${lx(MARGIN.fx + 0.022)}%`, top: `${ly(marginPos(k).fy)}%` }}>
+              <li key={m.id} style={{ left: `${lx(marginPos(k).fx + 0.03)}%`, top: `${ly(marginPos(k).fy)}%` }}>
                 <a href={m.url} target="_blank" rel="noopener" title={m.name}>{shortName(m)}</a>
               </li>
             ))}

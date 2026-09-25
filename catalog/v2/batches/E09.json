@@ -1,0 +1,146 @@
+[
+ {
+  "id": "zai-org/GLM-OCR",
+  "name": "GLM-OCR",
+  "creator": "zai-org",
+  "layer": 2,
+  "hf_task": "image-to-text",
+  "license": "mit",
+  "known_sources": [
+   "https://huggingface.co/zai-org/GLM-OCR/blob/main/README.md",
+   "https://huggingface.co/zai-org/GLM-OCR"
+  ]
+ },
+ {
+  "id": "PaddlePaddle/PP-DocLayoutV3_safetensors",
+  "name": "PP-DocLayoutV3_safetensors",
+  "creator": "PaddlePaddle",
+  "layer": 2,
+  "hf_task": "object-detection",
+  "license": "apache-2.0",
+  "known_sources": [
+   "https://huggingface.co/PaddlePaddle/PP-DocLayoutV3_safetensors/blob/main/README.md",
+   "https://huggingface.co/PaddlePaddle/PP-DocLayoutV3_safetensors"
+  ]
+ },
+ {
+  "id": "PekingU/rtdetr_r101vd_coco_o365",
+  "name": "rtdetr_r101vd_coco_o365",
+  "creator": "PekingU",
+  "layer": 2,
+  "hf_task": "object-detection",
+  "license": "apache-2.0",
+  "known_sources": [
+   "https://huggingface.co/PekingU/rtdetr_r101vd_coco_o365/blob/main/README.md",
+   "https://huggingface.co/PekingU/rtdetr_r101vd_coco_o365"
+  ]
+ },
+ {
+  "id": "Yifeng-Liu/rt-detr-finetuned-for-satellite-image-roofs-detection",
+  "name": "rt-detr-finetuned-for-satellite-image-roofs-detection",
+  "creator": "Yifeng-Liu",
+  "layer": 2,
+  "hf_task": "object-detection",
+  "license": "mit",
+  "known_sources": [
+   "https://huggingface.co/Yifeng-Liu/rt-detr-finetuned-for-satellite-image-roofs-detection/blob/main/README.md",
+   "https://huggingface.co/Yifeng-Liu/rt-detr-finetuned-for-satellite-image-roofs-detection"
+  ]
+ },
+ {
+  "id": "hustvl/yolos-small",
+  "name": "yolos-small",
+  "creator": "hustvl",
+  "layer": 2,
+  "hf_task": "object-detection",
+  "license": "apache-2.0",
+  "known_sources": [
+   "https://huggingface.co/hustvl/yolos-small",
+   "https://huggingface.co/hustvl/yolos-small/blob/main/README.md"
+  ]
+ },
+ {
+  "id": "microsoft/table-transformer-structure-recognition",
+  "name": "table-transformer-structure-recognition",
+  "creator": "microsoft",
+  "layer": 2,
+  "hf_task": "object-detection",
+  "license": "mit",
+  "known_sources": [
+   "https://huggingface.co/microsoft/table-transformer-structure-recognition/blob/main/README.md",
+   "https://huggingface.co/microsoft/table-transformer-structure-recognition"
+  ]
+ },
+ {
+  "id": "microsoft/table-transformer-detection",
+  "name": "table-transformer-detection",
+  "creator": "microsoft",
+  "layer": 2,
+  "hf_task": "object-detection",
+  "license": "mit",
+  "known_sources": [
+   "https://huggingface.co/microsoft/table-transformer-detection",
+   "https://huggingface.co/microsoft/table-transformer-detection/blob/main/README.md"
+  ]
+ },
+ {
+  "id": "BAAI/bge-m3",
+  "name": "bge-m3",
+  "creator": "BAAI",
+  "layer": 2,
+  "hf_task": "sentence-similarity",
+  "license": "mit",
+  "known_sources": [
+   "https://huggingface.co/BAAI/bge-m3",
+   "https://huggingface.co/BAAI/bge-m3/blob/main/README.md"
+  ]
+ },
+ {
+  "id": "Stern5497/sbert-legal-xlm-roberta-base",
+  "name": "sbert-legal-xlm-roberta-base",
+  "creator": "Stern5497",
+  "layer": 2,
+  "hf_task": "sentence-similarity",
+  "license": null,
+  "known_sources": [
+   "https://huggingface.co/Stern5497/sbert-legal-xlm-roberta-base",
+   "https://huggingface.co/Stern5497/sbert-legal-xlm-roberta-base/blob/main/README.md"
+  ]
+ },
+ {
+  "id": "intfloat/multilingual-e5-small",
+  "name": "multilingual-e5-small",
+  "creator": "intfloat",
+  "layer": 2,
+  "hf_task": "sentence-similarity",
+  "license": "mit",
+  "known_sources": [
+   "https://huggingface.co/intfloat/multilingual-e5-small",
+   "https://huggingface.co/intfloat/multilingual-e5-small/blob/main/README.md"
+  ]
+ },
+ {
+  "id": "nomic-ai/nomic-embed-text-v1.5",
+  "name": "nomic-embed-text-v1.5",
+  "creator": "nomic-ai",
+  "layer": 2,
+  "hf_task": "sentence-similarity",
+  "license": "apache-2.0",
+  "known_sources": [
+   "https://huggingface.co/nomic-ai/nomic-embed-text-v1.5",
+   "https://huggingface.co/nomic-ai/nomic-embed-text-v1.5/blob/main/README.md"
+  ]
+ },
+ {
+  "id": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "name": "paraphrase-multilingual-MiniLM-L12-v2",
+  "creator": "sentence-transformers",
+  "layer": 2,
+  "hf_task": "sentence-similarity",
+  "license": "apache-2.0",
+  "known_sources": [
+   "https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/blob/main/README.md",
+   "https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+  ]
+ }
+]

@@ -1,0 +1,435 @@
+[
+ {
+  "id": "openai/text-embedding-3-large",
+  "layer": 3,
+  "name": "text-embedding-3-large",
+  "creator": "OpenAI",
+  "creator_slug": "openai",
+  "hf_org": "openai",
+  "card": {
+   "what": "Text embedding API model by OpenAI that turns text into vectors for search and similarity tasks.",
+   "kind": "text embedding",
+   "input": [
+    "text"
+   ],
+   "output": [
+    "embedding"
+   ],
+   "interaction": "embedding model",
+   "access": "hosted API",
+   "languages": "multilingual",
+   "best_at": [
+    "finding semantically similar documents for search",
+    "grouping related text into clusters",
+    "powering recommendation systems from text similarity",
+    "detecting outlier or anomalous text records"
+   ],
+   "product_uses": [
+    "semantic search engine for a knowledge base",
+    "document similarity and deduplication tool",
+    "retrieval step for a RAG chatbot",
+    "recommendation engine for articles or products"
+   ],
+   "domains": [
+    "general"
+   ],
+   "not_for": [
+    "answering questions or holding a conversation (it returns vectors, not text)",
+    "reordering an existing list of search results by relevance",
+    "reading or embedding images or audio"
+   ]
+  },
+  "official_url": "https://developers.openai.com/api/docs/models/text-embedding-3-large",
+  "sources": [
+   "https://developers.openai.com/api/docs/models/text-embedding-3-large"
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cohere/embed-v4.0",
+  "layer": 3,
+  "name": "Embed v4.0",
+  "creator": "Cohere",
+  "creator_slug": "cohere",
+  "hf_org": "CohereLabs",
+  "card": {
+   "what": "Embedding API model by Cohere that turns text, images and mixed documents like PDFs into comparable vectors.",
+   "kind": "multimodal embedding",
+   "input": [
+    "text",
+    "image",
+    "document"
+   ],
+   "output": [
+    "embedding"
+   ],
+   "interaction": "embedding model",
+   "access": "hosted API",
+   "languages": "multilingual",
+   "best_at": [
+    "searching across text and scanned documents together",
+    "matching product photos to text descriptions",
+    "clustering mixed text and image content",
+    "powering retrieval for documents that mix text and images"
+   ],
+   "product_uses": [
+    "search engine over PDFs and scanned reports",
+    "visual product search for an online store",
+    "retrieval step for a RAG chatbot over mixed documents",
+    "content deduplication tool for a document archive"
+   ],
+   "domains": [
+    "general",
+    "software"
+   ],
+   "not_for": [
+    "answering questions or holding a conversation (it returns vectors, not text)",
+    "reordering an existing list of search results by relevance",
+    "generating or editing images"
+   ]
+  },
+  "official_url": "https://docs.cohere.com/docs/embed-2",
+  "sources": [
+   "https://docs.cohere.com/docs/embed-2"
+  ],
+  "notes": ""
+ },
+ {
+  "id": "cohere/rerank-v4.0-pro",
+  "layer": 3,
+  "name": "Rerank v4.0 Pro",
+  "creator": "Cohere",
+  "creator_slug": "cohere",
+  "hf_org": "CohereLabs",
+  "card": {
+   "what": "Reranking API model by Cohere that reorders a list of documents by relevance to a query.",
+   "kind": "reranker",
+   "input": [
+    "text",
+    "table"
+   ],
+   "output": [
+    "text"
+   ],
+   "interaction": "task model",
+   "access": "hosted API",
+   "languages": "multilingual",
+   "best_at": [
+    "reordering search results by relevance to a query",
+    "improving results returned by an existing search engine",
+    "ranking semi-structured records like JSON against a query",
+    "filtering a large candidate list down to the most relevant items"
+   ],
+   "product_uses": [
+    "search relevance booster for an existing search engine",
+    "second-pass ranking step in a RAG pipeline",
+    "support ticket or FAQ matching tool",
+    "product search ranking for an online store"
+   ],
+   "domains": [
+    "general",
+    "software"
+   ],
+   "not_for": [
+    "generating text embeddings or vectors",
+    "answering questions or holding a conversation",
+    "finding candidate documents from scratch (needs a list already retrieved)"
+   ]
+  },
+  "official_url": "https://docs.cohere.com/docs/rerank-2",
+  "sources": [
+   "https://docs.cohere.com/docs/rerank-2",
+   "https://docs.cohere.com/reference/rerank"
+  ],
+  "notes": ""
+ },
+ {
+  "id": "voyageai/voyage-4-large",
+  "layer": 3,
+  "name": "voyage-4-large",
+  "creator": "Voyage AI",
+  "creator_slug": "voyageai",
+  "hf_org": "voyageai",
+  "card": {
+   "what": "Text embedding API model by Voyage AI for general-purpose and multilingual retrieval.",
+   "kind": "text embedding",
+   "input": [
+    "text"
+   ],
+   "output": [
+    "embedding"
+   ],
+   "interaction": "embedding model",
+   "access": "hosted API",
+   "languages": "multilingual",
+   "best_at": [
+    "retrieving relevant documents for a query across languages",
+    "powering retrieval for RAG applications",
+    "clustering and grouping related text",
+    "finding semantically similar text records"
+   ],
+   "product_uses": [
+    "semantic search engine for a knowledge base",
+    "retrieval step for a RAG chatbot",
+    "document similarity and deduplication tool",
+    "multilingual search for a support center"
+   ],
+   "domains": [
+    "general"
+   ],
+   "not_for": [
+    "answering questions or holding a conversation (it returns vectors, not text)",
+    "reordering an existing list of search results by relevance",
+    "reading or embedding images, audio or video"
+   ]
+  },
+  "official_url": "https://docs.voyageai.com/docs/embeddings",
+  "sources": [
+   "https://docs.voyageai.com/docs/embeddings"
+  ],
+  "notes": ""
+ },
+ {
+  "id": "voyageai/rerank-2.5",
+  "layer": 3,
+  "name": "rerank-2.5",
+  "creator": "Voyage AI",
+  "creator_slug": "voyageai",
+  "hf_org": "voyageai",
+  "card": {
+   "what": "Reranking API model by Voyage AI that reorders retrieved documents by relevance to a query, following instructions.",
+   "kind": "reranker",
+   "input": [
+    "text"
+   ],
+   "output": [
+    "text"
+   ],
+   "interaction": "task model",
+   "access": "hosted API",
+   "languages": "multilingual",
+   "best_at": [
+    "reordering search results by relevance to a query",
+    "improving results returned by an embedding-based or keyword search",
+    "following a stated instruction about what counts as relevant",
+    "filtering a large candidate list down to the most relevant items"
+   ],
+   "product_uses": [
+    "second-pass ranking step in a RAG pipeline",
+    "search relevance booster for an existing search engine",
+    "support ticket or FAQ matching tool",
+    "document ranking tool for legal or research search"
+   ],
+   "domains": [
+    "general"
+   ],
+   "not_for": [
+    "generating text embeddings or vectors",
+    "answering questions or holding a conversation",
+    "finding candidate documents from scratch (needs a list already retrieved)"
+   ]
+  },
+  "official_url": "https://docs.voyageai.com/docs/reranker",
+  "sources": [
+   "https://docs.voyageai.com/docs/reranker"
+  ],
+  "notes": ""
+ },
+ {
+  "id": "google/gemini-embedding-2",
+  "layer": 3,
+  "name": "Gemini Embedding 2",
+  "creator": "Google",
+  "creator_slug": "google",
+  "hf_org": "google",
+  "card": {
+   "what": "Multimodal embedding model in the Gemini API that maps text, images, video, audio and documents into one vector space.",
+   "kind": "multimodal embedding",
+   "input": [
+    "text",
+    "image",
+    "audio",
+    "video",
+    "document"
+   ],
+   "output": [
+    "embedding"
+   ],
+   "interaction": "embedding model",
+   "access": "hosted API",
+   "languages": "multilingual",
+   "best_at": [
+    "searching across text, images, audio and video together",
+    "powering retrieval for a RAG application",
+    "reranking search results by embedding similarity",
+    "clustering mixed-media content"
+   ],
+   "product_uses": [
+    "cross-modal search engine over documents, images and video",
+    "retrieval step for a RAG chatbot",
+    "media library search and organization tool",
+    "content deduplication or anomaly detection tool"
+   ],
+   "domains": [
+    "general",
+    "media"
+   ],
+   "not_for": [
+    "answering questions or holding a conversation (it returns vectors, not text)",
+    "generating or editing images, audio or video",
+    "transcribing speech into readable text"
+   ]
+  },
+  "official_url": "https://ai.google.dev/gemini-api/docs/embeddings",
+  "sources": [
+   "https://ai.google.dev/gemini-api/docs/embeddings"
+  ],
+  "notes": ""
+ },
+ {
+  "id": "jinaai/jina-embeddings-v5-omni-small",
+  "layer": 3,
+  "name": "jina-embeddings-v5-omni-small",
+  "creator": "Jina AI",
+  "creator_slug": "jinaai",
+  "hf_org": "jinaai",
+  "card": {
+   "what": "Multimodal embedding model by Jina AI that turns text, images, audio, video and PDFs into one shared vector space.",
+   "kind": "multimodal embedding",
+   "input": [
+    "text",
+    "image",
+    "audio",
+    "video",
+    "document"
+   ],
+   "output": [
+    "embedding"
+   ],
+   "interaction": "embedding model",
+   "access": "open weights and hosted API",
+   "languages": "multilingual",
+   "best_at": [
+    "searching across text, images, audio and video together",
+    "powering retrieval for a RAG or agent application",
+    "clustering mixed-media content into groups",
+    "matching text queries to images, audio clips or documents"
+   ],
+   "product_uses": [
+    "cross-modal search engine for a media library",
+    "retrieval step for a RAG chatbot over PDFs and images",
+    "visual and audio product search for an online store",
+    "content deduplication tool for a mixed-media archive"
+   ],
+   "domains": [
+    "general",
+    "media"
+   ],
+   "not_for": [
+    "answering questions or holding a conversation (it returns vectors, not text)",
+    "reordering an existing list of search results by relevance",
+    "generating or editing images, audio or video"
+   ]
+  },
+  "official_url": "https://jina.ai/embeddings/",
+  "sources": [
+   "https://jina.ai/embeddings/"
+  ],
+  "notes": ""
+ },
+ {
+  "id": "jinaai/jina-reranker-v3.5",
+  "layer": 3,
+  "name": "jina-reranker-v3.5",
+  "creator": "Jina AI",
+  "creator_slug": "jinaai",
+  "hf_org": "jinaai",
+  "card": {
+   "what": "Reranker model by Jina AI that reorders a list of documents by relevance to a query.",
+   "kind": "reranker",
+   "input": [
+    "text"
+   ],
+   "output": [
+    "text"
+   ],
+   "interaction": "task model",
+   "access": "open weights and hosted API",
+   "languages": "multilingual",
+   "best_at": [
+    "reordering search results by relevance to a query",
+    "improving results returned by an existing search engine",
+    "scoring many candidate documents against a query at once",
+    "filtering a large candidate list down to the most relevant items"
+   ],
+   "product_uses": [
+    "second-pass ranking step in a RAG pipeline",
+    "search relevance booster for an existing search engine",
+    "legal or financial document retrieval tool",
+    "support ticket or FAQ matching tool"
+   ],
+   "domains": [
+    "general",
+    "legal",
+    "finance"
+   ],
+   "not_for": [
+    "generating text embeddings or vectors",
+    "answering questions or holding a conversation",
+    "finding candidate documents from scratch (needs a list already retrieved)"
+   ]
+  },
+  "official_url": "https://jina.ai/reranker/",
+  "sources": [
+   "https://jina.ai/reranker/"
+  ],
+  "notes": ""
+ },
+ {
+  "id": "mistralai/mistral-embed",
+  "layer": 3,
+  "name": "Mistral Embed",
+  "creator": "Mistral AI",
+  "creator_slug": "mistralai",
+  "hf_org": "mistralai",
+  "card": {
+   "what": "General-purpose text embedding API model by Mistral AI that turns text into vectors for search and retrieval.",
+   "kind": "text embedding",
+   "input": [
+    "text"
+   ],
+   "output": [
+    "embedding"
+   ],
+   "interaction": "embedding model",
+   "access": "hosted API",
+   "languages": "multilingual",
+   "best_at": [
+    "retrieving relevant documents for a query",
+    "powering retrieval for RAG applications",
+    "clustering and classifying text by similarity",
+    "detecting duplicate or near-duplicate text records"
+   ],
+   "product_uses": [
+    "semantic search engine for a knowledge base",
+    "retrieval step for a RAG chatbot",
+    "document clustering and classification tool",
+    "duplicate content detection tool"
+   ],
+   "domains": [
+    "general"
+   ],
+   "not_for": [
+    "answering questions or holding a conversation (it returns vectors, not text)",
+    "reordering an existing list of search results by relevance",
+    "embedding code repositories (use the dedicated code embedding model instead)"
+   ]
+  },
+  "official_url": "https://docs.mistral.ai/capabilities/embeddings/text_embeddings/",
+  "sources": [
+   "https://docs.mistral.ai/capabilities/embeddings/text_embeddings/",
+   "https://docs.mistral.ai/getting-started/models/models_overview/"
+  ],
+  "notes": "El id exacto de API es mistral-embed-23-12 (alias mistral-embed); las docs de la ficha de texto no listan el id explicitamente."
+ }
+]

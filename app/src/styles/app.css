@@ -47,6 +47,29 @@
   transition: opacity 0.35s, translate 0.35s cubic-bezier(.2,.8,.2,1);
 }
 .aviso.visible { opacity: 1; translate: 0 0; }
+/* Mientras Jev clasifica: tres puntos que laten en ola y una línea que se va llenando
+   con cada tanda que vuelve, con un brillo que la recorre para que se note viva. */
+.pensando { position: relative; display: inline-flex; align-items: center; gap: 0.55em; padding-bottom: 0.45rem; color: var(--tinta); }
+.puntos { display: inline-flex; gap: 0.22em; }
+.puntos i { width: 0.42em; height: 0.42em; border-radius: 50%; background: var(--cobalto); animation: latido 1s ease-in-out infinite; }
+.puntos i:nth-child(2) { animation-delay: 0.15s; }
+.puntos i:nth-child(3) { animation-delay: 0.3s; }
+@keyframes latido {
+  0%, 60%, 100% { translate: 0 0; opacity: 0.35; }
+  30% { translate: 0 -0.35em; opacity: 1; }
+}
+.progreso { position: absolute; left: 0; right: 0; bottom: 0; height: 2px; border-radius: 2px; background: var(--raya); overflow: hidden; }
+.progreso::before {
+  content: ''; position: absolute; inset: 0; transform-origin: left;
+  transform: scaleX(var(--p)); background: var(--cobalto);
+  transition: transform 0.5s cubic-bezier(.2,.8,.2,1);
+}
+.progreso::after {
+  content: ''; position: absolute; inset: 0; width: 35%;
+  background: linear-gradient(90deg, transparent, rgb(255 255 255 / 0.85), transparent);
+  animation: barrido 1.3s linear infinite;
+}
+@keyframes barrido { from { translate: -100% 0; } to { translate: 300% 0; } }
 .aviso .accion { pointer-events: auto; }
 .nota a { text-underline-offset: 0.3em; }
 .nota a:hover { color: var(--cobalto); }
@@ -190,6 +213,22 @@
   animation-delay: calc(0.35s + var(--i) * 0.04s);
   transition: left 0.6s cubic-bezier(.2,.8,.2,1);
 }
+.fila.arrastrando li { transition: none; } /* mientras el dedo arrastra, la etiqueta va pegada */
+.fila-arrastre { left: 0; right: 0; pointer-events: auto !important; touch-action: pan-y; cursor: grab; }
+.fila-borde { width: 18%; pointer-events: none; opacity: 0; transition: opacity 0.3s; z-index: 3 !important; }
+.fila-borde.visible { opacity: 1; }
+/* El borde es un pedazo del mismo papel (grano + viñeta, fijos a la pantalla para que calcen
+   pixel a pixel) que se desvanece con una máscara. Con color liso se veía una franja blanca:
+   la viñeta oscurece justo los bordes. */
+.fila-borde {
+  background-color: var(--papel);
+  background-image: var(--papel-vineta), var(--papel-grano);
+  background-size: auto, 320px 320px, 640px 640px;
+  background-blend-mode: multiply, multiply, multiply;
+  background-attachment: fixed;
+}
+.fila-borde.izq { left: 0; mask-image: linear-gradient(to right, #000 15%, transparent); }
+.fila-borde.der { right: 0; mask-image: linear-gradient(to left, #000 15%, transparent); }
 .fila a { display: grid; justify-items: center; gap: 0.2rem; color: inherit; text-decoration: none; }
 .rango { font-size: 0.6rem; }
 .nombre {
@@ -265,6 +304,25 @@
 @media (prefers-reduced-motion: reduce) {
   .fila li { animation: none; opacity: 1; }
   .conf.etiqueta, .mesa > .ayuda { animation: none; }
+  .puntos i, .progreso::after { animation: none; }
+  .puntos i { opacity: 1; }
+}
+
+/* Modo foco (celular, gráfico agrandado): el resto de la interfaz se aparta para que el
+   gráfico tenga la pantalla. Vuelve con "achicar". */
+.mesa > .encabezado, .mesa > .burbuja, .mesa > .controles { transition: opacity 0.3s; }
+.mesa.enfocada > .encabezado, .mesa.enfocada > .burbuja, .mesa.enfocada > .controles { opacity: 0; pointer-events: none; }
+.mesa.enfocada > .encabezado *, .mesa.enfocada > .burbuja *, .mesa.enfocada > .controles * { pointer-events: none; }
+
+/* En el celular no hay lugar para todos los nombres: quedan los de la frontera (lo mejor
+   por tu plata) y el que se toca. */
+@media (max-width: 640px) {
+  .grande .puntos-logo li:not(.mejor):not(.marcado) .nombre-punto { display: none; }
+  /* cerca del borde derecho, el nombre va a la izquierda del punto para no cortarse */
+  .grande .derecha .nombre-punto { left: auto; right: 1.35rem; }
+  /* Vista previa: solo los puntos, los números de los ejes y "agrandar" centrado abajo. */
+  .grafico:not(.grande) .eje-titulo, .grafico:not(.grande) .mejor-leyenda { display: none; }
+  .grafico:not(.grande) figcaption { justify-content: center; top: calc(100% + 1.3rem); }
 }
 
 /* ---------- El gráfico costo vs. calidad: uno solo, que cambia de caja ---------- */

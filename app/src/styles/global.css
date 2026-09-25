@@ -22,6 +22,11 @@
   --fibron-6: #a8daf2;
   --sans: 'Archivo Variable', system-ui, sans-serif;
   --mono: 'Chivo Mono', ui-monospace, monospace;
+  /* El papel en capas, para poder repetirlo encima del canvas donde algo tiene que taparlo. */
+  --papel-grano:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='320'%3E%3Cfilter id='f'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.86' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='320' height='320' filter='url(%23f)' opacity='0.055'/%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='640' height='640'%3E%3Cfilter id='m'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.014' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='640' height='640' filter='url(%23m)' opacity='0.085'/%3E%3C/svg%3E");
+  --papel-vineta: radial-gradient(130% 100% at 50% 20%, rgba(255,255,255,0) 0%, rgba(190,188,176,.08) 62%, rgba(160,158,145,.16) 100%);
 }
 
 * { box-sizing: border-box; }
@@ -30,9 +35,7 @@ html, body { margin: 0; height: 100%; }
 body {
   background-color: var(--papel);
   /* Dos escalas de irregularidad, como un papel de verdad: fibra fina y pasta. */
-  background-image:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='320'%3E%3Cfilter id='f'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.86' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='320' height='320' filter='url(%23f)' opacity='0.055'/%3E%3C/svg%3E"),
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='640' height='640'%3E%3Cfilter id='m'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.014' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='640' height='640' filter='url(%23m)' opacity='0.085'/%3E%3C/svg%3E");
+  background-image: var(--papel-grano);
   background-size: 320px 320px, 640px 640px;
   background-blend-mode: multiply, multiply;
   color: var(--tinta);
@@ -47,7 +50,7 @@ body::after {
   content: '';
   position: fixed; inset: 0; pointer-events: none; z-index: 0;
   mix-blend-mode: multiply;
-  background: radial-gradient(130% 100% at 50% 20%, rgba(255,255,255,0) 0%, rgba(190,188,176,.08) 62%, rgba(160,158,145,.16) 100%);
+  background: var(--papel-vineta);
 }
 
 ::selection { background: var(--cobalto); color: var(--papel); }

@@ -1,0 +1,425 @@
+[
+ {
+  "id": "google-t5/t5-small",
+  "name": "t5-small",
+  "creator": "Google",
+  "card": {
+   "what": "Small text-to-text model by Google that handles translation, summarization and other NLP tasks via fine-tuning.",
+   "kind": "translation",
+   "input": ["text"],
+   "output": ["text"],
+   "interaction": "base model: needs fine-tuning",
+   "access": "open weights",
+   "languages": "English, French, Romanian, German",
+   "best_at": [
+    "translating short text between English, French, German and Romanian",
+    "summarizing documents once fine-tuned",
+    "answering questions once fine-tuned on a dataset",
+    "classifying text once fine-tuned"
+   ],
+   "product_uses": [
+    "translation feature for a multilingual app",
+    "custom document summarizer built by fine-tuning",
+    "domain-specific text classifier built by fine-tuning"
+   ],
+   "domains": ["general"],
+   "not_for": [
+    "open-ended chat or following instructions out of the box",
+    "translating languages other than English, French, German and Romanian",
+    "long or complex documents"
+   ]
+  },
+  "official_url": "https://huggingface.co/google-t5/t5-small",
+  "sources": ["https://huggingface.co/google-t5/t5-small/raw/main/README.md"],
+  "notes": ""
+ },
+ {
+  "id": "openai/whisper-large-v3",
+  "name": "Whisper large-v3",
+  "creator": "OpenAI",
+  "card": {
+   "what": "Open-weights speech recognition model by OpenAI that transcribes spoken audio and translates it into English text.",
+   "kind": "speech-to-text",
+   "input": ["speech"],
+   "output": ["text"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "multilingual",
+   "best_at": [
+    "transcribing recorded meetings, calls and interviews",
+    "transcribing speech in many languages",
+    "translating speech into English text",
+    "transcribing podcasts and videos for captions"
+   ],
+   "product_uses": [
+    "meeting notes app",
+    "subtitles for videos and podcasts",
+    "voice notes transcription tool",
+    "content localization pipeline"
+   ],
+   "domains": ["general", "media"],
+   "not_for": [
+    "telling who spoke (no speaker labels)",
+    "real-time low-latency transcription",
+    "generating speech"
+   ]
+  },
+  "official_url": "https://huggingface.co/openai/whisper-large-v3",
+  "sources": ["https://huggingface.co/openai/whisper-large-v3/raw/main/README.md"],
+  "notes": ""
+ },
+ {
+  "id": "facebook/bart-large-mnli",
+  "name": "bart-large-mnli",
+  "creator": "Facebook/Meta",
+  "card": {
+   "what": "BART-large model fine-tuned by Facebook/Meta on MultiNLI for zero-shot text classification.",
+   "kind": "zero-shot classification",
+   "input": ["text"],
+   "output": ["labels"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": [
+    "classifying text into categories chosen at run time",
+    "assigning topics without labeled training data",
+    "detecting the intent behind a message",
+    "tagging content by custom categories"
+   ],
+   "product_uses": [
+    "support ticket router by topic",
+    "content moderation tagging tool",
+    "app that sorts articles into custom categories"
+   ],
+   "domains": ["general", "customer support"],
+   "not_for": [
+    "open-ended chat or conversation",
+    "tasks that need labeled training data for best accuracy",
+    "generating text"
+   ]
+  },
+  "official_url": "https://huggingface.co/facebook/bart-large-mnli",
+  "sources": ["https://huggingface.co/facebook/bart-large-mnli/raw/main/README.md"],
+  "notes": ""
+ },
+ {
+  "id": "sentence-transformers/all-MiniLM-L6-v2",
+  "name": "all-MiniLM-L6-v2",
+  "creator": "sentence-transformers",
+  "card": {
+   "what": "English sentence embedding model that maps sentences and short paragraphs into vectors for semantic search.",
+   "kind": "text embedding",
+   "input": ["text"],
+   "output": ["embedding"],
+   "interaction": "embedding model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": [
+    "finding semantically similar sentences",
+    "clustering short texts by topic",
+    "powering semantic search over documents",
+    "detecting paraphrased or duplicate text"
+   ],
+   "product_uses": [
+    "semantic search engine for a knowledge base",
+    "app that groups similar customer reviews",
+    "duplicate question detector for a forum"
+   ],
+   "domains": ["general", "software"],
+   "not_for": [
+    "non-English text",
+    "long documents (truncates after a short length)",
+    "generating or answering text directly"
+   ]
+  },
+  "official_url": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2",
+  "sources": ["https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/raw/main/README.md"],
+  "notes": ""
+ },
+ {
+  "id": "anthropic/claude-haiku-4.5",
+  "name": "Claude Haiku 4.5",
+  "creator": "Anthropic",
+  "card": {
+   "what": "Anthropic's fast, low-cost chat model in the Claude family, built for everyday assistants and coding agents.",
+   "kind": "multimodal LLM",
+   "input": ["text", "image", "document"],
+   "output": ["text"],
+   "interaction": "chat and instructions",
+   "access": "hosted API",
+   "languages": "multilingual",
+   "best_at": [
+    "holding low-latency real-time conversations",
+    "pair programming and quick coding help",
+    "answering customer support chats",
+    "coordinating multiple AI agents at low cost"
+   ],
+   "product_uses": [
+    "responsive customer support chatbot",
+    "pair programming assistant",
+    "multi-agent orchestration system",
+    "rapid prototyping tool for AI features"
+   ],
+   "domains": ["general", "customer support", "software"],
+   "not_for": [
+    "the deepest reasoning or most complex coding tasks (use a larger Claude model)",
+    "generating images or audio",
+    "self-hosting (no open weights)"
+   ]
+  },
+  "official_url": "https://www.anthropic.com/news/claude-haiku-4-5",
+  "sources": ["https://www.anthropic.com/news/claude-haiku-4-5"],
+  "notes": ""
+ },
+ {
+  "id": "openai/gpt-6-luna",
+  "name": "GPT-6 Luna",
+  "creator": "OpenAI",
+  "card": {
+   "what": "OpenAI's efficient GPT-6 chat model built for fast, high-volume, well-defined tasks at low cost.",
+   "kind": "multimodal LLM",
+   "input": ["text", "image"],
+   "output": ["text"],
+   "interaction": "chat and instructions",
+   "access": "hosted API",
+   "languages": "multilingual",
+   "best_at": [
+    "summarizing documents at scale",
+    "extracting information from text or images",
+    "answering straightforward questions quickly",
+    "classifying or routing large volumes of content"
+   ],
+   "product_uses": [
+    "bulk document summarization tool",
+    "customer support ticket classifier",
+    "data extraction pipeline for forms",
+    "high-volume content moderation bot"
+   ],
+   "domains": ["general", "customer support", "software"],
+   "not_for": [
+    "complex multi-step reasoning or novel problem-solving",
+    "deep coding or long agentic workflows (use a larger GPT-6 model)",
+    "real-time voice conversation"
+   ]
+  },
+  "official_url": "https://developers.openai.com/api/docs/models/gpt-6-luna",
+  "sources": [
+   "https://developers.openai.com/api/docs/models/gpt-6-luna",
+   "https://developers.openai.com/api/docs/guides/latest-model"
+  ],
+  "notes": "No se pudo abrir el blog de anuncio (openai.com, error 403); se verificó con la documentación oficial de la API."
+ },
+ {
+  "id": "google/gemini-3-pro-image",
+  "name": "Nano Banana Pro (Gemini 3 Pro Image)",
+  "creator": "Google",
+  "card": {
+   "what": "Google DeepMind model that generates and edits images from text and reference images.",
+   "kind": "text-to-image",
+   "input": ["text", "image"],
+   "output": ["image", "text"],
+   "interaction": "task model",
+   "access": "hosted API",
+   "languages": "multilingual",
+   "best_at": [
+    "creating product mockups and marketing graphics",
+    "rendering legible text inside images",
+    "editing uploaded photos (lighting, backgrounds, framing)",
+    "combining multiple images into one composition",
+    "generating infographics and diagrams from data"
+   ],
+   "product_uses": [
+    "product mockup generator for an ecommerce app",
+    "marketing graphic design tool with text overlays",
+    "photo editing app for lighting and background changes",
+    "infographic and diagram generator from data"
+   ],
+   "domains": ["general", "media", "retail"],
+   "not_for": [
+    "generating audio or video",
+    "open-ended chat conversation",
+    "text-only answers without producing an image"
+   ]
+  },
+  "official_url": "https://ai.google.dev/gemini-api/docs/models/gemini-3-pro-image",
+  "sources": [
+   "https://ai.google.dev/gemini-api/docs/models/gemini-3-pro-image",
+   "https://blog.google/innovation-and-ai/products/nano-banana-pro/"
+  ],
+  "notes": ""
+ },
+ {
+  "id": "mistralai/codestral-2508",
+  "name": "Codestral 2508",
+  "creator": "Mistral AI",
+  "card": {
+   "what": "Mistral AI's coding-focused language model optimized for fast code completion and generation.",
+   "kind": "coding LLM",
+   "input": ["text", "code"],
+   "output": ["code", "text"],
+   "interaction": "chat and instructions",
+   "access": "open weights and hosted API",
+   "languages": "English",
+   "best_at": [
+    "completing code as you type (fill-in-the-middle)",
+    "generating and refactoring code from instructions",
+    "writing unit tests for existing code",
+    "fixing and correcting code errors"
+   ],
+   "product_uses": [
+    "AI code completion plugin for an IDE",
+    "developer tool that generates unit tests",
+    "code review assistant that suggests fixes",
+    "in-house coding copilot for a dev team"
+   ],
+   "domains": ["software"],
+   "not_for": [
+    "general-purpose conversation unrelated to code",
+    "long-horizon planning or complex reasoning tasks",
+    "non-code natural language content"
+   ]
+  },
+  "official_url": "https://docs.mistral.ai/models/model-cards/codestral-25-08",
+  "sources": [
+   "https://docs.mistral.ai/models/model-cards/codestral-25-08",
+   "https://mistral.ai/news/codestral-25-08/"
+  ],
+  "notes": "Las fuentes leídas documentan 80+ lenguajes de programación soportados pero no confirman soporte multilingüe de lenguaje natural; se dejó English por precaución."
+ },
+ {
+  "id": "stabilityai/stable-diffusion-xl-base-1.0",
+  "name": "Stable Diffusion XL base 1.0",
+  "creator": "Stability AI",
+  "card": {
+   "what": "Latent diffusion model by Stability AI that generates images from text prompts.",
+   "kind": "text-to-image",
+   "input": ["text"],
+   "output": ["image"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": [
+    "generating artwork and illustrations from a prompt",
+    "creating design concepts and mockup visuals",
+    "producing images at different resolutions",
+    "prototyping visual ideas quickly"
+   ],
+   "product_uses": [
+    "AI art generator app",
+    "design concept tool for creative teams",
+    "stock-style image generator",
+    "game asset prototyping tool"
+   ],
+   "domains": ["general", "media"],
+   "not_for": [
+    "editing an existing photo",
+    "rendering legible text in images",
+    "generating consistent faces or real people accurately"
+   ]
+  },
+  "official_url": "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0",
+  "sources": ["https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/raw/main/README.md"],
+  "notes": ""
+ },
+ {
+  "id": "microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract",
+  "name": "BiomedNLP-BiomedBERT-base-uncased-abstract",
+  "creator": "Microsoft",
+  "card": {
+   "what": "BERT-style language model pretrained by Microsoft from scratch on PubMed abstracts for biomedical text.",
+   "kind": "base language model",
+   "input": ["text"],
+   "output": ["text"],
+   "interaction": "base model: needs fine-tuning",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": [
+    "recognizing biomedical entities after fine-tuning",
+    "classifying biomedical abstracts after fine-tuning",
+    "extracting relations from biomedical text after fine-tuning"
+   ],
+   "product_uses": [
+    "biomedical named entity recognition tool built by fine-tuning",
+    "medical literature classifier built by fine-tuning",
+    "research paper information extraction pipeline"
+   ],
+   "domains": ["medicine", "biology", "science"],
+   "not_for": [
+    "open-ended chat or answering questions directly",
+    "general-domain (non-biomedical) NLP tasks",
+    "full documents beyond abstracts (trained on abstracts only)"
+   ]
+  },
+  "official_url": "https://huggingface.co/microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract",
+  "sources": ["https://huggingface.co/microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract/raw/main/README.md"],
+  "notes": ""
+ },
+ {
+  "id": "amazon/chronos-2",
+  "name": "Chronos-2",
+  "creator": "Amazon",
+  "card": {
+   "what": "Amazon's foundation model for zero-shot time-series forecasting without task-specific training.",
+   "kind": "time-series forecasting",
+   "input": ["time series"],
+   "output": ["time series"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": [
+    "forecasting future values of a time series with no training",
+    "producing probabilistic multi-step demand forecasts",
+    "forecasting using historical data plus known future covariates",
+    "forecasting multiple related series at once"
+   ],
+   "product_uses": [
+    "demand forecasting dashboard for retail",
+    "electricity load forecasting tool",
+    "financial time series prediction app",
+    "sensor data forecasting pipeline"
+   ],
+   "domains": ["finance", "retail", "general"],
+   "not_for": [
+    "classifying or labeling data",
+    "processing text, images or audio",
+    "predicting non-numeric outcomes"
+   ]
+  },
+  "official_url": "https://huggingface.co/amazon/chronos-2",
+  "sources": ["https://huggingface.co/amazon/chronos-2/raw/main/README.md"],
+  "notes": ""
+ },
+ {
+  "id": "stanford-crfm/BioMedLM",
+  "name": "BioMedLM",
+  "creator": "Stanford CRFM / MosaicML",
+  "card": {
+   "what": "GPT-style language model by Stanford CRFM and MosaicML pretrained only on biomedical text.",
+   "kind": "base language model",
+   "input": ["text"],
+   "output": ["text"],
+   "interaction": "base model: needs fine-tuning",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": [
+    "answering biomedical exam-style questions once fine-tuned",
+    "generating biomedical text once fine-tuned",
+    "summarizing biomedical literature once fine-tuned"
+   ],
+   "product_uses": [
+    "biomedical question answering system built by fine-tuning",
+    "medical exam question solver built by fine-tuning",
+    "biomedical literature summarization tool built by fine-tuning"
+   ],
+   "domains": ["medicine", "science"],
+   "not_for": [
+    "giving medical advice or interpreting results directly",
+    "production use without fine-tuning",
+    "general-purpose (non-biomedical) text generation"
+   ]
+  },
+  "official_url": "https://huggingface.co/stanford-crfm/BioMedLM",
+  "sources": ["https://huggingface.co/stanford-crfm/BioMedLM/raw/main/README.md"],
+  "notes": ""
+ }
+]

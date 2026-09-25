@@ -1,0 +1,146 @@
+[
+ {
+  "id": "facebook/bart-large-cnn",
+  "name": "bart-large-cnn",
+  "creator": "facebook",
+  "layer": 2,
+  "hf_task": "summarization",
+  "license": "mit",
+  "known_sources": [
+   "https://huggingface.co/facebook/bart-large-cnn",
+   "https://huggingface.co/facebook/bart-large-cnn/blob/main/README.md"
+  ]
+ },
+ {
+  "id": "google/pegasus-xsum",
+  "name": "pegasus-xsum",
+  "creator": "google",
+  "layer": 2,
+  "hf_task": "summarization",
+  "license": null,
+  "known_sources": [
+   "https://huggingface.co/google/pegasus-xsum/blob/main/README.md",
+   "https://huggingface.co/google/pegasus-xsum"
+  ]
+ },
+ {
+  "id": "philschmid/bart-large-cnn-samsum",
+  "name": "bart-large-cnn-samsum",
+  "creator": "philschmid",
+  "layer": 2,
+  "hf_task": "summarization",
+  "license": "mit",
+  "known_sources": [
+   "https://huggingface.co/philschmid/bart-large-cnn-samsum/blob/main/README.md",
+   "https://huggingface.co/philschmid/bart-large-cnn-samsum"
+  ]
+ },
+ {
+  "id": "sshleifer/distilbart-cnn-12-6",
+  "name": "distilbart-cnn-12-6",
+  "creator": "sshleifer",
+  "layer": 2,
+  "hf_task": "summarization",
+  "license": "apache-2.0",
+  "known_sources": [
+   "https://huggingface.co/sshleifer/distilbart-cnn-12-6/blob/main/README.md",
+   "https://huggingface.co/sshleifer/distilbart-cnn-12-6"
+  ]
+ },
+ {
+  "id": "google/tapas-large-finetuned-sqa",
+  "name": "tapas-large-finetuned-sqa",
+  "creator": "google",
+  "layer": 2,
+  "hf_task": "table-question-answering",
+  "license": "apache-2.0",
+  "known_sources": [
+   "https://huggingface.co/google/tapas-large-finetuned-sqa/blob/main/README.md",
+   "https://huggingface.co/google/tapas-large-finetuned-sqa"
+  ]
+ },
+ {
+  "id": "google/tapas-base-finetuned-wtq",
+  "name": "tapas-base-finetuned-wtq",
+  "creator": "google",
+  "layer": 2,
+  "hf_task": "table-question-answering",
+  "license": "apache-2.0",
+  "known_sources": [
+   "https://huggingface.co/google/tapas-base-finetuned-wtq",
+   "https://huggingface.co/google/tapas-base-finetuned-wtq/blob/main/README.md"
+  ]
+ },
+ {
+  "id": "microsoft/tapex-base-finetuned-wikisql",
+  "name": "tapex-base-finetuned-wikisql",
+  "creator": "microsoft",
+  "layer": 2,
+  "hf_task": "table-question-answering",
+  "license": "mit",
+  "known_sources": [
+   "https://huggingface.co/microsoft/tapex-base-finetuned-wikisql/blob/main/README.md",
+   "https://huggingface.co/microsoft/tapex-base-finetuned-wikisql"
+  ]
+ },
+ {
+  "id": "BAAI/bge-reranker-v2-m3",
+  "name": "bge-reranker-v2-m3",
+  "creator": "BAAI",
+  "layer": 2,
+  "hf_task": "text-classification",
+  "license": "apache-2.0",
+  "known_sources": [
+   "https://huggingface.co/BAAI/bge-reranker-v2-m3",
+   "https://huggingface.co/BAAI/bge-reranker-v2-m3/blob/main/README.md"
+  ]
+ },
+ {
+  "id": "BAAI/bge-reranker-base",
+  "name": "bge-reranker-base",
+  "creator": "BAAI",
+  "layer": 2,
+  "hf_task": "text-classification",
+  "license": "mit",
+  "known_sources": [
+   "https://huggingface.co/BAAI/bge-reranker-base",
+   "https://huggingface.co/BAAI/bge-reranker-base/blob/main/README.md"
+  ]
+ },
+ {
+  "id": "ProsusAI/finbert",
+  "name": "finbert",
+  "creator": "ProsusAI",
+  "layer": 2,
+  "hf_task": "text-classification",
+  "license": null,
+  "known_sources": [
+   "https://huggingface.co/ProsusAI/finbert",
+   "https://huggingface.co/ProsusAI/finbert/blob/main/README.md"
+  ]
+ },
+ {
+  "id": "Qwen/Qwen2.5-Math-PRM-7B",
+  "name": "Qwen2.5-Math-PRM-7B",
+  "creator": "Qwen",
+  "layer": 2,
+  "hf_task": "text-classification",
+  "license": "other",
+  "known_sources": [
+   "https://huggingface.co/Qwen/Qwen2.5-Math-PRM-7B",
+   "https://huggingface.co/Qwen/Qwen2.5-Math-PRM-7B/blob/main/README.md"
+  ]
+ },
+ {
+  "id": "SamLowe/roberta-base-go_emotions",
+  "name": "roberta-base-go_emotions",
+  "creator": "SamLowe",
+  "layer": 2,
+  "hf_task": "text-classification",
+  "license": "mit",
+  "known_sources": [
+   "https://huggingface.co/SamLowe/roberta-base-go_emotions",
+   "https://huggingface.co/SamLowe/roberta-base-go_emotions/blob/main/README.md"
+  ]
+ }
+]

@@ -1,0 +1,142 @@
+[
+ {
+  "id": "qwen/qwen3.8-27b",
+  "name": "Qwen: Qwen3.8 27B",
+  "creator": "qwen",
+  "layer": 1,
+  "hf_task": null,
+  "license": null,
+  "known_sources": [
+   "https://huggingface.co/Qwen/Qwen3.8-27B"
+  ]
+ },
+ {
+  "id": "qwen/qwen3.8-omni-flash",
+  "name": "Qwen: Qwen3.8 Omni Flash",
+  "creator": "qwen",
+  "layer": 1,
+  "hf_task": null,
+  "license": null,
+  "known_sources": [
+   "https://www.alibabacloud.com/help/en/model-studio/qwen3-8-omni-flash"
+  ]
+ },
+ {
+  "id": "tencent/hy3",
+  "name": "Tencent: Hy3",
+  "creator": "tencent",
+  "layer": 1,
+  "hf_task": null,
+  "license": null,
+  "known_sources": [
+   "https://huggingface.co/tencent/Hy3"
+  ]
+ },
+ {
+  "id": "tencent/hy-mt2-7b",
+  "name": "Tencent: Hy-MT2-7B",
+  "creator": "tencent",
+  "layer": 1,
+  "hf_task": null,
+  "license": null,
+  "known_sources": [
+   "https://www.tencentcloud.com/techpedia/144776",
+   "https://huggingface.co/tencent/Hy-MT2-7B"
+  ]
+ },
+ {
+  "id": "x-ai/grok-4.7",
+  "name": "SpaceXAI: Grok 4.7",
+  "creator": "x-ai",
+  "layer": 1,
+  "hf_task": null,
+  "license": null,
+  "known_sources": [
+   "https://docs.x.ai/developers/grok-4-7",
+   "https://x.ai/news/grok-4-7"
+  ]
+ },
+ {
+  "id": "x-ai/grok-build-0.1",
+  "name": "SpaceXAI: Grok Build 0.1",
+  "creator": "x-ai",
+  "layer": 1,
+  "hf_task": null,
+  "license": null,
+  "known_sources": [
+   "https://docs.x.ai/developers/models/grok-build-0.1",
+   "https://openrouter.ai/x-ai/grok-build-0.1"
+  ]
+ },
+ {
+  "id": "z-ai/glm-5.3",
+  "name": "Z.ai: GLM 5.3",
+  "creator": "z-ai",
+  "layer": 1,
+  "hf_task": null,
+  "license": null,
+  "known_sources": [
+   "https://huggingface.co/zai-org/GLM-5.3"
+  ]
+ },
+ {
+  "id": "z-ai/glm-5.3-flash",
+  "name": "Z.ai: GLM 5.3 Flash",
+  "creator": "z-ai",
+  "layer": 1,
+  "hf_task": null,
+  "license": null,
+  "known_sources": [
+   "https://huggingface.co/zai-org/GLM-5.3-Flash",
+   "https://z.ai/blog/glm-5.3-flash"
+  ]
+ },
+ {
+  "id": "facebook/esmfold_v1",
+  "name": "esmfold_v1",
+  "creator": "facebook",
+  "layer": 2,
+  "hf_task": null,
+  "license": "mit",
+  "known_sources": [
+   "https://huggingface.co/facebook/esmfold_v1/blob/main/README.md",
+   "https://huggingface.co/facebook/esmfold_v1"
+  ]
+ },
+ {
+  "id": "ibm-nasa-geospatial/Prithvi-EO-2.0-300M",
+  "name": "Prithvi-EO-2.0-300M",
+  "creator": "ibm-nasa-geospatial",
+  "layer": 2,
+  "hf_task": null,
+  "license": "apache-2.0",
+  "known_sources": [
+   "https://huggingface.co/ibm-nasa-geospatial/Prithvi-EO-2.0-300M/blob/main/README.md",
+   "https://huggingface.co/ibm-nasa-geospatial/Prithvi-EO-2.0-300M"
+  ]
+ },
+ {
+  "id": "ibm-nasa-geospatial/Prithvi-EO-2.0-600M",
+  "name": "Prithvi-EO-2.0-600M",
+  "creator": "ibm-nasa-geospatial",
+  "layer": 2,
+  "hf_task": null,
+  "license": "apache-2.0",
+  "known_sources": [
+   "https://huggingface.co/ibm-nasa-geospatial/Prithvi-EO-2.0-600M",
+   "https://huggingface.co/ibm-nasa-geospatial/Prithvi-EO-2.0-600M/blob/main/README.md"
+  ]
+ },
+ {
+  "id": "microsoft/aurora",
+  "name": "aurora",
+  "creator": "microsoft",
+  "layer": 2,
+  "hf_task": null,
+  "license": "mit",
+  "known_sources": [
+   "https://huggingface.co/microsoft/aurora",
+   "https://github.com/microsoft/aurora"
+  ]
+ }
+]

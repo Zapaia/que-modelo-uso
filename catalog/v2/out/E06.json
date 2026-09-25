@@ -1,0 +1,412 @@
+[
+ {
+  "id": "depth-anything/Depth-Anything-V2-Small-hf",
+  "name": "Depth-Anything-V2-Small-hf",
+  "creator": "Depth Anything",
+  "card": {
+   "what": "Open-weights model that estimates a depth map from a single photo, from the Depth Anything project.",
+   "kind": "depth estimation",
+   "input": ["image"],
+   "output": ["depth map"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": [
+    "estimating relative depth from a single image",
+    "producing fine-grained depth maps quickly",
+    "generalizing to new images without fine-tuning",
+    "working on real photos despite synthetic training data"
+   ],
+   "product_uses": [
+    "3D scene reconstruction tool from photos",
+    "background blur or bokeh effect app",
+    "robot obstacle-distance estimation system",
+    "AR app that places objects at the right depth"
+   ],
+   "domains": ["general", "software"],
+   "not_for": [
+    "generating or editing images",
+    "measuring depth in real-world units without extra calibration",
+    "open-ended chat or conversation"
+   ]
+  },
+  "official_url": "https://huggingface.co/depth-anything/Depth-Anything-V2-Small-hf",
+  "sources": ["https://huggingface.co/depth-anything/Depth-Anything-V2-Small-hf/raw/main/README.md"],
+  "notes": ""
+ },
+ {
+  "id": "depth-anything/DA3METRIC-LARGE",
+  "name": "DA3METRIC-LARGE",
+  "creator": "ByteDance Seed",
+  "card": {
+   "what": "Depth Anything 3 model by ByteDance Seed that estimates real-world-scale depth and camera pose from images.",
+   "kind": "depth estimation",
+   "input": ["image"],
+   "output": ["depth map", "3d model"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": [
+    "estimating real-world scale depth from one image",
+    "reconstructing 3D scenes with camera pose and intrinsics",
+    "segmenting sky regions within a depth map",
+    "producing point clouds and 3D meshes from images"
+   ],
+   "product_uses": [
+    "real estate app that measures room dimensions from photos",
+    "3D mapping tool for indoor spaces",
+    "robot navigation system needing real-world distances",
+    "AR app that places virtual objects at correct scale"
+   ],
+   "domains": ["general", "software"],
+   "not_for": [
+    "generating or editing images",
+    "open-ended chat or conversation",
+    "keeping depth consistent across video sequences"
+   ]
+  },
+  "official_url": "https://huggingface.co/depth-anything/DA3METRIC-LARGE",
+  "sources": ["https://huggingface.co/depth-anything/DA3METRIC-LARGE/raw/main/README.md"],
+  "notes": ""
+ },
+ {
+  "id": "impira/layoutlm-document-qa",
+  "name": "layoutlm-document-qa",
+  "creator": "Impira",
+  "card": {
+   "what": "Impira's LayoutLM model fine-tuned to answer questions about scanned or digital document images.",
+   "kind": "question answering",
+   "input": ["document", "text"],
+   "output": ["text"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": [
+    "extracting specific answers from document images",
+    "answering questions about invoices and forms",
+    "locating requested fields in contracts or statements",
+    "pinpointing values in financial statements and receipts"
+   ],
+   "product_uses": [
+    "invoice field extraction tool",
+    "contract clause lookup assistant",
+    "receipt parsing app for expense tracking",
+    "document search tool that answers direct questions"
+   ],
+   "domains": ["general", "finance", "legal"],
+   "not_for": [
+    "open-ended chat or conversation",
+    "summarizing a whole document without a specific question",
+    "extracting text from non-document images"
+   ]
+  },
+  "official_url": "https://huggingface.co/impira/layoutlm-document-qa",
+  "sources": ["https://huggingface.co/impira/layoutlm-document-qa/raw/main/README.md"],
+  "notes": ""
+ },
+ {
+  "id": "impira/layoutlm-invoices",
+  "name": "layoutlm-invoices",
+  "creator": "Impira",
+  "card": {
+   "what": "Impira's LayoutLM model fine-tuned on invoices to answer questions about invoices and similar documents.",
+   "kind": "question answering",
+   "input": ["document", "text"],
+   "output": ["text"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": [
+    "extracting non-consecutive fields like multi-line addresses",
+    "answering direct questions about invoice contents",
+    "pulling specific line items from invoices",
+    "locating values scattered across a document"
+   ],
+   "product_uses": [
+    "automated invoice processing tool",
+    "accounts-payable line-item extraction app",
+    "expense report data-entry assistant",
+    "vendor address and field extraction tool"
+   ],
+   "domains": ["finance", "retail", "general"],
+   "not_for": [
+    "open-ended chat or conversation",
+    "summarizing a whole document without a specific question",
+    "extracting text from non-document images"
+   ]
+  },
+  "official_url": "https://huggingface.co/impira/layoutlm-invoices",
+  "sources": ["https://huggingface.co/impira/layoutlm-invoices/raw/main/README.md"],
+  "notes": ""
+ },
+ {
+  "id": "naver-clova-ix/donut-base-finetuned-docvqa",
+  "name": "donut-base-finetuned-docvqa",
+  "creator": "Naver Clova AI",
+  "card": {
+   "what": "Naver Clova AI's Donut model that reads document images and answers questions without a separate OCR step.",
+   "kind": "question answering",
+   "input": ["document", "text"],
+   "output": ["text"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": [
+    "answering questions about scanned document images",
+    "reading document layout without a separate OCR step",
+    "extracting values from forms and invoices",
+    "understanding visual document structure directly from pixels"
+   ],
+   "product_uses": [
+    "document question-answering app for scanned files",
+    "invoice and form data extraction tool",
+    "OCR-free document processing pipeline",
+    "customer support tool that reads uploaded documents"
+   ],
+   "domains": ["general", "finance", "legal"],
+   "not_for": [
+    "open-ended chat or conversation",
+    "summarizing a whole document without a specific question",
+    "classifying or captioning non-document photos"
+   ]
+  },
+  "official_url": "https://huggingface.co/naver-clova-ix/donut-base-finetuned-docvqa",
+  "sources": ["https://huggingface.co/naver-clova-ix/donut-base-finetuned-docvqa/raw/main/README.md"],
+  "notes": ""
+ },
+ {
+  "id": "ibm-research/MoLFormer-XL-both-10pct",
+  "name": "MoLFormer-XL-both-10pct",
+  "creator": "IBM Research",
+  "card": {
+   "what": "IBM Research's chemical language model that turns molecule SMILES strings into embeddings for property prediction.",
+   "kind": "biology and protein",
+   "input": ["text"],
+   "output": ["embedding"],
+   "interaction": "embedding model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": [
+    "turning molecule SMILES strings into embeddings",
+    "powering molecular similarity search",
+    "supporting fine-tuning for property prediction tasks",
+    "comparing and clustering small molecules"
+   ],
+   "product_uses": [
+    "drug discovery tool that ranks molecules by similarity",
+    "molecular property prediction pipeline built by fine-tuning",
+    "chemical database search and clustering app"
+   ],
+   "domains": ["chemistry", "medicine", "science"],
+   "not_for": [
+    "generating new molecules",
+    "processing very large molecules (macromolecules)",
+    "open-ended chat or conversation"
+   ]
+  },
+  "official_url": "https://huggingface.co/ibm-research/MoLFormer-XL-both-10pct",
+  "sources": ["https://huggingface.co/ibm-research/MoLFormer-XL-both-10pct/raw/main/README.md"],
+  "notes": "El modelo trabaja con moléculas (SMILES), no con proteínas o ADN; se usó \"biology and protein\" por ser el kind cerrado más cercano en VOCAB."
+ },
+ {
+  "id": "microsoft/codebert-base",
+  "name": "codebert-base",
+  "creator": "Microsoft",
+  "card": {
+   "what": "Microsoft's bimodal encoder pretrained on code and documentation, used to extract representations for code tasks.",
+   "kind": "text embedding",
+   "input": ["code", "text"],
+   "output": ["embedding"],
+   "interaction": "embedding model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": [
+    "powering semantic code search from natural-language queries",
+    "matching code snippets to their documentation",
+    "extracting code representations for downstream fine-tuning",
+    "finding similar code snippets across a codebase"
+   ],
+   "product_uses": [
+    "natural-language code search engine for a codebase",
+    "tool that matches functions to their docstrings",
+    "code similarity and duplicate-detection tool",
+    "custom code-classification model built by fine-tuning"
+   ],
+   "domains": ["software"],
+   "not_for": [
+    "generating or completing code",
+    "open-ended chat or conversation",
+    "natural-language tasks unrelated to code"
+   ]
+  },
+  "official_url": "https://huggingface.co/microsoft/codebert-base",
+  "sources": ["https://huggingface.co/microsoft/codebert-base/raw/main/README.md"],
+  "notes": ""
+ },
+ {
+  "id": "InstaDeepAI/nucleotide-transformer-v2-500m-multi-species",
+  "name": "nucleotide-transformer-v2-500m-multi-species",
+  "creator": "InstaDeep",
+  "card": {
+   "what": "InstaDeep's language model pretrained on DNA sequences from many species, meant to be fine-tuned or probed.",
+   "kind": "biology and protein",
+   "input": ["biological sequence"],
+   "output": ["biological sequence"],
+   "interaction": "base model: needs fine-tuning",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": [
+    "predicting molecular phenotypes once fine-tuned",
+    "learning DNA sequence representations across species",
+    "supporting variant-effect prediction after fine-tuning",
+    "comparing genomes across different species"
+   ],
+   "product_uses": [
+    "genomic variant classifier built by fine-tuning",
+    "species comparison tool built on DNA embeddings",
+    "research pipeline for regulatory-element prediction"
+   ],
+   "domains": ["biology", "science", "medicine"],
+   "not_for": [
+    "open-ended chat or answering questions directly",
+    "analyzing plant or virus genomes",
+    "production use without fine-tuning"
+   ]
+  },
+  "official_url": "https://huggingface.co/InstaDeepAI/nucleotide-transformer-v2-500m-multi-species",
+  "sources": ["https://huggingface.co/InstaDeepAI/nucleotide-transformer-v2-500m-multi-species/raw/main/README.md"],
+  "notes": ""
+ },
+ {
+  "id": "emilyalsentzer/Bio_ClinicalBERT",
+  "name": "Bio_ClinicalBERT",
+  "creator": "Emily Alsentzer (Stanford)",
+  "card": {
+   "what": "BERT model trained on ICU clinical notes from MIMIC-III, meant to be fine-tuned for clinical text tasks.",
+   "kind": "base language model",
+   "input": ["text"],
+   "output": ["text"],
+   "interaction": "base model: needs fine-tuning",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": [
+    "recognizing clinical entities after fine-tuning",
+    "classifying discharge summaries after fine-tuning",
+    "understanding ICU clinical note language"
+   ],
+   "product_uses": [
+    "clinical note information-extraction tool built by fine-tuning",
+    "discharge summary classifier built by fine-tuning",
+    "clinical named entity recognition system"
+   ],
+   "domains": ["medicine"],
+   "not_for": [
+    "open-ended chat or answering questions directly",
+    "general-domain (non-clinical) text",
+    "production use without fine-tuning"
+   ]
+  },
+  "official_url": "https://huggingface.co/emilyalsentzer/Bio_ClinicalBERT",
+  "sources": ["https://huggingface.co/emilyalsentzer/Bio_ClinicalBERT/raw/main/README.md"],
+  "notes": ""
+ },
+ {
+  "id": "facebook/esm2_t33_650M_UR50D",
+  "name": "esm2_t33_650M_UR50D",
+  "creator": "Facebook/Meta",
+  "card": {
+   "what": "Meta's protein language model pretrained with masked language modeling on protein sequences, meant to be fine-tuned.",
+   "kind": "biology and protein",
+   "input": ["biological sequence"],
+   "output": ["biological sequence"],
+   "interaction": "base model: needs fine-tuning",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": [
+    "learning protein sequence representations",
+    "supporting protein property prediction after fine-tuning",
+    "supporting secondary-structure prediction after fine-tuning"
+   ],
+   "product_uses": [
+    "protein function classifier built by fine-tuning",
+    "protein property prediction tool built by fine-tuning",
+    "research pipeline for secondary-structure prediction"
+   ],
+   "domains": ["biology", "science", "medicine"],
+   "not_for": [
+    "predicting 3D protein structure directly",
+    "open-ended chat or answering questions directly",
+    "production use without fine-tuning"
+   ]
+  },
+  "official_url": "https://huggingface.co/facebook/esm2_t33_650M_UR50D",
+  "sources": ["https://huggingface.co/facebook/esm2_t33_650M_UR50D/raw/main/README.md"],
+  "notes": ""
+ },
+ {
+  "id": "microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext",
+  "name": "BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext",
+  "creator": "Microsoft",
+  "card": {
+   "what": "Microsoft Research's BERT model pretrained from scratch on PubMed abstracts and full-text articles for biomedical text.",
+   "kind": "base language model",
+   "input": ["text"],
+   "output": ["text"],
+   "interaction": "base model: needs fine-tuning",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": [
+    "recognizing biomedical entities after fine-tuning",
+    "classifying biomedical papers after fine-tuning",
+    "extracting relations from biomedical literature after fine-tuning"
+   ],
+   "product_uses": [
+    "biomedical literature-mining tool built by fine-tuning",
+    "medical paper classifier built by fine-tuning",
+    "biomedical information-extraction pipeline"
+   ],
+   "domains": ["medicine", "biology", "science"],
+   "not_for": [
+    "open-ended chat or answering questions directly",
+    "general-domain (non-biomedical) NLP tasks",
+    "production use without fine-tuning"
+   ]
+  },
+  "official_url": "https://huggingface.co/microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext",
+  "sources": ["https://huggingface.co/microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext/raw/main/README.md"],
+  "notes": ""
+ },
+ {
+  "id": "microsoft/codebert-base-mlm",
+  "name": "codebert-base-mlm",
+  "creator": "Microsoft",
+  "card": {
+   "what": "Microsoft's CodeBERT variant trained with masked language modeling on code, meant as a base for fine-tuning.",
+   "kind": "base language model",
+   "input": ["code", "text"],
+   "output": ["code", "text"],
+   "interaction": "base model: needs fine-tuning",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": [
+    "predicting a masked token inside a line of code",
+    "learning code representations before fine-tuning",
+    "capturing patterns shared by code and its documentation"
+   ],
+   "product_uses": [
+    "custom code-completion model built by fine-tuning",
+    "code classification tool built by fine-tuning",
+    "research pipeline for downstream code-analysis models"
+   ],
+   "domains": ["software"],
+   "not_for": [
+    "reliable code completion or generation out of the box",
+    "open-ended chat or conversation",
+    "production use without fine-tuning"
+   ]
+  },
+  "official_url": "https://huggingface.co/microsoft/codebert-base-mlm",
+  "sources": ["https://huggingface.co/microsoft/codebert-base-mlm/raw/main/README.md"],
+  "notes": ""
+ }
+]

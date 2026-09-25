@@ -1,0 +1,128 @@
+[
+ {
+  "id": "facebook/vjepa2-vitl-fpc64-256",
+  "name": "vjepa2-vitl-fpc64-256",
+  "creator": "Meta",
+  "card": {
+   "what": "Video encoder by Meta AI that turns video clips into feature representations for downstream video tasks.",
+   "kind": "video understanding",
+   "input": ["video"],
+   "output": ["embedding"],
+   "interaction": "base model: needs fine-tuning",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": ["extracting visual features from video clips", "encoding video for downstream classifiers", "encoding video for retrieval systems", "serving as backbone for video-language models"],
+   "product_uses": ["video search engine backbone", "video recommendation system", "action recognition pipeline built on top of it"],
+   "domains": ["general", "media"],
+   "not_for": ["classifying video out of the box without training a head on top", "open-ended chat", "generating video or text"]
+  },
+  "official_url": "https://huggingface.co/facebook/vjepa2-vitl-fpc64-256",
+  "sources": ["https://huggingface.co/facebook/vjepa2-vitl-fpc64-256"],
+  "notes": ""
+ },
+ {
+  "id": "microsoft/xclip-base-patch16-zero-shot",
+  "name": "xclip-base-patch16-zero-shot",
+  "creator": "Microsoft",
+  "card": {
+   "what": "Video-language model by Microsoft that scores how well a video matches a set of text labels, without extra training.",
+   "kind": "video understanding",
+   "input": ["video", "text"],
+   "output": ["labels"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": ["classifying video clips into categories chosen at run time", "matching a video to the closest text description", "retrieving videos that match a text query"],
+   "product_uses": ["video tagging tool for a media library", "content moderation for uploaded videos", "video search by text description"],
+   "domains": ["general", "media"],
+   "not_for": ["generating video or text", "speaker or object localization inside the frame", "open-ended chat"]
+  },
+  "official_url": "https://huggingface.co/microsoft/xclip-base-patch16-zero-shot",
+  "sources": ["https://huggingface.co/microsoft/xclip-base-patch16-zero-shot"],
+  "notes": ""
+ },
+ {
+  "id": "MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7",
+  "name": "mDeBERTa-v3-base-xnli-multilingual-nli-2mil7",
+  "creator": "MoritzLaurer",
+  "card": {
+   "what": "Multilingual text classifier fine-tuned on natural language inference that labels text with categories chosen at run time.",
+   "kind": "zero-shot classification",
+   "input": ["text"],
+   "output": ["labels"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "multilingual",
+   "best_at": ["labeling text with categories defined at run time", "classifying topic or sentiment without training data", "sorting multilingual support tickets by category", "tagging documents with custom labels"],
+   "product_uses": ["support ticket triage tool", "content tagging system for a CMS", "multilingual survey response classifier"],
+   "domains": ["general", "customer support"],
+   "not_for": ["open-ended chat or answering questions directly", "generating text", "named entity extraction"]
+  },
+  "official_url": "https://huggingface.co/MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7",
+  "sources": ["https://huggingface.co/MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7"],
+  "notes": ""
+ },
+ {
+  "id": "cross-encoder/nli-deberta-v3-base",
+  "name": "nli-deberta-v3-base",
+  "creator": "Sentence Transformers",
+  "card": {
+   "what": "English cross-encoder trained on natural language inference that labels text with categories chosen at run time.",
+   "kind": "zero-shot classification",
+   "input": ["text"],
+   "output": ["labels"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": ["labeling text with categories defined at run time", "checking if one sentence implies or contradicts another", "classifying topic without training data", "sorting text into custom categories"],
+   "product_uses": ["fake news or claim verification tool", "content tagging system for a CMS", "FAQ matching system that checks entailment"],
+   "domains": ["general"],
+   "not_for": ["open-ended chat or answering questions directly", "generating text", "multilingual classification"]
+  },
+  "official_url": "https://huggingface.co/cross-encoder/nli-deberta-v3-base",
+  "sources": ["https://huggingface.co/cross-encoder/nli-deberta-v3-base"],
+  "notes": ""
+ },
+ {
+  "id": "joeddav/xlm-roberta-large-xnli",
+  "name": "xlm-roberta-large-xnli",
+  "creator": "joeddav",
+  "card": {
+   "what": "Multilingual text classifier fine-tuned on natural language inference that labels text with categories chosen at run time.",
+   "kind": "zero-shot classification",
+   "input": ["text"],
+   "output": ["labels"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "multilingual",
+   "best_at": ["labeling text with categories defined at run time", "classifying text in non-English languages without training data", "sorting multilingual documents by topic", "tagging text with custom categories"],
+   "product_uses": ["multilingual content tagging system", "support ticket triage tool for non-English markets", "survey response classifier"],
+   "domains": ["general", "customer support"],
+   "not_for": ["open-ended chat or answering questions directly", "generating text", "named entity extraction"]
+  },
+  "official_url": "https://huggingface.co/joeddav/xlm-roberta-large-xnli",
+  "sources": ["https://huggingface.co/joeddav/xlm-roberta-large-xnli"],
+  "notes": ""
+ },
+ {
+  "id": "microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224",
+  "name": "BiomedCLIP-PubMedBERT_256-vit_base_patch16_224",
+  "creator": "Microsoft",
+  "card": {
+   "what": "Biomedical vision-language model by Microsoft that turns medical images and text into comparable vectors.",
+   "kind": "multimodal embedding",
+   "input": ["image", "text"],
+   "output": ["embedding"],
+   "interaction": "embedding model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": ["matching medical images to text descriptions", "classifying microscopy, radiography or histology images by category chosen at run time", "retrieving similar medical images from a collection", "powering search over biomedical figure collections"],
+   "product_uses": ["medical image search tool for researchers", "biomedical literature figure retrieval system", "zero-shot triage tool for microscopy images"],
+   "domains": ["medicine", "biology", "science"],
+   "not_for": ["open-ended chat or answering questions directly", "generating images or text", "diagnosing patients or clinical deployment"]
+  },
+  "official_url": "https://huggingface.co/microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224",
+  "sources": ["https://huggingface.co/microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224"],
+  "notes": ""
+ }
+]

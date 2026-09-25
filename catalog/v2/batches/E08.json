@@ -1,0 +1,158 @@
+[
+ {
+  "id": "briaai/RMBG-2.0",
+  "name": "RMBG-2.0",
+  "creator": "briaai",
+  "layer": 2,
+  "hf_task": "image-segmentation",
+  "license": "other",
+  "known_sources": [
+   "https://github.com/Bria-AI/RMBG-2.0",
+   "https://huggingface.co/briaai/RMBG-2.0"
+  ],
+  "old_description_hint": "Background removal model from BRIA AI for segmenting foreground objects from images with precise alpha matting. Best at: separating foreground from background across diverse content categories. Domains: e-commerce, photography, image editing. Typical uses: product photography, portrait editing, image composition, content creation. Not suited for: very small objects or high-transparency scenarios."
+ },
+ {
+  "id": "facebook/mask2former-swin-large-cityscapes-semantic",
+  "name": "mask2former-swin-large-cityscapes-semantic",
+  "creator": "facebook",
+  "layer": 2,
+  "hf_task": "image-segmentation",
+  "license": "other",
+  "known_sources": [
+   "https://huggingface.co/facebook/mask2former-swin-large-cityscapes-semantic",
+   "https://huggingface.co/facebook/mask2former-swin-large-cityscapes-semantic/blob/main/README.md"
+  ],
+  "old_description_hint": "Mask2Former model trained on Cityscapes semantic segmentation with Swin backbone. Transformer-based architecture with masked attention. Best at: urban scene segmentation into 30+ semantic classes. Domains: autonomous driving, city planning. Typical uses: street scene analysis, autonomous navigation. Not suited for: real-time inference on constrained hardware."
+ },
+ {
+  "id": "mfaytin/mask2former-satellite",
+  "name": "mask2former-satellite",
+  "creator": "mfaytin",
+  "layer": 2,
+  "hf_task": "image-segmentation",
+  "license": "mit",
+  "known_sources": [
+   "https://huggingface.co/mfaytin/mask2former-satellite",
+   "https://huggingface.co/mfaytin/mask2former-satellite/blob/main/README.md"
+  ],
+  "old_description_hint": "Mask2Former semantic segmentation model fine-tuned on satellite imagery for land cover classification into 9 categories. Best at: classifying pixels into land cover types from aerial and satellite images. Domains: earth observation, remote sensing, environmental monitoring. Typical uses: land-use/land-cover mapping, urban sprawl analysis, environmental impact assessment. Not suited for: ground-level imagery or non-satellite data."
+ },
+ {
+  "id": "nvidia/segformer-b0-finetuned-ade-512-512",
+  "name": "segformer-b0-finetuned-ade-512-512",
+  "creator": "nvidia",
+  "layer": 2,
+  "hf_task": "image-segmentation",
+  "license": "other",
+  "known_sources": [
+   "https://huggingface.co/nvidia/segformer-b0-finetuned-ade-512-512",
+   "https://huggingface.co/nvidia/segformer-b0-finetuned-ade-512-512/blob/main/README.md"
+  ],
+  "old_description_hint": "SegFormer-B0 lightweight semantic segmentation model fine-tuned on ADE20k at 512x512. Efficient Transformer encoder with MLP decoder. Best at: fast scene understanding across 150+ semantic categories. Typical uses: real-time scene parsing, robotics, edge deployment. Not suited for: high-resolution inference without optimization."
+ },
+ {
+  "id": "baidu/Unlimited-OCR",
+  "name": "Unlimited-OCR",
+  "creator": "baidu",
+  "layer": 2,
+  "hf_task": "image-text-to-text",
+  "license": "mit",
+  "known_sources": [
+   "https://huggingface.co/baidu/Unlimited-OCR/blob/main/README.md",
+   "https://huggingface.co/baidu/Unlimited-OCR"
+  ],
+  "old_description_hint": "Baidu's multi-page OCR model supporting single-image and PDF parsing with layout preservation. Best at: Processing long documents and multi-page PDFs while maintaining formatting. Domains: Document digitization, archival, book scanning, business automation. Typical uses: Multi-page document scanning, book digitization, form processing, batch PDF conversion. Not suited for: Real-time single-image OCR, resource-constrained environments."
+ },
+ {
+  "id": "datalab-to/chandra-ocr-2",
+  "name": "chandra-ocr-2",
+  "creator": "datalab-to",
+  "layer": 2,
+  "hf_task": "image-text-to-text",
+  "license": "openrail",
+  "known_sources": [
+   "https://huggingface.co/datalab-to/chandra-ocr-2",
+   "https://huggingface.co/datalab-to/chandra-ocr-2/blob/main/README.md"
+  ],
+  "old_description_hint": "Datalab's OCR model for extracting text from documents in markdown, HTML, and JSON formats with layout preservation. Best at: accurate text extraction while maintaining document structure. Domains: document digitization, archival, business automation. Typical uses: PDF-to-markdown conversion, form processing, document intelligence, handwriting recognition. Not suited for: real-time processing, extremely small text, low-quality scans."
+ },
+ {
+  "id": "datalab-to/surya-ocr-2",
+  "name": "surya-ocr-2",
+  "creator": "datalab-to",
+  "layer": 2,
+  "hf_task": "image-text-to-text",
+  "license": "openrail",
+  "known_sources": [
+   "https://huggingface.co/datalab-to/surya-ocr-2",
+   "https://huggingface.co/datalab-to/surya-ocr-2/blob/main/README.md"
+  ],
+  "old_description_hint": "Datalab's 650M-parameter OCR model with layout analysis, table recognition, and multilingual support. Best at: Accurate text extraction with layout detection on diverse document types. Domains: Document processing, 91+ language support, structured data recognition. Typical uses: Newspaper digitization, form recognition, handwritten document processing, table extraction. Not suited for: Low-resource devices, extreme throughput requirements, non-document images."
+ },
+ {
+  "id": "deepseek-ai/DeepSeek-OCR",
+  "name": "DeepSeek-OCR",
+  "creator": "deepseek-ai",
+  "layer": 2,
+  "hf_task": "image-text-to-text",
+  "license": "mit",
+  "known_sources": [
+   "https://huggingface.co/deepseek-ai/DeepSeek-OCR",
+   "https://huggingface.co/deepseek-ai/DeepSeek-OCR/blob/main/README.md"
+  ],
+  "old_description_hint": "DeepSeek's vision-language model for document OCR with markdown output and visual understanding. Best at: Converting document images to structured markdown while understanding visual context. Domains: Document intelligence, digital transformation, content extraction. Typical uses: PDF processing, table extraction, document analysis, multi-modal understanding. Not suited for: Speed-critical applications, non-document images, real-time inference."
+ },
+ {
+  "id": "PaddlePaddle/PP-OCRv5_server_det",
+  "name": "PP-OCRv5_server_det",
+  "creator": "PaddlePaddle",
+  "layer": 2,
+  "hf_task": "image-to-text",
+  "license": "apache-2.0",
+  "known_sources": [
+   "https://huggingface.co/PaddlePaddle/PP-OCRv5_server_det",
+   "https://huggingface.co/PaddlePaddle/PP-OCRv5_server_det/blob/main/README.md"
+  ],
+  "old_description_hint": "High-performance text detection model supporting diverse scenarios and multiple languages. Best at: detecting text in varied orientations including rotated and curved text. Domains: document analysis, multilingual scene understanding. Typical uses: license plate detection, document layout analysis, rotated text localization. Not suited for: text recognition (detection-only model), very small or blurry text."
+ },
+ {
+  "id": "Salesforce/blip-image-captioning-base",
+  "name": "blip-image-captioning-base",
+  "creator": "Salesforce",
+  "layer": 2,
+  "hf_task": "image-to-text",
+  "license": "bsd-3-clause",
+  "known_sources": [
+   "https://huggingface.co/Salesforce/blip-image-captioning-base/blob/main/README.md",
+   "https://huggingface.co/Salesforce/blip-image-captioning-base"
+  ],
+  "old_description_hint": "BLIP vision-language model with ViT base backbone for image captioning. Best at: generating both conditional and unconditional image descriptions. Domains: image understanding, content accessibility. Typical uses: auto-generating image captions, image-to-text retrieval, alt text generation. Not suited for: complex visual reasoning requiring scene graph understanding."
+ },
+ {
+  "id": "Salesforce/blip-image-captioning-large",
+  "name": "blip-image-captioning-large",
+  "creator": "Salesforce",
+  "layer": 2,
+  "hf_task": "image-to-text",
+  "license": "bsd-3-clause",
+  "known_sources": [
+   "https://huggingface.co/Salesforce/blip-image-captioning-large",
+   "https://huggingface.co/Salesforce/blip-image-captioning-large/blob/main/README.md"
+  ],
+  "old_description_hint": "BLIP vision-language model with ViT large backbone for advanced image captioning. Best at: generating detailed image descriptions and captions. Domains: image understanding, content accessibility, media analysis. Typical uses: generating descriptive captions, creating detailed alt text, image-to-text understanding. Not suited for: visual reasoning tasks requiring scene graph analysis."
+ },
+ {
+  "id": "kha-white/manga-ocr-base",
+  "name": "manga-ocr-base",
+  "creator": "kha-white",
+  "layer": 2,
+  "hf_task": "image-to-text",
+  "license": "apache-2.0",
+  "known_sources": [
+   "https://huggingface.co/kha-white/manga-ocr-base",
+   "https://huggingface.co/kha-white/manga-ocr-base/blob/main/README.md"
+  ],
+  "old_description_hint": "Specialized OCR model for Japanese text recognition in manga and printed materials. Best at: extracting vertical and horizontal Japanese text with furigana support. Domains: manga, comics, Japanese publications. Typical uses: manga text extraction, Japanese document OCR, handling font variation. Not suited for: non-Japanese text, handwritten or cursive scripts."
+ }
+]

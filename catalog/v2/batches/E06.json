@@ -1,0 +1,158 @@
+[
+ {
+  "id": "depth-anything/Depth-Anything-V2-Small-hf",
+  "name": "Depth-Anything-V2-Small-hf",
+  "creator": "depth-anything",
+  "layer": 2,
+  "hf_task": "depth-estimation",
+  "license": "apache-2.0",
+  "known_sources": [
+   "https://huggingface.co/depth-anything/Depth-Anything-V2-Small-hf",
+   "https://huggingface.co/depth-anything/Depth-Anything-V2-Small-hf/blob/main/README.md"
+  ],
+  "old_description_hint": "Depth Anything V2 Small for monocular depth estimation. Trained on 595K synthetic + 62M unlabeled real images. Best at: zero-shot depth prediction with fine-grained details and robustness. Domains: 3D reconstruction, robotics, autonomous systems. Typical uses: depth map generation, 3D scene understanding. Not suited for: metric depth without calibration."
+ },
+ {
+  "id": "depth-anything/DA3METRIC-LARGE",
+  "name": "DA3METRIC-LARGE",
+  "creator": "depth-anything",
+  "layer": 2,
+  "hf_task": "depth-estimation",
+  "license": "apache-2.0",
+  "known_sources": [
+   "https://huggingface.co/depth-anything/DA3METRIC-LARGE/blob/main/README.md",
+   "https://huggingface.co/depth-anything/DA3METRIC-LARGE"
+  ],
+  "old_description_hint": "Depth Anything 3 Metric Large for metric depth estimation in monocular settings. 350M parameter model. Best at: real-world scale depth prediction with camera intrinsics and poses. Capabilities: relative depth, metric depth, sky segmentation. Typical uses: 3D mapping, real estate analysis. Not suited for: video sequences without temporal consistency."
+ },
+ {
+  "id": "impira/layoutlm-document-qa",
+  "name": "layoutlm-document-qa",
+  "creator": "impira",
+  "layer": 2,
+  "hf_task": "document-question-answering",
+  "license": "mit",
+  "known_sources": [
+   "https://huggingface.co/impira/layoutlm-document-qa/blob/main/README.md",
+   "https://huggingface.co/impira/layoutlm-document-qa"
+  ],
+  "old_description_hint": "LayoutLM fine-tuned on SQuAD 2.0 and DocVQA for document visual question answering. Best at: Extracting answers from document images using text and layout understanding. Domains: Business documents, invoices, forms, receipts. Typical uses: Invoice field extraction, receipt parsing, document-based information retrieval. Not suited for: Pure text QA, images without structured layout."
+ },
+ {
+  "id": "impira/layoutlm-invoices",
+  "name": "layoutlm-invoices",
+  "creator": "impira",
+  "layer": 2,
+  "hf_task": "document-question-answering",
+  "license": "cc-by-nc-sa-4.0",
+  "known_sources": [
+   "https://huggingface.co/impira/layoutlm-invoices",
+   "https://huggingface.co/impira/layoutlm-invoices/blob/main/README.md"
+  ],
+  "old_description_hint": "LayoutLM fine-tuned on invoices with non-consecutive token extraction capability. Best at: Question answering on invoices, extracting multi-line fields and addresses. Domains: Financial documents, invoice processing, business document automation. Typical uses: Automated invoice processing, line-item extraction, multi-field address capture. Not suited for: General document QA, non-structured text extraction."
+ },
+ {
+  "id": "naver-clova-ix/donut-base-finetuned-docvqa",
+  "name": "donut-base-finetuned-docvqa",
+  "creator": "naver-clova-ix",
+  "layer": 2,
+  "hf_task": "document-question-answering",
+  "license": "mit",
+  "known_sources": [
+   "https://huggingface.co/naver-clova-ix/donut-base-finetuned-docvqa/blob/main/README.md",
+   "https://huggingface.co/naver-clova-ix/donut-base-finetuned-docvqa"
+  ],
+  "old_description_hint": "Donut model (Swin Transformer encoder + BART decoder) fine-tuned on DocVQA for OCR-free document understanding. Best at: Document visual question answering without requiring explicit OCR. Domains: Document intelligence, form understanding, business document processing. Typical uses: Form field extraction, document classification, visual layout understanding. Not suited for: Text-only QA, non-document images, real-time processing."
+ },
+ {
+  "id": "ibm-research/MoLFormer-XL-both-10pct",
+  "name": "MoLFormer-XL-both-10pct",
+  "creator": "ibm-research",
+  "layer": 2,
+  "hf_task": "feature-extraction",
+  "license": "apache-2.0",
+  "known_sources": [
+   "https://huggingface.co/ibm-research/MoLFormer-XL-both-10pct/blob/main/README.md",
+   "https://huggingface.co/ibm-research/MoLFormer-XL-both-10pct"
+  ],
+  "old_description_hint": "IBM's transformer model trained on SMILES representations of molecules from ZINC and PubChem for molecular property prediction. Best at: extracting meaningful embeddings and representations of small molecules. Domains: chemistry, drug discovery, materials science. Typical uses: molecular property prediction, similarity search, fine-tuning for toxicity and solubility prediction. Not suited for: molecule generation; molecules larger than ~200 atoms."
+ },
+ {
+  "id": "microsoft/codebert-base",
+  "name": "codebert-base",
+  "creator": "microsoft",
+  "layer": 2,
+  "hf_task": "feature-extraction",
+  "license": null,
+  "known_sources": [
+   "https://huggingface.co/microsoft/codebert-base/blob/main/README.md",
+   "https://huggingface.co/microsoft/codebert-base"
+  ],
+  "old_description_hint": "Microsoft's bidirectional code-to-documentation embedding model trained on CodeSearchNet. Best at: semantic code search and matching code to documentation. Domains: software development. Typical uses: finding relevant code snippets by natural language query, code-to-doc retrieval, program synthesis assistance. Not suited for: code generation or completion."
+ },
+ {
+  "id": "InstaDeepAI/nucleotide-transformer-v2-500m-multi-species",
+  "name": "nucleotide-transformer-v2-500m-multi-species",
+  "creator": "InstaDeepAI",
+  "layer": 2,
+  "hf_task": "fill-mask",
+  "license": "cc-by-nc-sa-4.0",
+  "known_sources": [
+   "https://huggingface.co/InstaDeepAI/nucleotide-transformer-v2-500m-multi-species",
+   "https://huggingface.co/InstaDeepAI/nucleotide-transformer-v2-500m-multi-species/blob/main/README.md"
+  ],
+  "old_description_hint": "InstaDeepAI's 500M-parameter transformer pretrained on DNA sequences from 850 diverse genomes for genomic representation learning. Best at: extracting meaningful embeddings from DNA sequences across species. Domains: genomics, genetic research, evolutionary biology. Typical uses: predicting molecular phenotypes, disease association prediction, comparative genomics analysis. Not suited for: plants, viruses, or sequences exceeding design specifications."
+ },
+ {
+  "id": "emilyalsentzer/Bio_ClinicalBERT",
+  "name": "Bio_ClinicalBERT",
+  "creator": "emilyalsentzer",
+  "layer": 2,
+  "hf_task": "fill-mask",
+  "license": "mit",
+  "known_sources": [
+   "https://huggingface.co/emilyalsentzer/Bio_ClinicalBERT",
+   "https://huggingface.co/emilyalsentzer/Bio_ClinicalBERT/blob/main/README.md"
+  ],
+  "old_description_hint": "BioBERT-based language model pre-trained on MIMIC III clinical notes from ICU patients. Best at: downstream clinical NLP tasks including entity recognition, question answering, and text classification on clinical documents. Domains: clinical healthcare, biomedical research. Typical uses: clinical text understanding, medical record analysis, healthcare NLP applications. Not suited for: non-clinical text or general-domain language modeling."
+ },
+ {
+  "id": "facebook/esm2_t33_650M_UR50D",
+  "name": "esm2_t33_650M_UR50D",
+  "creator": "facebook",
+  "layer": 2,
+  "hf_task": "fill-mask",
+  "license": "mit",
+  "known_sources": [
+   "https://huggingface.co/facebook/esm2_t33_650M_UR50D/blob/main/README.md",
+   "https://huggingface.co/facebook/esm2_t33_650M_UR50D"
+  ],
+  "old_description_hint": "Meta's ESM-2 protein language model with 650M parameters trained via masked language modeling on protein sequences. Best at: learning protein representations and sequence embeddings. Domains: structural biology, protein research. Typical uses: fine-tuning for protein property prediction, secondary structure prediction, protein function classification. Not suited for: protein structure prediction (use ESMFold instead)."
+ },
+ {
+  "id": "microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext",
+  "name": "BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext",
+  "creator": "microsoft",
+  "layer": 2,
+  "hf_task": "fill-mask",
+  "license": "mit",
+  "known_sources": [
+   "https://huggingface.co/microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext/blob/main/README.md",
+   "https://huggingface.co/microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext"
+  ],
+  "old_description_hint": "BERT pre-trained on PubMed abstracts and full-text articles for comprehensive biomedical understanding. Best at: Biomedical NLP tasks spanning both abstracts and complete papers. Domains: Biomedical research, medical publishing, literature mining, life sciences. Typical uses: Full-text literature mining, biomedical information extraction, paper classification. Not suited for: General English NLP, non-medical domains, real-time applications."
+ },
+ {
+  "id": "microsoft/codebert-base-mlm",
+  "name": "codebert-base-mlm",
+  "creator": "microsoft",
+  "layer": 2,
+  "hf_task": "fill-mask",
+  "license": null,
+  "known_sources": [
+   "https://huggingface.co/microsoft/codebert-base-mlm/blob/main/README.md",
+   "https://huggingface.co/microsoft/codebert-base-mlm"
+  ],
+  "old_description_hint": "Microsoft's code embedding model trained with masked language modeling objective for code completion tasks. Best at: predicting missing tokens in code sequences. Domains: software development. Typical uses: code completion, code token prediction, fine-tuning on downstream programming tasks. Not suited for: semantic code search without adaptation."
+ }
+]

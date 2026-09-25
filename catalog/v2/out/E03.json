@@ -1,0 +1,380 @@
+[
+ {
+  "id": "moonshotai/kimi-k3",
+  "name": "MoonshotAI: Kimi K3",
+  "creator": "Moonshot AI",
+  "card": {
+   "what": "Open-weight multimodal agentic model by Moonshot AI for long-horizon coding, reasoning and knowledge work.",
+   "kind": "multimodal LLM",
+   "input": ["text", "image", "video"],
+   "output": ["text", "code"],
+   "interaction": "chat and instructions",
+   "access": "open weights",
+   "languages": "multilingual",
+   "best_at": [
+    "sustaining long, multi-step coding and engineering sessions",
+    "navigating and refactoring large code repositories",
+    "orchestrating terminal tools during coding sessions",
+    "producing research reports with interactive visualizations",
+    "understanding images and video alongside text"
+   ],
+   "product_uses": [
+    "autonomous coding agent for large repositories",
+    "research assistant that builds interactive dashboards",
+    "AI pair programmer for terminal-based workflows"
+   ],
+   "domains": ["software", "general"],
+   "not_for": ["generating or editing images and video", "generating speech or audio"]
+  },
+  "official_url": "https://huggingface.co/moonshotai/Kimi-K3",
+  "sources": ["https://huggingface.co/moonshotai/Kimi-K3"],
+  "notes": "Idioma no declarado explícitamente en la fuente; se completó como multilingual por defecto."
+ },
+ {
+  "id": "moonshotai/kimi-k2.7-code",
+  "name": "MoonshotAI: Kimi K2.7 Code",
+  "creator": "Moonshot AI",
+  "card": {
+   "what": "Open-weight coding-focused agentic LLM by Moonshot AI built on Kimi K2.6 for software engineering.",
+   "kind": "coding LLM",
+   "input": ["text", "image", "video"],
+   "output": ["text", "code"],
+   "interaction": "chat and instructions",
+   "access": "open weights",
+   "languages": "multilingual",
+   "best_at": [
+    "completing long, multi-step software engineering tasks",
+    "navigating and editing large codebases end to end",
+    "using developer tools through an agent framework",
+    "explaining and debugging code changes"
+   ],
+   "product_uses": [
+    "autonomous coding agent for a software team",
+    "AI assistant that completes end-to-end engineering tickets",
+    "coding copilot with tool-calling support"
+   ],
+   "domains": ["software"],
+   "not_for": ["generating or editing images and video", "generating speech or audio"]
+  },
+  "official_url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code",
+  "sources": ["https://huggingface.co/moonshotai/Kimi-K2.7-Code"],
+  "notes": "Idioma no declarado explícitamente en la fuente; se completó como multilingual por defecto."
+ },
+ {
+  "id": "nvidia/nemotron-3.5-lightning",
+  "name": "NVIDIA: Nemotron 3.5 Lightning",
+  "creator": "NVIDIA",
+  "card": {
+   "what": "Open-weight mixture-of-experts LLM by NVIDIA built to execute fixed tool-calling steps inside long-running AI agents.",
+   "kind": "chat LLM",
+   "input": ["text"],
+   "output": ["text"],
+   "interaction": "chat and instructions",
+   "access": "open weights",
+   "languages": "English, German, Spanish, French, Italian",
+   "best_at": [
+    "executing tool calls inside longer agent workflows",
+    "validating and formatting tool outputs",
+    "handling high-volume, routine steps in an agent pipeline",
+    "supporting retrieval-augmented generation systems"
+   ],
+   "product_uses": [
+    "execution layer for a multi-agent coding assistant",
+    "chatbot that validates and formats tool results",
+    "RAG system component tuned for a specific domain"
+   ],
+   "domains": ["general", "software"],
+   "not_for": ["planning complex multi-step strategies on its own", "generating images or audio"]
+  },
+  "official_url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+  "sources": [
+   "https://developer.nvidia.com/blog/nvidia-nemotron-3-5-lightning-delivers-fast-accurate-specialized-task-execution-for-long-running-agents/",
+   "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16"
+  ],
+  "notes": "La ficha de HF lo describe como pensado sobre todo para post-entrenamiento/customización; se completó como chat model porque también se documenta como usable directamente dentro de harnesses de agentes."
+ },
+ {
+  "id": "nvidia/nemotron-3-ultra-550b-a55b",
+  "name": "NVIDIA: Nemotron 3 Ultra",
+  "creator": "NVIDIA",
+  "card": {
+   "what": "Open-weight hybrid Mamba-attention mixture-of-experts LLM by NVIDIA for agentic, reasoning and long-context chat.",
+   "kind": "chat LLM",
+   "input": ["text"],
+   "output": ["text"],
+   "interaction": "chat and instructions",
+   "access": "open weights",
+   "languages": "English, French, Spanish, Italian, German",
+   "best_at": [
+    "handling long, multi-step reasoning tasks",
+    "working with very long documents and contexts",
+    "powering agentic workflows that call external tools",
+    "solving advanced coding and math problems"
+   ],
+   "product_uses": [
+    "enterprise assistant for long-document analysis",
+    "agentic coding assistant for large codebases",
+    "research tool for complex reasoning tasks"
+   ],
+   "domains": ["general", "software"],
+   "not_for": ["reading or generating images, audio or video", "answering with live web search and citations"]
+  },
+  "official_url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+  "sources": [
+   "https://research.nvidia.com/labs/nemotron/Nemotron-3-Ultra/",
+   "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16"
+  ],
+  "notes": ""
+ },
+ {
+  "id": "openai/gpt-6-sol-pro",
+  "name": "OpenAI: GPT-6 Sol Pro",
+  "creator": "OpenAI",
+  "card": {
+   "what": "Higher-effort configuration of OpenAI's GPT-6 Sol, a reasoning model built for complex coding and agentic work.",
+   "kind": "multimodal LLM",
+   "input": ["text", "image"],
+   "output": ["text"],
+   "interaction": "chat and instructions",
+   "access": "hosted API",
+   "languages": "multilingual",
+   "best_at": [
+    "handling complex coding and agentic workflows",
+    "reasoning through demanding, multi-step tasks",
+    "automating tasks that call external tools",
+    "professional work needing high factual accuracy"
+   ],
+   "product_uses": [
+    "coding agent for complex software projects",
+    "AI agent that automates multi-step workflows",
+    "assistant for professional research and analysis"
+   ],
+   "domains": ["software", "general"],
+   "not_for": ["generating images directly (only text output)", "real-time spoken conversation"]
+  },
+  "official_url": "https://developers.openai.com/api/docs/guides/latest-model",
+  "sources": [
+   "https://developers.openai.com/api/docs/guides/latest-model",
+   "https://developers.openai.com/api/docs/models/all"
+  ],
+  "notes": "Ninguna página oficial de OpenAI nombra un modelo separado 'GPT-6 Sol Pro'; solo documentan 'GPT-6 Sol'. La ficha describe la variante de mayor esfuerzo de razonamiento que revendedores de API listan como 'Sol Pro', usando los datos verificados de GPT-6 Sol."
+ },
+ {
+  "id": "openai/gpt-6-sol",
+  "name": "OpenAI: GPT-6 Sol",
+  "creator": "OpenAI",
+  "card": {
+   "what": "Reasoning-focused model in OpenAI's GPT-6 family built to power complex coding and agentic workflows.",
+   "kind": "multimodal LLM",
+   "input": ["text", "image"],
+   "output": ["text"],
+   "interaction": "chat and instructions",
+   "access": "hosted API",
+   "languages": "multilingual",
+   "best_at": [
+    "handling complex coding and agentic workflows",
+    "reasoning through demanding, multi-step tasks",
+    "automating tasks that call external tools",
+    "professional work needing high factual accuracy"
+   ],
+   "product_uses": [
+    "coding agent for complex software projects",
+    "AI agent that automates multi-step workflows",
+    "assistant for professional research and analysis"
+   ],
+   "domains": ["software", "general"],
+   "not_for": ["generating images directly (only text output)", "real-time spoken conversation"]
+  },
+  "official_url": "https://developers.openai.com/api/docs/guides/latest-model",
+  "sources": [
+   "https://developers.openai.com/api/docs/guides/latest-model",
+   "https://developers.openai.com/api/docs/models/all"
+  ],
+  "notes": ""
+ },
+ {
+  "id": "openai/gpt-6-luna-pro",
+  "name": "OpenAI: GPT-6 Luna Pro",
+  "creator": "OpenAI",
+  "card": {
+   "what": "Higher-throughput configuration of OpenAI's GPT-6 Luna, built for fast, high-volume, repeatable work.",
+   "kind": "multimodal LLM",
+   "input": ["text", "image"],
+   "output": ["text"],
+   "interaction": "chat and instructions",
+   "access": "hosted API",
+   "languages": "multilingual",
+   "best_at": [
+    "handling high-volume, repeatable tasks at low latency",
+    "automating simple multi-step workflows cheaply",
+    "matching larger models' factual accuracy at higher reasoning effort",
+    "running routine business and support tasks"
+   ],
+   "product_uses": [
+    "customer support bot handling high message volume",
+    "workflow automation for repetitive business tasks",
+    "cost-efficient AI agent for routine tasks"
+   ],
+   "domains": ["general", "customer support"],
+   "not_for": ["generating images directly (only text output)", "real-time spoken conversation"]
+  },
+  "official_url": "https://developers.openai.com/api/docs/guides/latest-model",
+  "sources": [
+   "https://developers.openai.com/api/docs/guides/latest-model",
+   "https://developers.openai.com/api/docs/models/all"
+  ],
+  "notes": "Ninguna página oficial de OpenAI nombra un modelo separado 'GPT-6 Luna Pro'; solo documentan 'GPT-6 Luna'. La ficha describe la variante de mayor throughput que revendedores de API listan como 'Luna Pro', usando los datos verificados de GPT-6 Luna."
+ },
+ {
+  "id": "openai/gpt-6-astra",
+  "name": "OpenAI: GPT-6 Astra",
+  "creator": "OpenAI",
+  "card": {
+   "what": "OpenAI's most capable GPT-6 model, built for the hardest end-to-end professional and technical work.",
+   "kind": "multimodal LLM",
+   "input": ["text", "image"],
+   "output": ["text"],
+   "interaction": "chat and instructions",
+   "access": "hosted API",
+   "languages": "multilingual",
+   "best_at": [
+    "handling the hardest end-to-end professional tasks",
+    "operating computers and browsers autonomously",
+    "writing and maintaining complex software",
+    "sustaining long, multi-step reasoning chains"
+   ],
+   "product_uses": [
+    "autonomous computer-use agent for office tasks",
+    "advanced coding agent for large systems",
+    "research assistant for complex professional work"
+   ],
+   "domains": ["general", "software"],
+   "not_for": ["turning reasoning off completely (always thinks before answering)", "generating images directly (only text output)"]
+  },
+  "official_url": "https://developers.openai.com/api/docs/guides/latest-model",
+  "sources": [
+   "https://developers.openai.com/api/docs/guides/latest-model",
+   "https://developers.openai.com/api/docs/models/all"
+  ],
+  "notes": ""
+ },
+ {
+  "id": "openai/o3-pro",
+  "name": "OpenAI: o3 Pro",
+  "creator": "OpenAI",
+  "card": {
+   "what": "Reasoning model from OpenAI's o3 family that spends extra compute to think longer before answering.",
+   "kind": "multimodal LLM",
+   "input": ["text", "image"],
+   "output": ["text"],
+   "interaction": "chat and instructions",
+   "access": "hosted API",
+   "languages": "multilingual",
+   "best_at": [
+    "solving especially hard, multi-step reasoning problems",
+    "working through problems that need extended thinking time",
+    "calling external tools and functions during reasoning",
+    "searching the web and citing sources while reasoning"
+   ],
+   "product_uses": [
+    "research assistant for the hardest analytical problems",
+    "agent that plans and calls tools over long tasks",
+    "back-end reasoning engine inside a larger workflow"
+   ],
+   "domains": ["general", "science"],
+   "not_for": ["generating images directly (use another model for that)", "real-time or chat-completions style conversation", "fine-tuning on custom data"]
+  },
+  "official_url": "https://developers.openai.com/api/docs/models/o3-pro",
+  "sources": ["https://developers.openai.com/api/docs/models/o3-pro"],
+  "notes": ""
+ },
+ {
+  "id": "perplexity/sonar-pro-search",
+  "name": "Perplexity: Sonar Pro Search",
+  "creator": "Perplexity",
+  "card": {
+   "what": "Search-augmented LLM by Perplexity that answers complex queries using live web results and citations.",
+   "kind": "search LLM",
+   "input": ["text"],
+   "output": ["text"],
+   "interaction": "chat and instructions",
+   "access": "hosted API",
+   "languages": "English",
+   "best_at": [
+    "answering complex, multi-step questions with web sources",
+    "comparing information across multiple sources",
+    "producing detailed research reports with citations"
+   ],
+   "product_uses": [
+    "research assistant that cites its sources",
+    "app that answers questions with up-to-date web data",
+    "comparison tool that synthesizes several sources"
+   ],
+   "domains": ["general"],
+   "not_for": ["generating images, audio or video", "writing or executing code changes in a repository"]
+  },
+  "official_url": "https://docs.perplexity.ai/docs/sonar/models/sonar-pro",
+  "sources": ["https://docs.perplexity.ai/docs/sonar/models/sonar-pro"],
+  "notes": "La fuente documenta 'Sonar Pro'; se usó para completar la ficha de 'Sonar Pro Search' indicada como misma fuente en la entrada."
+ },
+ {
+  "id": "qwen/qwen3.8-max-prime",
+  "name": "Qwen: Qwen3.8 Max Prime",
+  "creator": "Qwen",
+  "card": {
+   "what": "High-throughput variant of Alibaba's Qwen3.8-Max, a multimodal LLM for coding and long-running agent work.",
+   "kind": "multimodal LLM",
+   "input": ["text", "image", "video"],
+   "output": ["text"],
+   "interaction": "chat and instructions",
+   "access": "hosted API",
+   "languages": "multilingual",
+   "best_at": [
+    "coding autonomously across long, multi-day projects",
+    "professional knowledge work like legal and finance analysis",
+    "understanding images and long videos",
+    "running long, multi-step agent workflows"
+   ],
+   "product_uses": [
+    "autonomous coding agent for large projects",
+    "office automation assistant for professional documents",
+    "video-understanding assistant for long recordings"
+   ],
+   "domains": ["software", "legal", "finance"],
+   "not_for": ["generating images, audio or video (it understands them, not create them)", "running as an open-weights, self-hosted model"]
+  },
+  "official_url": "https://www.alibabacloud.com/help/en/model-studio/qwen3-8-max",
+  "sources": ["https://www.alibabacloud.com/help/en/model-studio/qwen3-8-max"],
+  "notes": "Alibaba no tiene una página propia para 'Qwen3.8 Max Prime'; se documentó con la ficha oficial de Qwen3.8-Max (misma arquitectura). El nombre 'Prime' y su diferencia de throughput solo aparecen en revendedores de API, no en fuente oficial de Alibaba."
+ },
+ {
+  "id": "qwen/qwen3.8-flash",
+  "name": "Qwen: Qwen3.8 Flash",
+  "creator": "Qwen",
+  "card": {
+   "what": "Open-weight multimodal LLM by Qwen (Alibaba) for general chat, coding and long-context agentic tasks.",
+   "kind": "multimodal LLM",
+   "input": ["text", "image", "video"],
+   "output": ["text"],
+   "interaction": "chat and instructions",
+   "access": "open weights",
+   "languages": "multilingual",
+   "best_at": [
+    "agentic coding tasks over long sessions",
+    "analyzing images and long videos",
+    "handling long-horizon office and work tasks",
+    "reasoning step by step before answering"
+   ],
+   "product_uses": [
+    "coding agent for complex programming tasks",
+    "assistant that understands images and video",
+    "long-context research or office automation tool"
+   ],
+   "domains": ["software", "general"],
+   "not_for": ["generating images, audio or video (it understands them, not create them)", "acting as a small model for lightweight on-device tasks"]
+  },
+  "official_url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+  "sources": ["https://huggingface.co/Qwen/Qwen3.8-Flash-Next"],
+  "notes": ""
+ }
+]

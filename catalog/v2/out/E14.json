@@ -1,0 +1,254 @@
+[
+ {
+  "id": "StanfordAIMI/stanford-deidentifier-base",
+  "name": "stanford-deidentifier-base",
+  "creator": "StanfordAIMI",
+  "card": {
+   "what": "Token classification model by Stanford AIMI that finds protected health information in medical text for de-identification.",
+   "kind": "named entity recognition",
+   "input": ["text"],
+   "output": ["entities"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": ["finding protected health information in radiology reports", "detecting patient names, dates and IDs in clinical notes", "supporting de-identification of medical documents"],
+   "product_uses": ["tool to de-identify hospital records before sharing", "pipeline to redact patient data from radiology reports", "compliance tool for medical data anonymization"],
+   "domains": ["medicine"],
+   "not_for": ["open-ended chat or answering questions directly", "de-identifying non-medical documents", "replacing entities with synthetic text on its own"]
+  },
+  "official_url": "https://huggingface.co/StanfordAIMI/stanford-deidentifier-base",
+  "sources": ["https://huggingface.co/StanfordAIMI/stanford-deidentifier-base/blob/main/README.md"],
+  "notes": ""
+ },
+ {
+  "id": "celiudos/legal-bert-lgpd",
+  "name": "legal-bert-lgpd",
+  "creator": "celiudos",
+  "card": {
+   "what": "Token classification model that finds personal data entities in Brazilian Portuguese legal text for LGPD compliance.",
+   "kind": "named entity recognition",
+   "input": ["text"],
+   "output": ["entities"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "Portuguese",
+   "best_at": ["finding names, addresses and IDs in legal documents", "detecting personal data for privacy compliance", "extracting dates, phone numbers and emails from contracts"],
+   "product_uses": ["tool to check contracts for LGPD compliance", "app that flags personal data in legal documents", "privacy audit tool for law firms"],
+   "domains": ["legal"],
+   "not_for": ["open-ended chat or answering questions directly", "giving legal advice", "working on languages other than Portuguese"]
+  },
+  "official_url": "https://huggingface.co/celiudos/legal-bert-lgpd",
+  "sources": ["https://huggingface.co/celiudos/legal-bert-lgpd"],
+  "notes": ""
+ },
+ {
+  "id": "d4data/biomedical-ner-all",
+  "name": "biomedical-ner-all",
+  "creator": "d4data",
+  "card": {
+   "what": "Token classification model that extracts biomedical entities from clinical text such as case reports.",
+   "kind": "named entity recognition",
+   "input": ["text"],
+   "output": ["entities"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": ["finding diseases, drugs and symptoms in clinical notes", "extracting biomedical entities from case reports", "supporting biomedical information extraction"],
+   "product_uses": ["tool to extract medical entities from clinical notes", "research assistant for biomedical literature review", "app that highlights drugs and conditions in patient records"],
+   "domains": ["medicine", "biology"],
+   "not_for": ["open-ended chat or answering questions directly", "giving medical diagnosis or advice", "extracting entities from non-biomedical text"]
+  },
+  "official_url": "https://huggingface.co/d4data/biomedical-ner-all",
+  "sources": ["https://huggingface.co/d4data/biomedical-ner-all/blob/main/README.md"],
+  "notes": ""
+ },
+ {
+  "id": "dbmdz/bert-large-cased-finetuned-conll03-english",
+  "name": "bert-large-cased-finetuned-conll03-english",
+  "creator": "dbmdz",
+  "card": {
+   "what": "BERT model fine-tuned for named entity recognition on English news text.",
+   "kind": "named entity recognition",
+   "input": ["text"],
+   "output": ["entities"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": ["finding people, organizations and locations in text", "extracting named entities from news articles", "supporting information extraction pipelines"],
+   "product_uses": ["tool to extract people and companies mentioned in news", "app that builds a knowledge graph from articles", "content tagging tool for a news platform"],
+   "domains": ["general", "media"],
+   "not_for": ["open-ended chat or answering questions directly", "recognizing entities outside person, organization, location and misc categories", "working reliably on domains far from news text"]
+  },
+  "official_url": "https://huggingface.co/dbmdz/bert-large-cased-finetuned-conll03-english",
+  "sources": ["https://huggingface.co/dbmdz/bert-large-cased-finetuned-conll03-english"],
+  "notes": ""
+ },
+ {
+  "id": "dslim/bert-base-NER",
+  "name": "bert-base-NER",
+  "creator": "dslim",
+  "card": {
+   "what": "Fine-tuned BERT model that identifies person, location, organization and misc entities in English text.",
+   "kind": "named entity recognition",
+   "input": ["text"],
+   "output": ["entities"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": ["finding people, locations and organizations in text", "extracting named entities from news content", "tagging structured information in documents"],
+   "product_uses": ["tool to extract entities from support tickets", "app that tags people and places in articles", "content moderation helper that flags named entities"],
+   "domains": ["general", "media"],
+   "not_for": ["open-ended chat or answering questions directly", "recognizing entities outside its four categories", "working reliably outside news-style English text"]
+  },
+  "official_url": "https://huggingface.co/dslim/bert-base-NER",
+  "sources": ["https://huggingface.co/dslim/bert-base-NER"],
+  "notes": ""
+ },
+ {
+  "id": "lfcc/bert-portuguese-ner",
+  "name": "bert-portuguese-ner",
+  "creator": "lfcc",
+  "card": {
+   "what": "Fine-tuned Portuguese BERT model that recognizes named entities in archival documents.",
+   "kind": "named entity recognition",
+   "input": ["text"],
+   "output": ["entities"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "Portuguese",
+   "best_at": ["finding people, places and organizations in archival records", "extracting dates and professions from historical documents", "supporting entity linking for archive browsing tools"],
+   "product_uses": ["tool to index historical archives by entity", "app for smart browsing of archival finding aids", "research tool for genealogy or historical records"],
+   "domains": ["general"],
+   "not_for": ["open-ended chat or answering questions directly", "recognizing entities outside its five categories", "working reliably on contemporary or non-archival Portuguese text"]
+  },
+  "official_url": "https://huggingface.co/lfcc/bert-portuguese-ner",
+  "sources": ["https://huggingface.co/lfcc/bert-portuguese-ner"],
+  "notes": ""
+ },
+ {
+  "id": "w11wo/indonesian-roberta-base-posp-tagger",
+  "name": "indonesian-roberta-base-posp-tagger",
+  "creator": "w11wo",
+  "card": {
+   "what": "Fine-tuned Indonesian RoBERTa model that tags each word in a sentence with its part of speech.",
+   "kind": "named entity recognition",
+   "input": ["text"],
+   "output": ["labels"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "Indonesian",
+   "best_at": ["tagging part of speech for Indonesian words", "supporting grammatical analysis of Indonesian text", "preprocessing text for Indonesian NLP pipelines"],
+   "product_uses": ["grammar checking tool for Indonesian", "linguistic research tool for Indonesian text", "preprocessing step for an Indonesian NLP pipeline"],
+   "domains": ["general", "education"],
+   "not_for": ["open-ended chat or answering questions directly", "named entity recognition (it tags grammar, not entities)", "working on languages other than Indonesian"]
+  },
+  "official_url": "https://huggingface.co/w11wo/indonesian-roberta-base-posp-tagger",
+  "sources": ["https://huggingface.co/w11wo/indonesian-roberta-base-posp-tagger/blob/main/README.md"],
+  "notes": ""
+ },
+ {
+  "id": "Helsinki-NLP/opus-mt-nl-en",
+  "name": "opus-mt-nl-en",
+  "creator": "Helsinki-NLP",
+  "card": {
+   "what": "Neural machine translation model by Helsinki-NLP that translates Dutch text into English.",
+   "kind": "translation",
+   "input": ["text"],
+   "output": ["text"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "Dutch, English",
+   "best_at": ["translating Dutch text into English", "converting Dutch documents to English"],
+   "product_uses": ["app that translates Dutch web content into English", "tool to localize Dutch product descriptions to English", "browser extension that translates Dutch pages"],
+   "domains": ["general"],
+   "not_for": ["open-ended chat or answering questions directly", "translating between languages other than Dutch and English", "translating speech directly (text only)"]
+  },
+  "official_url": "https://huggingface.co/Helsinki-NLP/opus-mt-nl-en",
+  "sources": ["https://huggingface.co/Helsinki-NLP/opus-mt-nl-en/blob/main/README.md"],
+  "notes": ""
+ },
+ {
+  "id": "Helsinki-NLP/opus-mt-fr-en",
+  "name": "opus-mt-fr-en",
+  "creator": "Helsinki-NLP",
+  "card": {
+   "what": "Neural machine translation model by Helsinki-NLP that translates French text into English.",
+   "kind": "translation",
+   "input": ["text"],
+   "output": ["text"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "French, English",
+   "best_at": ["translating French text into English", "converting French documents to English"],
+   "product_uses": ["app that translates French articles into English", "tool to localize French product descriptions to English", "browser extension that translates French pages"],
+   "domains": ["general"],
+   "not_for": ["open-ended chat or answering questions directly", "translating between languages other than French and English", "translating speech directly (text only)"]
+  },
+  "official_url": "https://huggingface.co/Helsinki-NLP/opus-mt-fr-en",
+  "sources": ["https://huggingface.co/Helsinki-NLP/opus-mt-fr-en/blob/main/README.md"],
+  "notes": ""
+ },
+ {
+  "id": "facebook/nllb-200-distilled-600M",
+  "name": "nllb-200-distilled-600M",
+  "creator": "facebook",
+  "card": {
+   "what": "Distilled machine translation model by Meta that translates single sentences among many languages.",
+   "kind": "translation",
+   "input": ["text"],
+   "output": ["text"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "multilingual",
+   "best_at": ["translating single sentences between many languages", "translating low-resource and underrepresented languages", "supporting research on multilingual translation"],
+   "product_uses": ["app that translates messages between many languages", "tool to localize content into low-resource languages", "research prototype for multilingual translation"],
+   "domains": ["general"],
+   "not_for": ["open-ended chat or answering questions directly", "translating full long documents (built for single sentences)", "specialized medical or legal translation"]
+  },
+  "official_url": "https://huggingface.co/facebook/nllb-200-distilled-600M",
+  "sources": ["https://huggingface.co/facebook/nllb-200-distilled-600M/blob/main/README.md"],
+  "notes": ""
+ },
+ {
+  "id": "google-t5/t5-base",
+  "name": "t5-base",
+  "creator": "Google",
+  "card": {
+   "what": "Text-to-text transformer by Google pretrained on many NLP tasks, meant to be fine-tuned for a specific task.",
+   "kind": "base language model",
+   "input": ["text"],
+   "output": ["text"],
+   "interaction": "base model: needs fine-tuning",
+   "access": "open weights",
+   "languages": "English, French, Romanian, German",
+   "best_at": ["serving as a base for translation, summarization or question answering", "adapting to new text-to-text tasks after fine-tuning", "providing a general-purpose text encoder-decoder backbone"],
+   "product_uses": ["custom summarization tool built by fine-tuning on domain text", "custom translation tool for a specific language pair", "custom question-answering system trained on proprietary documents"],
+   "domains": ["general"],
+   "not_for": ["open-ended chat or answering questions directly out of the box", "production use without fine-tuning on a target task", "languages beyond English, French, Romanian and German"]
+  },
+  "official_url": "https://huggingface.co/google-t5/t5-base",
+  "sources": ["https://huggingface.co/google-t5/t5-base"],
+  "notes": ""
+ },
+ {
+  "id": "MCG-NJU/videomae-base",
+  "name": "videomae-base",
+  "creator": "MCG-NJU",
+  "card": {
+   "what": "Self-supervised video model that learns representations by reconstructing masked video patches, meant to be fine-tuned.",
+   "kind": "base language model",
+   "input": ["video"],
+   "output": ["video"],
+   "interaction": "base model: needs fine-tuning",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": ["serving as a backbone for video classification after fine-tuning", "learning general video representations from unlabeled video", "extracting video features for downstream tasks"],
+   "product_uses": ["custom video classifier built by fine-tuning on labeled clips", "action recognition tool trained on proprietary video data", "video feature extractor for a recommendation system"],
+   "domains": ["media", "general"],
+   "not_for": ["open-ended chat or answering questions directly", "classifying video out of the box without fine-tuning", "generating or editing video content"]
+  },
+  "official_url": "https://huggingface.co/MCG-NJU/videomae-base",
+  "sources": ["https://huggingface.co/MCG-NJU/videomae-base/blob/main/README.md"],
+  "notes": ""
+ }
+]

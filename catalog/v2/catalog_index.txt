@@ -1,0 +1,196 @@
+openai/gpt-6-sol-pro	OpenAI: GPT-6 Sol Pro
+openai/gpt-6-sol	OpenAI: GPT-6 Sol
+openai/gpt-6-luna-pro	OpenAI: GPT-6 Luna Pro
+openai/gpt-6-luna	OpenAI: GPT-6 Luna
+openai/gpt-6-astra	OpenAI: GPT-6 Astra
+anthropic/claude-opus-5.5	Anthropic: Claude Opus 5.5
+anthropic/claude-fable-5.1	Anthropic: Claude Fable 5.1
+anthropic/claude-sonnet-5	Anthropic: Claude Sonnet 5
+anthropic/claude-haiku-4.5	Anthropic: Claude Haiku 4.5
+google/gemini-3.8-flash	Google: Gemini 3.8 Flash
+google/gemini-3.5-flash-lite	Google: Gemini 3.5 Flash Lite
+google/gemini-3-pro-image	Google: Nano Banana Pro (Gemini 3 Pro Image)
+meta-llama/llama-4-maverick	Meta: Llama 4 Maverick
+meta-llama/llama-4-scout	Meta: Llama 4 Scout
+meta-llama/llama-3.3-70b-instruct	Meta: Llama 3.3 70B Instruct
+meta-llama/llama-3.1-8b-instruct	Meta: Llama 3.1 8B Instruct
+mistralai/mistral-medium-3-5	Mistral: Mistral Medium 3.5
+mistralai/mistral-small-2603	Mistral: Mistral Small 4
+mistralai/ministral-8b-2512	Mistral: Ministral 3 8B 2512
+mistralai/codestral-2508	Mistral: Codestral 2508
+qwen/qwen3.8-max-prime	Qwen: Qwen3.8 Max Prime
+qwen/qwen3.8-flash	Qwen: Qwen3.8 Flash
+qwen/qwen3.8-27b	Qwen: Qwen3.8 27B
+qwen/qwen3.8-omni-flash	Qwen: Qwen3.8 Omni Flash
+deepseek/deepseek-v4-pro-0813	DeepSeek: DeepSeek V4 Pro 0813
+deepseek/deepseek-v4.1-flash	DeepSeek: DeepSeek V4.1 Flash
+deepseek/deepseek-v4-flash-vision-exp	DeepSeek: DeepSeek V4 Flash Vision Exp
+x-ai/grok-4.7	SpaceXAI: Grok 4.7
+x-ai/grok-build-0.1	SpaceXAI: Grok Build 0.1
+moonshotai/kimi-k3	MoonshotAI: Kimi K3
+moonshotai/kimi-k2.7-code	MoonshotAI: Kimi K2.7 Code
+z-ai/glm-5.3	Z.ai: GLM 5.3
+z-ai/glm-5.3-flash	Z.ai: GLM 5.3 Flash
+minimax/minimax-m3	MiniMax: MiniMax M3
+amazon/nova-premier-v1	Amazon: Nova Premier 1.0
+amazon/nova-2-lite-v1	Amazon: Nova 2 Lite
+microsoft/phi-4	Microsoft: Phi 4
+nvidia/nemotron-3.5-lightning	NVIDIA: Nemotron 3.5 Lightning
+nvidia/nemotron-3-ultra-550b-a55b	NVIDIA: Nemotron 3 Ultra
+cohere/command-a-plus	Cohere: Command A+
+ibm-granite/granite-4.2-8b	IBM: Granite 4.2 8B
+tencent/hy3	Tencent: Hy3
+tencent/hy-mt2-7b	Tencent: Hy-MT2-7B
+bytedance-seed/seed-2-1-turbo	ByteDance Seed: Seed 2.1 Turbo
+bytedance-seed/seed-2.0-code	ByteDance Seed: Seed-2.0-Code
+inception/mercury-2.5	Inception: Mercury 2.5
+perplexity/sonar-pro-search	Perplexity: Sonar Pro Search
+openai/o3-pro	OpenAI: o3 Pro
+jonatasgrosman/wav2vec2-large-xlsr-53-japanese	wav2vec2-large-xlsr-53-japanese
+pyannote/speaker-diarization-3.1	speaker-diarization-3.1
+openai/whisper-large-v3-turbo	whisper-large-v3-turbo
+jonatasgrosman/wav2vec2-large-xlsr-53-portuguese	wav2vec2-large-xlsr-53-portuguese
+pyannote/speaker-diarization-community-1	speaker-diarization-community-1
+openai/whisper-large-v3	whisper-large-v3
+hexgrad/Kokoro-82M	Kokoro-82M
+coqui/XTTS-v2	XTTS-v2
+Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice	Qwen3-TTS-12Hz-1.7B-CustomVoice
+ResembleAI/chatterbox	chatterbox
+k2-fsa/OmniVoice	OmniVoice
+Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice	Qwen3-TTS-12Hz-0.6B-CustomVoice
+laion/clap-htsat-fused	clap-htsat-fused
+audeering/wav2vec2-large-robust-24-ft-age-gender	wav2vec2-large-robust-24-ft-age-gender
+MIT/ast-finetuned-audioset-10-10-0.4593	ast-finetuned-audioset-10-10-0.4593
+facebook/audiobox-aesthetics	audiobox-aesthetics
+facebook/musicgen-medium	musicgen-medium
+facebook/musicgen-small	musicgen-small
+stabilityai/stable-audio-3-medium	stable-audio-3-medium
+timm/mobilenetv3_small_100.lamb_in1k	mobilenetv3_small_100.lamb_in1k
+google/vit-base-patch16-224	vit-base-patch16-224
+Falconsai/nsfw_image_detection	nsfw_image_detection
+timm/resnet18.a1_in1k	resnet18.a1_in1k
+PaddlePaddle/PP-DocLayoutV3_safetensors	PP-DocLayoutV3_safetensors
+microsoft/table-transformer-structure-recognition	table-transformer-structure-recognition
+PekingU/rtdetr_r101vd_coco_o365	rtdetr_r101vd_coco_o365
+hustvl/yolos-small	yolos-small
+microsoft/table-transformer-detection	table-transformer-detection
+CIDAS/clipseg-rd64-refined	clipseg-rd64-refined
+ZhengPeng7/BiRefNet	BiRefNet
+briaai/RMBG-2.0	RMBG-2.0
+facebook/mask2former-swin-large-cityscapes-semantic	mask2former-swin-large-cityscapes-semantic
+nvidia/segformer-b0-finetuned-ade-512-512	segformer-b0-finetuned-ade-512-512
+depth-anything/Depth-Anything-V2-Small-hf	Depth-Anything-V2-Small-hf
+Intel/dpt-hybrid-midas	dpt-hybrid-midas
+depth-anything/DA3METRIC-LARGE	DA3METRIC-LARGE
+stabilityai/stable-diffusion-xl-base-1.0	stable-diffusion-xl-base-1.0
+stable-diffusion-v1-5/stable-diffusion-v1-5	stable-diffusion-v1-5
+stabilityai/sdxl-turbo	sdxl-turbo
+Lykon/dreamshaper-7	dreamshaper-7
+RunDiffusion/Juggernaut-XL-v9	Juggernaut-XL-v9
+black-forest-labs/FLUX.1-dev	FLUX.1-dev
+zai-org/GLM-OCR	GLM-OCR
+Salesforce/blip-image-captioning-base	blip-image-captioning-base
+kha-white/manga-ocr-base	manga-ocr-base
+PaddlePaddle/PP-OCRv5_server_det	PP-OCRv5_server_det
+Salesforce/blip-image-captioning-large	blip-image-captioning-large
+FastVideo/FastVideo-FastH3-4-step-Preview-v1-VSA-DataFree	FastVideo-FastH3-4-step-Preview-v1-VSA-DataFree
+Wan-AI/Wan2.1-T2V-1.3B-Diffusers	Wan2.1-T2V-1.3B-Diffusers
+SulphurAI/Sulphur-2-base	Sulphur-2-base
+Wan-AI/Wan2.2-TI2V-5B-Diffusers	Wan2.2-TI2V-5B-Diffusers
+MCG-NJU/videomae-base	videomae-base
+facebook/vjepa2-vitl-fpc64-256	vjepa2-vitl-fpc64-256
+microsoft/xclip-base-patch16-zero-shot	xclip-base-patch16-zero-shot
+sentence-transformers/all-MiniLM-L6-v2	all-MiniLM-L6-v2
+sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2	paraphrase-multilingual-MiniLM-L12-v2
+BAAI/bge-m3	bge-m3
+nomic-ai/nomic-embed-text-v1.5	nomic-embed-text-v1.5
+intfloat/multilingual-e5-small	multilingual-e5-small
+BAAI/bge-reranker-v2-m3	bge-reranker-v2-m3
+BAAI/bge-reranker-base	bge-reranker-base
+Alibaba-NLP/gte-reranker-modernbert-base	gte-reranker-modernbert-base
+google-t5/t5-small	t5-small
+google-t5/t5-base	t5-base
+Helsinki-NLP/opus-mt-nl-en	opus-mt-nl-en
+facebook/nllb-200-distilled-600M	nllb-200-distilled-600M
+Helsinki-NLP/opus-mt-fr-en	opus-mt-fr-en
+facebook/bart-large-cnn	bart-large-cnn
+sshleifer/distilbart-cnn-12-6	distilbart-cnn-12-6
+google/pegasus-xsum	pegasus-xsum
+philschmid/bart-large-cnn-samsum	bart-large-cnn-samsum
+w11wo/indonesian-roberta-base-posp-tagger	indonesian-roberta-base-posp-tagger
+dbmdz/bert-large-cased-finetuned-conll03-english	bert-large-cased-finetuned-conll03-english
+dslim/bert-base-NER	bert-base-NER
+StanfordAIMI/stanford-deidentifier-base	stanford-deidentifier-base
+lfcc/bert-portuguese-ner	bert-portuguese-ner
+ProsusAI/finbert	finbert
+meta-llama/Prompt-Guard-86M	Prompt-Guard-86M
+distilbert/distilbert-base-uncased-finetuned-sst-2-english	distilbert-base-uncased-finetuned-sst-2-english
+SamLowe/roberta-base-go_emotions	roberta-base-go_emotions
+yiyanghkust/finbert-tone	finbert-tone
+facebook/bart-large-mnli	bart-large-mnli
+joeddav/xlm-roberta-large-xnli	xlm-roberta-large-xnli
+MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7	mDeBERTa-v3-base-xnli-multilingual-nli-2mil7
+cross-encoder/nli-deberta-v3-base	nli-deberta-v3-base
+amazon/chronos-2	chronos-2
+amazon/chronos-bolt-small	chronos-bolt-small
+impira/layoutlm-document-qa	layoutlm-document-qa
+impira/layoutlm-invoices	layoutlm-invoices
+naver-clova-ix/donut-base-finetuned-docvqa	donut-base-finetuned-docvqa
+microsoft/tapex-base-finetuned-wikisql	tapex-base-finetuned-wikisql
+google/tapas-large-finetuned-sqa	tapas-large-finetuned-sqa
+google/tapas-base-finetuned-wtq	tapas-base-finetuned-wtq
+datalab-to/chandra-ocr-2	chandra-ocr-2
+deepseek-ai/DeepSeek-OCR	DeepSeek-OCR
+baidu/Unlimited-OCR	Unlimited-OCR
+datalab-to/surya-ocr-2	surya-ocr-2
+microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract	BiomedNLP-BiomedBERT-base-uncased-abstract
+microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext	BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext
+d4data/biomedical-ner-all	biomedical-ner-all
+OpenMed/OpenMed-NER-DiseaseDetect-BioMed-335M	OpenMed-NER-DiseaseDetect-BioMed-335M
+emilyalsentzer/Bio_ClinicalBERT	Bio_ClinicalBERT
+yikuan8/Clinical-Longformer	Clinical-Longformer
+OpenMed/OpenMed-PII-Italian-ClinicalBGE-Large-335M-v1	OpenMed-PII-Italian-ClinicalBGE-Large-335M-v1
+OpenMed/OpenMed-NER-ProteinDetect-SuperClinical-141M	OpenMed-NER-ProteinDetect-SuperClinical-141M
+zhihan1996/DNABERT-2-117M	DNABERT-2-117M
+OpenMed/OpenMed-NER-DNADetect-SuperMedical-125M	OpenMed-NER-DNADetect-SuperMedical-125M
+OpenMed/OpenMed-NER-ChemicalDetect-ModernMed-149M	OpenMed-NER-ChemicalDetect-ModernMed-149M
+nlpaueb/legal-bert-base-uncased	legal-bert-base-uncased
+Stern5497/sbert-legal-xlm-roberta-base	sbert-legal-xlm-roberta-base
+protonx-models/protonx-legal-tc	protonx-legal-tc
+celiudos/legal-bert-lgpd	legal-bert-lgpd
+yiyanghkust/finbert-esg	finbert-esg
+nickmuchi/finbert-tone-finetuned-finance-topic-classification	finbert-tone-finetuned-finance-topic-classification
+yiyanghkust/finbert-tone-chinese	finbert-tone-chinese
+Yifeng-Liu/rt-detr-finetuned-for-satellite-image-roofs-detection	rt-detr-finetuned-for-satellite-image-roofs-detection
+mfaytin/mask2former-satellite	mask2former-satellite
+Pranilllllll/segformer-satellite-segementation	segformer-satellite-segementation
+prithivMLmods/Weather-Image-Classification	Weather-Image-Classification
+neulab/codebert-python	codebert-python
+microsoft/codebert-base	codebert-base
+microsoft/codebert-base-mlm	codebert-base-mlm
+Qwen/Qwen2.5-Math-1.5B-Instruct	Qwen2.5-Math-1.5B-Instruct
+Qwen/Qwen2.5-Math-PRM-7B	Qwen2.5-Math-PRM-7B
+unitary/unbiased-toxic-roberta	unbiased-toxic-roberta
+martin-ha/toxic-comment-model	toxic-comment-model
+s-nlp/roberta_toxicity_classifier	roberta_toxicity_classifier
+facebook/esm2_t33_650M_UR50D	esm2_t33_650M_UR50D
+facebook/esmfold_v1	esmfold_v1
+InstaDeepAI/nucleotide-transformer-v2-500m-multi-species	nucleotide-transformer-v2-500m-multi-species
+microsoft/BioGPT-Large	BioGPT-Large
+stanford-crfm/BioMedLM	BioMedLM
+ibm-nasa-geospatial/Prithvi-EO-2.0-300M	Prithvi-EO-2.0-300M
+ibm-nasa-geospatial/Prithvi-EO-2.0-600M	Prithvi-EO-2.0-600M
+microsoft/aurora	aurora
+ibm-nasa-geospatial/Prithvi-WxC-1.0-2300M	Prithvi-WxC-1.0-2300M
+ibm-research/MoLFormer-XL-both-10pct	MoLFormer-XL-both-10pct
+microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224	BiomedCLIP-PubMedBERT_256-vit_base_patch16_224
+openai/gpt-transcribe	GPT Transcribe
+openai/gpt-4o-mini-tts	GPT-4o mini TTS
+openai/gpt-realtime-2.1	GPT Realtime 2.1
+elevenlabs/scribe-v2	Scribe v2
+elevenlabs/eleven-v3	Eleven v3
+deepgram/nova-3	Nova-3
+deepgram/aura-2	Aura-2
+assemblyai/universal-3-5-pro	Universal-3.5 Pro
+cartesia/sonic-3.6	Sonic 3.6
+google/gemini-3.8-live	Gemini 3.8 Live

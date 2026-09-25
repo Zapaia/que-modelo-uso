@@ -1,15 +1,17 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import Pile, { type Target } from './Pile';
-import { BIG, CostChart, chartPos, frontier, marginPos } from './Chart';
+import { BIG, COMPACT, CostChart, chartPos, frontier, marginPos } from './Chart';
 import Typewriter from './Typewriter';
 import type { Model, Status } from './types';
 import '../styles/app.css';
 
-const BATCHES = 10; // tandas chicas: con saturación, TypeSafe corta primero los requests grandes
+const RETRIES = 5; // intentos por tanda antes de darla por perdida (esperas de 0,5 s a 4 s)
+const PER_BATCH = 19; // tandas chicas: con saturación, TypeSafe corta primero los requests grandes (medido: 19 sí, 25 a veces no)
 const THRESHOLD = 0.5;
 const MAX_ROW = 10;
 const ROW_Y = 0.43; // la fila, en fracción de pantalla desde arriba
 const ROW_GAP = 1.45; // entre centros de ficha, en unidades del mundo
+const ROW_MARGIN = 0.8; // del borde de la pantalla al centro de la primera ficha, si la fila se desliza
 const MAX_CHART = 16;
 const MAX_LOOSE = 6;
 const FIBRONES = ['var(--fibron-1)', 'var(--fibron-2)', 'var(--fibron-3)', 'var(--fibron-4)', 'var(--fibron-5)', 'var(--fibron-6)'];
@@ -25,6 +27,7 @@ const SPEED_STEPS = [0, 25, 50, 100, 150, 200, 300, 500];
 
 // En Webflow Cloud la app vive bajo un mount path (por ejemplo /app): la API también.
 const API = `${import.meta.env.BASE_URL.replace(/\/$/, '')}/api/match`;
+const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 const fmt = (n: number, d = 2) => n.toLocaleString('es-AR', { minimumFractionDigits: d, maximumFractionDigits: d });
 const shortName = (m: Model) => m.name.replace(/^[^:]+:\s*/, '');
 
@@ -43,12 +46,18 @@ export default function App({ models }: { models: Model[] }) {
   const [world, setWorld] = useState({ w: 25, h: 14 });
   const [expanded, setExpanded] = useState(false); // gráfico agrandado al centro
   const [hovered, setHovered] = useState<string | null>(null); // ficha con el mouse encima
+  const [shift, setShift] = useState(0); // desplazamiento de la fila en el celular, en unidades del mundo
+  const [dragging, setDragging] = useState(false);
+  const drag = useRef<{ x: number; from: number; moved: boolean } | null>(null);
   const run = useRef(0);
   const pending = useRef<string[][]>([]);
 
   // Las tandas mezclan modelos de todo el catálogo: cada oleada levanta de todo un poco.
   const batches = useMemo(
-    () => Array.from({ length: BATCHES }, (_, b) => models.filter((_, i) => i % BATCHES === b).map((m) => m.id)),
+    () => {
+      const n = Math.ceil(models.length / PER_BATCH); // el catálogo crece: las tandas se ajustan solas
+      return Array.from({ length: n }, (_, b) => models.filter((_, i) => i % n === b).map((m) => m.id));
+    },
     [models],
   );
 
@@ -59,29 +68,36 @@ export default function App({ models }: { models: Model[] }) {
     const fresh = !onlyIds;
     setAsked(q);
     setStatus('classifying');
-    if (fresh) { setScores({}); setAnswered(0); setElapsed(null); setExpanded(false); }
+    if (fresh) { setScores({}); setAnswered(0); setElapsed(null); setExpanded(false); setShift(0); }
     setFailed(0);
     const t0 = performance.now();
     const todo = onlyIds ?? batches;
     const lost: string[][] = [];
 
-    // Todas las tandas salen a la vez; cada una que vuelve es una oleada.
+    // Todas las tandas salen a la vez; cada una que vuelve es una oleada. La que falla se
+    // vuelve a pedir sola, con espera creciente: cuando por fin vuelve, sus modelos se suman
+    // al top y la fila se reacomoda. Solo si agota los intentos queda para el botón manual.
     await Promise.all(todo.map(async (ids) => {
-      try {
-        const res = await fetch(API, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ idea: q, ids }),
-          signal: AbortSignal.timeout(12_000),
-        });
-        if (!res.ok) throw new Error(String(res.status));
-        const { scores: s } = (await res.json()) as { scores: Record<string, number> };
-        if (run.current !== id) return;
-        setScores((prev) => ({ ...prev, ...s }));
-        setAnswered((n) => n + Object.keys(s).length);
-      } catch {
-        lost.push(ids);
+      for (let attempt = 0; attempt < RETRIES; attempt++) {
+        if (run.current !== id) return; // el usuario ya preguntó otra cosa
+        try {
+          const res = await fetch(API, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ idea: q, ids }),
+            signal: AbortSignal.timeout(12_000),
+          });
+          if (!res.ok) throw new Error(String(res.status));
+          const { scores: s } = (await res.json()) as { scores: Record<string, number> };
+          if (run.current !== id) return;
+          setScores((prev) => ({ ...prev, ...s }));
+          setAnswered((n) => n + Object.keys(s).length);
+          return;
+        } catch {
+          if (attempt < RETRIES - 1) await sleep(500 * 2 ** attempt + Math.random() * 400); // jitter: que no vuelvan todas juntas
+        }
       }
+      lost.push(ids);
     }));
 
     if (run.current !== id) return;
@@ -109,10 +125,16 @@ export default function App({ models }: { models: Model[] }) {
   }, [scores, byId, cap, floor]);
 
   const rowModels = winners.slice(0, MAX_ROW);
+  // Ancho de la fila en unidades del mundo, con media ficha de margen a cada lado.
+  const rowSpan = (rowModels.length - 1) * ROW_GAP + ROW_MARGIN * 2;
+  const scrollable = rowSpan > world.w;
+  const rowStart = scrollable ? -world.w / 2 + ROW_MARGIN : -((rowModels.length - 1) * ROW_GAP) / 2;
+  const minShift = scrollable ? world.w - rowSpan : 0;
   const plotted = useMemo(() => winners.filter((m) => m.hasData).slice(0, MAX_CHART), [winners]);
   const loose = useMemo(() => winners.filter((m) => !m.hasData).slice(0, MAX_LOOSE), [winners]);
   const best = useMemo(() => new Set(frontier(plotted).map((m) => m.id)), [plotted]);
-  const inChart = expanded && status !== 'classifying';
+  // Se puede agrandar mientras clasifica: las fichas que llegan después aterrizan en el gráfico.
+  const inChart = expanded && plotted.length > 0;
   const hoveredRow = hovered ? rowModels.find((m) => m.id === hovered) : undefined;
 
   // Destino de cada ficha elegida, en fracciones de pantalla.
@@ -124,11 +146,31 @@ export default function App({ models }: { models: Model[] }) {
       // Los sin benchmark no tienen coordenadas: van al margen.
       loose.forEach((m, k) => { t[m.id] = { ...marginPos(k), scale: 0.46 }; });
     } else {
-      const n = rowModels.length;
-      rowModels.forEach((m, i) => { t[m.id] = { fx: 0.5 + ((i - (n - 1) / 2) * ROW_GAP) / world.w, fy: ROW_Y }; });
+      // Si la fila no entra (celular), arranca pegada a la izquierda y se desliza con `shift`.
+      rowModels.forEach((m, i) => { t[m.id] = { fx: 0.5 + (rowStart + i * ROW_GAP + Math.max(minShift, shift)) / world.w, fy: ROW_Y }; });
     }
     return t;
-  }, [inChart, plotted, loose, rowModels, world.w]);
+  }, [inChart, plotted, loose, rowModels, world.w, rowStart, shift, minShift]);
+
+  // Arrastre horizontal de la fila: el dedo mueve `shift`, las fichas y las etiquetas lo siguen.
+  const onRowDown = (e: React.PointerEvent) => {
+    if (!scrollable) return;
+    drag.current = { x: e.clientX, from: shift, moved: false };
+    const move = (ev: PointerEvent) => {
+      const d = drag.current!;
+      const dx = ((ev.clientX - d.x) / window.innerWidth) * world.w;
+      if (Math.abs(ev.clientX - d.x) > 6) { d.moved = true; setDragging(true); }
+      setShift(Math.min(0, Math.max(minShift, d.from + dx)));
+    };
+    const up = () => {
+      window.removeEventListener('pointermove', move);
+      window.removeEventListener('pointerup', up);
+      setDragging(false);
+      setTimeout(() => { drag.current = null; }, 0); // el click que sigue al arrastre se descarta
+    };
+    window.addEventListener('pointermove', move);
+    window.addEventListener('pointerup', up);
+  };
 
   useEffect(() => {
     if (status === 'idle') return;
@@ -145,7 +187,7 @@ export default function App({ models }: { models: Model[] }) {
   const settled = status === 'done' || status === 'partial';
 
   return (
-    <main className="mesa">
+    <main className={inChart && COMPACT ? 'mesa enfocada' : 'mesa'}>
       <Pile models={models} targets={targets} onPick={pick} onHover={setHovered} hovered={hovered} onViewport={onViewport} />
 
       <header className="encabezado">
@@ -153,7 +195,13 @@ export default function App({ models }: { models: Model[] }) {
         <div className="fuente">
           <p className="nota">{total} modelos · clasifica <a href="https://typesafe.ai/blog/introducing-system-one-models-and-jev" target="_blank" rel="noopener">Jev</a> · benchmarks de <a href="https://artificialanalysis.ai/" target="_blank" rel="noopener">Artificial Analysis</a></p>
           <p className={toast ? 'aviso visible' : 'aviso'} aria-live="polite">
-            {status === 'classifying' && <>clasificando {answered} / {total}</>}
+            {status === 'classifying' && (
+              <span className="pensando">
+                <span className="puntos" aria-hidden="true"><i /><i /><i /></span>
+                jev está pensando · {answered} / {total}
+                <span className="progreso" aria-hidden="true" style={{ '--p': answered / total } as React.CSSProperties} />
+              </span>
+            )}
             {status === 'done' && <>{total} clasificados en {fmt((elapsed ?? 0) / 1000, 1)} s</>}
             {status === 'partial' && (
               <>{answered} de {total} · {failed} {failed === 1 ? 'tanda' : 'tandas'} sin respuesta ·{' '}
@@ -209,9 +257,16 @@ export default function App({ models }: { models: Model[] }) {
         )}
       </div>
 
+      {/* Franja para deslizar la fila con el dedo (solo si no entra): cubre las fichas 3D,
+          que están en el canvas y no reciben el gesto. */}
+      {!inChart && scrollable && (
+        <div className="fila-arrastre" onPointerDown={onRowDown}
+          style={{ top: `${(ROW_Y - 0.75 / world.h) * 100}%`, height: `${(1.5 / world.h) * 100}%` }} />
+      )}
       {/* Etiquetas: mismas coordenadas que las fichas. */}
       {!inChart && (
-        <ol className="fila" aria-label="Modelos que sirven">
+        <ol className={dragging ? 'fila arrastrando' : 'fila'} aria-label="Modelos que sirven" onPointerDown={onRowDown}
+          onClickCapture={(e) => { if (drag.current?.moved) { e.preventDefault(); e.stopPropagation(); } }}>
           {rowModels.map((m, i) => (
             <li key={m.id} style={{
               left: `${targets[m.id].fx * 100}%`, top: `${labelY}%`, width: `${(ROW_GAP / world.w) * 100}%`,
@@ -232,6 +287,16 @@ export default function App({ models }: { models: Model[] }) {
         </ol>
       )}
 
+      {/* Bordes que se desvanecen: la fila se esconde detrás del papel, del lado donde queda más. */}
+      {!inChart && scrollable && (
+        <>
+          <div className={shift < -0.05 ? 'fila-borde izq visible' : 'fila-borde izq'}
+            style={{ top: `${(ROW_Y - 0.85 / world.h) * 100}%`, height: `${(1.9 / world.h) * 100}%` }} />
+          <div className={Math.max(minShift, shift) > minShift + 0.05 ? 'fila-borde der visible' : 'fila-borde der'}
+            style={{ top: `${(ROW_Y - 0.85 / world.h) * 100}%`, height: `${(1.9 / world.h) * 100}%` }} />
+        </>
+      )}
+
       {/* Ayuda de la confianza: aparece sobre la ficha que tiene el mouse encima. El gráfico,
           con el mismo `hovered`, marca dónde cae ese modelo. */}
       {!inChart && hoveredRow && (
@@ -245,7 +310,8 @@ export default function App({ models }: { models: Model[] }) {
         </div>
       )}
 
-      {settled && plotted.length > 0 && (
+      {/* Aparece con el primer elegido que tenga benchmark, sin esperar a que vuelvan todas las tandas. */}
+      {plotted.length > 0 && (
         <CostChart models={plotted} loose={loose} best={best} expanded={inChart} onToggle={() => setExpanded(!expanded)}
           hovered={hovered} onHover={setHovered} />
       )}

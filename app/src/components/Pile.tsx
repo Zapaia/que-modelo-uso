@@ -79,9 +79,10 @@ interface TokenProps {
   onPick: (m: Model) => void;
   onHover: (id: string | null) => void;
   lift: boolean; // el mouse está sobre su etiqueta HTML: se inclina igual que con el mouse encima
+  rest: number; // tamaño en el montón: en el celular, la mitad, para que no tape la pantalla
 }
 
-const Token = memo(function Token({ model, target: dest, spawn, w, h, onPick, onHover, lift }: TokenProps) {
+const Token = memo(function Token({ model, target: dest, spawn, w, h, onPick, onHover, lift, rest }: TokenProps) {
   const body = useRef<RapierRigidBody>(null);
   const collider = useRef<RapierCollider>(null);
   const [pointer, setHover] = useState(false);
@@ -104,8 +105,9 @@ const Token = memo(function Token({ model, target: dest, spawn, w, h, onPick, on
   const [held, setHeld] = useState(false);
   const last = useRef<Target | null>(null);
   const release = useRef(0); // cuadros en reposo después de soltarla
-  const scaleNow = useRef(1);
+  const scaleNow = useRef(rest);
   const mesh = useRef<THREE.Mesh>(null);
+  useEffect(() => { mesh.current?.scale.setScalar(rest); }, [rest]);
   const seed = useMemo(() => Math.random() * 6, []);
   useEffect(() => {
     if (dest) { last.current = dest; setHeld(true); }
@@ -124,7 +126,7 @@ const Token = memo(function Token({ model, target: dest, spawn, w, h, onPick, on
     const b = body.current;
     if (!b) return;
     if (!held) {
-      if (scaleNow.current !== 1) { scaleNow.current = 1; mesh.current?.scale.setScalar(1); }
+      if (scaleNow.current !== rest) { scaleNow.current = rest; mesh.current?.scale.setScalar(rest); }
       if (release.current > 0) {
         release.current--;
         b.setLinvel({ x: 0, y: 0, z: 0 }, true);
@@ -141,8 +143,8 @@ const Token = memo(function Token({ model, target: dest, spawn, w, h, onPick, on
     const tx = (t.fx - 0.5) * w;
     const ty = (0.5 - t.fy) * h + Math.sin(state.clock.elapsedTime * 1.4 + seed) * 0.05;
     const tz = SLAB / 2 - 0.3;
-    // la escala también viaja: en el gráfico las fichas son más chicas
-    const want = (dest?.scale ?? 1) * (hover && dest ? 1.1 : 1);
+    // la escala también viaja: en el gráfico las fichas son más chicas, y la que vuelve al montón, al tamaño de reposo
+    const want = (dest ? dest.scale ?? 1 : rest) * (hover && dest ? 1.1 : 1);
     scaleNow.current += (want - scaleNow.current) * (1 - Math.exp(-dt * 8));
     mesh.current?.scale.setScalar(scaleNow.current);
     const ky = 1 - Math.exp(-dt * 7.5), kx = 1 - Math.exp(-dt * 4.2);
@@ -172,7 +174,7 @@ const Token = memo(function Token({ model, target: dest, spawn, w, h, onPick, on
       linearDamping={0.25}
       angularDamping={0.4}
     >
-      <CuboidCollider ref={collider} args={[SIZE / 2, SIZE / 2, DEPTH / 2]} />
+      <CuboidCollider ref={collider} args={[(SIZE / 2) * rest, (SIZE / 2) * rest, (DEPTH / 2) * rest]} />
       <mesh
         ref={mesh}
         geometry={geometry}
@@ -190,6 +192,8 @@ function World({ models, targets, onPick, onHover, hovered, onViewport }: SceneP
   const { viewport } = useThree();
   const w = viewport.width, h = viewport.height;
   useEffect(() => onViewport?.(w, h), [w, h, onViewport]);
+  // Se decide una vez: cambiar el colisionador en vivo reacomodaría todo el montón.
+  const rest = useMemo(() => (window.matchMedia('(max-width: 640px)').matches ? 0.5 : 1), []);
 
 
   // Las fichas caen desde arriba al cargar, escalonadas: el montón se forma solo.
@@ -213,7 +217,7 @@ function World({ models, targets, onPick, onHover, hovered, onViewport }: SceneP
       <CuboidCollider position={[0, 0, SLAB / 2 + 0.5]} args={[w, h * 3, 0.5]} />
       {models.map((m, i) => (
         <Token key={m.id} model={m} target={targets[m.id] ?? null}
-          spawn={spawns[i]} w={w} h={h} onPick={onPick} onHover={onHover} lift={hovered === m.id} />
+          spawn={spawns[i]} w={w} h={h} onPick={onPick} onHover={onHover} lift={hovered === m.id} rest={rest} />
       ))}
     </>
   );

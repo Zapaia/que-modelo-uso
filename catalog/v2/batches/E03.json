@@ -1,0 +1,141 @@
+[
+ {
+  "id": "moonshotai/kimi-k3",
+  "name": "MoonshotAI: Kimi K3",
+  "creator": "moonshotai",
+  "layer": 1,
+  "hf_task": null,
+  "license": null,
+  "known_sources": [
+   "https://huggingface.co/moonshotai/Kimi-K3"
+  ]
+ },
+ {
+  "id": "moonshotai/kimi-k2.7-code",
+  "name": "MoonshotAI: Kimi K2.7 Code",
+  "creator": "moonshotai",
+  "layer": 1,
+  "hf_task": null,
+  "license": null,
+  "known_sources": [
+   "https://huggingface.co/moonshotai/Kimi-K2.7-Code"
+  ]
+ },
+ {
+  "id": "nvidia/nemotron-3.5-lightning",
+  "name": "NVIDIA: Nemotron 3.5 Lightning",
+  "creator": "nvidia",
+  "layer": 1,
+  "hf_task": null,
+  "license": null,
+  "known_sources": [
+   "https://developer.nvidia.com/blog/nvidia-nemotron-3-5-lightning-delivers-fast-accurate-specialized-task-execution-for-long-running-agents/",
+   "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16"
+  ]
+ },
+ {
+  "id": "nvidia/nemotron-3-ultra-550b-a55b",
+  "name": "NVIDIA: Nemotron 3 Ultra",
+  "creator": "nvidia",
+  "layer": 1,
+  "hf_task": null,
+  "license": null,
+  "known_sources": [
+   "https://research.nvidia.com/labs/nemotron/Nemotron-3-Ultra/",
+   "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16"
+  ]
+ },
+ {
+  "id": "openai/gpt-6-sol-pro",
+  "name": "OpenAI: GPT-6 Sol Pro",
+  "creator": "openai",
+  "layer": 1,
+  "hf_task": null,
+  "license": null,
+  "known_sources": [
+   "https://developers.openai.com/api/docs/guides/latest-model",
+   "https://openai.com/index/introducing-gpt-6-sol-and-luna/"
+  ]
+ },
+ {
+  "id": "openai/gpt-6-sol",
+  "name": "OpenAI: GPT-6 Sol",
+  "creator": "openai",
+  "layer": 1,
+  "hf_task": null,
+  "license": null,
+  "known_sources": [
+   "https://developers.openai.com/api/docs/guides/latest-model",
+   "https://openai.com/index/introducing-gpt-6-sol-and-luna/"
+  ]
+ },
+ {
+  "id": "openai/gpt-6-luna-pro",
+  "name": "OpenAI: GPT-6 Luna Pro",
+  "creator": "openai",
+  "layer": 1,
+  "hf_task": null,
+  "license": null,
+  "known_sources": [
+   "https://developers.openai.com/api/docs/guides/latest-model",
+   "https://openai.com/index/introducing-gpt-6-sol-and-luna/"
+  ]
+ },
+ {
+  "id": "openai/gpt-6-astra",
+  "name": "OpenAI: GPT-6 Astra",
+  "creator": "openai",
+  "layer": 1,
+  "hf_task": null,
+  "license": null,
+  "known_sources": [
+   "https://developers.openai.com/api/docs/guides/latest-model",
+   "https://openai.com/index/gpt-6-astra/"
+  ]
+ },
+ {
+  "id": "openai/o3-pro",
+  "name": "OpenAI: o3 Pro",
+  "creator": "openai",
+  "layer": 1,
+  "hf_task": null,
+  "license": null,
+  "known_sources": [
+   "https://help.openai.com/en/articles/9624314-model-release-notes",
+   "https://openai.com/index/introducing-o3-and-o4-mini/"
+  ]
+ },
+ {
+  "id": "perplexity/sonar-pro-search",
+  "name": "Perplexity: Sonar Pro Search",
+  "creator": "perplexity",
+  "layer": 1,
+  "hf_task": null,
+  "license": null,
+  "known_sources": [
+   "https://docs.perplexity.ai/docs/sonar/models/sonar-pro"
+  ]
+ },
+ {
+  "id": "qwen/qwen3.8-max-prime",
+  "name": "Qwen: Qwen3.8 Max Prime",
+  "creator": "qwen",
+  "layer": 1,
+  "hf_task": null,
+  "license": null,
+  "known_sources": [
+   "https://openrouter.ai/qwen/qwen3.8-max-prime"
+  ]
+ },
+ {
+  "id": "qwen/qwen3.8-flash",
+  "name": "Qwen: Qwen3.8 Flash",
+  "creator": "qwen",
+  "layer": 1,
+  "hf_task": null,
+  "license": null,
+  "known_sources": [
+   "https://huggingface.co/Qwen/Qwen3.8-Flash-Next"
+  ]
+ }
+]

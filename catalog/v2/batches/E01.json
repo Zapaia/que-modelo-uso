@@ -1,0 +1,150 @@
+[
+ {
+  "id": "amazon/nova-premier-v1",
+  "name": "Amazon: Nova Premier 1.0",
+  "creator": "amazon",
+  "layer": 1,
+  "hf_task": null,
+  "license": null,
+  "known_sources": [
+   "https://aws.amazon.com/blogs/aws/amazon-nova-premier-our-most-capable-model-for-complex-tasks-and-teacher-for-model-distillation/",
+   "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-nova-premier.html"
+  ],
+  "old_description_hint": "Amazon's most capable multimodal model with 1M token context for complex reasoning tasks. Best at: multi-step planning, tool orchestration, model distillation as teacher. Domains: enterprise, financial services. Typical uses: investment research coordination, complex document analysis, knowledge transfer to smaller models. Not suited for: lightweight or cost-sensitive inference."
+ },
+ {
+  "id": "amazon/nova-2-lite-v1",
+  "name": "Amazon: Nova 2 Lite",
+  "creator": "amazon",
+  "layer": 1,
+  "hf_task": null,
+  "license": null,
+  "known_sources": [
+   "https://openrouter.ai/amazon/nova-2-lite-v1",
+   "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-nova-lite.html"
+  ],
+  "old_description_hint": "Fast, cost-effective multimodal model from Amazon for everyday reasoning workloads, processing text, images, and video. Best at: standard reasoning, rapid inference, practical applications. Domains: enterprise, customer-facing services. Typical uses: chat applications, document summarization, basic image analysis. Not suited for: multi-step complex reasoning requiring deep context."
+ },
+ {
+  "id": "anthropic/claude-opus-5.5",
+  "name": "Anthropic: Claude Opus 5.5",
+  "creator": "anthropic",
+  "layer": 1,
+  "hf_task": null,
+  "license": null,
+  "known_sources": [
+   "https://www.anthropic.com/claude-opus-5-5"
+  ],
+  "old_description_hint": "Anthropic's flagship model optimized for long-running agentic work and complex coding. Best at: agentic coding, computer automation, knowledge work, multi-step code changes in large codebases. Domains: software development, research, business automation, data analysis. Typical uses: code migration, complex analysis, autonomous workflows, extended problem-solving. Not suited for: cost-sensitive applications or real-time, latency-critical scenarios."
+ },
+ {
+  "id": "anthropic/claude-fable-5.1",
+  "name": "Anthropic: Claude Fable 5.1",
+  "creator": "anthropic",
+  "layer": 1,
+  "hf_task": null,
+  "license": null,
+  "known_sources": [
+   "https://www.anthropic.com/claude-fable-and-mythos-5-1"
+  ],
+  "old_description_hint": "Anthropic's most advanced model for demanding reasoning and knowledge work. Best at: demanding reasoning, long-horizon agentic tasks, scientific work, complex coding with self-verification. Domains: research, software development, professional knowledge work, scientific discovery. Typical uses: autonomous problem-solving, multi-step coding, knowledge discovery, advanced reasoning tasks. Not suited for: low-latency or cost-critical applications requiring immediate responses."
+ },
+ {
+  "id": "anthropic/claude-sonnet-5",
+  "name": "Anthropic: Claude Sonnet 5",
+  "creator": "anthropic",
+  "layer": 1,
+  "hf_task": null,
+  "license": null,
+  "known_sources": [
+   "https://www.anthropic.com/news/claude-sonnet-5"
+  ],
+  "old_description_hint": "Anthropic's most agentic Sonnet model balancing speed and intelligence for professional work. Best at: autonomous reasoning, multi-step coding, tool use, self-verification without prompting, complex problem-solving. Domains: software development, business automation, legal research, data analysis. Typical uses: PR handling, workflow automation, code debugging, end-to-end business processes. Not suited for: maximum capability reasoning or scientific research tasks."
+ },
+ {
+  "id": "bytedance-seed/seed-2-1-turbo",
+  "name": "ByteDance Seed: Seed 2.1 Turbo",
+  "creator": "bytedance-seed",
+  "layer": 1,
+  "hf_task": null,
+  "license": null,
+  "known_sources": [
+   "https://seed.bytedance.com/en/seed2_1"
+  ],
+  "old_description_hint": "Multimodal model from ByteDance Seed for agentic coding with 262K context, supporting text, image, and video inputs. Best at: end-to-end software delivery, multi-step task execution, visual debugging, code interpretation. Domains: software engineering, development tools. Typical uses: autonomous development workflows, repository-aware coding assistance, iterative problem solving. Not suited for: applications requiring sub-100ms latency."
+ },
+ {
+  "id": "bytedance-seed/seed-2.0-code",
+  "name": "ByteDance Seed: Seed-2.0-Code",
+  "creator": "bytedance-seed",
+  "layer": 1,
+  "hf_task": null,
+  "license": null,
+  "known_sources": [
+   "https://seed.bytedance.com/en/blog/seed-2-0-official-launch",
+   "https://seed.bytedance.com/en/seed2"
+  ],
+  "old_description_hint": "Specialized coding model from ByteDance Seed, multimodal with 262K context for programming-focused agent workflows. Best at: frontend development, multilingual programming, coding-agent orchestration in tools like Claude Code. Domains: software development. Typical uses: React component generation from screenshots, polyglot codebases, autonomous code debugging. Not suited for: non-technical domains outside programming."
+ },
+ {
+  "id": "cohere/command-a-plus",
+  "name": "Cohere: Command A+",
+  "creator": "cohere",
+  "layer": 1,
+  "hf_task": null,
+  "license": null,
+  "known_sources": [
+   "https://docs.cohere.com/docs/command-a-plus",
+   "https://cohere.com/blog/command-a-plus"
+  ],
+  "old_description_hint": "Enterprise mixture-of-experts model from Cohere (218B total, 25B active) supporting text and image inputs, 192K context, 48 languages. Best at: multilingual agentic workflows, tool calling, enterprise-scale inference. Domains: enterprise, sovereign critical infrastructure. Typical uses: multilingual customer support agents, document-heavy workflows, EU-compliant deployments. Not suited for: vision-focused tasks."
+ },
+ {
+  "id": "deepseek/deepseek-v4-pro-0813",
+  "name": "DeepSeek: DeepSeek V4 Pro 0813",
+  "creator": "deepseek",
+  "layer": 1,
+  "hf_task": null,
+  "license": null,
+  "known_sources": [
+   "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813"
+  ],
+  "old_description_hint": "A large mixture-of-experts model from DeepSeek with enhanced agentic capabilities and flexible reasoning. Best at: complex software engineering, long-horizon agent tasks, production workflows. Domains: coding, tool-use orchestration. Typical uses: multi-step code generation, terminal automation, GPU kernel optimization. Not suited for: extremely latency-critical applications."
+ },
+ {
+  "id": "deepseek/deepseek-v4.1-flash",
+  "name": "DeepSeek: DeepSeek V4.1 Flash",
+  "creator": "deepseek",
+  "layer": 1,
+  "hf_task": null,
+  "license": null,
+  "known_sources": [
+   "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash"
+  ],
+  "old_description_hint": "A 552B sparse mixture-of-experts model from DeepSeek activating 8B-16B parameters per token with innovative Causal Encoder-Decoder architecture. Best at: efficient long-context reasoning, multimodal agent tasks, code generation. Domains: software engineering, agentic workflows. Typical uses: long-context code analysis, tool orchestration, visual reasoning. Not suited for: fixed parameter requirements."
+ },
+ {
+  "id": "deepseek/deepseek-v4-flash-vision-exp",
+  "name": "DeepSeek: DeepSeek V4 Flash Vision Exp",
+  "creator": "deepseek",
+  "layer": 1,
+  "hf_task": null,
+  "license": null,
+  "known_sources": [
+   "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp"
+  ],
+  "old_description_hint": "An experimental 305B multimodal model from DeepSeek combining visual and text understanding for agent tasks. Best at: multimodal agent reasoning, chart analysis, image-based problem-solving. Domains: software engineering, data analysis. Typical uses: visual code analysis, multimodal agent workflows, document understanding. Not suited for: text-only latency-sensitive applications."
+ },
+ {
+  "id": "google/gemini-3.8-flash",
+  "name": "Google: Gemini 3.8 Flash",
+  "creator": "google",
+  "layer": 1,
+  "hf_task": null,
+  "license": null,
+  "known_sources": [
+   "https://ai.google.dev/gemini-api/docs/latest-model"
+  ],
+  "old_description_hint": "Google's most intelligent Flash model engineered for complex, long-horizon workflows. Best at: long-horizon software engineering, autonomous agents, multi-step reasoning, complex enterprise workflows. Domains: software development, enterprise automation, data processing, research. Typical uses: code refactoring, autonomous workflow execution, complex analysis, intelligent automation. Not suited for: real-time latency-sensitive or cost-critical applications with budget constraints."
+ }
+]

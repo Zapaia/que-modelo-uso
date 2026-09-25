@@ -5,7 +5,9 @@ import { AI_GATEWAY_API_KEY, JEV_BASE_URL, JEV_MODEL } from 'astro:env/server';
 const QUESTION =
   'Would the model described in `model` perform the core task of the product described in `idea`?';
 
-export interface Candidate { id: string; name: string; description: string }
+/** `card` es la ficha v2 (JSON con vocabulario cerrado). Jev acepta estructura en las
+ *  instrucciones y la lee mejor que un párrafo; sin ficha, va la descripción vieja. */
+export interface Candidate { id: string; name: string; description: string; card?: Record<string, unknown> }
 
 /** Una tanda: la idea en el state y una pregunta sí/no por modelo, todas en paralelo.
  *  Devuelve { id: probabilidad }. Reintenta 503/429 respetando retry-after. */
@@ -13,7 +15,7 @@ export async function scoreBatch(idea: string, models: Candidate[]): Promise<Rec
   const questions = Object.fromEntries(
     models.map((m, i) => [
       `m${i}`, // los ids tienen '/' y '.', mejor claves neutras
-      { type: 'noul', instructions: { question: QUESTION, model: { name: m.name, description: m.description } } },
+      { type: 'noul', instructions: { question: QUESTION, model: m.card ? { name: m.name, ...m.card } : { name: m.name, description: m.description } } },
     ]),
   );
   const body = JSON.stringify({ model: JEV_MODEL, state: { idea }, questions });
@@ -28,6 +30,8 @@ export async function scoreBatch(idea: string, models: Candidate[]): Promise<Rec
         method: 'POST',
         headers: { Authorization: `Bearer ${AI_GATEWAY_API_KEY}`, 'Content-Type': 'application/json' },
         body,
+        // Probado 3 s el 25/9 y empeoró (22 s → 48 s): directo contra Jev todo vuelve en <1,6 s
+        // (200 o 503 al instante), así que la espera parece estar entre la app y Jev, no en Jev.
         signal: AbortSignal.timeout(Math.min(6000, deadline - Date.now())), // en el spike un request se colgó >60 s
       });
       if (res.ok) {

@@ -1,0 +1,401 @@
+[
+ {
+  "id": "neulab/codebert-python",
+  "name": "codebert-python",
+  "creator": "NeuLab",
+  "card": {
+   "what": "Masked language model by NeuLab pretrained on Python source code, used to generate embeddings for measuring code similarity.",
+   "kind": "text embedding",
+   "input": ["code"],
+   "output": ["embedding"],
+   "interaction": "embedding model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": [
+    "generating embeddings for Python source code",
+    "measuring similarity between Python code snippets",
+    "scoring machine-generated code against reference code"
+   ],
+   "product_uses": [
+    "code generation evaluation tool",
+    "python code similarity checker",
+    "duplicate code detector for a codebase"
+   ],
+   "domains": ["software"],
+   "not_for": [
+    "code in languages other than Python",
+    "open-ended chat or writing code",
+    "understanding general natural language text"
+   ]
+  },
+  "official_url": "https://huggingface.co/neulab/codebert-python",
+  "sources": ["https://huggingface.co/neulab/codebert-python/raw/main/README.md"],
+  "notes": "El README lo describe como modelo de masked-language-modeling pensado para CodeBERTScore (embeddings + similitud); se clasificó como text embedding por ese uso documentado, no como base model."
+ },
+ {
+  "id": "nlpaueb/legal-bert-base-uncased",
+  "name": "legal-bert-base-uncased",
+  "creator": "nlpaueb",
+  "card": {
+   "what": "BERT model pretrained by AUEB's NLP Group on English legal text for legal NLP research.",
+   "kind": "base language model",
+   "input": ["text"],
+   "output": ["text"],
+   "interaction": "base model: needs fine-tuning",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": [
+    "predicting legal terminology in context",
+    "classifying legal documents once fine-tuned",
+    "recognizing legal entities once fine-tuned",
+    "understanding legislation, contracts and court rulings"
+   ],
+   "product_uses": [
+    "contract clause classifier built by fine-tuning",
+    "legal document categorization tool",
+    "computational law research pipeline"
+   ],
+   "domains": ["legal"],
+   "not_for": [
+    "open-ended chat or answering legal questions directly",
+    "production use without fine-tuning",
+    "non-English legal text"
+   ]
+  },
+  "official_url": "https://huggingface.co/nlpaueb/legal-bert-base-uncased",
+  "sources": ["https://huggingface.co/nlpaueb/legal-bert-base-uncased/raw/main/README.md"],
+  "notes": ""
+ },
+ {
+  "id": "yikuan8/Clinical-Longformer",
+  "name": "Clinical-Longformer",
+  "creator": "yikuan8",
+  "card": {
+   "what": "Longformer model further pretrained on MIMIC-III clinical notes for processing long clinical documents.",
+   "kind": "base language model",
+   "input": ["text"],
+   "output": ["text"],
+   "interaction": "base model: needs fine-tuning",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": [
+    "understanding long clinical notes once fine-tuned",
+    "extracting entities from clinical text once fine-tuned",
+    "answering questions from clinical documents once fine-tuned",
+    "classifying long clinical documents once fine-tuned"
+   ],
+   "product_uses": [
+    "clinical named entity recognition tool built by fine-tuning",
+    "discharge summary information extraction pipeline",
+    "medical record classifier built by fine-tuning"
+   ],
+   "domains": ["medicine"],
+   "not_for": [
+    "giving medical advice or interpreting results directly",
+    "production use without fine-tuning",
+    "general-domain, non-clinical text tasks"
+   ]
+  },
+  "official_url": "https://huggingface.co/yikuan8/Clinical-Longformer",
+  "sources": ["https://huggingface.co/yikuan8/Clinical-Longformer/raw/main/README.md"],
+  "notes": ""
+ },
+ {
+  "id": "Falconsai/nsfw_image_detection",
+  "name": "nsfw_image_detection",
+  "creator": "Falconsai",
+  "card": {
+   "what": "Vision Transformer fine-tuned by Falconsai to classify images as normal or NSFW for content moderation.",
+   "kind": "image classification",
+   "input": ["image"],
+   "output": ["labels"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": [
+    "flagging explicit or inappropriate images",
+    "screening user-uploaded photos for NSFW content",
+    "filtering adult content from a media feed"
+   ],
+   "product_uses": [
+    "content moderation pipeline for user uploads",
+    "photo review tool for a social platform",
+    "automated NSFW filter for an image gallery app"
+   ],
+   "domains": ["general", "media"],
+   "not_for": [
+    "nuanced aesthetic or artistic judgment calls",
+    "detecting violence, hate symbols or other non-nudity content",
+    "moderating video or text content"
+   ]
+  },
+  "official_url": "https://huggingface.co/Falconsai/nsfw_image_detection",
+  "sources": ["https://huggingface.co/Falconsai/nsfw_image_detection/raw/main/README.md"],
+  "notes": ""
+ },
+ {
+  "id": "google/vit-base-patch16-224",
+  "name": "vit-base-patch16-224",
+  "creator": "Google",
+  "card": {
+   "what": "Vision Transformer by Google that classifies images into common object categories, trained on ImageNet.",
+   "kind": "image classification",
+   "input": ["image"],
+   "output": ["labels"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": [
+    "classifying images into common object categories",
+    "recognizing everyday objects, animals and scenes",
+    "serving as a backbone for fine-tuned vision tasks"
+   ],
+   "product_uses": [
+    "general object recognition app",
+    "photo auto-tagging tool",
+    "custom image classifier built by fine-tuning the backbone"
+   ],
+   "domains": ["general"],
+   "not_for": [
+    "categories outside standard ImageNet classes without fine-tuning",
+    "detecting or locating multiple objects in one image",
+    "describing images in natural language"
+   ]
+  },
+  "official_url": "https://huggingface.co/google/vit-base-patch16-224",
+  "sources": ["https://huggingface.co/google/vit-base-patch16-224/raw/main/README.md"],
+  "notes": ""
+ },
+ {
+  "id": "prithivMLmods/Weather-Image-Classification",
+  "name": "Weather-Image-Classification",
+  "creator": "prithivMLmods",
+  "card": {
+   "what": "Image classifier fine-tuned by prithivMLmods from SigLIP2 that labels photos by weather condition.",
+   "kind": "image classification",
+   "input": ["image"],
+   "output": ["labels"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": [
+    "recognizing weather conditions in a photo",
+    "tagging images as sunny, cloudy, rainy, snowy or foggy",
+    "labeling outdoor scenes by weather type"
+   ],
+   "product_uses": [
+    "automated weather tagging tool for photo libraries",
+    "dataset labeling tool for weather images",
+    "scene understanding module for an autonomous vehicle system"
+   ],
+   "domains": ["general", "media"],
+   "not_for": [
+    "forecasting future weather",
+    "reading numeric weather sensor data",
+    "identifying objects unrelated to weather conditions"
+   ]
+  },
+  "official_url": "https://huggingface.co/prithivMLmods/Weather-Image-Classification",
+  "sources": ["https://huggingface.co/prithivMLmods/Weather-Image-Classification/raw/main/README.md"],
+  "notes": ""
+ },
+ {
+  "id": "timm/mobilenetv3_small_100.lamb_in1k",
+  "name": "mobilenetv3_small_100.lamb_in1k",
+  "creator": "timm",
+  "card": {
+   "what": "Lightweight MobileNetV3 image classification model trained on ImageNet, built for mobile and edge devices.",
+   "kind": "image classification",
+   "input": ["image"],
+   "output": ["labels"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": [
+    "classifying images on mobile and edge devices",
+    "recognizing common objects in real time",
+    "extracting image feature embeddings efficiently"
+   ],
+   "product_uses": [
+    "on-device image recognition for a mobile app",
+    "lightweight image tagging for an embedded camera",
+    "feature extractor for a custom vision pipeline"
+   ],
+   "domains": ["general"],
+   "not_for": [
+    "categories outside standard ImageNet classes without fine-tuning",
+    "tasks needing the highest possible accuracy",
+    "detecting or locating objects within an image"
+   ]
+  },
+  "official_url": "https://huggingface.co/timm/mobilenetv3_small_100.lamb_in1k",
+  "sources": ["https://huggingface.co/timm/mobilenetv3_small_100.lamb_in1k/raw/main/README.md"],
+  "notes": ""
+ },
+ {
+  "id": "timm/resnet18.a1_in1k",
+  "name": "resnet18.a1_in1k",
+  "creator": "timm",
+  "card": {
+   "what": "ResNet-18 image classification model trained on ImageNet, built for efficient inference and feature extraction.",
+   "kind": "image classification",
+   "input": ["image"],
+   "output": ["labels"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": [
+    "classifying images into common object categories",
+    "extracting image features for downstream tasks",
+    "running efficient inference with modest compute"
+   ],
+   "product_uses": [
+    "general image recognition app",
+    "feature extractor for a custom vision pipeline",
+    "lightweight image classifier for a resource-limited server"
+   ],
+   "domains": ["general"],
+   "not_for": [
+    "categories outside standard ImageNet classes without fine-tuning",
+    "fine-grained classification of very similar objects",
+    "detecting or locating objects within an image"
+   ]
+  },
+  "official_url": "https://huggingface.co/timm/resnet18.a1_in1k",
+  "sources": ["https://huggingface.co/timm/resnet18.a1_in1k/raw/main/README.md"],
+  "notes": ""
+ },
+ {
+  "id": "ibm-nasa-geospatial/Prithvi-WxC-1.0-2300M",
+  "name": "Prithvi-WxC-1.0-2300M",
+  "creator": "IBM and NASA",
+  "card": {
+   "what": "IBM and NASA foundation model that reconstructs and forecasts atmospheric state from weather and climate data.",
+   "kind": "time-series forecasting",
+   "input": ["time series"],
+   "output": ["time series"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": [
+    "reconstructing atmospheric state from partial weather data",
+    "forecasting future atmospheric conditions from past states",
+    "supporting climate downscaling once fine-tuned",
+    "supporting gravity wave parameterization once fine-tuned"
+   ],
+   "product_uses": [
+    "weather forecasting research tool",
+    "climate downscaling pipeline built by fine-tuning",
+    "atmospheric data reconstruction tool for missing observations"
+   ],
+   "domains": ["science", "geospatial"],
+   "not_for": [
+    "processing images, text or general non-atmospheric data",
+    "specialized tasks like downscaling without additional fine-tuning"
+   ]
+  },
+  "official_url": "https://huggingface.co/ibm-nasa-geospatial/Prithvi-WxC-1.0-2300M",
+  "sources": ["https://huggingface.co/ibm-nasa-geospatial/Prithvi-WxC-1.0-2300M/raw/main/README.md"],
+  "notes": "Trabaja sobre variables atmosféricas en grilla (MERRA-2), no sobre imágenes; se clasificó como time-series forecasting en vez de geospatial porque el vocabulario define geospatial como análisis de imágenes satelitales."
+ },
+ {
+  "id": "CIDAS/clipseg-rd64-refined",
+  "name": "clipseg-rd64-refined",
+  "creator": "CIDAS",
+  "card": {
+   "what": "CLIP-based model that segments objects in an image from a text or image prompt, without training.",
+   "kind": "image segmentation",
+   "input": ["image", "text"],
+   "output": ["masks"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": [
+    "segmenting objects in an image from a text description",
+    "segmenting objects in an image from an example image",
+    "finding objects without task-specific training data"
+   ],
+   "product_uses": [
+    "interactive photo editing tool with text-based selection",
+    "visual search tool that highlights described objects",
+    "background or object removal tool guided by text prompts"
+   ],
+   "domains": ["general"],
+   "not_for": [
+    "classifying an entire image with a single label",
+    "detecting objects with bounding boxes",
+    "generating or editing image content"
+   ]
+  },
+  "official_url": "https://huggingface.co/CIDAS/clipseg-rd64-refined",
+  "sources": ["https://huggingface.co/CIDAS/clipseg-rd64-refined/raw/main/README.md"],
+  "notes": ""
+ },
+ {
+  "id": "Pranilllllll/segformer-satellite-segementation",
+  "name": "segformer-satellite-segementation",
+  "creator": "Pranilllllll",
+  "card": {
+   "what": "SegFormer model fine-tuned to classify land use in satellite imagery of Kathmandu Valley, Nepal.",
+   "kind": "image segmentation",
+   "input": ["satellite image"],
+   "output": ["masks"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": [
+    "classifying land use in Kathmandu Valley satellite imagery",
+    "mapping residential areas, roads, rivers and forest cover",
+    "detecting unused or unclassified land in satellite images"
+   ],
+   "product_uses": [
+    "land-use mapping tool for urban planning",
+    "river and forest change detection tool",
+    "GIS pipeline for spatial analysis of Kathmandu Valley"
+   ],
+   "domains": ["geospatial"],
+   "not_for": [
+    "satellite imagery from regions outside Kathmandu Valley",
+    "non-satellite photos or general images",
+    "classifying an entire image with a single label"
+   ]
+  },
+  "official_url": "https://huggingface.co/Pranilllllll/segformer-satellite-segementation",
+  "sources": ["https://huggingface.co/Pranilllllll/segformer-satellite-segementation/raw/main/README.md"],
+  "notes": ""
+ },
+ {
+  "id": "ZhengPeng7/BiRefNet",
+  "name": "BiRefNet",
+  "creator": "ZhengPeng7 et al.",
+  "card": {
+   "what": "Segmentation model by ZhengPeng7 and collaborators that extracts a subject from an image at high resolution.",
+   "kind": "image segmentation",
+   "input": ["image"],
+   "output": ["masks", "image"],
+   "interaction": "task model",
+   "access": "open weights",
+   "languages": "English",
+   "best_at": [
+    "extracting the main subject from a photo at high resolution",
+    "removing backgrounds from product or portrait photos",
+    "detecting camouflaged objects in an image",
+    "separating salient objects from cluttered backgrounds"
+   ],
+   "product_uses": [
+    "background removal tool for ecommerce product photos",
+    "portrait cutout tool for a photo editing app",
+    "camouflaged object detector for research imagery"
+   ],
+   "domains": ["general", "media", "retail"],
+   "not_for": [
+    "multi-class semantic segmentation of a whole scene",
+    "classifying an entire image with a single label",
+    "generating or editing image content beyond masking"
+   ]
+  },
+  "official_url": "https://huggingface.co/ZhengPeng7/BiRefNet",
+  "sources": ["https://huggingface.co/ZhengPeng7/BiRefNet/raw/main/README.md"],
+  "notes": ""
+ }
+]
