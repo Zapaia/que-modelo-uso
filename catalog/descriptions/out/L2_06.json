@@ -1,0 +1,162 @@
+[
+  {
+    "id": "OpenMed/OpenMed-NER-DiseaseDetect-BioMed-335M",
+    "description": "Transformer-based token classifier by OpenMed for disease entity recognition in biomedical text. Best at: identifying disease mentions in clinical texts and research papers. Domains: biomedical literature, clinical documentation. Typical uses: drug interaction detection, adverse event monitoring, literature mining for drug discovery, knowledge graph construction. Not suited for: general-domain text or languages other than English.",
+    "source_url": "https://huggingface.co/OpenMed/OpenMed-NER-DiseaseDetect-BioMed-335M/blob/main/README.md",
+    "official_url": "https://huggingface.co/OpenMed/OpenMed-NER-DiseaseDetect-BioMed-335M",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "emilyalsentzer/Bio_ClinicalBERT",
+    "description": "BioBERT-based language model pre-trained on MIMIC III clinical notes from ICU patients. Best at: downstream clinical NLP tasks including entity recognition, question answering, and text classification on clinical documents. Domains: clinical healthcare, biomedical research. Typical uses: clinical text understanding, medical record analysis, healthcare NLP applications. Not suited for: non-clinical text or general-domain language modeling.",
+    "source_url": "https://huggingface.co/emilyalsentzer/Bio_ClinicalBERT/blob/main/README.md",
+    "official_url": "https://huggingface.co/emilyalsentzer/Bio_ClinicalBERT",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "yikuan8/Clinical-Longformer",
+    "description": "Longformer variant pre-trained on MIMIC-III clinical notes, supporting up to 4,096 input tokens for long document processing. Best at: NER, question answering, natural language inference, and text classification on extended clinical texts. Domains: clinical healthcare. Typical uses: analysis of long clinical documents, discharge summaries, comprehensive medical record understanding. Not suited for: short-text tasks or general-domain use.",
+    "source_url": "https://huggingface.co/yikuan8/Clinical-Longformer/blob/main/README.md",
+    "official_url": "https://huggingface.co/yikuan8/Clinical-Longformer",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "OpenMed/OpenMed-PII-Italian-ClinicalBGE-Large-335M-v1",
+    "description": "Token classifier by OpenMed for personally identifiable information (PII) detection in Italian text. Best at: identifying 54 types of sensitive information including names, addresses, medical records, financial data. Domains: clinical, healthcare, privacy compliance. Typical uses: de-identification of clinical documents, GDPR compliance, privacy-preserving data processing. Not suited for: non-Italian text or non-PII entity recognition.",
+    "source_url": "https://huggingface.co/OpenMed/OpenMed-PII-Italian-ClinicalBGE-Large-335M-v1/blob/main/README.md",
+    "official_url": "https://huggingface.co/OpenMed/OpenMed-PII-Italian-ClinicalBGE-Large-335M-v1",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "OpenMed/OpenMed-NER-ProteinDetect-SuperClinical-141M",
+    "description": "Transformer-based token classifier by OpenMed for biomedical entity recognition focusing on protein identification. Best at: detecting proteins, protein complexes, protein families, and variants in biomedical text. Domains: molecular biology, proteomics, biomedical research. Typical uses: protein-protein interaction extraction, systems biology research, drug discovery, molecular pathway analysis. Not suited for: general biomedical text without protein-specific focus.",
+    "source_url": "https://huggingface.co/OpenMed/OpenMed-NER-ProteinDetect-SuperClinical-141M/blob/main/README.md",
+    "official_url": "https://huggingface.co/OpenMed/OpenMed-NER-ProteinDetect-SuperClinical-141M",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "zhihan1996/DNABERT-2-117M",
+    "description": "Transformer-based genome foundation model trained on multi-species DNA sequences for biological representation learning. Best at: encoding DNA sequences into meaningful embeddings for downstream genomic tasks. Domains: genomics, bioinformatics, molecular biology. Typical uses: DNA sequence classification, genome analysis, embedding generation for genetic research. Not suited for: non-DNA sequences, protein sequences, or non-genomic tasks.",
+    "source_url": "https://huggingface.co/zhihan1996/DNABERT-2-117M/blob/main/README.md",
+    "official_url": "https://huggingface.co/zhihan1996/DNABERT-2-117M",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "OpenMed/OpenMed-NER-DNADetect-SuperMedical-125M",
+    "description": "Token classifier by OpenMed for recognizing DNA, RNA, protein, cell line, and cell type entities in biomedical literature. Best at: identifying molecular biology entities in MEDLINE abstracts and research papers. Domains: molecular biology, genomics, biomedical research. Typical uses: gene and protein recognition, molecular pathway mining, bioinformatics research, computational biology. Not suited for: clinical text without molecular entity focus.",
+    "source_url": "https://huggingface.co/OpenMed/OpenMed-NER-DNADetect-SuperMedical-125M/blob/main/README.md",
+    "official_url": "https://huggingface.co/OpenMed/OpenMed-NER-DNADetect-SuperMedical-125M",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "OpenMed/OpenMed-NER-ChemicalDetect-ModernMed-149M",
+    "description": "Token classifier by OpenMed for chemical entity recognition in biomedical texts. Best at: identifying chemical compounds, drugs, and chemical substances in scientific literature and patents. Domains: chemistry, pharmacology, drug discovery, biomedical research. Typical uses: drug name extraction from literature, chemical compound identification, pharmaceutical knowledge mining. Not suited for: text without chemical entities or general-domain classification.",
+    "source_url": "https://huggingface.co/OpenMed/OpenMed-NER-ChemicalDetect-ModernMed-149M/blob/main/README.md",
+    "official_url": "https://huggingface.co/OpenMed/OpenMed-NER-ChemicalDetect-ModernMed-149M",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "nlpaueb/legal-bert-base-uncased",
+    "description": "BERT variant trained on diverse English legal texts including legislation, contracts, and court cases. Best at: legal document classification, contract analysis, statute understanding, and legal NLP tasks. Domains: law, contracts, legislation, legal technology. Typical uses: contract clause classification, legal document categorization, computational law applications. Not suited for: non-English legal systems or general-domain text.",
+    "source_url": "https://huggingface.co/nlpaueb/legal-bert-base-uncased/blob/main/README.md",
+    "official_url": "https://huggingface.co/nlpaueb/legal-bert-base-uncased",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "Stern5497/sbert-legal-xlm-roberta-base",
+    "description": "Sentence-Transformers model for multilingual legal text similarity and semantic search. Best at: computing embeddings for legal documents and measuring semantic similarity across languages. Domains: law, legal research, multilingual NLP. Typical uses: legal document retrieval, contract similarity matching, cross-lingual legal search. Not suited for: single-word classification or tasks requiring fine-grained token-level analysis.",
+    "source_url": "https://huggingface.co/Stern5497/sbert-legal-xlm-roberta-base/blob/main/README.md",
+    "official_url": "https://huggingface.co/Stern5497/sbert-legal-xlm-roberta-base",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "protonx-models/protonx-legal-tc",
+    "description": "Seq2Seq Transformer for Vietnamese legal text correction and OCR post-processing. Best at: correcting OCR errors, diacritic restoration, and normalizing legal Vietnamese documents. Domains: legal, Vietnamese language, document processing. Typical uses: OCR output cleanup, government decree normalization, contract proofreading, administrative document processing. Not suited for: non-Vietnamese text or general-domain grammar correction.",
+    "source_url": "https://huggingface.co/protonx-models/protonx-legal-tc/blob/main/README.md",
+    "official_url": "https://huggingface.co/protonx-models/protonx-legal-tc",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "celiudos/legal-bert-lgpd",
+    "description": "BERT model domain-adapted for Brazilian Portuguese legal texts with emphasis on LGPD (Lei Geral de Proteção de Dados) privacy regulations. Best at: token-level entity recognition of personal data in Brazilian legal documents. Domains: Brazilian law, privacy regulation, data protection. Typical uses: PII extraction from legal documents, LGPD compliance, de-identification of privacy-sensitive text. Not suited for: non-Portuguese text or non-legal contexts.",
+    "source_url": "https://huggingface.co/celiudos/legal-bert-lgpd/blob/main/README.md",
+    "official_url": "https://huggingface.co/celiudos/legal-bert-lgpd",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "yiyanghkust/finbert-esg",
+    "description": "FinBERT fine-tuned for Environmental, Social, and Governance (ESG) topic classification in financial texts. Best at: classifying financial text into ESG categories or non-ESG class. Domains: finance, sustainability, corporate responsibility. Typical uses: ESG report analysis, sustainability-focused financial text categorization, investor screening. Not suited for: non-financial text or non-ESG topic classification.",
+    "source_url": "https://huggingface.co/yiyanghkust/finbert-esg/blob/main/README.md",
+    "official_url": "https://huggingface.co/yiyanghkust/finbert-esg",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "nickmuchi/finbert-tone-finetuned-finance-topic-classification",
+    "description": "FinBERT model fine-tuned for finance topic classification. Best at: categorizing financial text by topic and tone. Domains: finance. Typical uses: financial document classification, news categorization, sentiment-aware topic sorting. Not suited for: non-financial text or general-domain classification.",
+    "source_url": "https://huggingface.co/nickmuchi/finbert-tone-finetuned-finance-topic-classification/blob/main/README.md",
+    "official_url": "https://huggingface.co/nickmuchi/finbert-tone-finetuned-finance-topic-classification",
+    "confidence": "low",
+    "notes": "README is minimal; limited documentation available"
+  },
+  {
+    "id": "yiyanghkust/finbert-tone-chinese",
+    "description": "FinBERT variant fine-tuned for financial sentiment analysis in Chinese (neutral, positive, negative). Best at: classifying sentiment in Chinese-language financial analyst reports and investment text. Domains: finance, Chinese language. Typical uses: Chinese financial text sentiment detection, investor sentiment analysis, financial news classification. Not suited for: English or non-financial Chinese text.",
+    "source_url": "https://huggingface.co/yiyanghkust/finbert-tone-chinese/blob/main/README.md",
+    "official_url": "https://huggingface.co/yiyanghkust/finbert-tone-chinese",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "Yifeng-Liu/rt-detr-finetuned-for-satellite-image-roofs-detection",
+    "description": "RT-DETR object detector fine-tuned for roof detection in remote sensing imagery. Best at: identifying and localizing roofs in satellite and aerial images. Domains: earth observation, remote sensing, urban planning. Typical uses: property mapping, urban planning analysis, GIS applications, infrastructure inventory. Not suited for: ground-level imagery, non-roof object detection, or non-satellite data.",
+    "source_url": "https://huggingface.co/Yifeng-Liu/rt-detr-finetuned-for-satellite-image-roofs-detection/blob/main/README.md",
+    "official_url": "https://huggingface.co/Yifeng-Liu/rt-detr-finetuned-for-satellite-image-roofs-detection",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "mfaytin/mask2former-satellite",
+    "description": "Mask2Former semantic segmentation model fine-tuned on satellite imagery for land cover classification into 9 categories. Best at: classifying pixels into land cover types from aerial and satellite images. Domains: earth observation, remote sensing, environmental monitoring. Typical uses: land-use/land-cover mapping, urban sprawl analysis, environmental impact assessment. Not suited for: ground-level imagery or non-satellite data.",
+    "source_url": "https://huggingface.co/mfaytin/mask2former-satellite/blob/main/README.md",
+    "official_url": "https://huggingface.co/mfaytin/mask2former-satellite",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "Pranilllllll/segformer-satellite-segementation",
+    "description": "SegFormer-B0 semantic segmentation model fine-tuned on Kathmandu Valley satellite imagery for land-use classification. Best at: classifying pixels into urban and land-cover categories in satellite imagery. Domains: earth observation, urban planning, geospatial analysis. Typical uses: urban planning studies, land-use mapping, geographic analysis. Not suited for: regions outside training area or non-satellite imagery.",
+    "source_url": "https://huggingface.co/Pranilllllll/segformer-satellite-segementation/blob/main/README.md",
+    "official_url": "https://huggingface.co/Pranilllllll/segformer-satellite-segementation",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "prithivMLmods/Weather-Image-Classification",
+    "description": "Vision-language classifier fine-tuned from SiglIP for weather condition recognition in images. Best at: identifying weather conditions (sunny, cloudy, rainy, snowy, foggy) from visual data. Domains: computer vision, weather, environmental monitoring. Typical uses: automated weather tagging for media, autonomous vehicle enhancement, smart surveillance systems. Not suited for: weather forecasting or numerical data analysis.",
+    "source_url": "https://huggingface.co/prithivMLmods/Weather-Image-Classification/blob/main/README.md",
+    "official_url": "https://huggingface.co/prithivMLmods/Weather-Image-Classification",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "neulab/codebert-python",
+    "description": "CodeBERT language model trained on Python code for masked language modeling. Best at: generating contextual embeddings for Python source code and code evaluation. Domains: software development, code quality, machine learning. Typical uses: code generation evaluation via CodeBERTScore, code similarity assessment, source code analysis. Not suited for: non-Python code or general NLP tasks.",
+    "source_url": "https://huggingface.co/neulab/codebert-python/blob/main/README.md",
+    "official_url": "https://huggingface.co/neulab/codebert-python",
+    "confidence": "high",
+    "notes": ""
+  }
+]

@@ -1,0 +1,410 @@
+.mesa {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+}
+
+/* El canvas ocupa toda la hoja; la interfaz flota encima y deja pasar el puntero
+   salvo en sus propios controles. */
+.pile { position: absolute !important; inset: 0; z-index: 1; }
+.mesa > :not(.pile) { position: absolute; z-index: 2; pointer-events: none; }
+.mesa a, .mesa button, .mesa input, .mesa label { pointer-events: auto; }
+
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+
+/* ---------- Encabezado: anotación al margen, como en la hoja ---------- */
+.encabezado {
+  top: clamp(1rem, 3vh, 2rem);
+  align-items: start !important;
+  left: clamp(1rem, 3vw, 2.5rem);
+  right: clamp(1rem, 3vw, 2.5rem);
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+}
+.marca { margin: 0; font-weight: 700; font-size: 0.95rem; letter-spacing: -0.01em; }
+.nota, .pie, .estado, .rango {
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--grafito);
+}
+.fuente { display: grid; justify-items: end; gap: 0.45rem; }
+.nota { margin: 0; text-align: right; font-size: 0.56rem; letter-spacing: 0.1em; color: var(--grafito-claro); }
+.nota a { color: var(--grafito); }
+/* El dato de cuánto tardó: una notificación chiquita que se va sola. */
+.aviso {
+  margin: 0;
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--tinta-media);
+  opacity: 0;
+  translate: 0 -0.3rem;
+  transition: opacity 0.35s, translate 0.35s cubic-bezier(.2,.8,.2,1);
+}
+.aviso.visible { opacity: 1; translate: 0 0; }
+.aviso .accion { pointer-events: auto; }
+.nota a { text-underline-offset: 0.3em; }
+.nota a:hover { color: var(--cobalto); }
+
+/* ---------- La burbuja donde se escribe la idea ---------- */
+.burbuja {
+  top: 13vh;
+  left: 50%;
+  translate: -50% 0;
+  width: min(40rem, calc(100vw - 2.5rem));
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.45rem 0.45rem 0.45rem 1.6rem;
+  background: #ffffff;
+  border-radius: 999px;
+  /* Chat limpio, como el demo: sin borde de tinta, un aro apenas y sombra larga. */
+  box-shadow: 0 0 0 1px rgba(27, 30, 36, 0.07), 0 2px 4px rgba(27, 30, 36, 0.04), 0 20px 44px -18px rgba(27, 30, 36, 0.38);
+  pointer-events: auto;
+  transition: box-shadow 0.2s;
+}
+/* Al enfocar no cambia de color: la sombra apenas se asienta, el cursor ya dice dónde escribir. */
+.burbuja:focus-within { box-shadow: 0 0 0 1px rgba(27, 30, 36, 0.1), 0 2px 4px rgba(27, 30, 36, 0.05), 0 22px 48px -18px rgba(27, 30, 36, 0.42); }
+.burbuja input {
+  flex: 1;
+  min-width: 0;
+  border: 0;
+  background: transparent;
+  font: 400 clamp(1.1rem, 1.9vw, 1.4rem) / 1.3 var(--sans);
+  letter-spacing: -0.015em;
+  color: var(--tinta);
+  caret-color: var(--cobalto);
+  padding: 0.3rem 0;
+}
+.burbuja input::placeholder { color: var(--grafito-claro); }
+.burbuja input:focus { outline: none; }
+.burbuja button {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 0;
+  border-radius: 50%;
+  background: var(--tinta);
+  color: var(--papel);
+  cursor: pointer;
+  transition: background 0.2s, scale 0.2s cubic-bezier(.2,.8,.2,1);
+}
+.burbuja button svg { width: 1.15rem; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.burbuja button:hover:not(:disabled) { background: var(--cobalto); scale: 1.06; }
+.burbuja button:disabled { background: var(--raya-fuerte); cursor: default; }
+.burbuja button:focus-visible { outline-offset: 2px; }
+
+/* ---------- Debajo de la burbuja: ejemplos u opciones, y los filtros si se piden ---------- */
+.controles {
+  top: calc(13vh + 4.1rem);
+  left: 50%;
+  translate: -50% 0;
+  width: min(38rem, calc(100vw - 3.5rem));
+  display: grid;
+  gap: 0.7rem;
+}
+.opciones {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 1.5rem;
+  font-family: var(--mono);
+  font-size: 0.64rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--grafito);
+}
+.opciones p { margin: 0; line-height: 2; }
+.ejemplos { display: flex; flex-wrap: wrap; gap: 0 1.1rem; }
+.ejemplos span { color: var(--grafito); }
+.ejemplos button, .accion {
+  font: inherit; letter-spacing: inherit; text-transform: inherit;
+  color: var(--tinta-media);
+  background: none; border: 0; padding: 0; cursor: pointer;
+  text-decoration: underline dotted var(--grafito-claro);
+  text-underline-offset: 0.35em;
+}
+.ejemplos button:hover, .accion:hover { color: var(--cobalto); text-decoration-color: var(--cobalto); }
+.opciones > .accion { flex: none; line-height: 2; text-decoration: none; color: var(--grafito); }
+.opciones > .accion:hover { color: var(--cobalto); }
+
+/* ---------- Filtros: dos reglas de grafito ---------- */
+.filtros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 2.5rem;
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--grafito);
+}
+.filtros label { display: flex; align-items: center; gap: 0.75rem; cursor: pointer; }
+.filtros output { color: var(--tinta); min-width: 8.5em; }
+.filtros input[type='range'] {
+  -webkit-appearance: none; appearance: none;
+  width: 8rem; height: 0.9rem; margin: 0; background: transparent; cursor: pointer;
+}
+/* La pista es una regla: línea de tinta con marcas de grafito. */
+.filtros input[type='range']::-webkit-slider-runnable-track {
+  height: 0.9rem;
+  background:
+    linear-gradient(var(--tinta-media), var(--tinta-media)) center / 100% 1px no-repeat,
+    repeating-linear-gradient(90deg, var(--grafito-claro) 0 1px, transparent 1px calc(100% / 8)) center / 100% 0.45rem no-repeat;
+}
+.filtros input[type='range']::-moz-range-track {
+  height: 0.9rem;
+  background:
+    linear-gradient(var(--tinta-media), var(--tinta-media)) center / 100% 1px no-repeat,
+    repeating-linear-gradient(90deg, var(--grafito-claro) 0 1px, transparent 1px calc(100% / 8)) center / 100% 0.45rem no-repeat;
+}
+.filtros input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none; appearance: none;
+  width: 0.8rem; height: 0.8rem; margin-top: 0.05rem;
+  border-radius: 50%; background: var(--tinta); border: 2px solid var(--papel);
+  box-shadow: 0 1px 2px rgba(27, 30, 36, 0.35);
+  transition: scale 0.15s;
+}
+.filtros input[type='range']::-moz-range-thumb {
+  width: 0.8rem; height: 0.8rem; border-radius: 50%; background: var(--tinta); border: 2px solid var(--papel);
+}
+.filtros input[type='range']:hover::-webkit-slider-thumb { scale: 1.2; }
+.filtros input[type='range']:focus-visible { outline: 2px solid var(--cobalto); outline-offset: 4px; }
+
+/* ---------- La fila: etiquetas debajo de cada ficha elegida ---------- */
+.fila { inset: 0; margin: 0; padding: 0; list-style: none; }
+.fila li {
+  position: absolute;
+  translate: -50% 0;
+  padding: 0 0.2rem;
+  text-align: center;
+  opacity: 0;
+  animation: aparecer 0.5s cubic-bezier(.2,.8,.2,1) forwards;
+  animation-delay: calc(0.35s + var(--i) * 0.04s);
+  transition: left 0.6s cubic-bezier(.2,.8,.2,1);
+}
+.fila a { display: grid; justify-items: center; gap: 0.2rem; color: inherit; text-decoration: none; }
+.rango { font-size: 0.6rem; }
+.nombre {
+  font-weight: 600;
+  font-size: 0.76rem;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: var(--tinta);
+  text-wrap: balance;
+  overflow-wrap: anywhere;
+  /* Trazo de fibrón: una franja por detrás del texto, con bordes irregulares. */
+  background-image: linear-gradient(var(--fibron), var(--fibron));
+  background-repeat: no-repeat;
+  background-size: calc(100% + 0.5rem) 0.72em;
+  background-position: -0.25rem 0.5em;
+  padding: 0 0.1rem;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+/* Sin datos: rayado en grafito, como la casilla a medio completar de la hoja.
+   El mismo rayado marca la leyenda del switch. */
+.rayado { padding: 0 0.2rem; }
+.nombre.sin-datos, .rayado {
+  background-image: repeating-linear-gradient(-55deg, var(--raya-fuerte) 0 1.5px, transparent 1.5px 4.5px);
+}
+.nombre { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.fila a:hover .nombre { color: var(--cobalto); }
+/* ---------- Confianza de Jev ---------- */
+.conf { font-variant-numeric: tabular-nums; color: var(--tinta); }
+.conf small { font-size: 0.55em; font-weight: 400; color: var(--grafito); margin-left: 0.08em; }
+/* etiqueta: un sticker de fibrón pegado torcido en la esquina de la ficha */
+.conf.etiqueta {
+  position: absolute; translate: -50% 0; rotate: -7deg;
+  padding: 0.12rem 0.32rem 0.1rem;
+  font-family: var(--mono); font-size: 0.62rem; font-weight: 700; letter-spacing: 0.02em;
+  background: var(--fibron); border-radius: 3px;
+  box-shadow: 0 1px 2px rgba(27, 30, 36, 0.2);
+  pointer-events: none;
+  transition: scale 0.2s cubic-bezier(.2,.8,.2,1);
+  animation: pegar 0.4s cubic-bezier(.2,1.4,.4,1) both; animation-delay: calc(0.7s + var(--i) * 0.05s);
+}
+@keyframes pegar { from { opacity: 0; scale: 1.6; rotate: 8deg; } }
+.fila a:hover .etiqueta, .fila a:focus-visible .etiqueta { scale: 1.12; }
+
+/* La ayuda: una etiqueta mínima sobre la ficha, que nombra qué es el número. */
+.mesa > .ayuda {
+  translate: -50% -100%;
+  display: flex; align-items: center; gap: 0.45rem;
+  padding: 0.3rem 0.55rem 0.3rem 0.35rem;
+  white-space: nowrap;
+  background: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 0 0 1px rgba(27, 30, 36, 0.08), 0 8px 20px -10px rgba(27, 30, 36, 0.35);
+  animation: asomar 0.2s cubic-bezier(.2,.8,.2,1) both;
+  z-index: 3;
+}
+.ayuda::after { /* la puntita hacia la ficha */
+  content: ''; position: absolute; left: 50%; bottom: -4px; width: 8px; height: 8px;
+  background: #fff; translate: -50% 0; rotate: 45deg;
+  box-shadow: 1px 1px 0 rgba(27, 30, 36, 0.08);
+}
+.ayuda-cifra { font-family: var(--mono); font-size: 0.72rem; font-weight: 700; color: var(--tinta); background: var(--fibron); padding: 0.05rem 0.25rem; border-radius: 2px; }
+.ayuda-cifra small { font-size: 0.7em; font-weight: 400; }
+.ayuda-texto { font-family: var(--mono); font-size: 0.56rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--tinta-media); }
+@keyframes asomar { from { opacity: 0; translate: -50% calc(-100% + 0.35rem); } }
+
+@keyframes aparecer {
+  from { opacity: 0; translate: -50% 0.5rem; filter: blur(3px); }
+  to { opacity: 1; translate: -50% 0; filter: blur(0); }
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+  .fila li { animation: none; opacity: 1; }
+  .conf.etiqueta, .mesa > .ayuda { animation: none; }
+}
+
+/* ---------- El gráfico costo vs. calidad: uno solo, que cambia de caja ---------- */
+.mesa > .grafico {
+  margin: 0;
+  pointer-events: none; /* el mouse pasa a la escena: las fichas se siguen pudiendo clickear */
+  transition:
+    left 0.75s cubic-bezier(.2,.8,.2,1), top 0.75s cubic-bezier(.2,.8,.2,1),
+    width 0.75s cubic-bezier(.2,.8,.2,1), height 0.75s cubic-bezier(.2,.8,.2,1);
+  animation: aparecer-simple 0.5s 0.3s both;
+}
+.grafico a, .grafico button { pointer-events: auto; }
+/* La capa de fondo va debajo del canvas (z 1): las fichas tapan el fibrón, no al revés. */
+.mesa > .grafico.fondo { z-index: 0; }
+.grafico > svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+.grilla { stroke: var(--raya-fuerte); stroke-width: 1; stroke-dasharray: 2 4; vector-effect: non-scaling-stroke; }
+.eje { fill: none; stroke: var(--grafito); stroke-width: 1.2; vector-effect: non-scaling-stroke; stroke-linecap: round; stroke-linejoin: round; }
+/* La frontera: trazo de fibrón que se pasa de izquierda a derecha. Sin grosor fijo
+   en pantalla: el patrón de guiones necesita medirse en proporción del trazo. */
+.frontera-trazo {
+  fill: none;
+  stroke: var(--fibron-1);
+  stroke-width: 3.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  opacity: 0.85;
+  mix-blend-mode: multiply;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: trazar 1s cubic-bezier(.3,.7,.2,1) 0.55s forwards;
+}
+.grande .frontera-trazo { stroke-width: 2.4; animation-delay: 0.8s; }
+@keyframes trazar { to { stroke-dashoffset: 0; } }
+@keyframes aparecer-simple { from { opacity: 0; } to { opacity: 1; } }
+
+.grafico .tick, .grafico figcaption, .margen-titulo, .margen li, .nombre-punto {
+  font-family: var(--mono);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--grafito);
+  white-space: nowrap;
+}
+.grafico .tick { position: absolute; font-size: 0.52rem; }
+.tick.x { translate: -50% 0.35rem; }
+.tick.y { translate: calc(-100% - 0.45rem) -50%; }
+
+/* El modelo marcado: guías punteadas de cobalto hasta cada eje, y sus valores sobre el eje. */
+.guia { fill: none; stroke: var(--cobalto); stroke-width: 1.2; stroke-dasharray: 3 3; vector-effect: non-scaling-stroke; animation: aparecer-simple 0.2s both; }
+.grafico .valor {
+  position: absolute; z-index: 1;
+  font-family: var(--mono); font-size: 0.55rem; font-weight: 700; letter-spacing: 0.04em; white-space: nowrap;
+  color: #fff; background: var(--cobalto); padding: 0.08rem 0.3rem; border-radius: 3px;
+  animation: aparecer-simple 0.2s both;
+}
+/* tapan el número del eje en esa misma posición, como el cursor de un instrumento */
+.valor.x { translate: -50% 0.3rem; }
+.valor.y { translate: calc(-100% - 0.35rem) -50%; }
+.puntos-logo .marcado { z-index: 2; }
+.puntos-logo .marcado img, .puntos-logo .marcado .sin-logo { scale: 1.3; box-shadow: 0 0 0 1.5px var(--cobalto), 0 2px 6px rgba(27, 30, 36, 0.25); }
+.grande .marcado .nombre-punto { color: var(--cobalto); }
+
+/* Los puntos del gráfico chico: logos redondos, con aro de tinta los de la frontera. */
+.puntos-logo { position: absolute; inset: 0; margin: 0; padding: 0; list-style: none; }
+.puntos-logo li { position: absolute; translate: -50% -50%; transition: opacity 0.3s; }
+.puntos-logo a { display: block; position: relative; }
+.puntos-logo img, .puntos-logo .sin-logo {
+  display: block;
+  width: 1.05rem; height: 1.05rem;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 0 0 1px var(--raya-fuerte), 0 1px 3px rgba(27, 30, 36, 0.18);
+  object-fit: cover;
+}
+.puntos-logo .mejor img, .puntos-logo .mejor .sin-logo { box-shadow: 0 0 0 1.5px var(--tinta), 0 1px 3px rgba(27, 30, 36, 0.2); }
+.puntos-logo a:hover img { scale: 1.25; }
+.nombre-punto { display: none; }
+/* Agrandado: los logos se apagan y aterrizan las fichas 3D; quedan los nombres. */
+.grande .puntos-logo img, .grande .puntos-logo .sin-logo { opacity: 0; transition: opacity 0.35s; pointer-events: none; }
+.grande .nombre-punto {
+  display: block;
+  position: absolute; left: 1.35rem; top: 50%; translate: 0 -50%;
+  font-size: 0.52rem;
+  animation: aparecer-simple 0.4s 0.7s both;
+}
+.grande .mejor .nombre-punto { color: var(--tinta); font-weight: 700; }
+.grande .puntos-logo a:hover .nombre-punto { color: var(--cobalto); }
+
+.grafico figcaption {
+  position: absolute; left: 0; right: 0; top: calc(100% + 1.1rem);
+  display: flex; align-items: center; gap: 1rem;
+  font-size: 0.52rem;
+}
+/* Títulos de eje: el de costo bajo sus números, alineado al final del eje; el de
+   calidad parado a lo largo del eje vertical, a la izquierda de sus números. */
+.grafico .eje-titulo {
+  position: absolute;
+  font-family: var(--mono); font-size: 0.5rem; letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--tinta-media); white-space: nowrap;
+}
+.eje-titulo.x { translate: -100% 1.25rem; }
+/* anclado al pie del eje: rotado, el texto sube; translate va en coordenadas de la hoja */
+.eje-titulo.y { transform-origin: 0 0; rotate: -90deg; translate: -2.25rem 0; }
+.grafico figcaption .mejor-leyenda { margin-right: auto; }
+.mejor-leyenda { color: var(--tinta); background: linear-gradient(var(--fibron-1), var(--fibron-1)) 0 0.5em / 100% 0.7em no-repeat; padding: 0 0.2rem; }
+.agrandar {
+  display: inline-flex; align-items: center; gap: 0.35rem;
+  font: inherit; letter-spacing: inherit; text-transform: inherit;
+  color: var(--tinta-media); background: none; border: 0; padding: 0.15rem 0; cursor: pointer;
+}
+.agrandar svg { width: 0.75rem; fill: none; stroke: currentColor; stroke-width: 1.4; stroke-linecap: round; }
+.agrandar:hover { color: var(--cobalto); }
+
+/* El margen: los sin benchmark, separados por una regla, como una nota al margen. */
+.margen-regla { position: absolute; width: 0; border-left: 1px dashed var(--raya-fuerte); animation: aparecer-simple 0.4s 0.6s both; }
+.margen-titulo {
+  position: absolute; margin: 0; translate: 0 -0.2rem;
+  font-size: 0.55rem; color: var(--tinta-media);
+  animation: aparecer-simple 0.4s 0.6s both;
+}
+.margen-titulo span {
+  display: block; margin-top: 0.3rem; max-width: 11rem; white-space: normal;
+  text-transform: none; letter-spacing: 0; font-family: var(--sans); font-size: 0.68rem; line-height: 1.3; color: var(--grafito);
+}
+.margen { position: absolute; inset: 0; margin: 0; padding: 0; list-style: none; }
+.margen li { position: absolute; translate: 0 -50%; font-size: 0.52rem; animation: aparecer-simple 0.4s 0.8s both; }
+.margen a { color: var(--grafito); text-decoration: none; }
+.margen a:hover { color: var(--cobalto); }
+
+/* ---------- Sugerencias: máquina de escribir ---------- */
+.maquina { display: flex; align-items: baseline; gap: 0.7rem; margin: 0; line-height: 2; }
+.maquina-prefijo { color: var(--grafito-claro); flex: none; }
+.maquina button {
+  font: inherit; letter-spacing: inherit; text-transform: inherit;
+  color: var(--tinta-media); background: none; border: 0; padding: 0; cursor: pointer;
+  text-align: left;
+}
+.maquina button:hover { color: var(--cobalto); }
+.cursor {
+  display: inline-block; width: 1px; height: 1.05em; margin-left: 1px;
+  background: var(--cobalto); vertical-align: -0.15em;
+  animation: parpadeo 1s steps(1) infinite;
+}
+@keyframes parpadeo { 50% { opacity: 0; } }

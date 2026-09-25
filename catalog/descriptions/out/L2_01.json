@@ -1,0 +1,162 @@
+[
+  {
+    "id": "jonatasgrosman/wav2vec2-large-xlsr-53-japanese",
+    "description": "Fine-tuned Wav2Vec2 model for Japanese automatic speech recognition by Jonatas Grosman. Best at: Transcribing Japanese speech at 16kHz. Typical uses: Meeting transcription, voice commands, subtitle generation in Japanese. Not suited for: Other languages, audio outside 16kHz specification.",
+    "source_url": "https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-japanese/blob/main/README.md",
+    "official_url": "https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-japanese",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "pyannote/speaker-diarization-3.1",
+    "description": "",
+    "source_url": "https://huggingface.co/pyannote/speaker-diarization-3.1/blob/main/README.md",
+    "official_url": "https://huggingface.co/pyannote/speaker-diarization-3.1",
+    "confidence": "low",
+    "notes": "README is empty; no source information available"
+  },
+  {
+    "id": "openai/whisper-large-v3-turbo",
+    "description": "Pruned Whisper large-v3 by OpenAI with reduced decoder layers for faster inference. Best at: Multilingual speech transcription and speech-to-English translation. Typical uses: Real-time meeting transcription, video captioning, live stream transcription. Not suited for: Maximum accuracy requirements, requires accepting minor quality trade-off for speed.",
+    "source_url": "https://huggingface.co/openai/whisper-large-v3-turbo/blob/main/README.md",
+    "official_url": "https://huggingface.co/openai/whisper-large-v3-turbo",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "jonatasgrosman/wav2vec2-large-xlsr-53-portuguese",
+    "description": "Fine-tuned Wav2Vec2 model for Portuguese automatic speech recognition by Jonatas Grosman. Best at: Transcribing Portuguese speech (Brazilian and Portugal variants) at 16kHz. Typical uses: Portuguese meeting transcription, voice notes, subtitle generation. Not suited for: Other languages, audio sampled below 16kHz.",
+    "source_url": "https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-portuguese/blob/main/README.md",
+    "official_url": "https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-portuguese",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "pyannote/speaker-diarization-community-1",
+    "description": "",
+    "source_url": "https://huggingface.co/pyannote/speaker-diarization-community-1/blob/main/README.md",
+    "official_url": "https://huggingface.co/pyannote/speaker-diarization-community-1",
+    "confidence": "low",
+    "notes": "README is empty; no source information available"
+  },
+  {
+    "id": "openai/whisper-large-v3",
+    "description": "Whisper large-v3 by OpenAI for automatic speech recognition and translation, trained on 5M+ hours of multilingual audio. Best at: Multilingual speech transcription, speech translation to English across 99+ languages. Typical uses: Podcast transcription, documentary captioning, content localization. Not suited for: Real-time low-latency requirements, embedded/mobile-only deployments.",
+    "source_url": "https://huggingface.co/openai/whisper-large-v3/blob/main/README.md",
+    "official_url": "https://huggingface.co/openai/whisper-large-v3",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "hexgrad/Kokoro-82M",
+    "description": "Kokoro is an 82M parameter open-weight TTS model using StyleTTS 2 architecture by Hexgrad. Best at: Cost-efficient, lightweight text-to-speech synthesis across 8 languages with 54 voices. Typical uses: Voice chatbots, video narration, accessibility features, budget-conscious API deployment. Not suited for: Capturing extreme speech emotions, non-Latin scripts.",
+    "source_url": "https://huggingface.co/hexgrad/Kokoro-82M/blob/main/README.md",
+    "official_url": "https://huggingface.co/hexgrad/Kokoro-82M",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "coqui/XTTS-v2",
+    "description": "Multilingual voice cloning model by Coqui supporting 17 languages. Best at: Zero-shot voice cloning and cross-language synthesis from 6-second audio samples. Typical uses: Voice actor automation, multilingual content dubbing, emotion-controlled speech synthesis. Not suited for: Real-time streaming, resource-constrained edge devices.",
+    "source_url": "https://huggingface.co/coqui/XTTS-v2/blob/main/README.md",
+    "official_url": "https://huggingface.co/coqui/XTTS-v2",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+    "description": "Qwen3-TTS 1.7B multilingual text-to-speech with instruction-based voice control. Best at: High-quality speech synthesis with natural language control over tone, emotion, and prosody. Typical uses: Interactive voice assistants, multilingual audiobooks, podcasts with emotion. Not suited for: Lightweight deployments, applications requiring only predefined voices.",
+    "source_url": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice/blob/main/README.md",
+    "official_url": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "ResembleAI/chatterbox",
+    "description": "Chatterbox Multilingual TTS by Resemble AI supporting 23+ languages in 0.5B model. Best at: Zero-shot voice cloning and emotion exaggeration control for multilingual synthesis. Typical uses: Game dialogue, video voiceover, AI character voices. Not suited for: Ultra-low latency production (<200ms), applications without external optimization.",
+    "source_url": "https://huggingface.co/ResembleAI/chatterbox/blob/main/README.md",
+    "official_url": "https://huggingface.co/ResembleAI/chatterbox",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "k2-fsa/OmniVoice",
+    "description": "OmniVoice by k2-fsa is a massively multilingual zero-shot TTS supporting 600+ languages using diffusion language models. Best at: Voice cloning and voice design with extreme language coverage and fast inference. Typical uses: Global product localization, endangered language documentation, multilingual applications. Not suited for: Accent-specific synthesis, traditional language-optimized models.",
+    "source_url": "https://huggingface.co/k2-fsa/OmniVoice/blob/main/README.md",
+    "official_url": "https://huggingface.co/k2-fsa/OmniVoice",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice",
+    "description": "Qwen3-TTS 0.6B lightweight multilingual TTS with instruction-based voice control. Best at: Efficient speech synthesis with natural language control over tone and emotion across 10 languages. Typical uses: Mobile voice applications, real-time conversational agents, embedded systems. Not suited for: Maximum quality output, backgrounds with high noise.",
+    "source_url": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice/blob/main/README.md",
+    "official_url": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "laion/clap-htsat-fused",
+    "description": "LAION's Contrastive Language-Audio Pretraining model for audio understanding. Best at: Zero-shot audio classification using natural language descriptions. Typical uses: Sound event detection, audio tagging, text-to-audio retrieval, acoustic scene analysis. Not suited for: Speech transcription, music generation, single-modality tasks.",
+    "source_url": "https://huggingface.co/laion/clap-htsat-fused/blob/main/README.md",
+    "official_url": "https://huggingface.co/laion/clap-htsat-fused",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "audeering/wav2vec2-large-robust-24-ft-age-gender",
+    "description": "Wav2Vec2 large model fine-tuned for speaker age and gender prediction from audio. Best at: Estimating approximate speaker age and gender classification from speech signals. Typical uses: Speaker profiling, demographic analysis, voice authentication, content moderation. Not suited for: Speech transcription, non-speech audio analysis.",
+    "source_url": "https://huggingface.co/audeering/wav2vec2-large-robust-24-ft-age-gender/blob/main/README.md",
+    "official_url": "https://huggingface.co/audeering/wav2vec2-large-robust-24-ft-age-gender",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "MIT/ast-finetuned-audioset-10-10-0.4593",
+    "description": "Audio Spectrogram Transformer by MIT fine-tuned on AudioSet for sound classification. Best at: General-purpose audio event and environmental sound classification. Typical uses: Sound event detection, acoustic environment monitoring, audio indexing and retrieval. Not suited for: Speech-specific tasks, real-time edge inference requirements.",
+    "source_url": "https://huggingface.co/MIT/ast-finetuned-audioset-10-10-0.4593/blob/main/README.md",
+    "official_url": "https://huggingface.co/MIT/ast-finetuned-audioset-10-10-0.4593",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "facebook/audiobox-aesthetics",
+    "description": "Meta's unified automatic quality assessment model for speech, music, and sound. Best at: Evaluating production quality across multiple aesthetic dimensions. Typical uses: Automatic audio QA, content quality filtering, benchmark automation for audio products. Not suited for: Subjective artistic style assessment, genre-specific evaluation.",
+    "source_url": "https://huggingface.co/facebook/audiobox-aesthetics/blob/main/README.md",
+    "official_url": "https://huggingface.co/facebook/audiobox-aesthetics",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "facebook/musicgen-medium",
+    "description": "MusicGen medium (1.5B) by Meta for text-conditioned music generation. Best at: Generating high-quality music samples from text descriptions. Typical uses: Background music for videos, game soundtrack generation, creative audio content. Not suited for: Melody-guided generation, speech synthesis.",
+    "source_url": "https://huggingface.co/facebook/musicgen-medium/blob/main/README.md",
+    "official_url": "https://huggingface.co/facebook/musicgen-medium",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "facebook/musicgen-small",
+    "description": "MusicGen small (300M) by Meta for lightweight text-to-music generation. Best at: Efficient music generation with faster inference than larger variants. Typical uses: Real-time music applications, rapid prototyping, resource-constrained environments. Not suited for: Complex orchestration, production-quality audio requirements.",
+    "source_url": "https://huggingface.co/facebook/musicgen-small/blob/main/README.md",
+    "official_url": "https://huggingface.co/facebook/musicgen-small",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "stabilityai/stable-audio-3-medium",
+    "description": "",
+    "source_url": "https://huggingface.co/stabilityai/stable-audio-3-medium/blob/main/README.md",
+    "official_url": "https://huggingface.co/stabilityai/stable-audio-3-medium",
+    "confidence": "low",
+    "notes": "README is empty or contains only minimal information; insufficient source material"
+  },
+  {
+    "id": "timm/mobilenetv3_small_100.lamb_in1k",
+    "description": "MobileNetV3 small (2.5M params) image classifier trained on ImageNet-1k by timm library. Best at: Efficient image classification on mobile and edge devices. Typical uses: Real-time mobile image recognition, embedded vision systems, edge inference. Not suited for: Audio processing, text understanding, high-accuracy requirements.",
+    "source_url": "https://huggingface.co/timm/mobilenetv3_small_100.lamb_in1k/blob/main/README.md",
+    "official_url": "https://huggingface.co/timm/mobilenetv3_small_100.lamb_in1k",
+    "confidence": "high",
+    "notes": ""
+  }
+]

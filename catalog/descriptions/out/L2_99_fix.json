@@ -1,0 +1,74 @@
+[
+  {
+    "id": "pyannote/speaker-diarization-3.1",
+    "description": "Speaker diarization pipeline from pyannote for identifying and tracking speakers in audio. Best at: determining who speaks and when in conversations. Domains: audio processing, meeting transcription. Typical uses: speaker attribution in transcripts, speech processing, audio analysis. Not suited for: real-time streaming or very noisy audio.",
+    "source_url": "https://github.com/pyannote/hf-speaker-diarization-3.1",
+    "official_url": "https://huggingface.co/pyannote/speaker-diarization-3.1",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "pyannote/speaker-diarization-community-1",
+    "description": "Open-source speaker diarization model from pyannote for identifying and tracking speakers in conversations with improved speaker assignment. Best at: determining speaker identity and counting distinct speakers. Domains: audio processing, transcription services. Typical uses: meeting transcription, speaker attribution, audio segmentation. Not suited for: heavily overlapped speech scenarios.",
+    "source_url": "https://www.pyannote.ai/blog/community-1",
+    "official_url": "https://huggingface.co/pyannote/speaker-diarization-community-1",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "stabilityai/stable-audio-3-medium",
+    "description": "Medium-tier audio generation model from Stability AI for creating music and sound effects up to 6 minutes in length. Best at: generating coherent music with structure and melodic coherence. Domains: music production, sound design, content creation. Typical uses: music generation, audio editing, track extension via inpainting. Not suited for: real-time audio generation.",
+    "source_url": "https://stability.ai/news-updates/meet-stable-audio-3-the-model-family-built-for-artistic-experimentation-with-open-weight-models",
+    "official_url": "https://huggingface.co/stabilityai/stable-audio-3-medium",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "meta-llama/Prompt-Guard-86M",
+    "description": "Lightweight text classifier from Meta for detecting prompt injection and jailbreak attacks on LLM inputs with 86M parameters. Best at: identifying malicious prompts and command injections across multiple languages. Domains: LLM safety, security. Typical uses: input filtering for LLM applications, threat detection, security monitoring. Not suited for: general text classification.",
+    "source_url": "https://github.com/meta-llama/PurpleLlama/blob/main/Prompt-Guard/MODEL_CARD.md",
+    "official_url": "https://huggingface.co/meta-llama/Prompt-Guard-86M",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "briaai/RMBG-2.0",
+    "description": "Background removal model from BRIA AI for segmenting foreground objects from images with precise alpha matting. Best at: separating foreground from background across diverse content categories. Domains: e-commerce, photography, image editing. Typical uses: product photography, portrait editing, image composition, content creation. Not suited for: very small objects or high-transparency scenarios.",
+    "source_url": "https://github.com/Bria-AI/RMBG-2.0",
+    "official_url": "https://huggingface.co/briaai/RMBG-2.0",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "nickmuchi/finbert-tone-finetuned-finance-topic-classification",
+    "description": "FinBERT model fine-tuned for classifying financial topics in text with sentiment consideration across 20 categories. Best at: categorizing financial content by topic and tone. Domains: finance, financial services, news analysis. Typical uses: financial document classification, news topic categorization, sentiment-aware content sorting. Not suited for: non-financial text or general domain classification tasks.",
+    "source_url": "https://huggingface.co/nickmuchi/finbert-tone-finetuned-finance-topic-classification",
+    "official_url": "https://huggingface.co/nickmuchi/finbert-tone-finetuned-finance-topic-classification",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "microsoft/aurora",
+    "description": "Foundation model for weather and Earth system forecasting trained on atmospheric and geophysical data. Best at: predicting weather, air quality, ocean waves, and tropical cyclones. Domains: meteorology, climate science, environmental forecasting. Typical uses: multi-day weather forecasting, air quality prediction, ocean wave modeling. Not suited for: very-long-term climate projections.",
+    "source_url": "https://github.com/microsoft/aurora",
+    "official_url": "https://huggingface.co/microsoft/aurora",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "PekingU/rtdetr_r101vd_coco_o365",
+    "description": "Real-Time DETR (RT-DETR) is an end-to-end object detector by Peking University trained on COCO and Objects365 datasets. Best at: fast real-time object detection with balanced speed and accuracy. Domains: surveillance, autonomous vehicles. Typical uses: surveillance systems, autonomous vehicle perception, live video analysis. Not suited for: tiny object detection, extreme resolution images.",
+    "source_url": "https://huggingface.co/PekingU/rtdetr_r101vd_coco_o365/blob/main/README.md",
+    "official_url": "https://huggingface.co/PekingU/rtdetr_r101vd_coco_o365",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "datalab-to/chandra-ocr-2",
+    "description": "Datalab's OCR model for extracting text from documents in markdown, HTML, and JSON formats with layout preservation. Best at: accurate text extraction while maintaining document structure. Domains: document digitization, archival, business automation. Typical uses: PDF-to-markdown conversion, form processing, document intelligence, handwriting recognition. Not suited for: real-time processing, extremely small text, low-quality scans.",
+    "source_url": "https://huggingface.co/datalab-to/chandra-ocr-2/blob/main/README.md",
+    "official_url": "https://huggingface.co/datalab-to/chandra-ocr-2",
+    "confidence": "high",
+    "notes": ""
+  }
+]

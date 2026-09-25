@@ -1,0 +1,162 @@
+[
+  {
+    "id": "google/vit-base-patch16-224",
+    "description": "Vision Transformer model by Google for image classification. Pre-trained on ImageNet-21k and fine-tuned on ImageNet-1k. Best at: 1,000-class image classification at 224x224 resolution. Typical uses: object recognition, image tagging, transfer learning backbone. Not suited for: real-time inference on resource-constrained devices.",
+    "source_url": "https://huggingface.co/google/vit-base-patch16-224/blob/main/README.md",
+    "official_url": "https://huggingface.co/google/vit-base-patch16-224",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "Falconsai/nsfw_image_detection",
+    "description": "Fine-tuned Vision Transformer for content moderation. Trained on 80,000 diverse images with binary classification (normal/NSFW). Best at: detecting inappropriate images for content filtering. Domains: social media, user-generated content platforms. Typical uses: photo review pipelines, automated content screening. Not suited for: nuanced aesthetic judgments.",
+    "source_url": "https://huggingface.co/Falconsai/nsfw_image_detection/blob/main/README.md",
+    "official_url": "https://huggingface.co/Falconsai/nsfw_image_detection",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "timm/resnet18.a1_in1k",
+    "description": "ResNet-18 architecture trained on ImageNet-1k via timm library. Lightweight 11.7M parameter model for image classification. Best at: efficient 1,000-class image recognition. Typical uses: feature extraction, backbone for downstream tasks, real-time inference. Not suited for: small object detection or pixel-level tasks.",
+    "source_url": "https://huggingface.co/timm/resnet18.a1_in1k/blob/main/README.md",
+    "official_url": "https://huggingface.co/timm/resnet18.a1_in1k",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "PaddlePaddle/PP-DocLayoutV3_safetensors",
+    "description": "PaddleOCR document layout analysis model for page structure understanding. Best at: detecting document regions, text blocks, tables, and figures in PDFs and scans. Domains: document processing, data extraction. Typical uses: invoice parsing, document digitization, form extraction. Not suited for: handwritten content analysis.",
+    "source_url": "https://huggingface.co/PaddlePaddle/PP-DocLayoutV3_safetensors/blob/main/README.md",
+    "official_url": "https://huggingface.co/PaddlePaddle/PP-DocLayoutV3_safetensors",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "microsoft/table-transformer-structure-recognition",
+    "description": "Table Transformer (DETR) for recognizing table structure. Fine-tuned on PubTables1M dataset. Best at: identifying table rows, columns, and cells from document images. Domains: scientific papers, financial documents. Typical uses: document parsing, table extraction pipelines. Not suited for: detecting tables without clear grid structure.",
+    "source_url": "https://huggingface.co/microsoft/table-transformer-structure-recognition/blob/main/README.md",
+    "official_url": "https://huggingface.co/microsoft/table-transformer-structure-recognition",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "PekingU/rtdetr_r101vd_coco_o365",
+    "description": "Real-Time DETR (RT-DETR) end-to-end object detector by Peking University. Trained on COCO and Objects365. Best at: fast real-time detection with high accuracy (54.3% AP on COCO). Typical uses: surveillance, autonomous vehicles, live video analysis. Not suited for: tiny object detection.",
+    "source_url": "https://huggingface.co/PekingU/rtdetr_r101vd_coco_o365/blob/main/README.md",
+    "official_url": "https://huggingface.co/PekingU/rtdetr_r101vd_coco_o365",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "hustvl/yolos-small",
+    "description": "YOLOS (You Only Look at One Sequence) small Vision Transformer for object detection. Trained on COCO 2017 with DETR loss. Best at: general object detection with transformer architecture. Typical uses: real-time video object tracking, scene understanding. Not suited for: dense prediction or segmentation.",
+    "source_url": "https://huggingface.co/hustvl/yolos-small/blob/main/README.md",
+    "official_url": "https://huggingface.co/hustvl/yolos-small",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "microsoft/table-transformer-detection",
+    "description": "Table Transformer (DETR) for detecting table regions in documents. Fine-tuned on PubTables1M. Best at: localizing table boundaries in document pages. Domains: document analysis, digital archiving. Typical uses: document preprocessing, automated table extraction. Not suited for: detecting complex nested layouts.",
+    "source_url": "https://huggingface.co/microsoft/table-transformer-detection/blob/main/README.md",
+    "official_url": "https://huggingface.co/microsoft/table-transformer-detection",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "CIDAS/clipseg-rd64-refined",
+    "description": "CLIPSeg model for zero-shot and one-shot image segmentation. Combines CLIP with segmentation capability. Best at: segmenting objects based on text or image prompts without task-specific training. Typical uses: interactive image editing, visual search, content removal. Not suited for: real-time inference on edge devices.",
+    "source_url": "https://huggingface.co/CIDAS/clipseg-rd64-refined/blob/main/README.md",
+    "official_url": "https://huggingface.co/CIDAS/clipseg-rd64-refined",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "ZhengPeng7/BiRefNet",
+    "description": "BiRefNet for high-resolution dichotomous image segmentation (salient object detection). Produces binary masks separating foreground from background. Best at: precise object/subject extraction at 1024x1024 resolution. Domains: photography, e-commerce, design. Typical uses: product background removal, portrait extraction. Not suited for: multi-class semantic segmentation.",
+    "source_url": "https://huggingface.co/ZhengPeng7/BiRefNet/blob/main/README.md",
+    "official_url": "https://huggingface.co/ZhengPeng7/BiRefNet",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "briaai/RMBG-2.0",
+    "description": "RMBG-2.0 model for background removal and object segmentation. Specialized image segmentation model for isolating foreground objects. Best at: removing backgrounds from photos. Typical uses: product photography, portrait editing, image composition. Not suited for: multi-class semantic segmentation.",
+    "source_url": "https://huggingface.co/briaai/RMBG-2.0/blob/main/README.md",
+    "official_url": "https://huggingface.co/briaai/RMBG-2.0",
+    "confidence": "low",
+    "notes": "Local readme file was empty; inferred from model ID and pipeline tag"
+  },
+  {
+    "id": "facebook/mask2former-swin-large-cityscapes-semantic",
+    "description": "Mask2Former model trained on Cityscapes semantic segmentation with Swin backbone. Transformer-based architecture with masked attention. Best at: urban scene segmentation into 30+ semantic classes. Domains: autonomous driving, city planning. Typical uses: street scene analysis, autonomous navigation. Not suited for: real-time inference on constrained hardware.",
+    "source_url": "https://huggingface.co/facebook/mask2former-swin-large-cityscapes-semantic/blob/main/README.md",
+    "official_url": "https://huggingface.co/facebook/mask2former-swin-large-cityscapes-semantic",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "nvidia/segformer-b0-finetuned-ade-512-512",
+    "description": "SegFormer-B0 lightweight semantic segmentation model fine-tuned on ADE20k at 512x512. Efficient Transformer encoder with MLP decoder. Best at: fast scene understanding across 150+ semantic categories. Typical uses: real-time scene parsing, robotics, edge deployment. Not suited for: high-resolution inference without optimization.",
+    "source_url": "https://huggingface.co/nvidia/segformer-b0-finetuned-ade-512-512/blob/main/README.md",
+    "official_url": "https://huggingface.co/nvidia/segformer-b0-finetuned-ade-512-512",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "depth-anything/Depth-Anything-V2-Small-hf",
+    "description": "Depth Anything V2 Small for monocular depth estimation. Trained on 595K synthetic + 62M unlabeled real images. Best at: zero-shot depth prediction with fine-grained details and robustness. Domains: 3D reconstruction, robotics, autonomous systems. Typical uses: depth map generation, 3D scene understanding. Not suited for: metric depth without calibration.",
+    "source_url": "https://huggingface.co/depth-anything/Depth-Anything-V2-Small-hf/blob/main/README.md",
+    "official_url": "https://huggingface.co/depth-anything/Depth-Anything-V2-Small-hf",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "Intel/dpt-hybrid-midas",
+    "description": "DPT-Hybrid (MiDaS 3.0) monocular depth estimator by Intel. Vision Transformer backbone trained on 1.4M images (MIX 6 dataset). Best at: zero-shot cross-dataset depth estimation. Typical uses: 3D scene reconstruction, augmented reality, robotics. Not suited for: fine-tuning without substantial data.",
+    "source_url": "https://huggingface.co/Intel/dpt-hybrid-midas/blob/main/README.md",
+    "official_url": "https://huggingface.co/Intel/dpt-hybrid-midas",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "depth-anything/DA3METRIC-LARGE",
+    "description": "Depth Anything 3 Metric Large for metric depth estimation in monocular settings. 350M parameter model. Best at: real-world scale depth prediction with camera intrinsics and poses. Capabilities: relative depth, metric depth, sky segmentation. Typical uses: 3D mapping, real estate analysis. Not suited for: video sequences without temporal consistency.",
+    "source_url": "https://huggingface.co/depth-anything/DA3METRIC-LARGE/blob/main/README.md",
+    "official_url": "https://huggingface.co/depth-anything/DA3METRIC-LARGE",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "stabilityai/stable-diffusion-xl-base-1.0",
+    "description": "SDXL base model for text-to-image generation by Stability AI. Ensemble-of-experts pipeline with optional refinement. Best at: photorealistic image synthesis from text prompts at various resolutions. Typical uses: creative design, prototyping, content generation. Not suited for: consistent character generation, precise text rendering.",
+    "source_url": "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/blob/main/README.md",
+    "official_url": "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+    "description": "Stable Diffusion v1.5 latent diffusion model for text-to-image generation. Fine-tuned on LAION aesthetics dataset at 512x512. Best at: generating diverse photorealistic images from text. Typical uses: illustration, product mockups, artwork generation. Not suited for: high-resolution output, complex spatial relationships.",
+    "source_url": "https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5/blob/main/README.md",
+    "official_url": "https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "stabilityai/sdxl-turbo",
+    "description": "SDXL-Turbo fast text-to-image model using Adversarial Diffusion Distillation. Generates high-quality images in 1-4 steps. Best at: real-time image synthesis with minimal latency. Typical uses: interactive design tools, live preview, quick prototyping. Not suited for: batch processing large datasets.",
+    "source_url": "https://huggingface.co/stabilityai/sdxl-turbo/blob/main/README.md",
+    "official_url": "https://huggingface.co/stabilityai/sdxl-turbo",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "Lykon/dreamshaper-7",
+    "description": "Dreamshaper-7 fine-tuned text-to-image model based on Stable Diffusion v1.5. Improved LoRA support and artistic quality. Best at: stylized image generation with emphasis on realism and detail. Typical uses: game asset creation, concept art, design mockups. Not suited for: photorealism-only workflows.",
+    "source_url": "https://huggingface.co/Lykon/dreamshaper-7/blob/main/README.md",
+    "official_url": "https://huggingface.co/Lykon/dreamshaper-7",
+    "confidence": "high",
+    "notes": ""
+  }
+]

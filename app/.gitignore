@@ -1,0 +1,6 @@
+.astro/
+dist/
+node_modules/
+.dev.vars
+.wrangler/
+.env

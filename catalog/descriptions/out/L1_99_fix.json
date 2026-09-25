@@ -1,0 +1,18 @@
+[
+  {
+    "id": "qwen/qwen3.8-max-prime",
+    "description": "Multimodal variant of Qwen3.8 Max from Alibaba optimized for higher throughput at a separate pricing tier. Best at: text, image, and video understanding with fast output generation. Domains: content analysis, multimodal reasoning. Typical uses: batch processing, video analysis, real-time conversation. Not suited for: applications requiring minimal latency.",
+    "source_url": "https://openrouter.ai/qwen/qwen3.8-max-prime",
+    "official_url": "https://openrouter.ai/qwen/qwen3.8-max-prime",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "qwen/qwen3.8-omni-flash",
+    "description": "Omni-modal model from Alibaba with native audio, video, text, and image understanding built for agentic workflows. Best at: audio-video analysis and multimodal reasoning with 1M token context. Domains: media processing, agentic workflows. Typical uses: video understanding, audio transcription analysis, multimodal agent tasks. Not suited for: applications requiring minimal processing overhead.",
+    "source_url": "https://www.alibabacloud.com/help/en/model-studio/qwen3-8-omni-flash",
+    "official_url": "https://www.alibabacloud.com/help/en/model-studio/qwen3-8-omni-flash",
+    "confidence": "high",
+    "notes": ""
+  }
+]

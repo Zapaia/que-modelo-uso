@@ -1,0 +1,54 @@
+/*
+  El mismo mundo que la hoja de 100 Bucket List: papel frío con grano real,
+  tinta para lo que ya pasó, grafito para lo provisional, un solo cobalto para
+  lo que está en curso. El color pastel aparece solo sobre lo que cambió de
+  estado: acá, los modelos que Jev eligió.
+*/
+:root {
+  --papel: #f2f2ee;
+  --papel-hondo: #e7e7e1;
+  --raya: #e2e4de;
+  --raya-fuerte: #c3c7bf;
+  --grafito: #6d7480;
+  --grafito-claro: #9aa1ac;
+  --tinta: #1b1e24;
+  --tinta-media: #474d57;
+  --cobalto: #2547c8;
+  --fibron-1: #f6e56d;
+  --fibron-2: #a9e7c5;
+  --fibron-3: #f9b9d1;
+  --fibron-4: #c9bcf2;
+  --fibron-5: #fbc79b;
+  --fibron-6: #a8daf2;
+  --sans: 'Archivo Variable', system-ui, sans-serif;
+  --mono: 'Chivo Mono', ui-monospace, monospace;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; }
+
+body {
+  background-color: var(--papel);
+  /* Dos escalas de irregularidad, como un papel de verdad: fibra fina y pasta. */
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='320'%3E%3Cfilter id='f'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.86' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='320' height='320' filter='url(%23f)' opacity='0.055'/%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='640' height='640'%3E%3Cfilter id='m'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.014' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='640' height='640' filter='url(%23m)' opacity='0.085'/%3E%3C/svg%3E");
+  background-size: 320px 320px, 640px 640px;
+  background-blend-mode: multiply, multiply;
+  color: var(--tinta);
+  font-family: var(--sans);
+  font-feature-settings: 'tnum' 1;
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+}
+
+/* La hoja cae un poco hacia los bordes, como apoyada en un escritorio. */
+body::after {
+  content: '';
+  position: fixed; inset: 0; pointer-events: none; z-index: 0;
+  mix-blend-mode: multiply;
+  background: radial-gradient(130% 100% at 50% 20%, rgba(255,255,255,0) 0%, rgba(190,188,176,.08) 62%, rgba(160,158,145,.16) 100%);
+}
+
+::selection { background: var(--cobalto); color: var(--papel); }
+:focus-visible { outline: 2px solid var(--cobalto); outline-offset: 3px; }

@@ -1,0 +1,146 @@
+[
+  {
+    "id": "microsoft/codebert-base",
+    "description": "Microsoft's bidirectional code-to-documentation embedding model trained on CodeSearchNet. Best at: semantic code search and matching code to documentation. Domains: software development. Typical uses: finding relevant code snippets by natural language query, code-to-doc retrieval, program synthesis assistance. Not suited for: code generation or completion.",
+    "source_url": "https://huggingface.co/microsoft/codebert-base/blob/main/README.md",
+    "official_url": "https://huggingface.co/microsoft/codebert-base",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "microsoft/codebert-base-mlm",
+    "description": "Microsoft's code embedding model trained with masked language modeling objective for code completion tasks. Best at: predicting missing tokens in code sequences. Domains: software development. Typical uses: code completion, code token prediction, fine-tuning on downstream programming tasks. Not suited for: semantic code search without adaptation.",
+    "source_url": "https://huggingface.co/microsoft/codebert-base-mlm/blob/main/README.md",
+    "official_url": "https://huggingface.co/microsoft/codebert-base-mlm",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "description": "Qwen's 1.5B-parameter instruction-tuned model for mathematical problem solving in English and Chinese. Best at: solving math problems via step-by-step reasoning (CoT) and tool-integrated reasoning (TIR). Domains: mathematics, education. Typical uses: homework assistance, math tutoring, symbolic computation integration. Not suited for: non-mathematical text generation or tasks outside mathematics.",
+    "source_url": "https://huggingface.co/Qwen/Qwen2.5-Math-1.5B-Instruct/blob/main/README.md",
+    "official_url": "https://huggingface.co/Qwen/Qwen2.5-Math-1.5B-Instruct",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "Qwen/Qwen2.5-Math-PRM-7B",
+    "description": "Qwen's 7B process reward model for evaluating intermediate reasoning steps in mathematical problem solving. Best at: scoring and validating each step in mathematical derivations. Domains: mathematics, reasoning evaluation. Typical uses: best-of-N selection for multi-step reasoning, identifying errors in solution paths. Not suited for: generating solutions or handling non-mathematical reasoning.",
+    "source_url": "https://huggingface.co/Qwen/Qwen2.5-Math-PRM-7B/blob/main/README.md",
+    "official_url": "https://huggingface.co/Qwen/Qwen2.5-Math-PRM-7B",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "unitary/unbiased-toxic-roberta",
+    "description": "Unitary's RoBERTa-based model trained on Jigsaw toxic comment datasets for bias-aware toxicity detection. Best at: classifying toxic, obscene, threatening, and identity-based harmful comments. Domains: content moderation, online safety. Typical uses: moderating user comments, flagging harmful content, reducing identity bias in moderation. Not suited for: non-English text or nuanced sarcasm/irony detection.",
+    "source_url": "https://huggingface.co/unitary/unbiased-toxic-roberta/blob/main/README.md",
+    "official_url": "https://huggingface.co/unitary/unbiased-toxic-roberta",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "martin-ha/toxic-comment-model",
+    "description": "DistilBERT fine-tuned for toxic comment classification from Jigsaw Unintended Bias competition data. Best at: binary toxicity detection in online text. Domains: content moderation, social media safety. Typical uses: detecting toxic comments in forums, moderating user-generated content, content filtering. Not suited for: multilingual text; performs poorly on comments mentioning certain identity groups.",
+    "source_url": "https://huggingface.co/martin-ha/toxic-comment-model/blob/main/README.md",
+    "official_url": "https://huggingface.co/martin-ha/toxic-comment-model",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "s-nlp/roberta_toxicity_classifier",
+    "description": "RoBERTa model trained on merged Jigsaw toxicity datasets (2M examples) for robust toxicity classification. Best at: binary distinction between toxic and non-toxic English text. Domains: content moderation, safety. Typical uses: content moderation at scale, toxic comment filtering, model-assisted review. Not suited for: non-English languages or fine-grained toxicity categorization.",
+    "source_url": "https://huggingface.co/s-nlp/roberta_toxicity_classifier/blob/main/README.md",
+    "official_url": "https://huggingface.co/s-nlp/roberta_toxicity_classifier",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "facebook/esm2_t33_650M_UR50D",
+    "description": "Meta's ESM-2 protein language model with 650M parameters trained via masked language modeling on protein sequences. Best at: learning protein representations and sequence embeddings. Domains: structural biology, protein research. Typical uses: fine-tuning for protein property prediction, secondary structure prediction, protein function classification. Not suited for: protein structure prediction (use ESMFold instead).",
+    "source_url": "https://huggingface.co/facebook/esm2_t33_650M_UR50D/blob/main/README.md",
+    "official_url": "https://huggingface.co/facebook/esm2_t33_650M_UR50D",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "facebook/esmfold_v1",
+    "description": "Meta's ESMFold protein structure prediction model based on ESM-2 backbone. Best at: predicting 3D protein structures from sequences without requiring multiple sequence alignments. Domains: structural biology, bioinformatics. Typical uses: rapid protein structure determination, structure-based drug discovery, batch structure prediction. Not suited for: very large protein complexes or structures requiring co-evolution information.",
+    "source_url": "https://huggingface.co/facebook/esmfold_v1/blob/main/README.md",
+    "official_url": "https://huggingface.co/facebook/esmfold_v1",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "InstaDeepAI/nucleotide-transformer-v2-500m-multi-species",
+    "description": "InstaDeepAI's 500M-parameter transformer pretrained on DNA sequences from 850 diverse genomes for genomic representation learning. Best at: extracting meaningful embeddings from DNA sequences across species. Domains: genomics, genetic research, evolutionary biology. Typical uses: predicting molecular phenotypes, disease association prediction, comparative genomics analysis. Not suited for: plants, viruses, or sequences exceeding design specifications.",
+    "source_url": "https://huggingface.co/InstaDeepAI/nucleotide-transformer-v2-500m-multi-species/blob/main/README.md",
+    "official_url": "https://huggingface.co/InstaDeepAI/nucleotide-transformer-v2-500m-multi-species",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "microsoft/BioGPT-Large",
+    "description": "Microsoft's generative language model trained on biomedical literature for biomedical NLP tasks. Best at: generating biomedical text and extracting biomedical relations. Domains: biomedical science, medical literature. Typical uses: biomedical named entity recognition, relation extraction from papers, biomedical text generation, literature mining. Not suited for: clinical decision-making or medical advice generation.",
+    "source_url": "https://huggingface.co/microsoft/BioGPT-Large/blob/main/README.md",
+    "official_url": "https://huggingface.co/microsoft/BioGPT-Large",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "stanford-crfm/BioMedLM",
+    "description": "Stanford CRFM and MosaicML's 2.7B GPT-style language model trained exclusively on biomedical abstracts and papers. Best at: biomedical question answering and domain-specific language understanding. Domains: biomedical research, clinical informatics. Typical uses: biomedical QA systems, literature summarization, domain-specific fine-tuning. Not suited for: general-purpose text generation; not recommended for production NLG in medical contexts.",
+    "source_url": "https://huggingface.co/stanford-crfm/BioMedLM/blob/main/README.md",
+    "official_url": "https://huggingface.co/stanford-crfm/BioMedLM",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "ibm-nasa-geospatial/Prithvi-EO-2.0-300M",
+    "description": "IBM-NASA earth observation vision model with 300M parameters using Vision Transformer and spatiotemporal processing on multispectral satellite imagery. Best at: learning representations of multispectral satellite images with temporal changes. Domains: remote sensing, geospatial analysis, environmental monitoring. Typical uses: land cover mapping, crop monitoring, landslide detection, change detection. Not suited for: non-satellite imagery or scenes without multispectral bands.",
+    "source_url": "https://huggingface.co/ibm-nasa-geospatial/Prithvi-EO-2.0-300M/blob/main/README.md",
+    "official_url": "https://huggingface.co/ibm-nasa-geospatial/Prithvi-EO-2.0-300M",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "ibm-nasa-geospatial/Prithvi-EO-2.0-600M",
+    "description": "IBM-NASA earth observation vision model with 600M parameters using Vision Transformer and spatiotemporal processing on multispectral satellite imagery. Best at: learning representations of multispectral satellite images with temporal dimension. Domains: remote sensing, earth observation, environmental science. Typical uses: crop segmentation, urban mapping, disaster monitoring, carbon flux prediction. Not suited for: non-satellite or single-channel imagery.",
+    "source_url": "https://huggingface.co/ibm-nasa-geospatial/Prithvi-EO-2.0-600M/blob/main/README.md",
+    "official_url": "https://huggingface.co/ibm-nasa-geospatial/Prithvi-EO-2.0-600M",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "microsoft/aurora",
+    "description": "Microsoft's foundation model for weather and earth system prediction trained on atmospheric variables. Best at: weather forecasting and atmospheric state representation. Domains: meteorology, climate science, weather prediction. Typical uses: short-term weather forecasting, atmospheric analysis, climate research. Not suited for: very-long-term climate projections; details in repository.",
+    "source_url": "https://huggingface.co/microsoft/aurora/blob/main/README.md",
+    "official_url": "https://huggingface.co/microsoft/aurora",
+    "confidence": "low",
+    "notes": "README minimal; detailed info in GitHub repository and Nature paper."
+  },
+  {
+    "id": "ibm-nasa-geospatial/Prithvi-WxC-1.0-2300M",
+    "description": "IBM-NASA 2.3B parameter foundation model for weather and climate trained on MERRA-2 atmospheric data for forecasting and reconstruction. Best at: weather prediction and atmospheric state reconstruction from partial observations. Domains: meteorology, climate modeling. Typical uses: weather forecasting, downscaling, gravity wave parameterization, climate downscaling. Not suited for: long-range seasonal forecasting without adaptation.",
+    "source_url": "https://huggingface.co/ibm-nasa-geospatial/Prithvi-WxC-1.0-2300M/blob/main/README.md",
+    "official_url": "https://huggingface.co/ibm-nasa-geospatial/Prithvi-WxC-1.0-2300M",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "ibm-research/MoLFormer-XL-both-10pct",
+    "description": "IBM's transformer model trained on SMILES representations of molecules from ZINC and PubChem for molecular property prediction. Best at: extracting meaningful embeddings and representations of small molecules. Domains: chemistry, drug discovery, materials science. Typical uses: molecular property prediction, similarity search, fine-tuning for toxicity and solubility prediction. Not suited for: molecule generation; molecules larger than ~200 atoms.",
+    "source_url": "https://huggingface.co/ibm-research/MoLFormer-XL-both-10pct/blob/main/README.md",
+    "official_url": "https://huggingface.co/ibm-research/MoLFormer-XL-both-10pct",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224",
+    "description": "Microsoft's vision-language model trained on 15M biomedical figure-caption pairs from PubMed Central using contrastive learning with PubMedBERT and Vision Transformer. Best at: cross-modal retrieval and zero-shot classification of biomedical images. Domains: biomedical research, medical imaging, literature analysis. Typical uses: biomedical image search, visual question answering on medical images, image-text matching. Not suited for: non-biomedical images or clinical diagnostic applications.",
+    "source_url": "https://huggingface.co/microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224/blob/main/README.md",
+    "official_url": "https://huggingface.co/microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224",
+    "confidence": "high",
+    "notes": ""
+  }
+]

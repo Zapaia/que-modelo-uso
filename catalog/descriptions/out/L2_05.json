@@ -1,0 +1,162 @@
+[
+  {
+    "id": "yiyanghkust/finbert-tone",
+    "description": "FinBERT model fine-tuned on financial tone classification from analyst reports. Best at: Sentiment analysis (positive, negative, neutral) of financial documents. Domains: Finance, corporate communications, earnings analysis. Typical uses: Tone assessment of SEC filings, earnings transcripts, financial news. Not suited for: General-domain sentiment analysis, non-English text, image/audio content.",
+    "source_url": "https://huggingface.co/yiyanghkust/finbert-tone/blob/main/README.md",
+    "official_url": "https://huggingface.co/yiyanghkust/finbert-tone",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "facebook/bart-large-mnli",
+    "description": "BART-large model trained on MultiNLI for zero-shot text classification. Best at: Classifying sequences into arbitrary categories without task-specific fine-tuning. Domains: General NLP, content classification. Typical uses: Topic assignment, content categorization, intent detection. Not suited for: Scenarios requiring in-domain accuracy, tasks needing labeled training data, dense prediction tasks.",
+    "source_url": "https://huggingface.co/facebook/bart-large-mnli/blob/main/README.md",
+    "official_url": "https://huggingface.co/facebook/bart-large-mnli",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "joeddav/xlm-roberta-large-xnli",
+    "description": "XLM-RoBERTa-large fine-tuned on multilingual NLI data across 15 languages. Best at: Zero-shot classification in multiple languages, cross-lingual text understanding. Domains: Multilingual NLP (English, French, Spanish, German, Greek, Bulgarian, Russian, Turkish, Arabic, Vietnamese, Thai, Chinese, Hindi, Swahili, Urdu). Typical uses: Multilingual content categorization, cross-lingual classification. Not suited for: English-only applications, non-NLI tasks.",
+    "source_url": "https://huggingface.co/joeddav/xlm-roberta-large-xnli/blob/main/README.md",
+    "official_url": "https://huggingface.co/joeddav/xlm-roberta-large-xnli",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7",
+    "description": "mDeBERTa-v3-base fine-tuned on 2.7M multilingual NLI examples across 27 languages. Best at: Multilingual natural language inference and zero-shot classification at scale. Domains: Multilingual understanding across 100+ languages during pre-training, 27 during fine-tuning. Typical uses: Multilingual content classification, entailment detection, cross-lingual inference. Not suited for: Language-specific optimization, low-resource languages only.",
+    "source_url": "https://huggingface.co/MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7/blob/main/README.md",
+    "official_url": "https://huggingface.co/MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "cross-encoder/nli-deberta-v3-base",
+    "description": "DeBERTa-v3-base cross-encoder trained on SNLI and MultiNLI for sentence-pair classification. Best at: Determining relationships between sentence pairs (contradiction, entailment, neutral). Domains: Natural language understanding, semantic similarity. Typical uses: Zero-shot classification via entailment, semantic text matching, relevance ranking. Not suited for: Single-sentence tasks, tasks requiring consecutive token selection.",
+    "source_url": "https://huggingface.co/cross-encoder/nli-deberta-v3-base/blob/main/README.md",
+    "official_url": "https://huggingface.co/cross-encoder/nli-deberta-v3-base",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "amazon/chronos-2",
+    "description": "Amazon's 120M-parameter encoder-only time series foundation model for zero-shot forecasting. Best at: Univariate, multivariate, and covariate-informed quantile forecasting. Domains: Time series forecasting, business analytics, industrial applications. Typical uses: Electricity demand prediction, financial series forecasting, sensor data prediction. Not suited for: Non-temporal data, real-time streaming, classification tasks.",
+    "source_url": "https://huggingface.co/amazon/chronos-2/blob/main/README.md",
+    "official_url": "https://huggingface.co/amazon/chronos-2",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "amazon/chronos-bolt-small",
+    "description": "Amazon's 48M-parameter T5-based model for fast time series forecasting. Best at: Efficient zero-shot univariate forecasting up to 64 steps ahead. Domains: Time series, resource-constrained environments, edge deployment. Typical uses: Quick batch predictions, trend analysis on resource-limited devices, time series mining. Not suited for: Multivariate forecasting, long prediction horizons, covariate integration.",
+    "source_url": "https://huggingface.co/amazon/chronos-bolt-small/blob/main/README.md",
+    "official_url": "https://huggingface.co/amazon/chronos-bolt-small",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "impira/layoutlm-document-qa",
+    "description": "LayoutLM fine-tuned on SQuAD 2.0 and DocVQA for document visual question answering. Best at: Extracting answers from document images using text and layout understanding. Domains: Business documents, invoices, forms, receipts. Typical uses: Invoice field extraction, receipt parsing, document-based information retrieval. Not suited for: Pure text QA, images without structured layout.",
+    "source_url": "https://huggingface.co/impira/layoutlm-document-qa/blob/main/README.md",
+    "official_url": "https://huggingface.co/impira/layoutlm-document-qa",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "impira/layoutlm-invoices",
+    "description": "LayoutLM fine-tuned on invoices with non-consecutive token extraction capability. Best at: Question answering on invoices, extracting multi-line fields and addresses. Domains: Financial documents, invoice processing, business document automation. Typical uses: Automated invoice processing, line-item extraction, multi-field address capture. Not suited for: General document QA, non-structured text extraction.",
+    "source_url": "https://huggingface.co/impira/layoutlm-invoices/blob/main/README.md",
+    "official_url": "https://huggingface.co/impira/layoutlm-invoices",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "naver-clova-ix/donut-base-finetuned-docvqa",
+    "description": "Donut model (Swin Transformer encoder + BART decoder) fine-tuned on DocVQA for OCR-free document understanding. Best at: Document visual question answering without requiring explicit OCR. Domains: Document intelligence, form understanding, business document processing. Typical uses: Form field extraction, document classification, visual layout understanding. Not suited for: Text-only QA, non-document images, real-time processing.",
+    "source_url": "https://huggingface.co/naver-clova-ix/donut-base-finetuned-docvqa/blob/main/README.md",
+    "official_url": "https://huggingface.co/naver-clova-ix/donut-base-finetuned-docvqa",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "microsoft/tapex-base-finetuned-wikisql",
+    "description": "TAPEX (BART-based) model fine-tuned on WikiSQL via neural SQL executor training. Best at: Converting questions to SQL and answering queries over simple database tables. Domains: Structured data, knowledge bases, business intelligence. Typical uses: Table question answering, SQL synthesis, structured data mining. Not suited for: Complex multi-table reasoning, advanced SQL features, unstructured data.",
+    "source_url": "https://huggingface.co/microsoft/tapex-base-finetuned-wikisql/blob/main/README.md",
+    "official_url": "https://huggingface.co/microsoft/tapex-base-finetuned-wikisql",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "google/tapas-large-finetuned-sqa",
+    "description": "TAPAS large model fine-tuned on Sequential Question Answering for multi-turn table discussions. Best at: Answering sequences of contextually related questions about tables. Domains: Structured data, interactive analytics, conversational interfaces. Typical uses: Interactive table exploration, multi-turn question answering, sequential table understanding. Not suited for: Single isolated questions, non-conversational settings.",
+    "source_url": "https://huggingface.co/google/tapas-large-finetuned-sqa/blob/main/README.md",
+    "official_url": "https://huggingface.co/google/tapas-large-finetuned-sqa",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "google/tapas-base-finetuned-wtq",
+    "description": "TAPAS base model fine-tuned sequentially on SQA, WikiSQL, and WikiTable Questions. Best at: Question answering on diverse web tables with complex reasoning. Domains: Web-scale structured data, Wikipedia, open-domain QA. Typical uses: Wikipedia table understanding, web table QA, open-domain table retrieval. Not suited for: Proprietary databases, complex aggregations, numerical reasoning.",
+    "source_url": "https://huggingface.co/google/tapas-base-finetuned-wtq/blob/main/README.md",
+    "official_url": "https://huggingface.co/google/tapas-base-finetuned-wtq",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "datalab-to/chandra-ocr-2",
+    "description": "Datalab's state-of-the-art OCR model outputting markdown, HTML, and JSON with layout preservation. Best at: High-accuracy text extraction from documents while maintaining structure. Domains: Document digitization, archival, business automation, 90+ language support. Typical uses: PDF-to-markdown conversion, form processing, document intelligence, handwriting recognition. Not suited for: Real-time processing, extremely small text, low-quality scans.",
+    "source_url": "https://huggingface.co/datalab-to/chandra-ocr-2/blob/main/README.md",
+    "official_url": "https://huggingface.co/datalab-to/chandra-ocr-2",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "deepseek-ai/DeepSeek-OCR",
+    "description": "DeepSeek's vision-language model for document OCR with markdown output and visual understanding. Best at: Converting document images to structured markdown while understanding visual context. Domains: Document intelligence, digital transformation, content extraction. Typical uses: PDF processing, table extraction, document analysis, multi-modal understanding. Not suited for: Speed-critical applications, non-document images, real-time inference.",
+    "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-OCR/blob/main/README.md",
+    "official_url": "https://huggingface.co/deepseek-ai/DeepSeek-OCR",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "baidu/Unlimited-OCR",
+    "description": "Baidu's multi-page OCR model supporting single-image and PDF parsing with layout preservation. Best at: Processing long documents and multi-page PDFs while maintaining formatting. Domains: Document digitization, archival, book scanning, business automation. Typical uses: Multi-page document scanning, book digitization, form processing, batch PDF conversion. Not suited for: Real-time single-image OCR, resource-constrained environments.",
+    "source_url": "https://huggingface.co/baidu/Unlimited-OCR/blob/main/README.md",
+    "official_url": "https://huggingface.co/baidu/Unlimited-OCR",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "datalab-to/surya-ocr-2",
+    "description": "Datalab's 650M-parameter OCR model with layout analysis, table recognition, and multilingual support. Best at: Accurate text extraction with layout detection on diverse document types. Domains: Document processing, 91+ language support, structured data recognition. Typical uses: Newspaper digitization, form recognition, handwritten document processing, table extraction. Not suited for: Low-resource devices, extreme throughput requirements, non-document images.",
+    "source_url": "https://huggingface.co/datalab-to/surya-ocr-2/blob/main/README.md",
+    "official_url": "https://huggingface.co/datalab-to/surya-ocr-2",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract",
+    "description": "BERT pre-trained from scratch on PubMed abstracts for biomedical NLP tasks. Best at: Understanding biomedical concepts and relationships in research abstracts. Domains: Biomedical research, medical literature, life sciences. Typical uses: Named entity recognition in abstracts, article classification, biomedical information extraction. Not suited for: Full-text biomedical analysis, general-domain NLP, non-English content.",
+    "source_url": "https://huggingface.co/microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract/blob/main/README.md",
+    "official_url": "https://huggingface.co/microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext",
+    "description": "BERT pre-trained on PubMed abstracts and full-text articles for comprehensive biomedical understanding. Best at: Biomedical NLP tasks spanning both abstracts and complete papers. Domains: Biomedical research, medical publishing, literature mining, life sciences. Typical uses: Full-text literature mining, biomedical information extraction, paper classification. Not suited for: General English NLP, non-medical domains, real-time applications.",
+    "source_url": "https://huggingface.co/microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext/blob/main/README.md",
+    "official_url": "https://huggingface.co/microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "d4data/biomedical-ner-all",
+    "description": "DistilBERT-based token classification model trained on Maccrobat for 107 biomedical entity types. Best at: Recognizing medical entities including diseases, drugs, and clinical concepts. Domains: Biomedical text, medical case reports, clinical documentation. Typical uses: Disease and drug extraction, entity annotation, biomedical literature mining. Not suited for: General NER, non-medical texts, real-time processing on large volumes.",
+    "source_url": "https://huggingface.co/d4data/biomedical-ner-all/blob/main/README.md",
+    "official_url": "https://huggingface.co/d4data/biomedical-ner-all",
+    "confidence": "high",
+    "notes": ""
+  }
+]

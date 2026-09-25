@@ -1,0 +1,51 @@
+---
+import '@fontsource-variable/archivo';
+import '@fontsource/chivo-mono/400.css';
+import '@fontsource/chivo-mono/700.css';
+import '../styles/global.css';
+import App from '../components/App';
+import catalog from '../data/catalog.json';
+
+// Logos a color donde el avatar de Hugging Face viene en blanco y negro. Son los
+// íconos de marca de LobeHub (licencia MIT), recortados al mismo formato que el resto.
+// OpenAI, xAI y Black Forest Labs no tienen versión a color: su marca es monocromo.
+const BRAND_LOGOS: Record<string, string> = {
+  anthropic: '/logos/brand-claude.png',
+  moonshotai: '/logos/brand-kimi.png',
+  'z-ai': '/logos/brand-zhipu.png', // Z.ai es la marca internacional de Zhipu
+  'zai-org': '/logos/brand-zhipu.png',
+  amazon: '/logos/brand-aws.png',
+  perplexity: '/logos/brand-perplexity.png',
+  facebook: '/logos/brand-meta.png',
+  nvidia: '/logos/brand-nvidia.png',
+  cohere: '/logos/brand-cohere.png',
+  inception: '/logos/brand-inception.png', // no tenía logo: era la ficha gris
+};
+
+// Al navegador va solo lo que la interfaz necesita. Las descripciones quedan en
+// el servidor: las lee Jev, no el usuario.
+const models = catalog.map((m) => ({
+  id: m.id, name: m.name, creator: m.creator, logo: BRAND_LOGOS[m.creator] ?? m.logo, layer: m.layer,
+  hasData: m.has_data, quality: m.quality ?? null, price: m.price ?? null,
+  speed: m.speed ?? null, url: m.official_url, task: m.task ?? null,
+}));
+---
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>¿Qué modelo uso? — clasificado por Jev</title>
+    <meta name="description" content="Escribí qué querés construir y mirá cómo Jev elige, en segundos, los modelos de IA que sirven entre 186." />
+  </head>
+  <body>
+    <!--
+      THESIS: Una hoja de trabajo donde los modelos de IA son fichas físicas amontonadas abajo; escribís la idea en la línea de arriba y las que sirven son atraídas hasta la línea y quedan en fila. Refusa el chat que opina y la tabla de leaderboard.
+      OWN-WORLD: el papel de 100 Bucket List: grano real, tinta, grafito, un cobalto, fibrones pastel solo sobre lo elegido. Archivo y Chivo Mono.
+      STORY: el montón existe antes de preguntar; la pregunta lo ordena en segundos.
+      SIGNATURE: las fichas elegidas suben en oleadas, a medida que vuelve cada tanda de Jev.
+      RISK: 186 cuerpos con física y texturas en el navegador.
+    -->
+    <App client:only="react" models={models} />
+  </body>
+</html>

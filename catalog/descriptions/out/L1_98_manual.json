@@ -1,0 +1,18 @@
+[
+ {
+  "id": "x-ai/grok-build-0.1",
+  "description": "SpaceXAI's fast coding model optimized for agentic software engineering and tool-calling workflows. Best at: rapid code generation, interactive coding, general-purpose tool use. Domains: software development, automation. Typical uses: code completion, quick script generation, agentic workflows in Grok Build and Cursor. Not suited for: complex multi-step reasoning requiring extended deliberation.",
+  "source_url": "https://openrouter.ai/x-ai/grok-build-0.1",
+  "official_url": "https://docs.x.ai/developers/models/grok-build-0.1",
+  "confidence": "high",
+  "notes": "manual: el source_url original (x.ai/news/...) daba 404; los hechos coinciden con el texto de OpenRouter"
+ },
+ {
+  "id": "tencent/hy3",
+  "description": "295B mixture-of-experts model from Tencent (21B active) with a 256K context window. Best at: software development, financial modeling, front-end design, multi-agent coordination. Domains: office productivity, creative industries. Typical uses: autonomous code generation, financial report synthesis, UI mockup creation, multi-agent task planning. Not suited for: lightweight edge deployment.",
+  "source_url": "https://huggingface.co/tencent/Hy3",
+  "official_url": "https://huggingface.co/tencent/Hy3",
+  "confidence": "high",
+  "notes": "manual: source_url original daba 404; se verificó contra el model card de HF y se sacó 'fast-and-slow-thinking', que no figura en la fuente"
+ }
+]

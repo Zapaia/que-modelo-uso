@@ -1,0 +1,130 @@
+[
+  {
+    "id": "mistralai/mistral-medium-3-5",
+    "description": "A 128B dense model from Mistral AI designed for instruction-following, reasoning, and coding tasks. Best at: long-horizon coding, agentic workflows, productivity automation. Domains: software engineering, document processing. Typical uses: multi-step research tasks, cross-tool workflows, code generation. Not suited for: real-time latency-critical applications, extreme parameter efficiency.",
+    "source_url": "https://mistral.ai/news/vibe-remote-agents-mistral-medium-3-5/",
+    "official_url": "https://docs.mistral.ai/models/model-cards/mistral-medium-3-5-26-04",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "mistralai/mistral-small-2603",
+    "description": "A 119B mixture-of-experts model from Mistral AI with 6.5B activated parameters per token. Best at: reasoning with configurable effort levels, multilingual tasks, function calling. Domains: enterprise chat, document understanding, codebase analysis. Typical uses: chat assistants, mathematical reasoning, developer automation. Not suited for: latency-sensitive edge deployments, fixed resource constraints.",
+    "source_url": "https://huggingface.co/mistralai/Mistral-Small-4-119B-2603",
+    "official_url": "https://huggingface.co/mistralai/Mistral-Small-4-119B-2603",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "mistralai/ministral-8b-2512",
+    "description": "A 9B model from Mistral AI combining 8.4B language and 0.4B vision encoders for resource-constrained environments. Best at: instruction adherence, vision-language tasks, multilingual chat. Domains: local deployment, edge devices, constrained environments. Typical uses: chat interfaces, image analysis, translation, specialized agents. Not suited for: frontier reasoning, complex long-horizon planning.",
+    "source_url": "https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512",
+    "official_url": "https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "mistralai/codestral-2508",
+    "description": "A code-specialized model from Mistral AI with 128k context supporting 80+ programming languages. Best at: fill-in-the-middle code completion, low-latency code generation, test generation. Domains: software development, code editors. Typical uses: real-time code completion, code correction, IDE integration via Mistral Code plugin. Not suited for: general-purpose reasoning, long-horizon planning.",
+    "source_url": "https://mistral.ai/news/codestral-25-08/",
+    "official_url": "https://docs.mistral.ai/models/model-cards/codestral-25-08",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "qwen/qwen3.8-max-prime",
+    "description": "A multimodal variant of Qwen3.8 Max from Alibaba optimized for higher throughput at a separate pricing tier. Best at: text, image, and video inputs with fast throughput. Domains: content analysis, multimodal reasoning. Typical uses: batch processing, video analysis, content classification. Not suited for: latency-sensitive real-time applications.",
+    "source_url": "https://openrouter.ai/qwen/qwen3.8-max-prime",
+    "official_url": "https://openrouter.ai/qwen/qwen3.8-max-prime",
+    "confidence": "low",
+    "notes": "Seed description from OpenRouter; official Qwen documentation not found for this specific variant"
+  },
+  {
+    "id": "qwen/qwen3.8-flash",
+    "description": "A 125B mixture-of-experts model from Qwen with 6B activated parameters supporting multimodal reasoning. Best at: coding assistance, agentic workflows, visual understanding, long-video analysis. Domains: software engineering, document processing. Typical uses: code generation, desktop interaction, chart analysis, repository-level engineering. Not suited for: extreme latency requirements.",
+    "source_url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+    "official_url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "qwen/qwen3.8-27b",
+    "description": "An open-weight 27B dense model from Qwen with hybrid attention for coding and professional work. Best at: autonomous planning, coding, long-horizon agentic tasks, environment feedback handling. Domains: software engineering, research, professional workflows. Typical uses: code generation, codebase analysis, extended reasoning tasks. Not suited for: extreme resource constraints, real-time latency.",
+    "source_url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+    "official_url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "qwen/qwen3.8-omni-flash",
+    "description": "An omni-modal model from Alibaba with native audio-video understanding built around agentic capabilities. Best at: audio-video analysis and summarization, multimodal reasoning. Domains: media processing, agentic workflows. Typical uses: video understanding, audio transcription analysis, multimodal agent tasks. Not suited for: text-only applications requiring minimal latency.",
+    "source_url": "https://openrouter.ai/qwen/qwen3.8-omni-flash",
+    "official_url": "https://openrouter.ai/qwen/qwen3.8-omni-flash",
+    "confidence": "low",
+    "notes": "Seed description from OpenRouter; limited official documentation found for this specific variant"
+  },
+  {
+    "id": "deepseek/deepseek-v4-pro-0813",
+    "description": "A large mixture-of-experts model from DeepSeek with enhanced agentic capabilities and flexible reasoning. Best at: complex software engineering, long-horizon agent tasks, production workflows. Domains: coding, tool-use orchestration. Typical uses: multi-step code generation, terminal automation, GPU kernel optimization. Not suited for: extremely latency-critical applications.",
+    "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813",
+    "official_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "deepseek/deepseek-v4.1-flash",
+    "description": "A 552B sparse mixture-of-experts model from DeepSeek activating 8B-16B parameters per token with innovative Causal Encoder-Decoder architecture. Best at: efficient long-context reasoning, multimodal agent tasks, code generation. Domains: software engineering, agentic workflows. Typical uses: long-context code analysis, tool orchestration, visual reasoning. Not suited for: fixed parameter requirements.",
+    "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
+    "official_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "deepseek/deepseek-v4-flash-vision-exp",
+    "description": "An experimental 305B multimodal model from DeepSeek combining visual and text understanding for agent tasks. Best at: multimodal agent reasoning, chart analysis, image-based problem-solving. Domains: software engineering, data analysis. Typical uses: visual code analysis, multimodal agent workflows, document understanding. Not suited for: text-only latency-sensitive applications.",
+    "source_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+    "official_url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "x-ai/grok-4.7",
+    "description": "SpaceXAI's frontier model for coding, agentic tasks, and knowledge work with 500k context and flexible reasoning. Best at: long-running software engineering tasks, work verification, document creation. Domains: software development, knowledge work. Typical uses: extended coding projects, technical writing, multi-step automation. Not suited for: latency-critical interactive applications.",
+    "source_url": "https://x.ai/news/grok-4-7",
+    "official_url": "https://docs.x.ai/developers/grok-4-7",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "x-ai/grok-build-0.1",
+    "description": "SpaceXAI's fast coding model optimized for agentic software engineering and tool-calling workflows. Best at: rapid code generation, interactive coding, general-purpose tool use. Domains: software development, automation. Typical uses: code completion, quick script generation, agentic workflows in Grok Build and Cursor. Not suited for: complex multi-step reasoning requiring extended deliberation.",
+    "source_url": "https://x.ai/news/grok-build-0.1",
+    "official_url": "https://docs.x.ai/developers/models/grok-build-0.1",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "moonshotai/kimi-k3",
+    "description": "A 2.8T mixture-of-experts model from Moonshot AI with 104B activated parameters supporting native multimodality and 1M context. Best at: long-horizon coding, agentic knowledge work, complex reasoning. Domains: software engineering, research, multimedia content creation. Typical uses: extended code tasks, interactive dashboards, video analysis, chip design. Not suited for: extreme latency, fixed parameter budget.",
+    "source_url": "https://huggingface.co/moonshotai/Kimi-K3",
+    "official_url": "https://huggingface.co/moonshotai/Kimi-K3",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "moonshotai/kimi-k2.7-code",
+    "description": "A 1T coding-focused mixture-of-experts model from Moonshot with 32B activated parameters optimized for long-horizon programming. Best at: end-to-end coding tasks, agentic workflows, multi-step tool use. Domains: software development, backend services, ML engineering. Typical uses: real-world coding problems, multi-language development, visual code analysis. Not suited for: general-purpose reasoning outside coding.",
+    "source_url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code",
+    "official_url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "z-ai/glm-5.3",
+    "description": "A 753B open-weight model from Z.ai with mixture-of-experts architecture built for complex software engineering and long-horizon agent tasks. Best at: coding with flexible reasoning budgets, cybersecurity analysis, dynamic reasoning. Domains: software development, security research. Typical uses: code generation, vulnerability discovery, extended reasoning tasks. Not suited for: real-time latency-critical applications.",
+    "source_url": "https://huggingface.co/zai-org/GLM-5.3",
+    "official_url": "https://huggingface.co/zai-org/GLM-5.3",
+    "confidence": "high",
+    "notes": ""
+  }
+]

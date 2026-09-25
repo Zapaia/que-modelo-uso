@@ -1,0 +1,20 @@
+# Dependencias y builds
+node_modules/
+dist/
+.astro/
+.wrangler/
+
+# Secretos locales (la key de Vercel AI Gateway va en el dashboard de Webflow Cloud)
+.dev.vars
+.env
+.env.*
+
+# Descargas crudas: se regeneran con los scripts y no son nuestras para redistribuir
+# (volcado de la API de Artificial Analysis, lista de OpenRouter, fichas de Hugging Face)
+catalog/raw/artificialanalysis.json
+catalog/raw/openrouter.json
+catalog/raw/readmes/
+catalog/descriptions/batches/
+
+.DS_Store
+__pycache__/

@@ -1,0 +1,130 @@
+[
+  {
+    "id": "z-ai/glm-5.3-flash",
+    "description": "Native multimodal foundation model from Z.ai with 1M token context and hybrid sparse-linear attention. Best at: long-context agentic workflows, coding, video processing, 3D design. Domains: software development, creative production. Typical uses: autonomous agent orchestration, document-to-code generation, video editing with scene understanding. Not suited for: lightweight edge deployment, real-time streaming.",
+    "source_url": "https://z.ai/blog/glm-5.3-flash",
+    "official_url": "https://huggingface.co/zai-org/GLM-5.3-Flash",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "minimax/minimax-m3",
+    "description": "Mixture-of-experts foundation model from MiniMax (428B total, 23B active) supporting text, image, and video inputs with 1M context. Best at: agentic coding, long-horizon task orchestration, multimodal reasoning. Domains: software engineering, autonomous systems. Typical uses: autonomous 12-24 hour task execution, CUDA kernel optimization, paper reproduction workflows. Not suited for: resource-constrained environments.",
+    "source_url": "https://www.minimax.io/blog/minimax-m3",
+    "official_url": "https://huggingface.co/MiniMaxAI/MiniMax-M3",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "amazon/nova-premier-v1",
+    "description": "Amazon's most capable multimodal model with 1M token context for complex reasoning tasks. Best at: multi-step planning, tool orchestration, model distillation as teacher. Domains: enterprise, financial services. Typical uses: investment research coordination, complex document analysis, knowledge transfer to smaller models. Not suited for: lightweight or cost-sensitive inference.",
+    "source_url": "https://aws.amazon.com/blogs/aws/amazon-nova-premier-our-most-capable-model-for-complex-tasks-and-teacher-for-model-distillation/",
+    "official_url": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-nova-premier.html",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "amazon/nova-2-lite-v1",
+    "description": "Fast, cost-effective multimodal model from Amazon for everyday reasoning workloads, processing text, images, and video. Best at: standard reasoning, rapid inference, practical applications. Domains: enterprise, customer-facing services. Typical uses: chat applications, document summarization, basic image analysis. Not suited for: multi-step complex reasoning requiring deep context.",
+    "source_url": "https://openrouter.ai/amazon/nova-2-lite-v1",
+    "official_url": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-nova-lite.html",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "microsoft/phi-4",
+    "description": "14-billion parameter small language model from Microsoft trained with synthetic data for complex reasoning. Best at: mathematics, code generation, logical reasoning with efficiency constraints. Domains: education, embedded systems. Typical uses: math problem solving, competitive programming preparation, resource-constrained inference. Not suited for: multimodal tasks (base model is text-only).",
+    "source_url": "https://www.microsoft.com/en-us/research/publication/phi-4-technical-report/",
+    "official_url": "https://huggingface.co/microsoft/phi-4",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "nvidia/nemotron-3.5-lightning",
+    "description": "30B mixture-of-experts model from NVIDIA (3B active) with hybrid Mamba-2 and attention layers optimized for high-throughput agents. Best at: fast inference, specialized task execution, agentic workloads with strict latency requirements. Domains: production AI systems. Typical uses: high-volume agent orchestration, real-time response generation, cost-efficient scaling. Not suited for: complex multi-step reasoning.",
+    "source_url": "https://developer.nvidia.com/blog/nvidia-nemotron-3-5-lightning-delivers-fast-accurate-specialized-task-execution-for-long-running-agents/",
+    "official_url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "nvidia/nemotron-3-ultra-550b-a55b",
+    "description": "550B frontier mixture-of-experts model from NVIDIA (55B active) with hybrid Mamba-Transformer architecture and 300+ tokens/sec throughput. Best at: frontier-level reasoning, complex orchestration, knowledge-intensive workflows. Domains: enterprise, research. Typical uses: agentic multi-tool coordination, advanced problem solving, knowledge synthesis. Not suited for: edge devices or latency-critical applications.",
+    "source_url": "https://research.nvidia.com/labs/nemotron/Nemotron-3-Ultra/",
+    "official_url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "cohere/command-a-plus",
+    "description": "Enterprise mixture-of-experts model from Cohere (218B total, 25B active) supporting text and image inputs, 192K context, 48 languages. Best at: multilingual agentic workflows, tool calling, enterprise-scale inference. Domains: enterprise, sovereign critical infrastructure. Typical uses: multilingual customer support agents, document-heavy workflows, EU-compliant deployments. Not suited for: vision-focused tasks.",
+    "source_url": "https://cohere.com/blog/command-a-plus",
+    "official_url": "https://docs.cohere.com/docs/command-a-plus",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "ibm-granite/granite-4.2-8b",
+    "description": "8B dense reasoning model from IBM with native chain-of-thought and 128K context for enterprise applications. Best at: mathematics, code generation, multilingual dialogue, agentic tool calling. Domains: enterprise, finance, healthcare. Typical uses: reasoning-augmented function calling, multilingual support agents, math-heavy workflows. Not suited for: real-time streaming or extreme latency constraints.",
+    "source_url": "https://www.ibm.com/granite/docs/models/granite4-2",
+    "official_url": "https://huggingface.co/ibm-granite/granite-4.2-8b",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "tencent/hy3",
+    "description": "295B mixture-of-experts model from Tencent (21B active) with hybrid fast-and-slow-thinking and 256K context. Best at: software development, financial modeling, front-end design, multi-agent coordination. Domains: office productivity, creative industries. Typical uses: autonomous code generation, financial report synthesis, UI mockup creation, multi-agent task planning. Not suited for: lightweight edge deployment.",
+    "source_url": "https://www.tencent.com/en-us/articles/2202386.html",
+    "official_url": "https://huggingface.co/tencent/Hy3",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "tencent/hy-mt2-7b",
+    "description": "Specialized 7B translation model from Tencent supporting 33 language pairs and Chinese dialects with structured, contextual, and style-guided workflows. Best at: high-quality multilingual translation, dialect-aware localization, glossary-based term consistency. Domains: international business, localization. Typical uses: document translation with brand voice preservation, multilingual customer communication. Not suited for: general-purpose LLM tasks.",
+    "source_url": "https://www.tencentcloud.com/techpedia/144776",
+    "official_url": "https://huggingface.co/tencent/Hy-MT2-7B",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "bytedance-seed/seed-2-1-turbo",
+    "description": "Multimodal model from ByteDance Seed for agentic coding with 262K context, supporting text, image, and video inputs. Best at: end-to-end software delivery, multi-step task execution, visual debugging, code interpretation. Domains: software engineering, development tools. Typical uses: autonomous development workflows, repository-aware coding assistance, iterative problem solving. Not suited for: applications requiring sub-100ms latency.",
+    "source_url": "https://seed.bytedance.com/en/seed2_1",
+    "official_url": "https://seed.bytedance.com/en/seed2_1",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "bytedance-seed/seed-2.0-code",
+    "description": "Specialized coding model from ByteDance Seed, multimodal with 262K context for programming-focused agent workflows. Best at: frontend development, multilingual programming, coding-agent orchestration in tools like Claude Code. Domains: software development. Typical uses: React component generation from screenshots, polyglot codebases, autonomous code debugging. Not suited for: non-technical domains outside programming.",
+    "source_url": "https://seed.bytedance.com/en/blog/seed-2-0-official-launch",
+    "official_url": "https://seed.bytedance.com/en/seed2",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "inception/mercury-2.5",
+    "description": "Diffusion-based LLM from Inception with parallel token generation achieving 1,100+ tokens/sec and 260K context. Best at: fast inference, real-time applications, cost-effective reasoning. Domains: search, voice, coding. Typical uses: real-time search result synthesis, low-latency API responses, high-throughput inference. Not suited for: extended step-by-step reasoning requiring sequential generation.",
+    "source_url": "https://www.inceptionlabs.ai/blog/introducing-mercury-2-5",
+    "official_url": "https://www.inceptionlabs.ai/blog/introducing-mercury-2-5",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "perplexity/sonar-pro-search",
+    "description": "Agentic search system from Perplexity with 200K context, multi-step reasoning, and live web search integration. Best at: autonomous research workflows, complex information retrieval, multi-query analysis. Domains: research, knowledge work, analysis. Typical uses: financial research automation, deep topic analysis, multi-step information synthesis. Not suited for: isolated reasoning without external data access.",
+    "source_url": "https://docs.perplexity.ai/docs/sonar/models/sonar-pro",
+    "official_url": "https://docs.perplexity.ai/docs/sonar/models/sonar-pro",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "openai/o3-pro",
+    "description": "Reasoning-focused model from OpenAI trained with reinforcement learning for extended thinking, 200K context, vision support. Best at: complex problem solving, deep reasoning, challenging intellectual tasks. Domains: research, mathematics, complex analysis. Typical uses: scientific reasoning, competitive problem solving, multi-step logic puzzles. Not suited for: simple tasks where reasoning overhead adds unnecessary latency.",
+    "source_url": "https://openai.com/index/introducing-o3-and-o4-mini/",
+    "official_url": "https://help.openai.com/en/articles/9624314-model-release-notes",
+    "confidence": "high",
+    "notes": ""
+  }
+]

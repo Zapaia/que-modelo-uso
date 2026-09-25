@@ -1,0 +1,147 @@
+{
+ "openai/gpt-6-sol-pro": [],
+ "openai/gpt-6-sol": [
+  "gpt-6-sol",
+  "gpt-6-sol-xhigh",
+  "gpt-6-sol-high",
+  "gpt-6-sol-medium",
+  "gpt-6-sol-low",
+  "gpt-6-sol-non-reasoning"
+ ],
+ "openai/gpt-6-luna-pro": [],
+ "openai/gpt-6-luna": [
+  "gpt-6-luna",
+  "gpt-6-luna-xhigh",
+  "gpt-6-luna-high",
+  "gpt-6-luna-medium",
+  "gpt-6-luna-low",
+  "gpt-6-luna-non-reasoning"
+ ],
+ "openai/gpt-6-astra": [
+  "gpt-6-astra",
+  "gpt-6-astra-xhigh",
+  "gpt-6-astra-high",
+  "gpt-6-astra-medium",
+  "gpt-6-astra-low"
+ ],
+ "anthropic/claude-opus-5.5": [
+  "claude-opus-5-5",
+  "claude-opus-5-5-xhigh",
+  "claude-opus-5-5-high",
+  "claude-opus-5-5-medium",
+  "claude-opus-5-5-low"
+ ],
+ "anthropic/claude-fable-5.1": [
+  "claude-fable-5-1",
+  "claude-fable-5-1-xhigh",
+  "claude-fable-5-1-high",
+  "claude-fable-5-1-medium",
+  "claude-fable-5-1-low"
+ ],
+ "anthropic/claude-sonnet-5": [
+  "claude-sonnet-5",
+  "claude-sonnet-5-xhigh",
+  "claude-sonnet-5-high",
+  "claude-sonnet-5-medium",
+  "claude-sonnet-5-low",
+  "claude-sonnet-5-non-reasoning"
+ ],
+ "anthropic/claude-haiku-4.5": [],
+ "google/gemini-3.8-flash": [
+  "gemini-3-8-flash",
+  "gemini-3-8-flash-medium",
+  "gemini-3-8-flash-low"
+ ],
+ "google/gemini-3.5-flash-lite": [
+  "gemini-3-5-flash-lite"
+ ],
+ "google/gemini-3-pro-image": [],
+ "meta-llama/llama-4-maverick": [
+  "llama-4-maverick"
+ ],
+ "meta-llama/llama-4-scout": [
+  "llama-4-scout"
+ ],
+ "meta-llama/llama-3.3-70b-instruct": [],
+ "meta-llama/llama-3.1-8b-instruct": [],
+ "mistralai/mistral-medium-3-5": [
+  "mistral-medium-3-5"
+ ],
+ "mistralai/mistral-small-2603": [],
+ "mistralai/ministral-8b-2512": [],
+ "mistralai/codestral-2508": [],
+ "qwen/qwen3.8-max-prime": [],
+ "qwen/qwen3.8-flash": [
+  "qwen3-8-flash-next"
+ ],
+ "qwen/qwen3.8-27b": [
+  "qwen3-8-27b",
+  "qwen3-8-27b-medium",
+  "qwen3-8-27b-low",
+  "qwen3-8-27b-non-reasoning"
+ ],
+ "qwen/qwen3.8-omni-flash": [],
+ "deepseek/deepseek-v4-pro-0813": [],
+ "deepseek/deepseek-v4.1-flash": [
+  "deepseek-v4-1-flash",
+  "deepseek-v4-1-flash-non-reasoning"
+ ],
+ "deepseek/deepseek-v4-flash-vision-exp": [],
+ "x-ai/grok-4.7": [
+  "grok-4-7",
+  "grok-4-7-high"
+ ],
+ "x-ai/grok-build-0.1": [
+  "grok-build-0-1-06-16"
+ ],
+ "moonshotai/kimi-k3": [
+  "kimi-k3",
+  "kimi-k3-low"
+ ],
+ "moonshotai/kimi-k2.7-code": [
+  "kimi-k2-7-code"
+ ],
+ "z-ai/glm-5.3": [
+  "glm-5-3",
+  "glm-5-3-flash",
+  "glm-5-3-low"
+ ],
+ "z-ai/glm-5.3-flash": [
+  "glm-5-3-flash"
+ ],
+ "minimax/minimax-m3": [
+  "minimax-m3"
+ ],
+ "amazon/nova-premier-v1": [],
+ "amazon/nova-2-lite-v1": [],
+ "microsoft/phi-4": [
+  "phi-4",
+  "phi-4-mini",
+  "phi-4-multimodal"
+ ],
+ "nvidia/nemotron-3.5-lightning": [
+  "nemotron-3-5-lightning"
+ ],
+ "nvidia/nemotron-3-ultra-550b-a55b": [],
+ "cohere/command-a-plus": [
+  "command-a-plus"
+ ],
+ "ibm-granite/granite-4.2-8b": [
+  "granite-4-2-8b"
+ ],
+ "tencent/hy3": [
+  "hy3",
+  "hy3-preview",
+  "hy3-non-reasoning"
+ ],
+ "tencent/hy-mt2-7b": [],
+ "bytedance-seed/seed-2-1-turbo": [],
+ "bytedance-seed/seed-2.0-code": [],
+ "inception/mercury-2.5": [
+  "mercury-2-5"
+ ],
+ "perplexity/sonar-pro-search": [],
+ "openai/o3-pro": [
+  "o3-pro"
+ ]
+}

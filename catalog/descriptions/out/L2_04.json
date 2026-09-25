@@ -1,0 +1,162 @@
+[
+ {
+  "id": "BAAI/bge-reranker-base",
+  "description": "BAAI BGE cross-encoder reranker by BAAI. Best at: re-ranking documents in retrieval pipelines. Typical uses: improving search quality by re-ranking top-k results, document ranking in RAG systems, relevance scoring for passage retrieval. Not suited for: generating text, embedding generation, tasks requiring semantic understanding beyond pairwise comparison.",
+  "source_url": "https://huggingface.co/BAAI/bge-reranker-base/blob/main/README.md",
+  "official_url": "https://huggingface.co/BAAI/bge-reranker-base",
+  "confidence": "high",
+  "notes": ""
+ },
+ {
+  "id": "Alibaba-NLP/gte-reranker-modernbert-base",
+  "description": "Alibaba-NLP text reranker by Tongyi Lab based on ModernBERT (149M params, 8192 token max). Best at: re-ranking text pairs for relevance in retrieval tasks. Typical uses: document ranking in search pipelines, query-document ranking for RAG, improving retrieval precision. Not suited for: embedding generation, text generation, semantic similarity without comparison pairs.",
+  "source_url": "https://huggingface.co/Alibaba-NLP/gte-reranker-modernbert-base/blob/main/README.md",
+  "official_url": "https://huggingface.co/Alibaba-NLP/gte-reranker-modernbert-base",
+  "confidence": "high",
+  "notes": ""
+ },
+ {
+  "id": "google-t5/t5-small",
+  "description": "T5 Small encoder-decoder by Google (60M parameters). Best at: machine translation, summarization, question answering, text classification via unified text-to-text format. Languages: English, French, Romanian, German. Typical uses: translation between multiple languages, document summarization, QA systems, paraphrase generation. Not suited for: image understanding, specialized domain tasks, very long documents.",
+  "source_url": "https://huggingface.co/google-t5/t5-small/blob/main/README.md",
+  "official_url": "https://huggingface.co/google-t5/t5-small",
+  "confidence": "high",
+  "notes": ""
+ },
+ {
+  "id": "google-t5/t5-base",
+  "description": "T5 Base encoder-decoder by Google (220M parameters). Best at: machine translation, summarization, question answering, text classification via text-to-text format. Languages: English, French, Romanian, German. Typical uses: translation, document summarization, QA systems, text generation tasks. Not suited for: image understanding, specialized domains, documents exceeding model context.",
+  "source_url": "https://huggingface.co/google-t5/t5-base/blob/main/README.md",
+  "official_url": "https://huggingface.co/google-t5/t5-base",
+  "confidence": "high",
+  "notes": ""
+ },
+ {
+  "id": "Helsinki-NLP/opus-mt-nl-en",
+  "description": "OPUS-MT transformer model for Dutch-to-English translation by Helsinki-NLP. Best at: translating Dutch text to English. Typical uses: Dutch-English translation for documents, user-generated content, cross-lingual information retrieval, multilingual NLP pipelines. Not suited for: other language pairs, non-textual content, document-level translation without sentence splitting.",
+  "source_url": "https://huggingface.co/Helsinki-NLP/opus-mt-nl-en/blob/main/README.md",
+  "official_url": "https://huggingface.co/Helsinki-NLP/opus-mt-nl-en",
+  "confidence": "high",
+  "notes": ""
+ },
+ {
+  "id": "facebook/nllb-200-distilled-600M",
+  "description": "Meta NLLB-200 distilled 600M variant for translating among 200 languages. Best at: low-resource language translation, research on multilingual translation. Limitations: trained on sequences up to 512 tokens, not recommended for production deployment, unsuitable for domain-specific or document-level translation. Typical uses: research translation, low-resource language support. Not suited for: production systems, certified translations, specialized domains.",
+  "source_url": "https://huggingface.co/facebook/nllb-200-distilled-600M/blob/main/README.md",
+  "official_url": "https://huggingface.co/facebook/nllb-200-distilled-600M",
+  "confidence": "high",
+  "notes": ""
+ },
+ {
+  "id": "Helsinki-NLP/opus-mt-fr-en",
+  "description": "OPUS-MT transformer model for French-to-English translation by Helsinki-NLP. Best at: translating French text to English. Typical uses: French-English translation for documents and text, cross-lingual retrieval, multilingual NLP pipelines, content localization. Not suited for: other language pairs, reverse translation (English to French), non-textual content.",
+  "source_url": "https://huggingface.co/Helsinki-NLP/opus-mt-fr-en/blob/main/README.md",
+  "official_url": "https://huggingface.co/Helsinki-NLP/opus-mt-fr-en",
+  "confidence": "high",
+  "notes": ""
+ },
+ {
+  "id": "facebook/bart-large-cnn",
+  "description": "BART large encoder-decoder by Meta, fine-tuned on CNN Daily Mail for abstractive summarization. Best at: abstractive text summarization of news and long-form content. Typical uses: news article summarization, document condensing, generating concise summaries from longer texts. Not suited for: translation, direct text generation beyond summaries, classification tasks.",
+  "source_url": "https://huggingface.co/facebook/bart-large-cnn/blob/main/README.md",
+  "official_url": "https://huggingface.co/facebook/bart-large-cnn",
+  "confidence": "high",
+  "notes": ""
+ },
+ {
+  "id": "sshleifer/distilbart-cnn-12-6",
+  "description": "DistilBART 12-layer (306M params) by Sam Shleifer, fine-tuned on CNN/DailyMail for abstractive summarization. Best at: efficient text summarization with reduced latency compared to full BART. Typical uses: fast document summarization for production systems, resource-constrained environments, news summarization. Not suited for: translation, fine-grained linguistic analysis, tasks requiring full model capacity.",
+  "source_url": "https://huggingface.co/sshleifer/distilbart-cnn-12-6/blob/main/README.md",
+  "official_url": "https://huggingface.co/sshleifer/distilbart-cnn-12-6",
+  "confidence": "high",
+  "notes": ""
+ },
+ {
+  "id": "google/pegasus-xsum",
+  "description": "PEGASUS model by Google fine-tuned on XSum for abstractive summarization. Best at: abstractive summarization of news and documents using gap-sentence pre-training. Typical uses: news headline generation, document condensing, single-document summarization. Domains: news, journalism, information extraction. Not suited for: multi-document summarization, content generation beyond summaries.",
+  "source_url": "https://huggingface.co/google/pegasus-xsum/blob/main/README.md",
+  "official_url": "https://huggingface.co/google/pegasus-xsum",
+  "confidence": "high",
+  "notes": ""
+ },
+ {
+  "id": "philschmid/bart-large-cnn-samsum",
+  "description": "BART large by Philipp Schmid, fine-tuned on SAMSum dataset for conversation summarization. Best at: abstractive summarization of conversations and dialogue. Typical uses: meeting minutes generation, chat conversation summarization, dialogue-to-summary conversion. Not suited for: general document summarization, non-conversational text, technical documentation.",
+  "source_url": "https://huggingface.co/philschmid/bart-large-cnn-samsum/blob/main/README.md",
+  "official_url": "https://huggingface.co/philschmid/bart-large-cnn-samsum",
+  "confidence": "high",
+  "notes": ""
+ },
+ {
+  "id": "w11wo/indonesian-roberta-base-posp-tagger",
+  "description": "Indonesian RoBERTa by W11WO fine-tuned on IndonLU dataset for POS tagging and named entity recognition. Best at: Indonesian-language NER and part-of-speech tagging. Language: Indonesian. Typical uses: named entity extraction from Indonesian text, linguistic annotation, Indonesian NLP pipelines. Not suited for: English or other languages, tasks outside token classification.",
+  "source_url": "https://huggingface.co/w11wo/indonesian-roberta-base-posp-tagger/blob/main/README.md",
+  "official_url": "https://huggingface.co/w11wo/indonesian-roberta-base-posp-tagger",
+  "confidence": "high",
+  "notes": ""
+ },
+ {
+  "id": "dbmdz/bert-large-cased-finetuned-conll03-english",
+  "description": "BERT-large fine-tuned on CoNLL-2003 English NER dataset by DBMDZ. Best at: Named entity recognition for four entity types (LOC, ORG, PER, MISC). Language: English. Typical uses: entity extraction from documents, information extraction from text, named entity tagging. Not suited for: non-English text, languages other than English.",
+  "source_url": "https://huggingface.co/dbmdz/bert-large-cased-finetuned-conll03-english/blob/main/README.md",
+  "official_url": "https://huggingface.co/dbmdz/bert-large-cased-finetuned-conll03-english",
+  "confidence": "high",
+  "notes": ""
+ },
+ {
+  "id": "dslim/bert-base-NER",
+  "description": "BERT-base fine-tuned on CoNLL-2003 English NER dataset by DS Lim. Best at: Named entity recognition for four entity types (LOC, ORG, PER, MISC). Language: English. Typical uses: entity extraction from text, information retrieval, document analysis for named entities. Not suited for: non-English languages, document-level analysis, tasks outside entity classification.",
+  "source_url": "https://huggingface.co/dslim/bert-base-NER/blob/main/README.md",
+  "official_url": "https://huggingface.co/dslim/bert-base-NER",
+  "confidence": "high",
+  "notes": ""
+ },
+ {
+  "id": "StanfordAIMI/stanford-deidentifier-base",
+  "description": "Transformer-based de-identification model by Stanford AIMI, trained on radiology and biomedical documents to detect and replace protected health information. Best at: identifying PHI in medical documents and replacing with realistic surrogates. Domains: healthcare, radiology, biomedical NLP. Typical uses: automated de-identification of medical records. Not suited for: general NER, non-medical text, non-healthcare applications.",
+  "source_url": "https://huggingface.co/StanfordAIMI/stanford-deidentifier-base/blob/main/README.md",
+  "official_url": "https://huggingface.co/StanfordAIMI/stanford-deidentifier-base",
+  "confidence": "high",
+  "notes": ""
+ },
+ {
+  "id": "lfcc/bert-portuguese-ner",
+  "description": "BERT fine-tuned for Portuguese NER by LFCC on archival documents. Best at: Named entity recognition in Portuguese (Date, Profession, Person, Place, Organization). Language: Portuguese. Domains: archival documents, historical texts. Typical uses: entity extraction from Portuguese documents, information retrieval from archives. Not suited for: other languages, non-archival domains.",
+  "source_url": "https://huggingface.co/lfcc/bert-portuguese-ner/blob/main/README.md",
+  "official_url": "https://huggingface.co/lfcc/bert-portuguese-ner",
+  "confidence": "high",
+  "notes": ""
+ },
+ {
+  "id": "ProsusAI/finbert",
+  "description": "FinBERT by Prosus, BERT fine-tuned for financial sentiment analysis on Financial PhraseBank. Best at: classifying sentiment in financial documents (positive, negative, neutral). Domains: finance, investment, financial reporting. Typical uses: financial news sentiment analysis, investment text analysis, earnings report sentiment. Not suited for: general sentiment analysis, non-financial text, technical document analysis.",
+  "source_url": "https://huggingface.co/ProsusAI/finbert/blob/main/README.md",
+  "official_url": "https://huggingface.co/ProsusAI/finbert",
+  "confidence": "high",
+  "notes": ""
+ },
+ {
+  "id": "meta-llama/Prompt-Guard-86M",
+  "description": "",
+  "source_url": "https://huggingface.co/meta-llama/Prompt-Guard-86M/blob/main/README.md",
+  "official_url": "https://huggingface.co/meta-llama/Prompt-Guard-86M",
+  "confidence": "low",
+  "notes": "Model card is empty; unable to extract description from local readme file"
+ },
+ {
+  "id": "distilbert/distilbert-base-uncased-finetuned-sst-2-english",
+  "description": "DistilBERT by Hugging Face fine-tuned on SST-2 for binary sentiment classification. Best at: classifying text sentiment as positive or negative. Language: English. Typical uses: sentiment analysis of reviews, opinion mining from user text, social media sentiment tracking. Not suited for: multi-class classification, non-English text, emotion detection beyond positive/negative.",
+  "source_url": "https://huggingface.co/distilbert/distilbert-base-uncased-finetuned-sst-2-english/blob/main/README.md",
+  "official_url": "https://huggingface.co/distilbert/distilbert-base-uncased-finetuned-sst-2-english",
+  "confidence": "high",
+  "notes": ""
+ },
+ {
+  "id": "SamLowe/roberta-base-go_emotions",
+  "description": "RoBERTa by Sam Lowe fine-tuned on GoEmotions dataset for multi-label emotion classification (28 labels). Best at: detecting multiple emotions in text simultaneously. Domains: social media, user-generated content, sentiment analysis. Typical uses: emotion detection in Reddit data, multi-emotion analysis of text, mood classification. Not suited for: binary sentiment classification, single-label emotion prediction, non-English text.",
+  "source_url": "https://huggingface.co/SamLowe/roberta-base-go_emotions/blob/main/README.md",
+  "official_url": "https://huggingface.co/SamLowe/roberta-base-go_emotions",
+  "confidence": "high",
+  "notes": ""
+ }
+]

@@ -1,0 +1,162 @@
+[
+  {
+    "id": "RunDiffusion/Juggernaut-XL-v9",
+    "description": "Fine-tuned SDXL text-to-image model by RunDiffusion optimized for photorealism. Best at: photorealistic portrait and product photography. Domains: commercial, advertising, product design. Typical uses: generating architectural renders, food photography, automotive images, interior design visualizations. Not suited for: abstract art styles, stylized illustrations.",
+    "source_url": "https://huggingface.co/RunDiffusion/Juggernaut-XL-v9/blob/main/README.md",
+    "official_url": "https://huggingface.co/RunDiffusion/Juggernaut-XL-v9",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "black-forest-labs/FLUX.1-dev",
+    "description": "12-billion parameter text-to-image model by Black Forest Labs for high-quality image generation. Best at: converting text prompts to images with competitive quality. Domains: creative, commercial, research. Typical uses: image synthesis, visual content creation, design mockups. Not suited for: tasks requiring non-commercial license restrictions.",
+    "source_url": "https://huggingface.co/black-forest-labs/FLUX.1-dev",
+    "official_url": "https://huggingface.co/black-forest-labs/FLUX.1-dev",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "zai-org/GLM-OCR",
+    "description": "Multimodal OCR model for complex document understanding using GLM encoder-decoder architecture. Best at: document parsing, formula recognition, table extraction, text recognition. Domains: finance, document processing, information extraction. Typical uses: invoice processing, structured data extraction, layout-aware OCR. Not suited for: real-time high-volume processing, handwritten text.",
+    "source_url": "https://huggingface.co/zai-org/GLM-OCR/blob/main/README.md",
+    "official_url": "https://huggingface.co/zai-org/GLM-OCR",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "Salesforce/blip-image-captioning-base",
+    "description": "BLIP vision-language model with ViT base backbone for image captioning. Best at: generating both conditional and unconditional image descriptions. Domains: image understanding, content accessibility. Typical uses: auto-generating image captions, image-to-text retrieval, alt text generation. Not suited for: complex visual reasoning requiring scene graph understanding.",
+    "source_url": "https://huggingface.co/Salesforce/blip-image-captioning-base/blob/main/README.md",
+    "official_url": "https://huggingface.co/Salesforce/blip-image-captioning-base",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "kha-white/manga-ocr-base",
+    "description": "Specialized OCR model for Japanese text recognition in manga and printed materials. Best at: extracting vertical and horizontal Japanese text with furigana support. Domains: manga, comics, Japanese publications. Typical uses: manga text extraction, Japanese document OCR, handling font variation. Not suited for: non-Japanese text, handwritten or cursive scripts.",
+    "source_url": "https://huggingface.co/kha-white/manga-ocr-base/blob/main/README.md",
+    "official_url": "https://huggingface.co/kha-white/manga-ocr-base",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "PaddlePaddle/PP-OCRv5_server_det",
+    "description": "High-performance text detection model supporting diverse scenarios and multiple languages. Best at: detecting text in varied orientations including rotated and curved text. Domains: document analysis, multilingual scene understanding. Typical uses: license plate detection, document layout analysis, rotated text localization. Not suited for: text recognition (detection-only model), very small or blurry text.",
+    "source_url": "https://huggingface.co/PaddlePaddle/PP-OCRv5_server_det/blob/main/README.md",
+    "official_url": "https://huggingface.co/PaddlePaddle/PP-OCRv5_server_det",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "Salesforce/blip-image-captioning-large",
+    "description": "BLIP vision-language model with ViT large backbone for advanced image captioning. Best at: generating detailed image descriptions and captions. Domains: image understanding, content accessibility, media analysis. Typical uses: generating descriptive captions, creating detailed alt text, image-to-text understanding. Not suited for: visual reasoning tasks requiring scene graph analysis.",
+    "source_url": "https://huggingface.co/Salesforce/blip-image-captioning-large/blob/main/README.md",
+    "official_url": "https://huggingface.co/Salesforce/blip-image-captioning-large",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "FastVideo/FastVideo-FastH3-4-step-Preview-v1-VSA-DataFree",
+    "description": "Text-to-audio-video generation model with 4-step inference using FastH3 and VSA distillation. Best at: fast synchronized audio-video synthesis from text. Domains: video production, multimedia. Typical uses: generating short videos with synchronized audio, creative media content. Not suited for: high-resolution or long-form production video, consumer GPU deployment.",
+    "source_url": "https://huggingface.co/FastVideo/FastVideo-FastH3-4-step-Preview-v1-VSA-DataFree/blob/main/README.md",
+    "official_url": "https://huggingface.co/FastVideo/FastVideo-FastH3-4-step-Preview-v1-VSA-DataFree",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "Wan-AI/Wan2.1-T2V-1.3B-Diffusers",
+    "description": "Lightweight text-to-video model optimized for consumer GPUs, requiring 8GB VRAM. Best at: text-to-video generation on limited hardware. Domains: accessible video creation. Typical uses: generating 480P videos, consumer video synthesis, accessible animation. Not suited for: high-resolution output (720P), long-duration videos, production workflows.",
+    "source_url": "https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B-Diffusers/blob/main/README.md",
+    "official_url": "https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B-Diffusers",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "SulphurAI/Sulphur-2-base",
+    "description": "Uncensored video generation model based on LTX 2.3 architecture supporting text-to-video and image-to-video. Best at: flexible video generation with minimal content restrictions. Domains: creative video synthesis. Typical uses: T2V synthesis, I2V generation, creative video content. Not suited for: content requiring safety alignment, professional production standards.",
+    "source_url": "https://huggingface.co/SulphurAI/Sulphur-2-base/blob/main/README.md",
+    "official_url": "https://huggingface.co/SulphurAI/Sulphur-2-base",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "Wan-AI/Wan2.2-TI2V-5B-Diffusers",
+    "description": "Text-image-to-video model supporting 720P resolution at 24fps with Mixture-of-Experts architecture. Best at: high-definition video generation from text and images. Domains: professional video production, cinematic content. Typical uses: 720P video synthesis, image-to-video generation, cinematic video creation. Not suited for: real-time generation without sufficient VRAM, consumer deployment without optimization.",
+    "source_url": "https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B-Diffusers/blob/main/README.md",
+    "official_url": "https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B-Diffusers",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "MCG-NJU/videomae-base",
+    "description": "Video masked autoencoder model pre-trained on Kinetics-400 for self-supervised video representation learning. Best at: extracting generalizable video features for downstream tasks. Domains: video understanding, representation learning. Typical uses: video classification fine-tuning, feature extraction for transfer learning. Not suited for: direct zero-shot video classification, real-time applications.",
+    "source_url": "https://huggingface.co/MCG-NJU/videomae-base/blob/main/README.md",
+    "official_url": "https://huggingface.co/MCG-NJU/videomae-base",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "facebook/vjepa2-vitl-fpc64-256",
+    "description": "Meta's V-JEPA 2 video understanding model using joint embedding predictive architecture. Best at: video representation learning for classification and retrieval tasks. Domains: video analysis, multimedia retrieval. Typical uses: video classification, video-text retrieval, extracting video embeddings. Not suited for: video generation, frame-level tasks.",
+    "source_url": "https://huggingface.co/facebook/vjepa2-vitl-fpc64-256/blob/main/README.md",
+    "official_url": "https://huggingface.co/facebook/vjepa2-vitl-fpc64-256",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "microsoft/xclip-base-patch16-zero-shot",
+    "description": "X-CLIP video-language model for zero-shot video classification trained on Kinetics-400. Best at: zero-shot video classification and video-text matching without fine-tuning. Domains: video understanding, action recognition. Typical uses: zero-shot action recognition, video-text retrieval, content classification. Not suited for: video generation, frame-level analysis.",
+    "source_url": "https://huggingface.co/microsoft/xclip-base-patch16-zero-shot/blob/main/README.md",
+    "official_url": "https://huggingface.co/microsoft/xclip-base-patch16-zero-shot",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "sentence-transformers/all-MiniLM-L6-v2",
+    "description": "Sentence embedding model producing 384-dimensional dense vectors trained on 1 billion sentence pairs. Best at: semantic search, text clustering, and similarity detection. Domains: information retrieval, NLP. Typical uses: semantic document search, clustering similar texts, paraphrase detection. Not suited for: multilingual tasks (English-optimized), very long documents.",
+    "source_url": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/blob/main/README.md",
+    "official_url": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "description": "Multilingual sentence embedding model with 384-dimensional output supporting multiple languages. Best at: cross-lingual semantic search and multilingual text clustering. Domains: multilingual NLP, international information retrieval. Typical uses: cross-lingual document search, multilingual clustering, paraphrase detection. Not suited for: domain-specific embeddings without fine-tuning.",
+    "source_url": "https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2/blob/main/README.md",
+    "official_url": "https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "BAAI/bge-m3",
+    "description": "Multilingual embedding model supporting 100+ languages with hybrid retrieval capabilities (dense, sparse, ColBERT). Best at: dense and sparse retrieval with long context (up to 8192 tokens). Domains: multilingual information retrieval, RAG systems. Typical uses: hybrid search combining dense and sparse methods, long document retrieval. Not suited for: image or multimodal embeddings.",
+    "source_url": "https://huggingface.co/BAAI/bge-m3/blob/main/README.md",
+    "official_url": "https://huggingface.co/BAAI/bge-m3",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "nomic-ai/nomic-embed-text-v1.5",
+    "description": "Text embedding model using Matryoshka Representation Learning for resizable dimensions with task-specific prefixes. Best at: flexible-dimension embeddings for search, clustering, and classification. Domains: information retrieval, semantic search. Typical uses: document search embeddings, query embeddings, text classification features. Not suited for: image embeddings, real-time tasks with unknown task types.",
+    "source_url": "https://huggingface.co/nomic-ai/nomic-embed-text-v1.5/blob/main/README.md",
+    "official_url": "https://huggingface.co/nomic-ai/nomic-embed-text-v1.5",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "intfloat/multilingual-e5-small",
+    "description": "Multilingual sentence embedding model with 384 dimensions supporting 100 languages from XLM-RoBERTa. Best at: multilingual semantic search and similarity detection. Domains: multilingual NLP, international information retrieval. Typical uses: cross-lingual document search, multilingual clustering, query-document matching. Not suited for: domain-specific embeddings without fine-tuning, non-text data.",
+    "source_url": "https://huggingface.co/intfloat/multilingual-e5-small/blob/main/README.md",
+    "official_url": "https://huggingface.co/intfloat/multilingual-e5-small",
+    "confidence": "high",
+    "notes": ""
+  },
+  {
+    "id": "BAAI/bge-reranker-v2-m3",
+    "description": "Cross-encoder reranker model for multilingual relevance scoring based on BGE-M3. Best at: re-ranking search results to improve relevance. Domains: information retrieval, RAG pipelines. Typical uses: filtering retrieved search results, relevance scoring in RAG systems, improving retrieval quality. Not suited for: real-time scoring at large scale without optimization, initial dense retrieval.",
+    "source_url": "https://huggingface.co/BAAI/bge-reranker-v2-m3/blob/main/README.md",
+    "official_url": "https://huggingface.co/BAAI/bge-reranker-v2-m3",
+    "confidence": "high",
+    "notes": ""
+  }
+]
